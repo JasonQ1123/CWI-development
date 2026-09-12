@@ -1,7 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "kubejs:item/tools/stone_hammer",
-    "layer1": "kubejs:item/tools/charged_overlay_1"
+    "layer0": "kubejs:item/tools/charged_stone_hammer"
   }
 }
