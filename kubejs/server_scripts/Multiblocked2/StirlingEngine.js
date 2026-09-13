@@ -13,7 +13,7 @@ directionOffsets[Direction.WEST]  = [0.8, -0.1, 0.4, 1.1, 0.4, -0.1, 0.8, 1.1]
 
 // Update Machine Speed And State
 
-function updateMachine(machine) {
+function updateMachineSE(machine) {
     const level = machine.getLevel()
     const pos = machine.getPos()
     const blockBelowPos = pos.offset(0, -1, 0)
@@ -50,7 +50,7 @@ function updateMachine(machine) {
 MBDMachineEvents.onPlaced('cwi:stirling_engine', event => {
     const machine = event.getEvent().getMachine()
     machine.getLevel().getServer().scheduleInTicks(1, () => {
-        updateMachine(machine)
+        updateMachineSE(machine)
 
         const pos = machine.getPos()
         const offsets = directionOffsets[machine.getFrontFacing().get()]
@@ -63,7 +63,7 @@ MBDMachineEvents.onPlaced('cwi:stirling_engine', event => {
 // On Neighbor Changed
 
 MBDMachineEvents.onNeighborChanged('cwi:stirling_engine', event => {
-    updateMachine(event.getEvent().getMachine())
+    updateMachineSE(event.getEvent().getMachine())
 })
 
 // On Machine Tick
