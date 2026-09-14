@@ -205,6 +205,13 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_stone_tool')
         .mapColor('#FF5500')
 
+    event.create('eruptive_bedrock')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(1000)
+        .lightLevel(1)
+        .mapColor('#FF5500')
+
 // Ores
 
     event.create('quartz_ore')

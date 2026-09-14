@@ -504,8 +504,8 @@ ServerEvents.recipes(event => {
             { "type": "place", "block": "air" },
             { "type": "add_item_cooldown", "s": 0.2 },
             { "type": "damage_item" },
-            { "type": "drop_item", "item": "createdieselgenerators:wood_chip", "count": 5 },
-            { "type": "drop_item", "item": "createdieselgenerators:wood_chip", "count": 3, "contextual": { "type": "chance", "chance": 0.75 } },
+            { "type": "drop_item", "item": "createdieselgenerators:wood_chip", "count": 3 },
+            { "type": "drop_item", "item": "createdieselgenerators:wood_chip", "count": 1, "contextual": { "type": "chance", "chance": 0.75 } },
             { "type": "drop_item", "item": "kubejs:dark_ash", "count": 2, "contextual": { "type": "chance", "chance": 0.73 } }
         ]
     })
@@ -578,8 +578,8 @@ ServerEvents.recipes(event => {
             { "type": "place", "block": "air" },
             { "type": "add_item_cooldown", "s": 0.2 },
             { "type": "damage_item" },
-            { "type": "drop_item", "item": "createdieselgenerators:wood_chip", "count": 6 },
-            { "type": "drop_item", "item": "createdieselgenerators:wood_chip", "count": 4, "contextual": { "type": "chance", "chance": 0.85 } },
+            { "type": "drop_item", "item": "createdieselgenerators:wood_chip", "count": 3 },
+            { "type": "drop_item", "item": "createdieselgenerators:wood_chip", "count": 2, "contextual": { "type": "chance", "chance": 0.85 } },
             { "type": "drop_item", "item": "kubejs:ash", "contextual": { "type": "chance", "chance": 0.53 } }
         ]
     })

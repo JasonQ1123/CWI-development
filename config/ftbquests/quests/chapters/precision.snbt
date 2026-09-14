@@ -1320,13 +1320,13 @@
 			id: "0F10364E2DA4BE4C"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Unified Storage"
+			subtitle: "Infinite Lava"
 			tasks: [{
-				id: "09AEA3C15634C3D5"
-				item: "functionalstorage:storage_controller"
+				id: "5005CA92BCEB36A8"
+				item: "cwi:lava_extractor_head"
 				type: "item"
 			}]
-			title: "Storage Controller"
+			title: "Lava Extractor"
 			x: 16.0d
 			y: -2.0d
 		}
