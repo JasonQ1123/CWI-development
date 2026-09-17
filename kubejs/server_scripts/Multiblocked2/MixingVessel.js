@@ -6,7 +6,7 @@ MBDMachineEvents.onBeforeRecipeModify("cwi:mixing_vessel", (event) => {
     const holder = partmachine.machineHolder
     if (holder.speed === 0) return
     const copyRecipe = recipe.copy()
-    copyRecipe.duration = Math.max(1, Math.floor(recipe.duration * Math.abs(256 / holder.speed)))
+    copyRecipe.duration = Math.max(1, Math.floor(recipe.duration * Math.abs(MAX_RPM / holder.speed)))
     event.getEvent().setRecipe(copyRecipe)
 })
 
