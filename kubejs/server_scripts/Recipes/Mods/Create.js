@@ -5,6 +5,109 @@ ServerEvents.recipes(event => {
         'fluid:fluid_manifest'
     )
 
+    event.shapeless(
+        '3x create:shaft',
+        'kubejs:small_pile_of_shafts'
+    )
+
+    event.shapeless(
+        '8x create:shaft',
+        'kubejs:pile_of_shafts'
+    )
+
+    event.shapeless(
+        '14x create:shaft',
+        'kubejs:large_pile_of_shafts'
+    )
+
+    event.shapeless(
+        'kubejs:small_pile_of_shafts',
+        '3x create:shaft'
+    )
+
+    event.shapeless(
+        'kubejs:pile_of_shafts',
+        '8x create:shaft'
+    )
+
+    event.shapeless(
+        'kubejs:pile_of_shafts',
+        [
+            'kubejs:small_pile_of_shafts',
+            '5x create:shaft'
+        ]
+    )
+
+    event.shapeless(
+        'kubejs:pile_of_shafts',
+        [
+            '2x kubejs:small_pile_of_shafts',
+            '2x create:shaft'
+        ]
+    )
+
+    event.shapeless(
+        'kubejs:large_pile_of_shafts',
+        '14x create:shaft'
+    )
+
+    event.shapeless(
+        'kubejs:large_pile_of_shafts',
+        [
+            'kubejs:small_pile_of_shafts',
+            '12x create:shaft'
+        ]
+    )
+
+    event.shapeless(
+        'kubejs:large_pile_of_shafts',
+        [
+            'kubejs:pile_of_shafts',
+            '6x create:shaft'
+        ]
+    )
+
+    event.shapeless(
+        'kubejs:large_pile_of_shafts',
+        [
+            'kubejs:pile_of_shafts',
+            'kubejs:small_pile_of_shafts',
+            '3x create:shaft'
+        ]
+    )
+
+    event.shapeless(
+        'kubejs:large_pile_of_shafts',
+        [
+            'kubejs:pile_of_shafts',
+            '2x kubejs:small_pile_of_shafts',
+        ]
+    )
+
+    event.shapeless(
+        'kubejs:large_pile_of_shafts',
+        [
+            '2x kubejs:small_pile_of_shafts',
+            '8x create:shaft'
+        ]
+    )
+
+    event.shapeless(
+        'kubejs:large_pile_of_shafts',
+        [
+            '3x kubejs:small_pile_of_shafts',
+            '5x create:shaft'
+        ]
+    )
+
+    event.shapeless(
+        'kubejs:large_pile_of_shafts',
+        [
+            '4x kubejs:small_pile_of_shafts',
+            '2x create:shaft'
+        ]
+    )
+
     event.shaped(
        'tfmg:lithium_torch',
         [

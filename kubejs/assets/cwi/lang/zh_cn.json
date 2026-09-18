@@ -6,7 +6,22 @@
   "block.cwi.incubator": "培养器",
   "block.cwi.spider_egg": "蜘蛛卵",
   "block.cwi.dride_algae": "干藻",
+  "block.cwi.lava_extractor_head": "熔岩抽取机头部",
+  "block.cwi.lava_extractor_pump": "熔岩抽取机泵",
+  "block.cwi.lava_extractor_pump_blade": "熔岩抽取机泵叶片",
+  "block.cwi.lava_extractor_stress_input": "熔岩抽取机应力输入",
 
   "cwi.blast_furnace_processing": "高炉冶炼",
-  "cwi.arc_furnace_processing": "电弧炉冶炼"
+  "cwi.arc_furnace_processing": "电弧炉冶炼",
+
+  "cwi.recipe.budding_growth": "母岩催生",
+  "cwi.recipe.block_conversion": "方块转换",
+  "cwi.recipe.depot_conversion": "置物台转换",
+  "cwi.recipe.incubating": "培养",
+  "cwi.recipe.mixing_vessel": "搅拌釜",
+  "cwi.recipe.equipment_upgrades": "装备升级",
+
+  "message.cwi.no_lockpick": "无法开锁",
+  "message.cwi.lockpick_success": "开锁成功",
+  "message.cwi.lockpick_failure": "开锁失败"
 }

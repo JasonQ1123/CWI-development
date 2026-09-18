@@ -278,9 +278,8 @@ function slabPair(event, type, block, slab) {
     if (type == 'wood') event.recipes.create.cutting(`2x ${slab}`, block)
 }
 
-function stoneSlabPair(event, block, slab) {
-    event.shaped(`6x ${slab}`, ['AAA'], { A: block })
-    event.stonecutting(`2x ${slab}`, block)
+function slabPairReverse(event, type, block, slab) {
+    event.shaped(block, ['A', 'A'], { A: slab })
 }
 
 ServerEvents.recipes(event => {
@@ -362,6 +361,7 @@ ServerEvents.recipes(event => {
 
     // Slab
     slabPair(event, 'normal', 'kubejs:depleted_dirt', 'kubejs:depleted_dirt_slab')
+    slabPairReverse(event, 'normal', 'kubejs:depleted_dirt', 'kubejs:depleted_dirt_slab')
 
     // Special Melting And Casting
     melting(event, 'heated', AddItem('darkerdepths:amber'), 55, AddFluid('150 kubejs:molten_sticky_resin'))

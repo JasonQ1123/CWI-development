@@ -6,6 +6,10 @@
   "block.cwi.incubator": "Incubator",
   "block.cwi.spider_egg": "Spider Egg",
   "block.cwi.dride_algae": "Dried Algae",
+  "block.cwi.lava_extractor_head": "Lava Extractor Head",
+  "block.cwi.lava_extractor_pump": "Lava Extractor Pump",
+  "block.cwi.lava_extractor_pump_blade": "Lava Extractor Pump Blade",
+  "block.cwi.lava_extractor_stress_input": "Lava Extractor Stress Input",
 
   "cwi.blast_furnace_processing": "Blast Furnace Smelting",
   "cwi.arc_furnace_processing": "Arc Furnace Smelting",

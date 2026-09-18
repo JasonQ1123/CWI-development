@@ -28,7 +28,7 @@ StartupEvents.registry('item', event => {
     event.create('nylon_salt_crystal')
     event.create('carborundum')
     event.create('fat')
-    event.create('yeast_paste').texture('tfc:item/canola_paste')
+    event.create('yeast_paste')
     event.create('quality_tool_handle')
     event.create('backpack_extension')
 })
