@@ -1,5 +1,0 @@
-
-[multiblock_builder]
-	#Range: > 5
-	slowBuildBlocksPerTick = 5
-
