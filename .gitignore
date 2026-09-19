@@ -20,7 +20,12 @@
 !/config/ftbquests/
 !/config/functionalstorage/
 !/config/jade/
-!/config/jei/
+!/config/jei/blacklist.cfg.bak
+
+!/config/jei/ingredient-list-mod-sort-order.ini
+!/config/jei/ingredient-list-type-sort-order.ini
+!/config/jei/recipe-category-sort-order.ini
+
 !/config/ad_astra-client.jsonc
 !/config/ad_astra.jsonc
 !/config/createjustenoughtime-common.toml
