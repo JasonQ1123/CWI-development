@@ -1,0 +1,8 @@
+name = "Create-Wasteland-Industry"
+author = "QIUWH"
+version = "v0.4.1-beta"
+pack-format = ""
+
+[versions]
+forge = "47.4.10"
+minecraft = "1.20.1"
