@@ -1,6 +1,0 @@
-
-#Simple Schematic
-[simple_schematic]
-	#Enable the Simple Schematic’s Flip Tool
-	enable_simple_schematic_flip_tool = false
-
