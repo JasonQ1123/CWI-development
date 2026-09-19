@@ -2,7 +2,7 @@
 [blocks_limit]
 	#--------------------------------------------------------------------------
 	#The count limit of blocks that are used in block entities. The first para is count limit and the second para is stabilize para.
-	blocks_limit = [["create:deployer", 256, 100], ["create:mechanical_drill", 256, 100], ["create:mechanical_roller", 64, 100], ["minecraft:dirt", 2048, 10000], ["create:linear_chassis", 2048, -100], ["minecraft:netherrack", 2048, 5000], ["minecraft:stone", 2048, 4000], ["minecraft:deepslate", 2048, 4000], ["minecraft:end_stone", 2048, 4000], ["minecraft:white_wool", 2048, 80], ["create:item_vault", 2048, 360], ["minecraft:barrel", 2048, 400], ["minecraft:chest", 2048, 800], ["ae2:smooth_sky_stone_chest", 2048, 800]]
+	blocks_limit = []
 	#--------------------------------------------------------------------------
 	#Default on this config will ignore one entity crush at first time.
 	#This can keep miner not broken at the first time crush for helping player.

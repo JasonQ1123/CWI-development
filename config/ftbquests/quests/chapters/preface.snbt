@@ -70,9 +70,8 @@
 		}
 		{
 			description: [
-				"&eWhen using the Mandala's GUI, the others are only for the GUI author's download count; please use the customized version of this modpack. &r"
-				""
-				"&eThe Old Copper Texture is a resource pack I made to port the 0.5 texture of create into 6.0. If you disabled it, please use the New Copper Texture, otherwise, the textures may have issues.&r"
+				"&b Inverntory Sort: &r"
+				"&e   Select any slot in the GUI and press J on the keyboard to organize.&r"
 			]
 			disable_toast: true
 			icon: {
@@ -82,17 +81,51 @@
 			}
 			id: "216B9570B131C6AF"
 			size: 2.0d
-			subtitle: "MandalasGUI and Copper Textures"
+			subtitle: "Useful Things"
 			tasks: [{
 				id: "16EB191EAC44D5AF"
 				type: "checkmark"
 			}]
-			title: "Resource Packs"
+			title: "Utilities"
 			x: 0.0d
 			y: 4.0d
 		}
 		{
-			description: ["&6Some mods are only for enhancing gaming experience, and you can delete them without causing any problems in the modpack.&r\\n\\n&eXaero's Maps - Map that is actually very useful&r\\n\\n&eInventory Sorter - A mod for Sorting items&r\\n\\n&eOculus - Including all mods around shaders&r\\n\\n&eJust Enough Characters - If you don't speak chinese&r\\n\\n&eSodium Dynamic Light&r"]
+			description: [
+				"&6Some mods are only for enhancing gaming experience, and you can delete them without causing any problems in the modpack."
+				""
+				"&b Xaero's World/Mini Maps:&r"
+				"&e - Map, which is actually very useful&r"
+				""
+				"&b Inventory Sorter:&r"
+				"&e - A mod for Sorting items&r"
+				""
+				"&b Oculus:&r"
+				"&e - Including all mods around shaders&r"
+				""
+				"&b ColorWheel/Patcher:&r"
+				"&e - Better performance on Create with shaders&r"
+				""
+				"&b Ceate Better FPS:&r"
+				"&e - Better performance on Create with shaders&r"
+				""
+				"{@pagebreak}"
+				""
+				"&b Just Enough Characters:&r"
+				"&e - For Chinese users exclusively&r"
+				""
+				"&b Sodium Dynamic Light:&r"
+				"&e - Dynamic Light&r"
+				""
+				"&b Certain Questing Addition:&r"
+				"&e - Improvements on FTB Quest&r"
+				""
+				"&b Shadow Drop:&r"
+				"&e - Shadow effect on Items in UI&r"
+				""
+				"&b Status Effect Bar Reforged:&r"
+				"&e - Improvements on Status Effect Barv"
+			]
 			disable_toast: true
 			icon: "minecraft:end_crystal"
 			id: "48AC81B4ABF02782"
@@ -173,7 +206,15 @@
 			y: 3.0d
 		}
 		{
-			description: ["&eIf any BUG was found in this modpack, please report in the discord server or under the modpack's curseforge page&r\\n\\n&eYou could join the modpack's Discord server using the URL https://discord.gg/sbJyC2qxX3 , you can find it in the Curseforge page&r"]
+			description: [
+				"&6If any&r &cBUG&r &6was found in this modpack, please report in the&r &aDiscord Server &6or under the modpack's&r &aCurseforge Page &6^w^&r"
+				""
+				"&6You could join the modpack's Discord server using the URL&r"
+				""
+				"&b      https://discord.gg/sbJyC2qxX3&r"
+				""
+				"&6You can find it in the Curseforge page&r"
+			]
 			disable_toast: true
 			icon: "createdeco:decal_warning"
 			id: "5A4EECDD6BF9801B"
