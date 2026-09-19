@@ -82,7 +82,7 @@ MBDMachineEvents.onTick('cwi:blast_furnace', event => {
     const lastArmor = machine.customData.getInt('lastArmor')
     if (heaterHeats === lastHH && armor === lastArmor && Math.abs(temperature - effectiveMax) < 1.5) {
         machine.customData.putFloat('temperature', effectiveMax)
-        Utils.server.tell(`Temp: ${effectiveMax}`)
+        //Utils.server.tell(`Temp: ${effectiveMax}`)
         return
     }
 
@@ -95,6 +95,7 @@ MBDMachineEvents.onTick('cwi:blast_furnace', event => {
 
     const processingTime = 1 - 0.75 * (temperature / 2400)
 
+    /*
     Utils.server.tell('')
     Utils.server.tell('----------------------------------------')
     Utils.server.tell('')
@@ -105,6 +106,7 @@ MBDMachineEvents.onTick('cwi:blast_furnace', event => {
     Utils.server.tell(`MachineHeat: ${newHeat}`)
     Utils.server.tell(`ProcessingTime: ${processingTime}`)
     Utils.server.tell(`Reinforcement: ${armor}`)
+    */
 
     machine.customData.putInt('heaterHeats', heaterHeats)
     machine.customData.putFloat('temperature', temperature)
