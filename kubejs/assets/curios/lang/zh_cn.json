@@ -1,0 +1,7 @@
+{
+ "commands.curios.drop.success": "已掉落%s槽位%s中的物品",
+ "commands.curios.dropAll.success": "已掉落%s所有槽位中的物品",
+ "commands.curios.replace.success": "已将%s槽位%s替换为%s",
+ "gui.curios.toggle.cosmetics": "切换外观",
+ "gui.curios.page": "第 %d / %d 页"
+}

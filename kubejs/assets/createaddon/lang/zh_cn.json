@@ -1,0 +1,14 @@
+{
+ "block.createaddon.andesite_calibrated_noteblock_encased_shaft": "安山校音盒包裹传动杆",
+ "block.createaddon.beaker": "烧杯",
+ "block.createaddon.big_mechanical_press": "大型机械冲压机",
+ "block.createaddon.brass_calibrated_noteblock_encased_shaft": "黄铜校音盒包裹传动杆",
+ "block.createaddon.extrusion_die": "挤压模具",
+ "block.createaddon.measuring_cylinder": "量筒",
+ "block.createaddon.mechanical_sieve": "机械筛",
+ "createaddon.behaviour.beaker.fill_level": "烧杯液位",
+ "createaddon.behaviour.measuring_cylinder.fill_level": "量筒液位",
+ "createaddon.value_settings.fill": "填充",
+ "item.createaddon.incomplete_diamond": "未完成的钻石",
+ "recipe.createaddon.compressing": "用机械冲压机或大型机械冲压机压制"
+}

@@ -1,0 +1,12 @@
+{
+ "gui.ae2wtlib.magnetcard.desc.me_no_magnet": "磁力关闭，拾取至ME",
+ "gui.ae2wtlib.wireless_terminal_settings_title": "无线终端设置",
+ "gui.ae2wtlib.magnet_settings_title": "磁铁设置",
+ "gui.ae2wtlib.pick_block.text": "启用选取方块",
+ "gui.ae2wtlib.craft_if_missing.text": "缺失时合成",
+ "gui.ae2wtlib.restock.text": "补货",
+ "gui.ae2wtlib.magnet.text": "磁铁",
+ "gui.ae2wtlib.pickup_to_me.text": "拾取至ME系统",
+ "key.ae2.ae2wtlib_stow": "将手中整叠存入ME系统",
+ "chat.ae2wtlib.NetworkNotPowered": "网络未供电"
+}

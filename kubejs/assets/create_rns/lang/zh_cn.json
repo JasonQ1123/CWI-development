@@ -1,0 +1,22 @@
+{
+ "block.create_rns.coal_deposit_block": "煤矿床",
+ "block.create_rns.lapis_deposit_block": "青金石矿床",
+ "block.create_rns.osmium_deposit_block": "锇矿床",
+ "block.create_rns.platinum_deposit_block": "铂矿床",
+ "block.create_rns.wolframite_deposit_block": "钨矿床",
+ "subtitle.create_rns.mining_large_head_accent": "大型矿头钻探",
+ "create_rns.structure.deposit_coal": "煤矿床",
+ "create_rns.structure.deposit_lapis": "青金石矿床",
+ "create_rns.structure.deposit_osmium": "锇矿床",
+ "create_rns.structure.deposit_platinum": "铂矿床",
+ "create_rns.structure.deposit_nether_wolframite": "钨矿床",
+ "create_rns.command.debug.deposit_detection": "矿床探测区域可视化：%s",
+ "create_rns.command.debug.template.miner_setup": "矿机布置",
+ "create_rns.command.debug.template.miner": "矿机",
+ "create_rns.command.debug.template.motor": "创造马达",
+ "create_rns.command.debug.template.place.success": "已在%3$s %4$s %5$s处放置%1$s %2$s",
+ "create_rns.command.debug.template.remove.success": "已移除%3$s %4$s %5$s处的%1$s %2$s",
+ "create_rns.command.debug.template.unknown": "未知模板：%1$s",
+ "create_rns.command.debug.template.motor.missing_bearing": "预期在%1$s %2$s %3$s处有一个矿机轴承",
+ "create_rns.command.debug.template.invalid_area": "所有模板位置必须已加载且在建筑高度内"
+}

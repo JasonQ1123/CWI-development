@@ -1,0 +1,21 @@
+{
+ "inventorysorter.gui.title": "物品栏整理（可配置）",
+ "inventorysorter.gui.middleClickSorting": "物品栏整理",
+ "inventorysorter.gui.middleClickSorting.tooltip": "是否启用物品栏整理模块？",
+ "inventorysorter.gui.containerDebug": "调试容器整理",
+ "inventorysorter.gui.containerDebug.tooltip": "容器被整理时生成日志消息，辅助黑名单编写",
+ "keygroup.inventorysorter": "物品栏整理（可配置）",
+ "key.inventorysorter.sort": "整理物品栏",
+ "inventorysorter.commands.inventorysorter.usage": "/invsorter §ebladd§f|§eblrem§f|§eshow§f|§elist§f",
+ "inventorysorter.commands.inventorysorter.bladd.message": "已将§e{0}§f加入容器黑名单",
+ "inventorysorter.commands.inventorysorter.blremove.message": "已将§e{0}§f移出容器黑名单",
+ "inventorysorter.commands.inventorysorter.badtype": "字符串§c{0}§f不是有效容器类型，已忽略",
+ "inventorysorter.commands.inventorysorter.showlast.message": "上次整理的容器：§e{0}§f",
+ "inventorysorter.commands.inventorysorter.showlast.nosort": "你还没有整理过容器，试试整理一个！",
+ "inventorysorter.commands.inventorysorter.showblacklist.message": "当前黑名单§e{0}§f",
+ "inventorysorter.commands.inventorysorter.showblacklist.empty": "黑名单为空",
+ "inventorysorter.config.containerblacklist": "容器黑名单",
+ "inventorysorter.config.slotblacklist": "槽位类型黑名单",
+ "inventorysorter.config.sortorder": "排序方式",
+ "inventorysorter.config.sortbycountfirst": "先按数量排序"
+}
