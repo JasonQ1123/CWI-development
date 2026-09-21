@@ -1,0 +1,10 @@
+{
+ "block.ratatouille.aerator": "充气机",
+ "block.ratatouille.cake_batter": "蛋糕糊",
+ "block.ratatouille.egg_yolk": "蛋黄",
+ "block.ratatouille.fishpond_block": "鱼塘方块",
+ "block.ratatouille.melon_juice_fluid": "西瓜汁流体",
+ "block.ratatouille.mince_meat": "肉馅",
+ "item.ratatouille.fish_feed": "鱼饲料",
+ "ratatouille.generic.unit.millibuckets": "mB"
+}

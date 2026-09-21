@@ -1,5 +1,9 @@
 {
-  "item.createaddition.straw": "流体燃烧模块",
-  "block.createaddition.electrum_block": "琥珀金块",
-  "block.createaddition.liquid_blaze_burner": "流体燃料燃烧室"
+ "item.createaddition.straw": "流体燃烧模块",
+ "block.createaddition.electrum_block": "琥珀金块",
+ "block.createaddition.liquid_blaze_burner": "流体燃料燃烧室",
+ "attack.death.createaddition.barbed_wire": "%1$s试图穿越铁丝网",
+ "attack.death.createaddition.barbed_wire.player": "%1$s在与%2$s战斗时试图穿越铁丝网",
+ "attack.death.createaddition.tesla_coil": "%1$s受到了致命电击",
+ "attack.death.createaddition.tesla_coil.player": "%1$s在与%2$s战斗时受到致命电击"
 }

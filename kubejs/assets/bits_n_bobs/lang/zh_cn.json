@@ -1,0 +1,9 @@
+{
+ "block.bits_n_bobs.brass_lamp.tooltip.behaviour1": "切换灯泡是否_常亮_，无视红石信号。",
+ "block.bits_n_bobs.brass_lamp.tooltip.condition1": "空手右键时",
+ "block.bits_n_bobs.brass_lamp.tooltip.summary": "_不只是个灯泡_，它还有精致的黄铜外壳。",
+ "block.bits_n_bobs.headlamp.tooltip.behaviour1": "切换灯泡是否_常亮_，无视红石信号。",
+ "block.bits_n_bobs.headlamp.tooltip.condition1": "空手右键时",
+ "block.bits_n_bobs.lightbulb.tooltip.behaviour2": "切换灯泡是否_常亮_，无视红石信号。",
+ "block.bits_n_bobs.lightbulb.tooltip.condition2": "空手右键时"
+}

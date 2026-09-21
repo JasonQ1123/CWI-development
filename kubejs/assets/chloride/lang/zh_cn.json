@@ -1,0 +1,11 @@
+{
+ "chloride.world.clouds.height.desc.__COMMENT": "云太高了，连末影龙都得抬头看",
+ "chloride.world.void_horizon.title": "虚空地平线高度",
+ "chloride.world.void_horizon.desc": "暗色虚空平面开始渲染的Y高度。\n63保持原版行为；设为-64可移除海平面以下的半暗天空（类似超平坦）",
+ "chloride.world.void_horizon.vanilla": "原版",
+ "chloride.world.far_skybox.title": "远天空盒",
+ "chloride.world.far_skybox.desc": "极低渲染距离下防止天空盒裁剪。\n强制使用原版在32区块时的天空远平面",
+ "chloride.particles.list": "粒子列表",
+ "chloride.particles.list.search": "搜索粒子……",
+ "chloride.particles.list.desc": "打开逐粒子开关列表，可在此禁用单个粒子类型。"
+}

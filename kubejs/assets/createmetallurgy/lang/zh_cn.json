@@ -1,0 +1,14 @@
+{
+ "createmetallurgy.casting.lock_mode": "模具锁定模式",
+ "createmetallurgy.crucible.title": "坩埚信息：",
+ "createmetallurgy.generic.icon.down": "↓",
+ "createmetallurgy.generic.icon.heart": "❤",
+ "createmetallurgy.generic.icon.up": "↑",
+ "createmetallurgy.generic.symbol.equal": "=",
+ "createmetallurgy.generic.symbol.greater": ">",
+ "createmetallurgy.generic.symbol.greater_eq": "≥",
+ "createmetallurgy.generic.symbol.less": "<",
+ "createmetallurgy.generic.symbol.less_eq": "≤",
+ "createmetallurgy.generic.unit.thermal": "Tu",
+ "createmetallurgy.recipe.foundry.min_size": "%1$sx%2$s"
+}

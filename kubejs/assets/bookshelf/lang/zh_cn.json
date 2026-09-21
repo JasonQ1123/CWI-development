@@ -1,0 +1,6 @@
+{
+ "commands.bookshelf.loot_tables": "%s缺少%d个战利品表。",
+ "commands.bookshelf.loot_tables.wildcard": "所有模组共缺少%d个战利品表。",
+ "argument.bookshelf.unknown_value": "值“%s”未知。",
+ "text.bookshelf.ticks": "刻：%s"
+}

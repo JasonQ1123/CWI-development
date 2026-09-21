@@ -1,0 +1,17 @@
+{
+ "config.jade.plugin_functionalstorage.armory": "功能性存储军械库",
+ "configurationtool.configmode.swapped": "已切换模式为 ",
+ "gui.functionalstorage.empty": "空",
+ "item.functionalstorage.max_storage_upgrade": "最大存储升级",
+ "linkingtool.controller.configured": "已将控制器配置到工具",
+ "linkingtool.drawer.clear": "已清除抽屉频率",
+ "linkingtool.ender.changed": "已更改抽屉频率",
+ "linkingtool.ender.stored": "已将频率存入工具",
+ "linkingtool.ender.warning": "无法更改频率，抽屉中仍有物品。潜行+右键再次忽略此保护",
+ "linkingtool.linkingaction.swapped": "已切换动作为 %s",
+ "linkingtool.linkingmode.swapped": "已切换模式为 %s",
+ "linkingtool.multiple_drawer.linked": "已将抽屉连接到控制器",
+ "linkingtool.multiple_drawer.removed": "已将抽屉从控制器移除",
+ "linkingtool.single_drawer.linked": "已将抽屉连接到控制器",
+ "linkingtool.single_drawer.removed": "已将抽屉从控制器移除"
+}

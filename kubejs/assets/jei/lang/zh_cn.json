@@ -1,0 +1,12 @@
+{
+ "key.jei.recipeForward": "下一个配方",
+ "jei.config.client.advanced.recipeSyncWarningEnabled": "配方同步警告",
+ "jei.config.client.advanced.recipeSyncWarningEnabled.description": "当服务器不向JEI提供同步配方时在聊天中显示警告（如原版服务器或未安装JEI的服务器）",
+ "jei.config.client.ingredientList.buttonNavigationVisibility": "导航可见性",
+ "jei.config.client.ingredientList.buttonNavigationVisibility.description": "顶部翻页按钮的可见性。AUTO_HIDE仅在多页时显示。",
+ "jei.config.client.bookmarkList.buttonNavigationVisibility": "导航可见性",
+ "jei.config.client.bookmarkList.buttonNavigationVisibility.description": "顶部翻页按钮的可见性。AUTO_HIDE仅在多页时显示。",
+ "jei.config.debug.debug.crashingTestItemsEnabled": "启用崩溃测试物品",
+ "jei.config.debug.debug.crashingTestItemsEnabled.description": "向JEI添加会故意崩溃的物品，用于调试JEI。",
+ "jei.message.missing.recipes.from.server": "JEI缺少配方。请在服务器安装JEI以同步配方到客户端。"
+}

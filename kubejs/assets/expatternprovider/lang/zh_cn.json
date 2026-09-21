@@ -1,0 +1,15 @@
+{
+ "item.expatternprovider.wireless_advanced_tool": "ME无线高级设置套件",
+ "item.expatternprovider.wireless_ex_ct": "无线扩展合成终端",
+ "wireless_advanced.mode": "当前模式：%s",
+ "wireless_advanced.port_list": "已存连接（%s/%s）：",
+ "wireless_advanced.mode.add": "§b添加",
+ "wireless_advanced.mode.use": "§d使用",
+ "wireless_advanced.mode.swapped": "已切换模式为：%s",
+ "gui.expatternprovider.precise_export_bus.exact": "精确数量",
+ "gui.expatternprovider.precise_export_bus.batch": "批量输出",
+ "chat.wireless_added": "已添加到列表 X：%s，Y：%s，Z：%s",
+ "chat.wireless_advanced_queue_limit": "队列中无法再添加超过%s条",
+ "chat.wireless_advanced_duplicate": "§4无法添加重复的连接器",
+ "key.ae2.wireless_ex_crafting_terminal": "打开无线扩展合成终端"
+}

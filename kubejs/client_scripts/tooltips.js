@@ -10,11 +10,11 @@ ItemEvents.tooltip(event => {
     })
 
     event.addAdvanced('#cwi:hot_items', (item, advanced, text) => {
-        text.add(Text.of('Hot').red())
+        text.add(Text.translate('tooltip.kubejs.hot').red())
     })
 
     event.addAdvanced('#cwi:no_gravity_items', (item, advanced, text) => {
-        text.add(Text.of('No Gravity').white())
+        text.add(Text.translate('tooltip.kubejs.no_gravity').white())
     })
 
 })
