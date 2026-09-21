@@ -198,7 +198,7 @@ CWI 是一款以 **机械动力（Create）** 为主体的魔改科技整合包�
 
 **特别鸣谢参与本项目的所有成员（排名不分先后）**
 
-<a href="https://github.com/QIUWH123/CWI-development/graphs/contributors" target="_blank">
+<a href="https://github.com/QIUWH123/CWI-development/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=QIUWH123/CWI-development" />
 </a>
 
