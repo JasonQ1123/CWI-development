@@ -38,7 +38,7 @@
 !/config/darkerdepths-common.toml
 !/config/naturescompass-client.toml
 !/config/naturescompass-common.toml
-!/config/resourcepackoverrides.toml
+!/config/resourcepackoverrides.json
 !/config/tfmg-common.toml
 !/config/vintageimprovements-client.toml
 !/config/vintageimprovements-common.toml

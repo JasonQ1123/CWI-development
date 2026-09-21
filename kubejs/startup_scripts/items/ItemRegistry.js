@@ -7,7 +7,7 @@ StartupEvents.registry('item', event => {
     event.create('glass_batch')
     event.create('sintered_glass_blank')
 
-    event.create('dust-covered_seeds').displayName('Dust-Covered Seeds')
+    event.create('dust-covered_seeds')
         .texture('kubejs:item/plants/dust-covered_seeds')
 
     event.create('muddy_bamboo')

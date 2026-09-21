@@ -90,7 +90,9 @@
       "miners_delight:patch_cave_carrots",
       "cwi:natures/ash_log_place",
       "cwi:natures/fallen_ash_log",
-      "cwi:natures/pebbles",
+      "cwi:natures/pebbles_sml",
+      "cwi:natures/pebbles_mid",
+      "cwi:natures/pebbles_lrg",
       "cwi:natures/dead_bush",
       "cwi:natures/dead_leaves"
     ]

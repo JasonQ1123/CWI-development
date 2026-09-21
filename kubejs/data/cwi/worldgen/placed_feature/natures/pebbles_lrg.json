@@ -1,9 +1,9 @@
 {
-  "feature": "cwi:natures/pebbles",
+  "feature": "cwi:natures/pebbles_sml",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 10
+      "chance": 6
     },
     {
       "type": "minecraft:in_square"
