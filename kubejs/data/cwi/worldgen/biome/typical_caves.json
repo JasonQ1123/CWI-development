@@ -41,7 +41,8 @@
       "cwi:structures/ashstone_place",
       "cwi:structures/scrap_place",
       "cwi:structures/dry_biological_sediment",
-      "cwi:structures/wet_biological_sediment"
+      "cwi:structures/wet_biological_sediment",
+      "cwi:stones/eruptive_bedrock"
     ],
     [],
     [

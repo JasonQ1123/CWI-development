@@ -286,11 +286,17 @@ ServerEvents.tags('block', event => {
     ]
     event.add('cwi:normal_logs', blockLogs.filter(log => !blockLogsToRemove.includes(log.toString())))
 
-// SoulFireBase
+// SoulFireBases
     event.add('minecraft:soul_fire_base_blocks', [
         'minecraft:reinforced_deepslate',
         'minecraft:sculk',
         'minecraft:sculk_catalyst'
+    ])
+
+// Bedrocks
+    event.add('cwi:bedrocks', [
+        'minecraft:bedrock',
+        'kubejs:eruptive_bedrock'
     ])
 
 // PassiveBoilerHeaters
