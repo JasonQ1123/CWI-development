@@ -314,18 +314,12 @@ ServerEvents.recipes(event => {
 
     global.pipePileDefinitions.forEach(([pipeId, texturePath, hardness, resistance, soundType, miningType, toolLevel, pipes]) => {
 
-        event.shapeless(
-            `kubejs:small_pile_of_${pipeId}_pipes`,
-            `2x ${pipes}`
-        )
-        event.shapeless(
-            `kubejs:pile_of_${pipeId}_pipes`,
-            `3x ${pipes}`
-        )
-        event.shapeless(
-            `kubejs:large_pile_of_${pipeId}_pipes`,
-            `4x ${pipes}`
-        )
-        
+        event.shapeless(`kubejs:small_pile_of_${pipeId}_pipes`, `2x ${pipes}`)
+        event.shapeless(`kubejs:pile_of_${pipeId}_pipes`, `3x ${pipes}`)
+        event.shapeless(`kubejs:pile_of_${pipeId}_pipes`, [`${pipes}`, `kubejs:small_pile_of_${pipeId}_pipes`])
+        event.shapeless(`kubejs:large_pile_of_${pipeId}_pipes`, `4x ${pipes}`)
+        event.shapeless(`kubejs:pile_of_${pipeId}_pipes`, [`2x ${pipes}`, `kubejs:small_pile_of_${pipeId}_pipes`])
+        event.shapeless(`kubejs:pile_of_${pipeId}_pipes`, `2x kubejs:small_pile_of_${pipeId}_pipes`)
+        event.shapeless(`kubejs:pile_of_${pipeId}_pipes`, [`${pipes}`, `kubejs:pile_of_${pipeId}_pipes`])
     })
 })

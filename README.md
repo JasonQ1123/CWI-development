@@ -115,7 +115,7 @@ CWI 是一款以 **机械动力（Create）** 为主体的魔改科技整合包�
 
 <p align="center">
   <a>
-    <img src="kubejs/assets/cwi/textures/images_for_readme/recommendation.png" alt="Logo" width="850" height="200">
+    <img src="kubejs/assets/cwi/textures/images_for_readme/suggestion.png" alt="Logo" width="850" height="200">
   </a>
 
 ### 运行环境
