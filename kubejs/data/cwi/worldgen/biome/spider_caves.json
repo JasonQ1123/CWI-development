@@ -38,7 +38,8 @@
       "cwi:structures/lava_lake_basalt_underground",
       "cwi:structures/lava_lake_basalt_surface",
       
-      "cwi:natures/cobweb"
+      "cwi:natures/cobweb",
+      "cwi:stones/eruptive_bedrock"
     ],
     [],
     [],

@@ -37,7 +37,8 @@
       "cwi:structures/lava_lake_basalt_surface",
 
       "cwi:surfaces/arid_surface",
-      "darkerdepths:catacombs_lava_lining"
+      "darkerdepths:catacombs_lava_lining",
+      "cwi:stones/eruptive_bedrock"
     ],
     [],
     [],

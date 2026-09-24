@@ -37,7 +37,8 @@
       "cwi:structures/stone_spike",
       "cwi:structures/stone_spike_2",
       "cwi:structures/dry_biological_sediment",
-      "cwi:structures/wet_biological_sediment"
+      "cwi:structures/wet_biological_sediment",
+      "cwi:stones/eruptive_bedrock"
     ],
     [],
     [],

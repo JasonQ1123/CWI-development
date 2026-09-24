@@ -39,7 +39,8 @@
       "cwi:stones/darkslate",
       "cwi:stones/darkslate_2",
       "cwi:stones/darkslate_3",
-      "darkerdepths:large_molten_pillar"
+      "darkerdepths:large_molten_pillar",
+      "cwi:stones/eruptive_bedrock"
     ],
     [
       "minecraft:amethyst_geode",

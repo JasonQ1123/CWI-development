@@ -36,7 +36,8 @@
       "cwi:structures/lava_lake_granite_underground",
       "cwi:structures/lava_lake_granite_surface",
       "cwi:structures/lava_lake_basalt_underground",
-      "cwi:structures/lava_lake_basalt_surface"
+      "cwi:structures/lava_lake_basalt_surface",
+      "cwi:stones/eruptive_bedrock"
     ],
     [
       "minecraft:large_dripstone"

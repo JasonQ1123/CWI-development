@@ -41,7 +41,8 @@
       
       "cwi:structures/echo_geode",
       "cwi:structures/echo_crystal_spike",
-      "cwi:structures/echo_crystal_spike_floor"
+      "cwi:structures/echo_crystal_spike_floor",
+      "cwi:stones/eruptive_bedrock"
     ],
     [],
     [],
