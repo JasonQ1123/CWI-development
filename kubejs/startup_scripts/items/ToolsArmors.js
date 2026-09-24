@@ -22,6 +22,7 @@ StartupEvents.registry('item', event => {
         stainless_steel: {sword:9, axe:12, pickaxe:6.5, shovel:7,   hoe:1},
         steel:           {sword:8, axe:11, pickaxe:6,   shovel:6.5, hoe:1},
         bronze:          {sword:7, axe:10, pickaxe:5,   shovel:5.5, hoe:1},
+        industrial_iron: {sword:7, axe:10, pickaxe:5,   shovel:5.5, hoe:1},
         brass:           {sword:6, axe:9,  pickaxe:4,   shovel:4.5, hoe:1},
         zinc:            {sword:5, axe:8,  pickaxe:3.5, shovel:4,   hoe:1},
         copper:          {sword:5, axe:8,  pickaxe:3.5, shovel:4,   hoe:1},
@@ -45,7 +46,8 @@ ItemEvents.toolTierRegistry(event => {
     const tiers = {
         steel:           [1257, 10, 3, 0, 'tfmg:steel_ingot'],
         stainless_steel: [1593, 11, 4, 0, 'kubejs:stainless_steel_ingot'],
-        bronze:          [861, 8,  2, 0, 'kubejs:bronze_ingot'],
+        bronze:          [861,  8,  2, 0, 'kubejs:bronze_ingot'],
+        industrial_iron: [927,  9,  2, 0, 'kubejs:industrial_iron_ingot'],
         brass:           [673,  7,  2, 0, 'create:brass_ingot'],
         zinc:            [187,  5,  1, 0, 'create:zinc_ingot'],
         copper:          [381,  5,  2, 0, 'create:copper_ingot'],
@@ -91,6 +93,24 @@ ItemEvents.armorTierRegistry(event => {
         tier.knockbackResistance = 0.2
     })
 })
+
+// Hammers
+
+global.hammers = [
+    ['bronze_hammer', 'bronze', 12, 3, 4],
+    ['industrial_iron_hammer', 'industrial_iron', 13, 3, 4],
+    ['brass_hammer', 'brass', 13, 2, 3],
+    ['steel_hammer', 'steel', 11, 3, 5],
+    ['stainless_steel_hammer', 'stainless_steel', 10, 3, 6],
+    ['iron_hammer', 'iron', 14, 3, 2],
+    ['rusted_iron_hammer', 'rusted_iron', 16, 2, 1],
+    ['stone_hammer', 'stone', 18, 1, 0],
+    ['golden_hammer', 'gold', 8, 1, 0],
+    ['zinc_hammer', 'zinc', 9, 1, 2],
+    ['copper_hammer', 'copper', 15, 2, 1],
+    ['lead_hammer', 'lead', 21, 1, 5],
+    ['netherite_hammer', 'netherite', 9, 3, 0]
+]
 
 // Misc
 const $ShieldItem = Java.loadClass('net.minecraft.world.item.ShieldItem')

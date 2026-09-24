@@ -49,6 +49,8 @@ ServerEvents.recipes(event => {
     addTools('kubejs:bronze_sheet', 'kubejs:bronze')
     addArmor('kubejs:bronze_sheet', 'kubejs:bronze')
 
+    addTools('kubejs:industrial_iron_sheet', 'kubejs:industrial_iron')
+
     addTools('create:brass_sheet', 'kubejs:brass')
 
     addTools('create:copper_sheet', 'kubejs:copper')

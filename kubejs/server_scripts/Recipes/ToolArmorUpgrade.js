@@ -80,14 +80,15 @@ ServerEvents.recipes(event => {
         rusted_iron:     { tier: 1, multiplier: 1.25, tools: true,  armor: false, prefix: 'kubejs:rusted_iron_' },
         golden:          { tier: 2, multiplier: 0.80, tools: true,  armor: true,  prefix: 'minecraft:golden_' },
         zinc:            { tier: 2, multiplier: 1.10, tools: true,  armor: false, prefix: 'kubejs:zinc_' },
-        iron:            { tier: 2, multiplier: 1.00, tools: true,  armor: true,  prefix: 'minecraft:iron_' },
+        copper:          { tier: 2, multiplier: 1.15, tools: true,  armor: false, prefix: 'kubejs:copper_' },
         lead:            { tier: 2, multiplier: 1.10, tools: true,  armor: false, prefix: 'kubejs:lead_' },
-        copper:          { tier: 2, multiplier: 0.90, tools: true,  armor: false, prefix: 'kubejs:copper_' },
-        brass:           { tier: 3, multiplier: 0.70, tools: true,  armor: false, prefix: 'kubejs:brass_' },
-        bronze:          { tier: 3, multiplier: 0.45, tools: true,  armor: true,  prefix: 'kubejs:bronze_' },
-        steel:           { tier: 4, multiplier: 0.35, tools: true,  armor: true,  prefix: 'kubejs:steel_' },
-        stainless_steel: { tier: 4, multiplier: 0.25, tools: true,  armor: true,  prefix: 'kubejs:stainless_steel_' },
-        netherite:       { tier: 4, multiplier: 0.15, tools: true,  armor: true,  prefix: 'minecraft:netherite_' }
+        iron:            { tier: 2, multiplier: 1.00, tools: true,  armor: true,  prefix: 'minecraft:iron_' },
+        brass:           { tier: 3, multiplier: 0.90, tools: true,  armor: false, prefix: 'kubejs:brass_' },
+        industrial_iron: { tier: 3, multiplier: 0.80, tools: true,  armor: false, prefix: 'kubejs:industrial_iron_' },
+        bronze:          { tier: 3, multiplier: 0.65, tools: true,  armor: true,  prefix: 'kubejs:bronze_' },
+        steel:           { tier: 4, multiplier: 0.45, tools: true,  armor: true,  prefix: 'kubejs:steel_' },
+        stainless_steel: { tier: 4, multiplier: 0.35, tools: true,  armor: true,  prefix: 'kubejs:stainless_steel_' },
+        netherite:       { tier: 4, multiplier: 0.25, tools: true,  armor: true,  prefix: 'minecraft:netherite_' }
     }
 
     const TOOLS = ['sword', 'pickaxe', 'axe', 'shovel', 'hoe', 'hammer']
