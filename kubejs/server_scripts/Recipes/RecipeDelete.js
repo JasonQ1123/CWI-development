@@ -520,6 +520,7 @@ ServerEvents.recipes(event => {
         'minecraft:diamond_pickaxe',
         'minecraft:diamond_shovel',
         'minecraft:diamond_sword',
+        'minecraft:magma_cream',
         'minecraft:diorite',
         'minecraft:dispenser',
         'minecraft:lightning_rod',
