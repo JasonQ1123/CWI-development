@@ -9,9 +9,10 @@ global.releaseHammer = function(itemStack, level, player, durationLeft, required
 
     if (stage < 1) {
         let it = player.getItemInHand(hand)
-        if (it.nbt && it.nbt.CustomModelData !== 0) {
-            it.nbt = Object.assign({}, it.nbt, { CustomModelData: 0 })
-            player.setItemInHand(hand, it)
+        if (it.nbt && typeof it.nbt.putInt === 'function') {
+            it.nbt.putInt('CustomModelData', 0)
+        } else {
+            it.nbt = Object.assign({}, it.nbt || {}, { CustomModelData: 0 })
         }
         return itemStack
     }
@@ -103,9 +104,10 @@ global.releaseHammer = function(itemStack, level, player, durationLeft, required
     }
 
     let item = player.getItemInHand(hand)
-    if (item.nbt && item.nbt.CustomModelData !== 0) {
-        item.nbt = Object.assign({}, item.nbt, { CustomModelData: 0 })
-        player.setItemInHand(hand, item)
+    if (item.nbt && typeof item.nbt.putInt === 'function') {
+        item.nbt.putInt('CustomModelData', 0)
+    } else {
+        item.nbt = Object.assign({}, item.nbt || {}, { CustomModelData: 0 })
     }
 
     return itemStack
