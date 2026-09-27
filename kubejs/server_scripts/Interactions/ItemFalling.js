@@ -307,12 +307,13 @@ EntityEvents.spawned('item', function (event) {
 
     trackedItems.push({
         entity: entity,
+        dimension: String(entity.level.dimension),
         startY: entity.y,
         effects: effects
     })
 })
 
-LevelEvents.tick(function (event) {
+ServerEvents.tick(function (event) {
     if (globalTickCounter % 2) return
 
     let compactNeeded = false
@@ -342,4 +343,11 @@ LevelEvents.tick(function (event) {
     if (compactNeeded) {
         trackedItems = trackedItems.filter(function (item) { return item !== null })
     }
+})
+
+LevelEvents.unloaded(function (event) {
+    const unloadedDimension = String(event.level.dimension)
+    trackedItems = trackedItems.filter(function (data) {
+        return data.dimension !== unloadedDimension
+    })
 })

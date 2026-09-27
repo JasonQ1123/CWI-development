@@ -1,8 +1,11 @@
 ServerEvents.recipes(event => {
 
     function catalystsRecipe(material) {
-        let mat = global.materialTypes[material]
-        event.shaped( `kubejs:${material}_fan_catalyst_frame`, [ 'ABA', 'B B', 'ABA' ], { A: mat.items.sheet, B: mat.items.rod } )
+        const sheet = getMaterial(material, 'sheet')
+        const rod = getMaterial(material, 'rod')
+        if (!sheet || !rod) return
+
+        event.shaped( `kubejs:${material}_fan_catalyst_frame`, [ 'ABA', 'B B', 'ABA' ], { A: sheet, B: rod } )
         
         event.recipes.create.deploying(`kubejs:${material}_fan_splashing_catalyst`, [`kubejs:${material}_fan_catalyst_frame`, 'kubejs:distilled_water_bucket'])
         event.recipes.create.deploying(`kubejs:${material}_fan_splashing_catalyst`, [`kubejs:${material}_fan_catalyst_frame`, 'minecraft:water_bucket'])

@@ -104,36 +104,29 @@ ServerEvents.recipes(event => {
 
 // Material Component Functions
 
-    function getGlobalMaterialItem(mat, itemType) {
-        const globalId = { golden: 'gold' }[mat] || mat
-        const entry = global.materialTypes[globalId]
-        if (entry && entry.items && entry.items[itemType]) {
-            return entry.items[itemType]
-        }
-        return undefined
-    }
+    const GLOBAL_MATERIAL_ALIASES = { golden: 'gold' }
 
     function sheet(mat, synthetic) {
         if (synthetic) return 'tfmg:synthetic_leather'
         if (MAT[mat].sheet) return MAT[mat].sheet
-        return getGlobalMaterialItem(mat, 'sheet')
+        return getMaterial(GLOBAL_MATERIAL_ALIASES[mat] || mat, 'sheet')
     }
     function rod(mat) {
         if (MAT[mat].rod) return MAT[mat].rod
-        return getGlobalMaterialItem(mat, 'rod')
+        return getMaterial(GLOBAL_MATERIAL_ALIASES[mat] || mat, 'rod')
     }
     function ingot(mat, synthetic) {
         if (synthetic) return 'tfmg:synthetic_leather'
         if (MAT[mat].ingot) return MAT[mat].ingot
-        return getGlobalMaterialItem(mat, 'ingot')
+        return getMaterial(GLOBAL_MATERIAL_ALIASES[mat] || mat, 'ingot')
     }
     function block(mat) {
         if (MAT[mat].block) return MAT[mat].block
-        return getGlobalMaterialItem(mat, 'block')
+        return getMaterial(GLOBAL_MATERIAL_ALIASES[mat] || mat, 'block')
     }
     function wire(mat) {
         if (MAT[mat].wire) return MAT[mat].wire
-        return getGlobalMaterialItem(mat, 'wire')
+        return getMaterial(GLOBAL_MATERIAL_ALIASES[mat] || mat, 'wire')
     }
 
 // Recipe Definition Arrays

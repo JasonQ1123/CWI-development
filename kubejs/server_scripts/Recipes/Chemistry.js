@@ -41,24 +41,7 @@ function coking(event, ingredients, results, processingTime) {
 }
 
 function vatRecipe(event, heatRequirement, machines, allowedVatTypes, minSize, ingredients, results, processingTime) {
-    function expandInput(arr) {
-        var out = []
-        arr.forEach(function(e) {
-            if (e.count && !e.chance) {
-                for (var i = 0; i < e.count; i++) {
-                    var copy = {}
-                    for (var k in e) {
-                        if (e.hasOwnProperty(k) && k !== 'count') copy[k] = e[k]
-                    }
-                    out.push(copy)
-                }
-            } else {
-                out.push(e)
-            }
-        })
-        return out
-    }
-    var expandedIngredients = expandInput(ingredients)
+    var expandedIngredients = expandCountedIngredients(ingredients)
     var recipe = {
         "type": "tfmg:vat_machine_recipe",
         "allowedVatTypes": allowedVatTypes,

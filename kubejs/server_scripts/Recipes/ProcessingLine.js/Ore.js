@@ -1,19 +1,8 @@
-function getItemId(matId, type) {
-    const mat = global.materialTypes[matId]
-    return mat ? mat.items[type] : null
-}
-
-function getPowderFromRock(rockId, type) {
-    const stone = global.stoneTypes[rockId]
-    return stone ? stone.items[type] : null
-}
-
-
 ServerEvents.recipes(event => {
 
     // ----- 遍历全部矿石 -----
     Object.values(global.compoundOreTypes).forEach(ore => {
-        if (ore.process !== 'true') return
+        if (!ore.process) return
         const id = ore.id
         if (!global.productionMaps || !global.productionMaps[id]) return
         const map = global.productionMaps[id]
@@ -36,8 +25,8 @@ ServerEvents.recipes(event => {
         const refinedMain = `kubejs:refined_${main}`
 
         // 从 materialTypes 获取金属粉末、粒 ID
-        const mainPowder = getItemId(main, 'powder') || `kubejs:${main}_powder`
-        const mainNugget = getItemId(main, 'nugget') || `kubejs:${main}_nugget`
+        const mainPowder = getMaterial(main, 'powder')
+        const mainNugget = getMaterial(main, 'nugget')
         const mainCrystal = `kubejs:${main}_crystal`
 
         // ================= 1. 粗碎 =================
@@ -46,7 +35,7 @@ ServerEvents.recipes(event => {
             Item.of(crushed, 1).withChance(0.75)
         ]
         hostRocks.forEach(([rock, chance]) => {
-            let rockPowder = getPowderFromRock(rock)
+            let rockPowder = getStone(rock, 'powder')
             if (rockPowder) crushOut.push(Item.of(rockPowder).withChance(chance))
         })
         event.recipes.create.crushing(crushOut, oreBlock)
@@ -57,7 +46,7 @@ ServerEvents.recipes(event => {
             Item.of(powder, 1).withChance(0.75)
         ]
         hostRocks.forEach(([rock, chance]) => {
-            let rockPowder = getPowderFromRock(rock)
+            let rockPowder = getStone(rock, 'powder')
             if (rockPowder) millOutOre.push(Item.of(rockPowder).withChance(chance))
         })
         event.recipes.create.milling(millOutOre, oreBlock)
@@ -88,11 +77,9 @@ ServerEvents.recipes(event => {
         // 选出调整后概率最高的岩粉
         if (hostRocks.length > 0) {
             let best = hostRocks.reduce((prev, curr) => {
-                let prevChance = prev[1] * 0.9
-                let currChance = curr[1] * 0.9
-                return currChance > prevChance ? curr : prev
+                return curr[1] > prev[1] ? curr : prev
             })
-            let rockPowder = getPowderFromRock(best[0])
+            let rockPowder = getStone(best[0], 'powder')
             if (rockPowder) vibOut.push(AddItem(rockPowder, best[1] * 0.9))
         }
         vibrating(event, AddItem(powder), vibOut, 120)
@@ -107,11 +94,9 @@ ServerEvents.recipes(event => {
 
         if (hostRocks.length > 0) {
             let best = hostRocks.reduce((prev, curr) => {
-                let prevChance = prev[1] * 1.3
-                let currChance = curr[1] * 1.3
-                return currChance > prevChance ? curr : prev
+                return curr[1] > prev[1] ? curr : prev
             })
-            let rockPowder = getPowderFromRock(best[0])
+            let rockPowder = getStone(best[0], 'powder')
             if (rockPowder) centOut.push(AddItem(rockPowder, best[1] * 1.3))
         }
         centrifuging(event, [AddItem(powder)], centOut, 200)
@@ -121,7 +106,7 @@ ServerEvents.recipes(event => {
             AddItem(refinedMain, 0.37),
             AddItem(stubborn, 1.0)
         ]
-        by.forEach(([metal, chance]) => flotationOut.push(AddItem(`kubejs:refined_${metal}`, chance * 1.0)))
+        by.forEach(([metal, chance]) => flotationOut.push(AddItem(`kubejs:refined_${metal}`, chance)))
         vatRecipe(event, null, ['tfmg:mixing'], ['tfmg:steel_vat'], 1,
             [
                 AddItem(tailings),
@@ -199,10 +184,10 @@ ServerEvents.recipes(event => {
 
     global.outPutMaterial.forEach(([material, canProcess]) => {
         if (!canProcess) return
-        event.smelting(getItemId(material, 'ingot'), `kubejs:refined_${material}`)
-        event.blasting(getItemId(material, 'ingot'), `kubejs:refined_${material}`)
-        event.smelting(getItemId(material, 'ingot'), `kubejs:${material}_crystal`)
-        event.blasting(getItemId(material, 'ingot'), `kubejs:${material}_crystal`)
+        event.smelting(getMaterial(material, 'ingot'), `kubejs:refined_${material}`)
+        event.blasting(getMaterial(material, 'ingot'), `kubejs:refined_${material}`)
+        event.smelting(getMaterial(material, 'ingot'), `kubejs:${material}_crystal`)
+        event.blasting(getMaterial(material, 'ingot'), `kubejs:${material}_crystal`)
     })
 
     event.recipes.create.crushing(['2x kubejs:lignite_item', Item.of('kubejs:lignite_item').withChance(0.75), Item.of('kubejs:claystone_powder').withChance(0.63), Item.of('kubejs:shale_powder').withChance(0.37)], 'tfmg:lignite')

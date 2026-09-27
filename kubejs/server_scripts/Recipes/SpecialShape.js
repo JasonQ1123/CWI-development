@@ -9,8 +9,11 @@ ServerEvents.recipes(event => {
     })
 
     global.frameMaterials.forEach(material => {
-        let mat = global.materialTypes[material]
-        event.shaped(`tfmg:${material}_frame`, [ 'ABA', 'B B', 'ABA' ], { A: mat.items.rod, B: mat.items.wire } )
+        const rod = getMaterial(material, 'rod')
+        const wire = getMaterial(material, 'wire')
+        if (!rod || !wire) return
+
+        event.shaped(`tfmg:${material}_frame`, [ 'ABA', 'B B', 'ABA' ], { A: rod, B: wire } )
 
         event.recipes.minecraft.stonecutting(`3x tfmg:${material}_frame_panel`, `tfmg:${material}_frame`)
         event.recipes.minecraft.stonecutting(`4x tfmg:${material}_frame_upper_eaves`, `tfmg:${material}_frame`)

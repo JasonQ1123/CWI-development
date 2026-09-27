@@ -1,24 +1,7 @@
 // Fermenting Helper
 
 function addFermentingRecipes(event, ingredients, results, processingTime, heatRequirement, types) {
-    function expandInput(arr) {
-        var out = []
-        arr.forEach(function(e) {
-            if (e.count && !e.chance) {
-                for (var i = 0; i < e.count; i++) {
-                    var copy = {}
-                    for (var k in e) {
-                        if (e.hasOwnProperty(k) && k !== 'count') copy[k] = e[k]
-                    }
-                    out.push(copy)
-                }
-            } else {
-                out.push(e)
-            }
-        })
-        return out
-    }
-    var expandedIngredients = expandInput(ingredients)
+    var expandedIngredients = expandCountedIngredients(ingredients)
     types.forEach(function(type) {
         var recipe = {
             type: "createdieselgenerators:" + type + "_fermenting",

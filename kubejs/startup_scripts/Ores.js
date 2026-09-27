@@ -80,13 +80,13 @@ StartupEvents.registry('item', event => {
     event.create('washing_residue')
     event.create('silicate_residue')
     Object.values(global.compoundOreTypes).forEach(ore => {
-        if (ore.process === 'true') {
+        if (ore.process) {
             event.create(`crushed_${ore.id}`).texture(`kubejs:item/ores/crushed_${ore.id}`)
         } else {
             event.create(ore.id + '_item').texture(ore.itemTexture)
         }
         event.create(`${ore.id}_powder`).texture(`kubejs:item/ores/${ore.id}_powder`)
-        if (ore.process === 'true') {
+        if (ore.process) {
             event.create(`${ore.id}_tailings`)
                 .textureJson({
                     layer0: `kubejs:item/ores/${ore.id}_powder`,
@@ -113,7 +113,7 @@ StartupEvents.registry('item', event => {
 
 StartupEvents.registry('fluid', event => {
     Object.values(global.compoundOreTypes).forEach(ore => {
-        if (ore.process === 'false') return
+        if (!ore.process) return
 
         registerHeavyFLuid(event, `leach_${ore.id}_solution`, ore.color)
         registerHeavyFLuid(event, `purified_${ore.id}_solution`, ore.color)
