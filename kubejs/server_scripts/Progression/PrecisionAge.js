@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'kubejs:industrial_iron_sheet',
-            Blocks: '#cwi:rubbers',
+            B: '#cwi:rubbers',
             C: 'create:shaft'
         }
     )

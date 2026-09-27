@@ -1,4 +1,4 @@
-ItemEvents.entityInteracted('biomancy:injector', e => {
+ItemEvents.entityInteracted('biomancy:injector', event => {
     let { item, player, level, target } = event
     let serum = item.nbt.inventory.Item
     let fac = player.facing

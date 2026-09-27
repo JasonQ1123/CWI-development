@@ -263,7 +263,6 @@
 				item: "createaddition:straw"
 				type: "item"
 			}]
-			title: "Straw"
 			x: 6.0d
 			y: 0.0d
 		}
