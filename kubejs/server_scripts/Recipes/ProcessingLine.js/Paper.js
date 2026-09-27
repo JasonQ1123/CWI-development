@@ -43,7 +43,7 @@ ServerEvents.recipes(function(event) {
 
     event.recipes.create.filling('kubejs:wet_web', ['kubejs:forming_fabric', Fluid.of('kubejs:fine_pulp', 100)])
 
-    event.recipes.create.pressing(['kubejs:pressed_wet_web' ,Fluid.of('minecraft:water', 25)], 'kubejs:wet_web')
+    event.recipes.create.pressing('kubejs:pressed_wet_web', 'kubejs:wet_web')
     event.recipes.create.pressing(['minecraft:paper', 'kubejs:forming_fabric'], 'kubejs:dried_web')
 
     event.recipes.minecraft.smoking('kubejs:dried_web', 'kubejs:pressed_wet_web')

@@ -21,14 +21,6 @@ CreateEvents.spoutHandler((event) => {
         { id: "minecraft:water", amount: 1000 },
         ['minecraft:mud']
     )
-    
-    blockFilling(
-        "cwi:mud",
-        ['minecraft:dirt'],
-        { id: "kubejs:distilled_water", amount: 1000 },
-        ['minecraft:mud']
-    )
-
     blockFilling(
         "cwi:brown_mushroom",
         "minecraft:brown_mushroom",

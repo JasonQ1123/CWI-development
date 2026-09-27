@@ -1,3 +1,4 @@
+/* Disabled temporarily; keep this implementation for a later serum-deployer fix.
 ItemEvents.entityInteracted('biomancy:injector', event => {
     let { item, player, level, target } = event
     let serum = item.nbt.inventory.Item
@@ -41,3 +42,4 @@ ItemEvents.entityInteracted('biomancy:injector', event => {
         Java.loadClass('com.github.elenterius.biomancy.item.injector.InjectorItem').tryInjectLivingEntity(level, target.block.pos, item)
     }
 })
+*/
