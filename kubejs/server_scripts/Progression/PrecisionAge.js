@@ -802,7 +802,7 @@ ServerEvents.recipes(event => {
             event.recipes.create.deploying('kubejs:incomplete_precise_machine', ['kubejs:incomplete_precise_machine', 'create:precision_mechanism']),
             event.recipes.create.filling('kubejs:incomplete_precise_machine', ['kubejs:incomplete_precise_machine', Fluid.of('kubejs:redstone_acid', 250)]),
             event.recipes.create.deploying('kubejs:incomplete_precise_machine', ['kubejs:incomplete_precise_machine', 'create:electron_tube']),
-            event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'tfmg:screwdriver'])
+            event.recipes.create.deploying('kubejs:incomplete_precise_machine', ['kubejs:incomplete_precise_machine', 'tfmg:screwdriver'])
         ]
     )
     .transitionalItem('kubejs:incomplete_precise_machine')

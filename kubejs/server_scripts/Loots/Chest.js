@@ -25,7 +25,7 @@
         Item.of("kubejs:fine_whetstone").withChance(0.1),
         Item.of("kubejs:small_hammer").withChance(0.1),
         Item.of("kubejs:whetstone").withChance(0.3),
-        Item.of("create:sandpaper").withChance(0.5)
+        Item.of("create:sand_paper").withChance(0.5)
     ]
 
     const BOWS = [
@@ -1706,19 +1706,19 @@ LootJS.modifiers((event) => {
         .pool(pool => {
             pool.rolls(1)
             pool.randomChance(0.4)
-            pool.addLoot("kubejs:rustic_iron_nugget")
+            pool.addLoot("kubejs:rusted_iron_nugget")
             pool.limitCount([1, 3])
         })
         .pool(pool => {
             pool.rolls(1)
             pool.randomChance(0.3)
-            pool.addLoot("kubejs:rustic_iron_rod")
+            pool.addLoot("kubejs:rusted_iron_rod")
             pool.limitCount([1, 2])
         })
         .pool(pool => {
             pool.rolls(1)
             pool.randomChance(0.3)
-            pool.addLoot("kubejs:rustic_iron_wire")
+            pool.addLoot("kubejs:rusted_iron_wire")
             pool.limitCount([1, 2])
         })
         .pool(pool => {
@@ -1868,19 +1868,19 @@ LootJS.modifiers((event) => {
         .pool(pool => {
             pool.rolls(1)
             pool.randomChance(0.3)
-            pool.addLoot("kubejs:rustic_iron_nugget")
+            pool.addLoot("kubejs:rusted_iron_nugget")
             pool.limitCount([1, 2])
         })
         .pool(pool => {
             pool.rolls(1)
             pool.randomChance(0.2)
-            pool.addLoot("kubejs:rustic_iron_rod")
+            pool.addLoot("kubejs:rusted_iron_rod")
             pool.limitCount([1, 1])
         })
         .pool(pool => {
             pool.rolls(1)
             pool.randomChance(0.2)
-            pool.addLoot("kubejs:rustic_iron_wire")
+            pool.addLoot("kubejs:rusted_iron_wire")
             pool.limitCount([1, 1])
         })
         .pool(pool => {
@@ -2006,19 +2006,19 @@ LootJS.modifiers((event) => {
         .pool(pool => {
             pool.rolls(1)
             pool.randomChance(0.2)
-            pool.addLoot("kubejs:rustic_iron_nugget")
+            pool.addLoot("kubejs:rusted_iron_nugget")
             pool.limitCount([1, 1])
         })
         .pool(pool => {
             pool.rolls(1)
             pool.randomChance(0.15)
-            pool.addLoot("kubejs:rustic_iron_rod")
+            pool.addLoot("kubejs:rusted_iron_rod")
             pool.limitCount([1, 1])
         })
         .pool(pool => {
             pool.rolls(1)
             pool.randomChance(0.15)
-            pool.addLoot("kubejs:rustic_iron_wire")
+            pool.addLoot("kubejs:rusted_iron_wire")
             pool.limitCount([1, 1])
         })
         .pool(pool => {

@@ -165,7 +165,7 @@ ServerEvents.tags('item', event => {
     event.add('cwi:coal_powders', ['kubejs:charcoal_powder', 'kubejs:coal_powder', 'tfmg:coal_coke_dust'])
 
 // CharcoalItems
-    event.add('cwi:charcoals', ['minecrft:charcoal', 'kubejs:charcoal_powder'])
+    event.add('cwi:charcoals', ['minecraft:charcoal', 'kubejs:charcoal_powder'])
 
 // CoalItems
     event.add('cwi:coals', ['minecraft:coal', 'kubejs:coal_powder'])

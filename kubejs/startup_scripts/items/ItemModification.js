@@ -1,4 +1,4 @@
-// Priority: -10
+// priority: -10
 
 ItemEvents.modification(event => {
 
@@ -121,14 +121,14 @@ ItemEvents.modification(event => {
         'minecraft:dried_kelp_block',
         'minecraft:smithing_table',
         'minecraft:jukebox',
-        'minecraft:note_box',
+        'minecraft:note_block',
         'minecraft:chest',
         'minecraft:crafting_table',
         'minecraft:trapped_chest',
         'minecraft:daylight_detector',
         'minecraft:barrel',
         'minecraft:blaze_rod',
-        'minecraft:lava',
+        'minecraft:lava_bucket',
         'darkerdepths:stripped_petrified_log',
         'darkerdepths:petrified_planks',
         'darkerdepths:petrified_wood',
@@ -204,7 +204,7 @@ ItemEvents.modification(event => {
     maxDamage_change('minecraft:golden_shovel', 173)
     maxDamage_change('minecraft:golden_hoe', 173)
     maxDamage_change('minecraft:golden_hammer', 173)
-    maxDamage_change('farmersdelight:goldeb_knife', 173)
+    maxDamage_change('farmersdelight:golden_knife', 173)
 
     maxDamage_change('minecraft:netherite_sword', 3627)
     maxDamage_change('minecraft:netherite_axe', 3627)

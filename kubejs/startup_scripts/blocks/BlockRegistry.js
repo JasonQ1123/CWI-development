@@ -1,4 +1,4 @@
-// Priority: 1
+// priority: 1
 
 StartupEvents.registry('block', event => {
 

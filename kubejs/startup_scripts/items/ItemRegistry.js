@@ -1,4 +1,4 @@
-// Priority: 10
+// priority: 10
 
 // Basic Materials
 

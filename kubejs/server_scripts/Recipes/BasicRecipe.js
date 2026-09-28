@@ -1,4 +1,4 @@
-// Priority: 5
+// priority: 5
 
 // AddItem Helper
 function AddItem(input, chance) {

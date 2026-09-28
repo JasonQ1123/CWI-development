@@ -425,7 +425,7 @@ ServerEvents.recipes(event => {
             event.recipes.create.deploying('kubejs:incomplete_heavy_machinery_casing', ['kubejs:incomplete_heavy_machinery_casing', 'tfmg:heavy_plate']),
             event.recipes.create.filling('kubejs:incomplete_heavy_machinery_casing', ['kubejs:incomplete_heavy_machinery_casing', Fluid.of('kubejs:molten_steel', 100)]),
             event.recipes.create.pressing('kubejs:incomplete_heavy_machinery_casing', 'kubejs:incomplete_heavy_machinery_casing'),
-            event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'tfmg:screwdriver']),
+            event.recipes.create.deploying('kubejs:incomplete_heavy_machinery_casing', ['kubejs:incomplete_heavy_machinery_casing', 'tfmg:screwdriver']),
             polishing(event, 3, AddItem('kubejs:incomplete_heavy_machinery_casing'), [AddItem('kubejs:incomplete_heavy_machinery_casing')], 20)
         ]
     )
