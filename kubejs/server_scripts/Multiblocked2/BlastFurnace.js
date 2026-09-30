@@ -265,7 +265,7 @@ global.blastFurnaceRecipes = [
         duration: 400,
         heat: 'superheated',
         inputs: [
-            { item: 'kubejs:hematite' },
+            { item: 'create:crimsite' },
             { item: 'kubejs:limestone_powder' }
         ],
         outputs: [

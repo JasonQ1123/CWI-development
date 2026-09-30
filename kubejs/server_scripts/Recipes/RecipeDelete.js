@@ -596,7 +596,7 @@ ServerEvents.recipes(event => {
 
     // Natures Compass
 
-        'naturescompass:natures_compass',
+        'naturescompass:naturescompass',
 
     // Ratatouille
 

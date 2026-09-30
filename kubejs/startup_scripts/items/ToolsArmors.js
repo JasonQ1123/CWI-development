@@ -50,7 +50,7 @@ ItemEvents.toolTierRegistry(event => {
         industrial_iron: [927,  9,  2, 0, 'kubejs:industrial_iron_ingot'],
         brass:           [673,  7,  2, 0, 'create:brass_ingot'],
         zinc:            [187,  5,  1, 0, 'create:zinc_ingot'],
-        copper:          [381,  5,  2, 0, 'create:copper_ingot'],
+        copper:          [381,  5,  2, 0, 'minecraft:copper_ingot'],
         lead:            [154,  1,  2, 0, 'tfmg:lead_ingot'],
         rusted_iron:     [287,  4,  2, 0, 'kubejs:rusted_iron_ingot']
     }

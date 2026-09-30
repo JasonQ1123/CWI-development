@@ -119,7 +119,7 @@ const waterFluids = [
 ServerEvents.tags('item', event => {
 
 // ChemicalSprayer
-    event.add('cwi:chemical_sprayer', ['cwi:chemical_sprayer', 'createdieselgenerators:chemical_sprayer_lighter'])
+    event.add('cwi:chemical_sprayer', ['createdieselgenerators:chemical_sprayer', 'createdieselgenerators:chemical_sprayer_lighter'])
 
 // WrenchTools
     event.add('forge:tools/wrench', 'clanginghowl:industrial_adjustable_wrench')
@@ -155,7 +155,7 @@ ServerEvents.tags('item', event => {
     event.add('cwi:string', [
         'tfmg:synthetic_string',
         'minecraft:string',
-        'biomancy:sinew'
+        'biomancy:mob_sinew'
     ])
 
 // RubberBlock
@@ -311,7 +311,6 @@ ServerEvents.tags('block', event => {
     event.add('create:wrench_pickup', [
         'kubejs:rusted_heavy_machinery_casing',
         'kubejs:rusted_industrial_aluminum_casing',
-        'kubejs:computer_heat_vent',
         'kubejs:sealed_wood',
         'kubejs:polished_sealed_wood',
         'kubejs:quality_sealed_wood',
@@ -321,24 +320,12 @@ ServerEvents.tags('block', event => {
         'kubejs:industrial_casing',
         'kubejs:stainless_steel_casing',
         'kubejs:incomplete_precise_machine',
-        'kubejs:incomplete_mechanical_arm',
-        'kubejs:incomplete_mechanical_pipette',
+        'kubejs:incomplete_mechanical_arm_base',
         'kubejs:incomplete_diesel_engine',
         'kubejs:incomplete_large_diesel_engine',
         'kubejs:incomplete_huge_diesel_engine',
         'kubejs:incomplete_heavy_machinery_casing',
-        'kubejs:incomplete_blast_furnace_reinforcement',
-        'cwi:steel_energy_input',
-        'cwi:graphite_electrode',
-        'cwi:steel_item_input',
-        'cwi:steel_item_output',
-        'cwi:steel_fluid_input',
-        'cwi:steel_fluid_output',
-        'cwi:arc_furnace_stress_output',
-        'cwi:arc_furnace',
-        'cwi:heavy_machinery_top_item_input',
-        'cwi:heavy_machinery_top_fluid_input',
-        'cwi:steel_gas_output'
+        'kubejs:incomplete_blast_furnace_reinforcement'
     ])
 
 // DeepslateOreReplaceables
