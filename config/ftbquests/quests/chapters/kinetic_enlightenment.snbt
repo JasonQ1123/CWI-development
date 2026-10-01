@@ -721,7 +721,7 @@
 			id: "5E24F2344B85B318"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Chiseled From Claystone Base"
+			subtitle: "Chiseled From Ash Brick Base"
 			tasks: [{
 				id: "54ABA5747F20DD14"
 				item: "minecraft:furnace"
@@ -1026,7 +1026,7 @@
 			id: "476F895A01D30141"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Chiseled From Claystone Base"
+			subtitle: "Chiseled From Ash Brick Base"
 			tasks: [{
 				id: "58396F5CCA70668D"
 				item: "minecraft:crafting_table"

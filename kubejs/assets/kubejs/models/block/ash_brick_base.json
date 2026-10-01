@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-    "front": "kubejs:block/furnace_front",
+    "front": "kubejs:block/ash_brick_base_side",
     "side": "kubejs:block/ash_brick_base_side",
-    "top": "kubejs:block/furnace_top",
+    "top": "kubejs:block/ash_brick_base_top",
     "bottom": "kubejs:block/ash_brick_base_bottom"
   }
 }

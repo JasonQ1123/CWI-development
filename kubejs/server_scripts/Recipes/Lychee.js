@@ -30,35 +30,35 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "lychee:block_interacting",
         "item_in": { "tag": "minecraft:pickaxes" },
-        "block_in": "kubejs:claystone_clump",
+        "block_in": "kubejs:reinforced_ash_brick",
         "post": [
             { "type": "execute", "command": "particle minecraft:falling_dust minecraft:gravel ~ ~ ~ 0.4 0.3 0.4 0.03 7", "hide": true },
             { "type": "execute", "command": "particle minecraft:smoke ~ ~ ~ 0.3 0.3 0.3 0.05 5", "hide": true },
             { "type": "add_item_cooldown", "s": 0.3 },
             { "type": "damage_item" },
-            { "type": "drop_item", "item": "kubejs:claystone_base", "contextual": { "type": "chance", "chance": 0 } },
-            { "type": "execute", "command": "setblock ~ ~ ~ kubejs:claystone_base", "hide": true }
+            { "type": "drop_item", "item": "kubejs:ash_brick_base", "contextual": { "type": "chance", "chance": 0 } },
+            { "type": "execute", "command": "setblock ~ ~ ~ kubejs:ash_brick_base", "hide": true }
         ]
     })
 
     event.custom({
         "type": "lychee:block_interacting",
         "item_in": { "tag": "minecraft:shovels" },
-        "block_in": "kubejs:claystone_clump",
+        "block_in": "kubejs:reinforced_ash_brick",
         "post": [
             { "type": "execute", "command": "particle minecraft:falling_dust minecraft:gravel ~ ~ ~ 0.4 0.3 0.4 0.03 7", "hide": true },
             { "type": "execute", "command": "particle minecraft:smoke ~ ~ ~ 0.3 0.3 0.3 0.05 5", "hide": true },
             { "type": "add_item_cooldown", "s": 0.3 },
             { "type": "damage_item", "damage": 1 },
-            { "type": "drop_item", "item": "kubejs:claystone_base", "contextual": { "type": "chance", "chance": 0 } },
-            { "type": "execute", "command": "setblock ~ ~ ~ kubejs:claystone_base", "hide": true }
+            { "type": "drop_item", "item": "kubejs:ash_brick_base", "contextual": { "type": "chance", "chance": 0 } },
+            { "type": "execute", "command": "setblock ~ ~ ~ kubejs:ash_brick_base", "hide": true }
         ]
     })
 
     event.custom({
         "type": "lychee:block_interacting",
         "item_in": { "item": "minecraft:flint" },
-        "block_in": "kubejs:claystone_clump",
+        "block_in": "kubejs:ash_brick_clump",
         "post": [
             { "type": "execute", "command": "particle minecraft:falling_dust minecraft:gravel ~ ~ ~ 0.4 0.3 0.4 0.03 3", "hide": true },
             { "type": "execute", "command": "particle minecraft:smoke ~ ~ ~ 0.3 0.3 0.3 0.05 2", "hide": true },
@@ -68,8 +68,8 @@ ServerEvents.recipes(event => {
                 "type": "if",
                 "contextual": { "type": "chance", "chance": 0.87 },
                 "then": [
-                    { "type": "drop_item", "item": "kubejs:claystone_base", "contextual": { "type": "chance", "chance": 0 } },
-                    { "type": "execute", "command": "setblock ~ ~ ~ kubejs:claystone_base", "hide": true },
+                    { "type": "drop_item", "item": "kubejs:ash_brick_base", "contextual": { "type": "chance", "chance": 0 } },
+                    { "type": "execute", "command": "setblock ~ ~ ~ kubejs:ash_brick_base", "hide": true },
                     { "type": "execute", "command": "particle minecraft:falling_dust minecraft:gravel ~ ~ ~ 0.4 0.3 0.4 0.03 4", "hide": true },
                     { "type": "execute", "command": "particle minecraft:smoke ~ ~ ~ 0.3 0.3 0.3 0.05 3", "hide": true }
                 ]
@@ -77,12 +77,12 @@ ServerEvents.recipes(event => {
         ]
     })
 
-// Block Interacting - Claystone Base
+// Block Interacting - Ash Brick Base
 
     event.custom({
         "type": "lychee:block_interacting",
         "item_in": { "tag": "minecraft:pickaxes" },
-        "block_in": "kubejs:claystone_base",
+        "block_in": "kubejs:ash_brick_base",
         "post": [
             { "type": "execute", "command": "particle minecraft:falling_dust minecraft:gravel ~ ~ ~ 0.4 0.3 0.4 0.03 7", "hide": true },
             { "type": "execute", "command": "particle minecraft:smoke ~ ~ ~ 0.3 0.3 0.3 0.05 5", "hide": true },
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "lychee:block_interacting",
         "item_in": { "tag": "minecraft:shovels" },
-        "block_in": "kubejs:claystone_base",
+        "block_in": "kubejs:ash_brick_base",
         "post": [
             { "type": "execute", "command": "particle minecraft:falling_dust minecraft:gravel ~ ~ ~ 0.4 0.3 0.4 0.03 7", "hide": true },
             { "type": "execute", "command": "particle minecraft:smoke ~ ~ ~ 0.3 0.3 0.3 0.05 5", "hide": true },
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "lychee:block_interacting",
         "item_in": { "item": "minecraft:flint" },
-        "block_in": "kubejs:claystone_base",
+        "block_in": "kubejs:ash_brick_base",
         "post": [
             { "type": "execute", "command": "particle minecraft:falling_dust minecraft:gravel ~ ~ ~ 0.4 0.3 0.4 0.03 3", "hide": true },
             { "type": "execute", "command": "particle minecraft:smoke ~ ~ ~ 0.3 0.3 0.3 0.05 2", "hide": true },
@@ -186,7 +186,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "lychee:block_interacting",
         "item_in": { "tag": "cwi:leathers" },
-        "block_in": "kubejs:claystone_base",
+        "block_in": "kubejs:ash_brick_base",
         "post": [
             { "type": "execute", "command": "particle minecraft:falling_dust minecraft:gravel ~ ~ ~ 0.4 0.3 0.4 0.03 3", "hide": true },
             { "type": "add_item_cooldown", "s": 0.3 },
@@ -303,8 +303,8 @@ ServerEvents.recipes(event => {
         "item_in": { "tag": "forge:tools/knives" },
         "block_in": "darkerdepths:mossy_sprouts",
         "post": [
-            { "type": "execute", "command": "particle vital_herbs:aura_crystal_particle ~ ~ ~ 0.1 0.1 0.1 0.02 2", "hide": true },
-            { "type": "execute", "command": "particle vital_herbs:pedestal_aura ~ ~ ~ 0.3 0.3 0.3 0.05 4", "hide": true },
+            { "type": "execute", "command": "particle minecraft:electric_spark ~ ~ ~ 0.1 0.1 0.1 0.02 2", "hide": true },
+            { "type": "execute", "command": "particle minecraft:glow ~ ~ ~ 0.3 0.3 0.3 0.05 4", "hide": true },
             { "type": "add_item_cooldown", "s": 0.3 },
             { "type": "place", "block": "air" },
             { "type": "damage_item" },
@@ -323,8 +323,8 @@ ServerEvents.recipes(event => {
         "item_in": { "tag": "forge:tools/knives" },
         "block_in": "darkerdepths:glowspurs",
         "post": [
-            { "type": "execute", "command": "particle vital_herbs:aura_crystal_particle ~ ~ ~ 0.1 0.1 0.1 0.02 2", "hide": true },
-            { "type": "execute", "command": "particle vital_herbs:pedestal_aura ~ ~ ~ 0.3 0.3 0.3 0.05 4", "hide": true },
+            { "type": "execute", "command": "particle minecraft:electric_spark ~ ~ ~ 0.1 0.1 0.1 0.02 2", "hide": true },
+            { "type": "execute", "command": "particle minecraft:glow ~ ~ ~ 0.3 0.3 0.3 0.05 4", "hide": true },
             { "type": "add_item_cooldown", "s": 0.3 },
             { "type": "place", "block": "air" },
             { "type": "damage_item" },
@@ -343,8 +343,8 @@ ServerEvents.recipes(event => {
         "item_in": { "tag": "forge:tools/knives" },
         "block_in": "darkerdepths:glowshroom",
         "post": [
-            { "type": "execute", "command": "particle vital_herbs:aura_crystal_particle ~ ~ ~ 0.1 0.1 0.1 0.02 2", "hide": true },
-            { "type": "execute", "command": "particle vital_herbs:pedestal_aura ~ ~ ~ 0.3 0.3 0.3 0.05 4", "hide": true },
+            { "type": "execute", "command": "particle minecraft:electric_spark ~ ~ ~ 0.1 0.1 0.1 0.02 2", "hide": true },
+            { "type": "execute", "command": "particle minecraft:glow ~ ~ ~ 0.3 0.3 0.3 0.05 4", "hide": true },
             { "type": "add_item_cooldown", "s": 0.3 },
             { "type": "place", "block": "air" },
             { "type": "damage_item" },
@@ -367,8 +367,8 @@ ServerEvents.recipes(event => {
         "item_in": { "tag": "forge:tools/knives" },
         "block_in": "darkerdepths:glimmering_vines",
         "post": [
-            { "type": "execute", "command": "particle vital_herbs:aura_crystal_particle ~ ~ ~ 0.1 0.1 0.1 0.02 2", "hide": true },
-            { "type": "execute", "command": "particle vital_herbs:pedestal_aura ~ ~ ~ 0.3 0.3 0.3 0.05 4", "hide": true },
+            { "type": "execute", "command": "particle minecraft:electric_spark ~ ~ ~ 0.1 0.1 0.1 0.02 2", "hide": true },
+            { "type": "execute", "command": "particle minecraft:glow ~ ~ ~ 0.3 0.3 0.3 0.05 4", "hide": true },
             { "type": "add_item_cooldown", "s": 0.3 },
             { "type": "place", "block": "air" },
             { "type": "damage_item" },
@@ -391,8 +391,8 @@ ServerEvents.recipes(event => {
         "item_in": { "tag": "forge:tools/knives" },
         "block_in": "darkerdepths:glimmering_vine_plant",
         "post": [
-            { "type": "execute", "command": "particle vital_herbs:aura_crystal_particle ~ ~ ~ 0.1 0.1 0.1 0.02 2", "hide": true },
-            { "type": "execute", "command": "particle vital_herbs:pedestal_aura ~ ~ ~ 0.3 0.3 0.3 0.05 4", "hide": true },
+            { "type": "execute", "command": "particle minecraft:electric_spark ~ ~ ~ 0.1 0.1 0.1 0.02 2", "hide": true },
+            { "type": "execute", "command": "particle minecraft:glow ~ ~ ~ 0.3 0.3 0.3 0.05 4", "hide": true },
             { "type": "add_item_cooldown", "s": 0.3 },
             { "type": "place", "block": "air" },
             { "type": "damage_item" },
@@ -427,8 +427,8 @@ ServerEvents.recipes(event => {
                     { "type": "drop_item", "item": "kubejs:crystallum_coccus" }
                 ]
             },
-            { "type": "execute", "command": "particle vital_herbs:aura_crystal_particle ~ ~ ~ 0.1 0.1 0.1 0.02 2", "hide": true },
-            { "type": "execute", "command": "particle vital_herbs:pedestal_aura ~ ~ ~ 0.3 0.3 0.3 0.05 4", "hide": true },
+            { "type": "execute", "command": "particle minecraft:electric_spark ~ ~ ~ 0.1 0.1 0.1 0.02 2", "hide": true },
+            { "type": "execute", "command": "particle minecraft:glow ~ ~ ~ 0.3 0.3 0.3 0.05 4", "hide": true },
             { "type": "add_item_cooldown", "s": 0.75 },
             { "type": "damage_item" },
             { "type": "drop_item", "item": "minecraft:redstone", "contextual": { "type": "chance", "chance": 0.13 } },

@@ -135,6 +135,10 @@ ServerEvents.recipes(event => {
         'create:crushing/raw_aluminum_block',
         'create:crushing/raw_aluminum',
         'create:crushing/aluminum_ore',
+        'create:crushing/iron_horse_armor',
+        'create:crushing/golden_horse_armor',
+        'create:crushing/diamond_horse_armor',
+        '',
         'create:filling/blaze_cake',
         'create:filling/cake',
         'create:filling/cake_mold_filled',
@@ -544,6 +548,7 @@ ServerEvents.recipes(event => {
         'minecraft:golden_shovel',
         'minecraft:golden_sword',
         'minecraft:granite',
+        'minecraft:leather_horse_armor',
         'minecraft:hopper',
         'minecraft:stick',
         'minecraft:iron_axe',
@@ -799,11 +804,7 @@ ServerEvents.recipes(event => {
         'tfmg:vat_machine_recipe/plastic_from_propylene',
         'tfmg:vat_machine_recipe/sulfuric_acid',
         'tfmg:winding/electromagnetic_coil',
-        'tfmg:winding/resistor',
-
-    // Vital Herbs
-
-        'vital_herbs:teapot_recipe'
+        'tfmg:winding/resistor'
 
     ]
     idsToRemove.forEach(id => event.remove({ id: id }))

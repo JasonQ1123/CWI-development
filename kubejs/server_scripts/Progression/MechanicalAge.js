@@ -81,41 +81,49 @@ ServerEvents.recipes(event => {
     )
     
     event.shapeless(
-        'kubejs:claystone_clump',
+        'kubejs:reinforced_ash_brick',
         [
-            '2x kubejs:cobbled_claystone',
+            '2x kubejs:ash_brick',
             '2x minecraft:cobblestone'
         ]
     )
 
     event.shapeless(
-        'kubejs:claystone_clump',
+        'kubejs:reinforced_ash_brick',
         [
-            '2x kubejs:cobbled_claystone',
+            '2x kubejs:ash_brick',
             '2x minecraft:cobbled_deepslate'
         ]
     )
 
     event.shapeless(
-        'kubejs:claystone_clump',
+        'kubejs:reinforced_ash_brick',
         [
-            '2x kubejs:cobbled_claystone',
+            '2x kubejs:ash_brick',
             '2x kubejs:cobbled_diorite'
         ]
     )
 
     event.shapeless(
-        'kubejs:claystone_clump',
+        'kubejs:reinforced_ash_brick',
         [
-            '2x kubejs:cobbled_claystone',
+            '2x kubejs:ash_brick',
             '2x kubejs:cobbled_andesite'
         ]
     )
 
     event.shapeless(
-        'kubejs:claystone_clump',
+        'kubejs:reinforced_ash_brick',
         [
-            '2x kubejs:cobbled_claystone',
+            '2x kubejs:ash_brick',
+            '2x kubejs:cobbled_claystone'
+        ]
+    )
+
+    event.shapeless(
+        'kubejs:reinforced_ash_brick',
+        [
+            '2x kubejs:ash_brick',
             '2x kubejs:cobbled_granite'
         ]
     )

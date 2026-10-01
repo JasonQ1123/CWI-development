@@ -727,8 +727,8 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_iron_tool')
         .mapColor('#FF5500')
   
-    event.create('claystone_clump')
-        .textureAll('kubejs:block/claystone_base_bottom')
+    event.create('reinforced_ash_brick')
+        .textureAll('kubejs:block/ash_brick_base_top')
         .soundType('polished_deepslate')
         .hardness(3)
         .resistance(3)
@@ -737,7 +737,7 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_stone_tool')
         .mapColor('#B0965F')
 
-    event.create('claystone_base')
+    event.create('ash_brick_base')
         .soundType('polished_deepslate')
         .hardness(3)
         .resistance(3)

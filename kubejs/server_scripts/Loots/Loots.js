@@ -64,7 +64,6 @@ LootJS.modifiers((event) => {
 
     event.addLootTableModifier("minecraft:entities/spider")
         .removeLoot("miners_delight:arthropod")
-        .removeLoot("vital_herbs:silken_husk")
         .removeLoot("minecraft:spider_eye")
         .removeLoot("minecraft:string")
         .randomChanceWithLooting(0.3, 1)
@@ -86,7 +85,6 @@ LootJS.modifiers((event) => {
 
     event.addLootTableModifier("minecraft:entities/cave_spider")
         .removeLoot("miners_delight:arthropod")
-        .removeLoot("vital_herbs:silken_husk")
         .removeLoot("minecraft:spider_eye")
         .removeLoot("minecraft:string")
         .randomChanceWithLooting(0.3, 1)

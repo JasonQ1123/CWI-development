@@ -1,20 +1,6 @@
 ServerEvents.recipes(event => {
 
     event.shaped(
-        'vital_herbs:teapot',
-        [
-            'AAA',
-            'B B',
-            'BCB'
-        ],
-        {
-            A: 'create:iron_sheet',
-            B: 'minecraft:brick',
-            C: '#cwi:charcoals'
-        }
-    )
-
-    event.shaped(
         'farmersdelight:cooking_pot',
         [
             'BCB',
