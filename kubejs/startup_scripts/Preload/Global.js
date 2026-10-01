@@ -904,6 +904,40 @@ global.apples = [
     ]],
     ['titanium', 5, 0.5, [
         ['minecraft:resistance', 40, 4, 1]
+    ]],
+    ['cobalt', 5, 0.5, [
+        ['minecraft:strength', 200, 0, 1],
+        ['minecraft:resistance', 200, 0, 1]
+    ]],
+    ['constantan', 5, 0.5, [
+        ['minecraft:fire_resistance', 400, 0, 1],
+        ['minecraft:resistance', 200, 0, 1]
+    ]],
+    ['netherite', 5, 0.5, [
+        ['minecraft:strength', 300, 1, 1],
+        ['minecraft:resistance', 300, 2, 1],
+        ['minecraft:fire_resistance', 300, 0, 1]
+    ]],
+    ['platinum', 5, 0.5, [
+        ['minecraft:regeneration', 400, 0, 1],
+        ['minecraft:fire_resistance', 400, 0, 1]
+    ]],
+    ['silver', 5, 0.5, [
+        ['minecraft:regeneration', 600, 0, 1],
+        ['minecraft:speed', 400, 0, 1]
+    ]],
+    ['tin', 5, 0.5, [
+        ['minecraft:absorption', 400, 0, 1],
+        ['minecraft:resistance', 80, 0, 1],
+        ['minecraft:slowness', 80, 0, 1]
+    ]],
+    ['vanadium', 5, 0.5, [
+        ['minecraft:strength', 240, 0, 1],
+        ['minecraft:resistance', 160, 1, 1]
+    ]],
+    ['zinc', 5, 0.5, [
+        ['minecraft:regeneration', 400, 0, 1],
+        ['minecraft:resistance', 120, 0, 1]
     ]]
 ]
 
