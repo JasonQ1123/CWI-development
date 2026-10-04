@@ -170,8 +170,8 @@ StartupEvents.registry('block', event => {
 
     event.create('ash_bricks')
         .soundType('deepslate')
-        .hardness(3)
-        .resistance(5)
+        .hardness(2)
+        .resistance(3)
         .requiresTool(true)
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_wooden_tool')

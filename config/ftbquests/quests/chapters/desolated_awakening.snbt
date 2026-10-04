@@ -83,7 +83,11 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["&eCold. Silence. The hum of old machinery. This place was sealed for a long time, and now the air moves again. Something woke you. Something waited.&r"]
+			description: [
+				"&eCold. Then the hum of machinery beyond the room. You wake in a derelict laboratory. You cannot remember how long you have been here.&r"
+				""
+				"&eThere are supplies to find before you leave, and rooms that are still closed. Some equipment still runs, but no one is tending it.&r"
+			]
 			disable_toast: true
 			hide_until_deps_complete: true
 			icon: "kubejs:rusted_industrial_aluminum_casing"
@@ -95,7 +99,7 @@
 				dimension: "minecraft:overworld"
 				icon: "kubejs:rusted_industrial_aluminum_casing"
 				id: "559365AE1AFEB82A"
-				title: "Where Am I"
+				title: "Awaken in the Overworld"
 				type: "dimension"
 			}]
 			title: "A Derelict Laboratory"
@@ -104,10 +108,10 @@
 		}
 		{
 			dependencies: ["48FAA6DBC81EED3F"]
-			description: ["&eNear the exit, a chest. It wasn't hidden – whoever left it wanted it found. Basic tools, scraps of food. Enough to take the first breath outside.&r"]
+			description: ["&eA chest near the exit, in plain view. Tools and a few rations. Whoever put it here expected someone to need them on the way out.&r"]
 			id: "737A920A90D7A43F"
 			size: 1.5d
-			subtitle: "Basic Tools and Food For Survival"
+			subtitle: "Left in Plain View"
 			tasks: [{
 				icon: "minecraft:chest"
 				id: "789C0595276C26EF"
@@ -123,14 +127,17 @@
 		}
 		{
 			dependencies: ["48FAA6DBC81EED3F"]
-			description: ["&eA ring of metal and silence. You remember standing here, but the memory slides away like water. What did it do?&r"]
+			description: [
+				"&eYou know this ring. You remember standing here, though you cannot recall what you were waiting for.&r"
+				""
+				"&eThe memory passes before the rest of it returns.&r"
+			]
 			icon: "create_connected:music_disc_interlude"
 			id: "1206CB23534B30CD"
 			size: 1.5d
-			subtitle: "Examine the Ancient Apparatus"
 			tasks: [{
 				id: "417448A9C37F1C8C"
-				title: "I'm So sorry, I didn't finish the STARGATE"
+				title: "Examine the Stargate"
 				type: "checkmark"
 			}]
 			title: "The Stargate"
@@ -139,10 +146,10 @@
 		}
 		{
 			dependencies: ["737A920A90D7A43F"]
-			description: ["&eA rusted blade. It still cuts. For now, the only enemy is silence... but instincts don't forget.&r"]
+			description: ["&eThe edge is rusted, but usable. Your hand finds its balance before you have decided how to hold it.&r"]
 			disable_toast: true
 			id: "22E7A8175E59CF13"
-			subtitle: "A Weapon From the Past"
+			subtitle: "An Instinct That Remains"
 			tasks: [{
 				id: "69AFB6CBE2EF23AA"
 				item: {
@@ -161,10 +168,10 @@
 		}
 		{
 			dependencies: ["737A920A90D7A43F"]
-			description: ["&eOutside, the remains of a forest. Dead, dry, waiting. An axe turns waiting into building.&r"]
+			description: ["&eThe trees outside are dead. Their timber is not entirely lost: strip burnt or ash logs with the axe, then work the stripped logs again to recover wood chips.&r"]
 			disable_toast: true
 			id: "5E4DE9E833C9C2DA"
-			subtitle: "For Cutting Wood"
+			subtitle: "Recover wood from dead trees"
 			tasks: [{
 				id: "273F865B7B73669D"
 				item: {
@@ -183,10 +190,10 @@
 		}
 		{
 			dependencies: ["737A920A90D7A43F"]
-			description: ["&eRock and concrete. Some doors are buried, some rooms sealed. A pickaxe decides which ones open.&r"]
+			description: ["&eA worn pickaxe, packed with the other tools. Enough for stone and the first underground resources. The steel armor sealing part of the laboratory will need something stronger.&r"]
 			disable_toast: true
 			id: "7DF378D01AB247E2"
-			subtitle: "Breaking Stone"
+			subtitle: "Begin mining stone"
 			tasks: [{
 				id: "68D4543D44CB154F"
 				item: {
@@ -205,10 +212,10 @@
 		}
 		{
 			dependencies: ["737A920A90D7A43F"]
-			description: ["&eDust and ash cover the floor. What lies beneath? Tools. Ruins. Answers. Or perhaps just more dust.&r"]
+			description: ["&eDust and ash have settled around the equipment. The shovel clears loose ground; it can also shape placed reinforced ash brick into a base for a furnace or crafting table.&r"]
 			disable_toast: true
 			id: "781CBC788184EF67"
-			subtitle: "Digging and Clearing"
+			subtitle: "Clear ground and shape ash bricks"
 			tasks: [{
 				id: "1B2ECDDA2B140F0F"
 				item: {
@@ -227,10 +234,14 @@
 		}
 		{
 			dependencies: ["737A920A90D7A43F"]
-			description: ["&eA tool for tilling dead earth. Perhaps it's optimism, or perhaps someone knew the soil wouldn't stay dead forever.&r"]
+			description: [
+				"&eA hoe, among tools chosen for immediate survival. Someone made room for it despite the state of the ground outside.&r"
+				""
+				"&eKeep it. Suitable soil and seeds would give it a purpose again.&r"
+			]
 			disable_toast: true
 			id: "6FD0D927965EF699"
-			subtitle: "Tilling Dead Soil"
+			subtitle: "Room for a Hoe"
 			tasks: [{
 				id: "3DA2E058DAA4B31D"
 				item: {
@@ -249,11 +260,11 @@
 		}
 		{
 			dependencies: ["737A920A90D7A43F"]
-			description: ["&eThe rations will run out. The world offers little, but what it offers can be eaten. Cave carrots, eggs of things that crawl, meat from things that scuttle. Cooked, they sustain.&r"]
+			description: ["&eThe rations will run out. Cave carrots, silverfish eggs, meat from things that scuttle. Some is cooked; some is still raw. Whatever lives underground may have to replace these supplies.&r"]
 			disable_toast: true
 			icon: "miners_delight:baked_cave_carrot"
 			id: "5B36FDD15F527D57"
-			subtitle: "Basic Food Supply"
+			subtitle: "Enough to Begin"
 			tasks: [
 				{
 					id: "2391B1D9755A1F41"
@@ -281,17 +292,22 @@
 					type: "item"
 				}
 			]
-			title: "Basic Foods"
+			title: "First Rations"
 			x: -4.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["737A920A90D7A43F"]
-			description: ["&eGoggles and a wrench. Wearing them feels familiar, like muscle memory. Machines once answered to these tools. They will again.&r"]
+			description: [
+				"&eThe goggles sit comfortably. Your fingers settle around the wrench without searching for a grip.&r"
+				""
+				"   &3----------&r   &bUse Goggles and Wrench&r   &3----------&r"
+				"&eWear the goggles to inspect Create machinery. Use the wrench to adjust compatible blocks; sneak-use dismantles them.&r"
+			]
 			disable_toast: true
 			icon: "create:goggles"
 			id: "350604D826FB8C8B"
-			subtitle: "Give You Better Control Over Your Factory"
+			subtitle: "A Familiar Grip"
 			tasks: [
 				{
 					id: "1BA6ED8CD76DC77F"
@@ -310,10 +326,13 @@
 		}
 		{
 			dependencies: ["737A920A90D7A43F"]
-			description: ["&eAn iron-framed backpack. Blueprints linger in memory – extra pockets, reinforced straps. Worth building. Worth upgrading.&r"]
+			description: [
+				"&eYou check the backpack's pockets in a familiar order.&r"
+				""
+				"&eIts upgrade slots can add functions later. For now, there is room for what you recover.&r"
+			]
 			disable_toast: true
 			id: "1DA273BCC6892499"
-			subtitle: "The Best Storage at the Beginning"
 			tasks: [{
 				id: "01A8EA22815D7D9F"
 				item: {
@@ -333,16 +352,16 @@
 		}
 		{
 			dependencies: ["737A920A90D7A43F"]
-			description: ["&eStack upgrades. More room, fewer journeys. Schematics suggest layering – tier one, then beyond.&r"]
+			description: ["&eFit the tier-one stack upgrade in a backpack upgrade slot. Each storage slot will hold larger stacks, reducing the trips needed to carry stone and salvage.&r"]
 			disable_toast: true
 			id: "182462AD7FF16BFF"
-			subtitle: "Essential For Increasing Backpack Storage"
+			subtitle: "Increase the capacity of each slot"
 			tasks: [{
 				id: "3AF7A5E7020846A8"
 				item: "sophisticatedbackpacks:stack_upgrade_tier_1"
 				type: "item"
 			}]
-			title: "Backpack Upgrades"
+			title: "Stack Upgrade"
 			x: -3.0d
 			y: -0.5d
 		}
@@ -353,12 +372,16 @@
 				"1D44AAED53869BBB"
 				"0ECB4F57C7E65627"
 			]
-			description: ["&eA suitcase, left near the Stargate. Inside, a manual – decayed, pages fallen apart. If the fragments can be gathered, the knowledge inside might explain what happened. Or how to start over.&r"]
+			description: [
+				"&eThe mechanical manual has separated into three sections, now scattered among the laboratory's toolboxes.&r"
+				""
+				"&eRecover the top, middle, and bottom sections. Together, enough of the diagrams survive to begin a workshop.&r"
+			]
 			disable_toast: true
 			id: "661157F41CB9C876"
 			shape: "square"
 			size: 1.25d
-			subtitle: "Crucial Data Lies Within"
+			subtitle: "Reassemble the three manual scraps"
 			tasks: [{
 				id: "13643586A234CC77"
 				item: "kubejs:mechanic_manual"
@@ -369,64 +392,65 @@
 			y: 0.0d
 		}
 		{
-			description: ["&eThe top section, near the cover. It was left somewhere up high.&r"]
+			description: ["&eThe opening section of the mechanical manual, found among the laboratory toolboxes.&r"]
 			disable_toast: true
 			hide_dependency_lines: false
 			hide_until_deps_complete: true
 			id: "3434515ECC589ED9"
-			subtitle: "Fragments of The Manual"
 			tasks: [{
 				id: "1161E076F39531B3"
 				item: "kubejs:mechanic_manual_scrap_top"
 				type: "item"
 			}]
-			title: "Manual Scrap – Top"
+			title: "Manual Scrap: Top"
 			x: 7.5d
 			y: -1.5d
 		}
 		{
-			description: ["&eThe bottom section. It fell somewhere dark, maybe behind something.&r"]
+			description: ["&eThe final section of the mechanical manual, recovered from a laboratory toolbox.&r"]
 			disable_toast: true
 			hide_until_deps_complete: true
 			id: "0ECB4F57C7E65627"
-			subtitle: "Fragments of The Manual"
 			tasks: [{
 				id: "1772AB57F0C0D0FA"
 				item: "kubejs:mechanic_manual_scrap_bottom"
 				type: "item"
 			}]
-			title: "Manual Scrap – Bottom"
+			title: "Manual Scrap: Bottom"
 			x: 7.5d
 			y: 1.5d
 		}
 		{
-			description: ["&eThe middle section. The largest part. Last seen near the cold... the cryo chamber.&r"]
+			description: ["&eThe middle section of the mechanical manual, also kept in a laboratory toolbox.&r"]
 			disable_toast: true
 			hide_until_deps_complete: true
 			id: "1D44AAED53869BBB"
-			subtitle: "Fragments of The Manual"
 			tasks: [{
 				id: "16731FD5D699FDD8"
 				item: "kubejs:mechanic_manual_scrap_middle"
 				type: "item"
 			}]
-			title: "Manual Scrap – Middle"
+			title: "Manual Scrap: Middle"
 			x: 8.25d
 			y: 0.0d
 		}
 		{
 			dependencies: ["48FAA6DBC81EED3F"]
-			description: ["&eThere are armored doors here. Whatever's behind them was worth protecting. It won't open with simple tools.&r"]
+			description: [
+				"&eSteel armor still seals this chamber. Whatever needed protection here was given better walls than the rest of the laboratory.&r"
+				""
+				"&eOrdinary mining tools cannot break through. Remember the room and return with a portable drill.&r"
+			]
 			icon: "kubejs:steel_armor_penetrated"
 			id: "2C66266D37EC7F2F"
 			size: 1.5d
-			subtitle: "A Chamber, Conspicuously Sealed"
+			subtitle: "Still Sealed"
 			tasks: [{
 				icon: "kubejs:steel_armor_block"
 				id: "2DE4E30622B92C04"
 				observe_type: 0
 				timer: 0L
-				title: "Armored"
+				title: "Inspect the Steel Armor"
 				to_observe: "kubejs:steel_armor_block"
 				type: "observation"
 			}]
@@ -436,30 +460,31 @@
 		}
 		{
 			dependencies: ["48FAA6DBC81EED3F"]
-			description: ["&eThree toolboxes, left deliberately. One in the observation room, one in the preparation chamber, one near the exit. Each contains a piece of what was known.&r"]
+			description: ["&eThe laboratory's gray toolboxes hold surviving manuals, notes, and engineers' logs.&r"]
 			icon: "create:gray_toolbox"
 			id: "7A4768D007A9209B"
 			size: 1.5d
-			subtitle: "There Are Three Toolboxes In This Lab"
+			subtitle: "Search the gray toolboxes"
 			tasks: [{
 				icon: "create:gray_toolbox"
 				id: "34284AC03C517D9F"
 				observe_type: 0
 				timer: 0L
-				title: "Important Boxes"
+				title: "Inspect a Gray Toolbox"
 				to_observe: "create:gray_toolbox"
 				type: "observation"
 			}]
-			title: "Recover the Logs"
+			title: "Recover the Documents"
 			x: 0.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["7A4768D007A9209B"]
-			description: ["&eFluid engineering. Pipes, pumps, steam. The lifeblood of a factory. Whoever wrote this knew it would be needed.&r"]
+			description: [
+				"&ePipes, pumps, tanks, steam. The fluid manual shows how to carry water and fuel through a working workshop.&r"
+			]
 			disable_toast: true
 			id: "456814B0836CE2D6"
-			subtitle: "Another Manual For Fluids"
 			tasks: [{
 				id: "659036A893C2FE8C"
 				item: "kubejs:fluid_manual"
@@ -471,10 +496,13 @@
 		}
 		{
 			dependencies: ["7A4768D007A9209B"]
-			description: ["&eA brass lockbox, sealed tight. It seems a machine will be required to open it.&r"]
+			description: [
+				"&eThe brass lockbox remains shut. Its documents have had more protection than the manual scraps.&r"
+				""
+				"&eA mechanical press can break the seal.&r"
+			]
 			disable_toast: true
 			id: "4B7E501F02D99DEF"
-			subtitle: "It Seems to Contain Important Clues"
 			tasks: [{
 				id: "7DD0E6BBD451D50F"
 				item: "kubejs:brass_lockbox"
@@ -486,10 +514,14 @@
 		}
 		{
 			dependencies: ["7A4768D007A9209B"]
-			description: ["&eNotes on survival, coaxing life from a dead world. The basics of starting over.&r"]
+			description: [
+				"&eThe survival note lists salvage and improvised equipment. The environmental note goes further: soil, seeds, cultures, a source of food that might last.&r"
+				""
+				"&eThere is no account here of anyone living on these methods for years.&r"
+			]
 			disable_toast: true
 			id: "0EA786F00A19ADC6"
-			subtitle: "Environmental Recovery and Survival Guide"
+			subtitle: "Scavenge, Then Restore"
 			tasks: [
 				{
 					id: "7F91ABDAA7AE930C"
@@ -508,14 +540,10 @@
 		}
 		{
 			dependencies: ["7A4768D007A9209B"]
-			description: [
-				"&eOres and Stones.&r"
-				""
-				"&eMetals, Alloys, and other things.&r"
-			]
+			description: ["&eTwo reference books: geological notes on rocks and ores, and material notes on the substances a workshop can make from them. Identification marks and properties have survived better than the bindings.&r"]
 			disable_toast: true
 			id: "01145B3810F3CA52"
-			subtitle: "Stones, Ores, and Material Information"
+			subtitle: "Rocks and Materials"
 			tasks: [
 				{
 					id: "06ACDE2AA3D90380"
@@ -533,5 +561,5 @@
 			y: 5.5d
 		}
 	]
-	title: "Desolated Awakening"
+	title: "Desolate Awakening"
 }

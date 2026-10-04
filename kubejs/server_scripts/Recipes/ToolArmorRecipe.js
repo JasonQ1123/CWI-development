@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
         'minecraft:stone_hammer',
         [
             'AAA',
-            ' B ',
+            'ABA',
             ' B '
         ],
         {

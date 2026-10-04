@@ -107,32 +107,36 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"&eThe package from the brass lockbox contains the precision manual, processing notes, and a manufacturing engineer's log. Cut the wrapping open before separating the documents.&r"
+				""
+				"&eThese pages explain how to reproduce components without their original makers. A working assembly line can then supply its own replacements.&r"
+			]
 			hide_dependent_lines: true
 			id: "32BA01C17B48E245"
 			invisible: true
 			shape: "gear"
 			size: 2.0d
+			subtitle: "Workshop Instruction Copy"
 			tasks: [{
 				id: "2CEE9B57BFF8DB7F"
 				item: "kubejs:precision_manual"
 				type: "item"
 			}]
-			title: "Precision Age"
+			title: "Precision Manufacturing"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["32BA01C17B48E245"]
 			description: [
-				"&eBrass is the foundation for any mechanism that demands accuracy. &r"
-				""
-				"&eSmelt copper and zinc dust together, and you'll have a material that turns crude contraptions into real machines.&r"
+				"&eBrass is a copper-zinc alloy. Its machinability suits small fittings and gear parts, while its conductivity suits electrical contacts. In this workshop, brass sheets, wire, and nuggets serve both the moving assemblies and their control circuits.&r"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "51B224D51AE9FFAD"
 			shape: "square"
-			subtitle: "The Alloy of Precision"
+			subtitle: "An Alloy for Small Parts"
 			tasks: [{
 				id: "3AF05ADCD1A40C7F"
 				item: "create:brass_ingot"
@@ -144,11 +148,15 @@
 		}
 		{
 			dependencies: ["68973D217B4EDAB9"]
-			description: ["&eA casing made from brass. Used for more advanced machinery than andesite.&r"]
+			description: [
+				"&eA brass casing encloses the small moving parts and circuits of precision machinery. Its prepared wooden body supports the fittings; the metal covering forms the outer enclosure.&r"
+				""
+				"&eBrass is readily worked into accurate fittings, which makes it useful for deployers, mechanical crafters, and the precise machine core.&r"
+			]
 			id: "12887B78FD9C72DA"
 			shape: "rsquare"
 			size: 1.75d
-			subtitle: "Casing for Precision"
+			subtitle: "An Enclosure for Precision Parts"
 			tasks: [{
 				id: "59554561A9869559"
 				item: "create:brass_casing"
@@ -160,11 +168,15 @@
 		}
 		{
 			dependencies: ["51EF890D08BB88B8"]
-			description: ["&eAn alloy of copper and tin. Stronger than brass, suitable for tools and armor.&r"]
+			description: [
+				"&eBronze is a copper-tin alloy. Its long history in tools and cast objects predates modern steelmaking; its composition can be adjusted to suit different work.&r"
+				""
+				"&eTin changes the hardness and wear behavior of the copper alloy. The workshop uses bronze in tools and armor, as well as the rods and wire of railway and steam equipment.&r"
+			]
 			disable_toast: true
 			id: "549E4EE23C1A3AB8"
 			shape: "square"
-			subtitle: "Stronger Alloy"
+			subtitle: "Copper with Tin"
 			tasks: [{
 				id: "62800B31CA89B1CA"
 				item: "kubejs:bronze_ingot"
@@ -180,11 +192,9 @@
 				"68973D217B4EDAB9"
 			]
 			description: [
-				"&eMachined brass gears, calibrated and assembled into a complex mechanism, enable fine control over mechanical timing and torque distribution. &r"
+				"&eThe precision mechanism is designed to keep moving parts in step. Meshing gear teeth set the relationship between rotations; accurate alignment keeps the gears engaging consistently as they turn.&r"
 				""
-				"&eThe improved precision allows for consistent output even under variable load, essential for automated systems that demand reliability. &r"
-				""
-				"&eThe internal alignment of brass gears and calibrated springs is extremely delicate.&r"
+				"&ePrecise machine cores and mechanical arm bases use this mechanism. An arm repeatedly returns to selected pickup and delivery points, where consistent motion matters.&r"
 				""
 				"&cHandle it carefully, could be factured if it falls on the ground.&r"
 			]
@@ -192,7 +202,7 @@
 			id: "1D16D3568A4B56AC"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Very Precise and Delicate"
+			subtitle: "Keeping Motion in Step"
 			tasks: [{
 				id: "0774B32C9FEA408F"
 				item: "create:precision_mechanism"
@@ -208,15 +218,11 @@
 				"00C03DD3A3903E7C"
 			]
 			description: [
-				"&eServes as the central processing unit for most advanced instruments, integrating multiple precision mechanisms into a single stable framework. &r"
-				""
-				"&eIts internal architecture handles the complex calculations and synchronized movements required for high-grade fabrication.&r"
-				""
+				"&eThe precise machine core combines the workshop's moving mechanism with its basic circuit control. It is used in mechanical crafters, lathes, and incubators: machines that repeat a controlled operation, whether assembling a workpiece, shaping a part, or developing a sealed culture.&r"
 			]
 			id: "53BF409251D93EE1"
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "The Core of Precision"
 			tasks: [{
 				id: "20D912C588434E59"
 				item: "kubejs:precise_machine"
@@ -228,11 +234,11 @@
 		}
 		{
 			dependencies: ["51EF890D08BB88B8"]
-			description: ["&eA reinforced version of iron. Hard and durable.&r"]
+			description: ["&eIndustrial iron is worked construction stock for drill heads, cutting blades, springs, and machine frames. These parts repeatedly carry force or contact the workpiece, so their metal must withstand more demanding service than a simple cover or fitting.&r"]
 			disable_toast: true
 			id: "612A2B07C4F613E6"
 			shape: "square"
-			subtitle: "Heavy Duty"
+			subtitle: "Metal for Working Parts"
 			tasks: [{
 				id: "3D58417254FBFD77"
 				item: "kubejs:industrial_iron_ingot"
@@ -247,31 +253,34 @@
 			description: [
 				"   &3-----&r   &bSupports Superheating&r   &3-----&r "
 				""
-				"&eConverts liquid fuel into sustained thermal energy for power generation and industrial heat applications. &r"
+				"&eThe module feeds liquid fuel into a blaze burner, turning a piped supply into heat for melting, alloying, and other heated processes. Continuous delivery lets the burner remain supplied while a production line runs.&r"
 				""
-				"&eIt generate high-grade thermal energy with significantly greater efficiency than solid-fuel alternatives. &r"
-				""
-				"&eDesigned for integration into industrial systems where sustained heat output is essential.&r"
+				"&eThe burner can reach the stronger heat required by advanced processing when supplied with a suitable liquid fuel.&r"
 			]
 			disable_toast: true
 			id: "51EF890D08BB88B8"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Applies on Burner"
+			subtitle: "Heat from Liquid Fuel"
 			tasks: [{
 				id: "12D193F968B2CEF9"
 				item: "createaddition:straw"
 				type: "item"
 			}]
+			title: "Fluid Combustion Module"
 			x: 6.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["61B2E0C63F00A944"]
-			description: ["&eAn apparatus that harnesses steam pressure to generate mechanical power. Used for engines and advanced tools.&r"]
+			description: [
+				"&eThe steam apparatus is a compact piston assembly for engines and powered tools. In a steam-driven mechanism, pressure acts on the piston face and produces a working stroke; the linked mechanism passes that movement to the tool.&r"
+				""
+				"&ePortable drills, powered suits, and the Stirling engine use this assembly as part of their drive. The heat source and working cycle belong to the finished machine.&r"
+			]
 			disable_toast: true
 			id: "3CC959E1243E962E"
-			subtitle: "Steam Power"
+			subtitle: "Steam Equipment Subassembly"
 			tasks: [{
 				id: "2086A44BD5849958"
 				item: "kubejs:steam_apparatus"
@@ -283,10 +292,14 @@
 		}
 		{
 			dependencies: ["612A2B07C4F613E6"]
-			description: ["&eA precision-machined piston. Used in stirling engines, steam apparatus, and jetpacks.&r"]
+			description: [
+				"&eA piston moves inside a cylinder. Pressure acting across its face pushes it along the bore, and a connecting mechanism transfers that stroke to the rest of the engine. A close fit limits leakage while leaving room for movement.&r"
+				""
+				"&eSteam apparatus, Stirling engines, and powered suits use these pistons to turn pressure changes into useful motion.&r"
+			]
 			disable_toast: true
 			id: "61B2E0C63F00A944"
-			subtitle: "Precision Machined"
+			subtitle: "Pressure into Motion"
 			tasks: [{
 				id: "0128972083BC8E2E"
 				item: "createdieselgenerators:engine_piston"
@@ -301,12 +314,16 @@
 				"233D8C38E18799CF"
 				"25C5F3ED706FFA9C"
 			]
-			description: ["&eA machine for turning and shaping metals. Uses blades to cut precise profiles.&r"]
+			description: [
+				"&eA lathe rotates the workpiece against a cutting tool, removing material around its axis to form round parts. This controlled shape matters for pistons that must fit a bore and drill heads that must rotate evenly.&r"
+				""
+				"&eThe workshop also uses the lathe to prepare blades and curving heads.&r"
+			]
 			disable_toast: true
 			id: "7A7EB90A68EA8845"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Metal Turning"
+			subtitle: "Shaping a Rotating Workpiece"
 			tasks: [{
 				id: "40EB2155EC2FD3DA"
 				item: "vintageimprovements:lathe"
@@ -318,10 +335,14 @@
 		}
 		{
 			dependencies: ["2EB25FBA5BA0E442"]
-			description: ["&cHandle it carefully, could be factured if it falls on the ground.&r"]
+			description: [
+				"&ePolished rose quartz is the finished crystal used in electron tubes and other precision components.&r"
+				""
+				"&cHandle it carefully, could be factured if it falls on the ground.&r"
+			]
 			disable_toast: true
 			id: "00206C2F04A626DB"
-			subtitle: "A Purified Rose Quartz"
+			subtitle: "A Finished Circuit Crystal"
 			tasks: [{
 				id: "2146F272A02E4A8D"
 				item: "create:polished_rose_quartz"
@@ -336,12 +357,16 @@
 				"12887B78FD9C72DA"
 				"5518FD26FF090152"
 			]
-			description: ["&eAssembled from rubber hand and control chip, this articulated arm performs repetitive assembly tasks with consistent accuracy.&r"]
+			description: [
+				"&eThe deployer repeats the action of a hand: applying ingredients, using tools, or interacting with the block in front of it. Rotation drives its repeated strokes.&r"
+				""
+				"&eThis makes it useful for assembly operations that require contact with a workpiece rather than grinding or heating it. The held item determines the action.&r"
+			]
 			disable_toast: true
 			id: "00C03DD3A3903E7C"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "An Artificial Hand"
+			subtitle: "Repeating a Hand Operation"
 			tasks: [{
 				id: "200F0D7440714DA2"
 				item: "create:deployer"
@@ -354,15 +379,15 @@
 		{
 			dependencies: ["00206C2F04A626DB"]
 			description: [
-				"&eA simple redstone tube shaped to allow signal flow in only one direction prevents feedback loops in basic circuits. &r"
+				"&eThe electron tube is a circuit component for control chips and precise machine cores. The one-way design described in these notes follows the principle of a vacuum diode: current can pass in one direction while the reverse path is blocked.&r"
 				""
-				"&eThis component is the first step toward reliable logic systems and automated control networks.&r"
+				"&eIn electronics, additional control electrodes allow tubes to regulate or switch current. Here, chips assembled with tubes are used in deployers that repeat hand operations and transport blocks that select passing items.&r"
 				""
 				"&cHandle it carefully, could be factured if it falls on the ground.&r"
 			]
 			disable_toast: true
 			id: "785427A61D5C6471"
-			subtitle: "A Simple Diode"
+			subtitle: "A One-Way Signal Element"
 			tasks: [{
 				id: "2C84EBCBDD918BE9"
 				item: "create:electron_tube"
@@ -374,12 +399,16 @@
 		}
 		{
 			dependencies: ["53BF409251D93EE1"]
-			description: ["&eA mechanical crafting table that automates complex recipes. Uses multiple slots and sequenced assembly.&r"]
+			description: [
+				"&eEach mechanical crafter holds one ingredient position. Connected crafters pass those ingredients toward a final assembly point, so a large machine can be built from a pattern spread across several blocks.&r"
+				""
+				"&eThe output arrows define that route; slot covers preserve empty positions in the pattern. This supplies the large crafting layouts required by later machinery.&r"
+			]
 			disable_toast: true
 			id: "7B2506C2B1F67B51"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Automated Crafting"
+			subtitle: "Arrange the Crafting Network"
 			tasks: [{
 				id: "627A0E815A3D5CF0"
 				item: "create:mechanical_crafter"
@@ -391,10 +420,9 @@
 		}
 		{
 			dependencies: ["51B224D51AE9FFAD"]
-			description: ["&eBrass ingot pressed into a thin sheet. Used for casings and precision components.&r"]
+			description: ["&eBrass sheets form casing covers and circuit supports, and supply thin stock for small precision parts.&r"]
 			disable_toast: true
 			id: "68973D217B4EDAB9"
-			subtitle: "Thin Brass"
 			tasks: [{
 				id: "2AE30EC30861415E"
 				item: "create:brass_sheet"
@@ -411,7 +439,11 @@
 				"148115A10C1A0F03"
 				"7B2506C2B1F67B51"
 			]
-			description: ["&eWinds wire into coiled springs. Produces springs used in lathes and other precision machinery.&r"]
+			description: [
+				"&eThe coiling machine bends wire or rods into repeated turns. A controlled coil gives a spring its working shape: movement can be taken up along the coil instead of being concentrated in a short straight piece.&r"
+				""
+				"&eIts springs are used in machining and biological equipment, where parts must return after a stroke or accommodate repeated movement.&r"
+			]
 			disable_toast: true
 			id: "6D37805074F5C079"
 			shape: "hexagon"
@@ -428,10 +460,14 @@
 		}
 		{
 			dependencies: ["00C03DD3A3903E7C"]
-			description: ["&eRobotic component used to assemble mechanical arm.&r"]
+			description: [
+				"&eThe robot hand lets a mechanical arm grip solid items and release them at the selected destination.&r"
+				""
+				"&eThe arm base supplies movement and control; the hand is its item-handling attachment.&r"
+			]
 			disable_toast: true
 			id: "3CD9A2ACE4B55909"
-			subtitle: "Mechanical Parts"
+			subtitle: "Interchangeable Arm Attachment"
 			tasks: [{
 				id: "3E90D9CF5FF5250C"
 				item: "kubejs:robot_hand"
@@ -446,12 +482,12 @@
 				"3CD9A2ACE4B55909"
 				"7D38C4D9ED31E904"
 			]
-			description: ["&eA fully articulated mechanical arm. Moves items between inventories with precision.&r"]
+			description: ["&eAn articulated arm carries items between selected points within its reach. Its joints let one machine serve several inventories, assembly stations, or burners without a belt running through every transfer point.&r"]
 			disable_toast: true
 			id: "3BE4C9ED2CFB6296"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Item Transport"
+			subtitle: "Transfer between Selected Points"
 			tasks: [{
 				id: "1DE9C406DBAB9576"
 				item: "create:mechanical_arm"
@@ -463,10 +499,14 @@
 		}
 		{
 			dependencies: ["612A2B07C4F613E6"]
-			description: ["&eA blade made from industrial iron. Fits onto a lathe for cutting metals.&r"]
+			description: [
+				"&eA cutting blade concentrates force along a narrow edge, removing material from the workpiece. The edge and the body behind it must withstand repeated contact without losing their shape.&r"
+				""
+				"&eIndustrial iron blades supply the cutting parts of lathes and spring coiling machines.&r"
+			]
 			disable_toast: true
 			id: "148115A10C1A0F03"
-			subtitle: "Lathe Tool"
+			subtitle: "A Working Cutting Edge"
 			tasks: [{
 				id: "7F4CF1DCFA09C614"
 				item: "kubejs:industrial_iron_blade"
@@ -478,15 +518,11 @@
 		}
 		{
 			dependencies: ["32BA01C17B48E245"]
-			description: [
-				"&eFusing redstone with quartz yields rose quartz, a material with superior signal conductivity and structural stability. &r"
-				""
-				"&eThis forms the ideal base for crafting redstone tubes and more advanced circuitry. &r"
-			]
+			description: ["&eThe workshop's rose quartz is quartz treated with redstone. Its polished form is the crystal component of an electron tube, giving the mineral a use in machine control.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "2EB25FBA5BA0E442"
-			subtitle: "Redstone Conductor"
+			subtitle: "Quartz Treatment"
 			tasks: [{
 				id: "54CDFF50630397BE"
 				item: "create:rose_quartz"
@@ -499,9 +535,7 @@
 		{
 			dependencies: ["785427A61D5C6471"]
 			description: [
-				"&eAssemble a control circuit using electron tubes for signals, brass for durable contacts, and redstone for logic pathways. &r"
-				""
-				"&eThis combination allows for reliable switching and timing, enabling machines to operate with minimal supervision.&r"
+				"&eA control chip supplies the circuit component for deployers and filtered transport. A deployer repeats the operation of its held tool; a funnel or chute selects which items may pass.&r"
 				""
 				"&cHandle it carefully, could be factured if it falls on the ground.&r"
 			]
@@ -510,7 +544,6 @@
 			id: "5518FD26FF090152"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Better Control"
 			tasks: [{
 				id: "5F1DAA094B98107D"
 				item: "create_connected:control_chip"
@@ -522,10 +555,10 @@
 		}
 		{
 			dependencies: ["36EB97B842C0099F"]
-			description: ["&eA sheet made from heated powdered obsidian. Used for railway casings and sturdy components.&r"]
+			description: ["&eSturdy sheets turn processed obsidian into flat construction stock. They supply railway casings, powered tools, and lava extractor components where a durable covering or structural part is needed.&r"]
 			disable_toast: true
 			id: "59C14FA285FD0CD7"
-			subtitle: "Obsidian Plate"
+			subtitle: "Working Obsidian Powder"
 			tasks: [{
 				id: "35D77ACFED239955"
 				item: "create:sturdy_sheet"
@@ -537,11 +570,11 @@
 		}
 		{
 			dependencies: ["549E4EE23C1A3AB8"]
-			description: ["&eArmor made from bronze. Tougher than iron.&r"]
+			description: ["&eBronze-sheet armor offers more protection and durability than ordinary iron armor, with a little knockback resistance.&r"]
 			disable_toast: true
 			id: "02E7571BE326FB95"
 			shape: "diamond"
-			subtitle: "Tougher Armor"
+			subtitle: "Field Equipment: Bronze"
 			tasks: [
 				{
 					disable_toast: true
@@ -602,12 +635,12 @@
 		}
 		{
 			dependencies: ["2812D99E5A60DF15"]
-			description: ["&eA control panel for trains. Allows manual operation of train movement.&r"]
+			description: ["&eTrain controls give the driver manual control over movement. Their orientation sets the driving direction, making the cab a defined operating position on an otherwise moving structure.&r"]
 			disable_toast: true
 			id: "67A795C95E8DA367"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Manual Operation"
+			subtitle: "Driver's Position"
 			tasks: [{
 				id: "2CC1833B7C4E8D5A"
 				item: "create:controls"
@@ -622,12 +655,12 @@
 				"68973D217B4EDAB9"
 				"59C14FA285FD0CD7"
 			]
-			description: ["&eA casing made from sturdy sheet and brass. Foundation for railway equipment.&r"]
+			description: ["&eA railway casing forms the body of a bogey, supporting the train above its running wheels. Its sturdy-sheet construction belongs to the parts that carry the vehicle's load as it follows the track.&r"]
 			disable_toast: true
 			id: "2812D99E5A60DF15"
 			shape: "rsquare"
 			size: 1.75d
-			subtitle: "Train Foundation"
+			subtitle: "Railway Construction Stock"
 			tasks: [{
 				id: "0688432FA30EA4CE"
 				item: "create:railway_casing"
@@ -639,12 +672,16 @@
 		}
 		{
 			dependencies: ["2812D99E5A60DF15"]
-			description: ["&eControl Train Direction and emits redstone signals based on train positions. Used for railway control.&r"]
+			description: [
+				"&eSignals divide track into sections and hold trains outside occupied sections. At a junction, the useful boundary is the one that prevents two trains from claiming the crossing together. Inspect the displayed section boundaries when laying out the signals.&r"
+				""
+				"&eSignal outputs can also provide redstone information to station machinery.&r"
+			]
 			disable_toast: true
 			id: "28BD3950F860F78C"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Railway Signal"
+			subtitle: "Occupied Sections"
 			tasks: [{
 				id: "05A4B3D9B1F217E0"
 				item: "create:track_signal"
@@ -656,12 +693,12 @@
 		}
 		{
 			dependencies: ["2812D99E5A60DF15"]
-			description: ["&eA station block for trains. Allows trains to stop and be scheduled.&r"]
+			description: ["&eA station marks a named stopping point and provides a place to assemble a train. The name gives a schedule a destination it can address, allowing the railway to carry repeated deliveries between distant workshops.&r"]
 			disable_toast: true
 			id: "6CE800627DED4C1F"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Train Stop"
+			subtitle: "A Named Railway Destination"
 			tasks: [{
 				id: "5CD0F39DC3538CDD"
 				item: "create:track_station"
@@ -673,11 +710,11 @@
 		}
 		{
 			dependencies: ["549E4EE23C1A3AB8"]
-			description: ["&eTools made from bronze. More durable than iron tools.&r"]
+			description: ["&eBronze tools last longer than ordinary iron tools, reducing how often a working edge must be replaced during mining or harvesting.&r"]
 			disable_toast: true
 			id: "6D2CAE4E440B1120"
 			shape: "diamond"
-			subtitle: "Durable Tools"
+			subtitle: "Tools Between Iron and Steel"
 			tasks: [
 				{
 					disable_toast: true
@@ -751,12 +788,16 @@
 		}
 		{
 			dependencies: ["4A993A8E3CFDEC82"]
-			description: ["&eA drill powered by mechanical energy. Can break through hardened blocks.&r"]
+			description: [
+				"&eA mechanical drill carries rotational power to a cutting head at its front. Repeated contact breaks the block in its path; mounting drills on a moving contraption extends that action across an excavation.&r"
+				""
+				"&eThe laboratory's armored blocks require the portable drill held in hand. Keep that tool available for access work.&r"
+			]
 			disable_toast: true
 			id: "7E7168763D8B3AAE"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Hard Block Breaker"
+			subtitle: "Fixed and Moving Excavation"
 			tasks: [{
 				id: "44D7F3BF3197A7AE"
 				item: "create:mechanical_drill"
@@ -768,11 +809,16 @@
 		}
 		{
 			dependencies: ["3CC959E1243E962E"]
-			description: ["&eA chestplate equipped with a brass jetpack. Allows short bursts of flight.&r"]
+			description: [
+				"   &3---&r   &bHold Flying to Fly&r   &3---&r"
+				"   &3---&r   &bHold Flying + Sneak to Hover&r   &3---&r"
+				""
+				"&eThe Bronze Jetpack uses fuel and water to produce steam that spins its propellers. Flying is bound to Space by default. It also moves faster in water, but this grade can rise only about 28 blocks above the surface below.&r"
+			]
 			disable_toast: true
 			id: "1179AACAA33B2ACB"
 			shape: "diamond"
-			subtitle: "Short Flight"
+			subtitle: "Steam-Driven Flight"
 			tasks: [{
 				id: "1A34A2FCF9D0B78F"
 				item: {
@@ -782,17 +828,17 @@
 				}
 				type: "item"
 			}]
-			title: "Brass Jetpack"
+			title: "Bronze Jetpack"
 			x: 12.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["3CC959E1243E962E"]
-			description: ["&eA brass exoskeleton that enhances carrying capacity and movement.&r"]
+			description: ["&eThe Bronze Exoskeleton assists the wearer's movements with a powered frame. It grants Haste and Strength while consuming fuel and water, helping with both mining and heavier blows.&r"]
 			disable_toast: true
 			id: "73448C27E377A62B"
 			shape: "diamond"
-			subtitle: "Enhanced Strength"
+			subtitle: "Powered Field Suit"
 			tasks: [{
 				id: "7984A95493018473"
 				item: {
@@ -802,33 +848,39 @@
 				}
 				type: "item"
 			}]
-			title: "Brass Exoskeleton"
+			title: "Bronze Exoskeleton"
 			x: 14.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["32BA01C17B48E245"]
+			description: ["&eCarried in the inventory, the filling tank continuously replenishes fuel and water for supported tools held in hand and equipment being worn. Its supply is unlimited, so it does not need refilling while powering field equipment.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "47D86B0C09158DB9"
 			shape: "diamond"
-			subtitle: "Infinite Amount of Fuel For Tools"
+			subtitle: "An Unlimited Equipment Supply"
 			tasks: [{
 				id: "5D86814C1271B90B"
 				item: "create_sa:creative_filling_tank"
 				type: "item"
 			}]
-			title: "Filling Tanks"
+			title: "Filling Tank"
 			x: 16.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["7E7168763D8B3AAE"]
-			description: [""]
+			description: [
+				"&eOrdinary hand tools cannot recover the laboratory's armored blocks. A portable drill held in hand can break them and retrieve the block.&r"
+				""
+				"&eReturn to the sealed rooms when a drill and its supplies are ready. Some documents remain behind those doors.&r"
+			]
 			disable_toast: true
 			id: "7268A2EB9AEE52C0"
 			shape: "gear"
 			size: 2.75d
+			subtitle: "Armored Access"
 			tasks: [{
 				id: "785EEF5C44B50847"
 				item: "kubejs:steel_armor_block"
@@ -843,12 +895,12 @@
 				"233D8C38E18799CF"
 				"3A8590545AC9E328"
 			]
-			description: ["&eApplies pressure to materials. Used to process magma and other substances.&r"]
+			description: ["&eThe compressor applies pressure to fluids in a processing chamber and recovers solid products. In this workshop, lava supplies mineral powders and honey supplies sugar, giving it a role in recovering materials from a liquid feed.&r"]
 			disable_toast: true
 			id: "64100A05BE92A991"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Pressure Application"
+			subtitle: "Compression Equipment"
 			tasks: [{
 				id: "34294E6204408536"
 				item: "rubberworks:compressor"
@@ -860,10 +912,14 @@
 		}
 		{
 			dependencies: ["7A7EB90A68EA8845"]
-			description: ["&eA drill head made from industrial iron.&r"]
+			description: [
+				"&eThe drill head is the part that meets the rock. Its cutting surfaces concentrate the drive's force into a small working area, while rotation brings those surfaces into repeated contact with the block.&r"
+				""
+				"&eThe same industrial iron head serves mechanical and portable drills; the surrounding drive determines whether it works from a fixed machine or the operator's hand.&r"
+			]
 			disable_toast: true
 			id: "4A993A8E3CFDEC82"
-			subtitle: "Drill Attachment"
+			subtitle: "The Rock-Cutting Part"
 			tasks: [{
 				id: "5DF6C6FA6DB8F89A"
 				item: "kubejs:industrial_iron_drill_head"
@@ -875,11 +931,15 @@
 		}
 		{
 			dependencies: ["4A993A8E3CFDEC82"]
-			description: ["&eA portable drill that can be carried and used by hand.&r"]
+			description: [
+				"&eThe portable drill carries a powered cutting head in a handheld tool. Its own drive supplies repeated cutting motion while the operator directs it, allowing access to the laboratory's armored doors, blocks, and safe.&r"
+				""
+				"&eIt consumes fuel and water. A later design with a steel head improves its mining efficiency.&r"
+			]
 			disable_toast: true
 			id: "34269C4BA12E6891"
 			shape: "diamond"
-			subtitle: "Handheld Drill"
+			subtitle: "Access Tool"
 			tasks: [{
 				id: "775CE69D73B1F2A2"
 				item: {
@@ -895,13 +955,13 @@
 		}
 		{
 			dependencies: ["32BA01C17B48E245"]
-			description: ["&eTools shaped by a lathe. Propeller and whisk for mixing applications.&r"]
+			description: ["&eA propeller's angled blades push air or fluid as they rotate, which makes the part useful in fans and pumps. A whisk instead sweeps through the contents of a basin, bringing ingredients into contact throughout the mixture.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "create:whisk"
 			id: "5C8B8FCFF3830E1D"
 			shape: "diamond"
-			subtitle: "Lathe Products"
+			subtitle: "Moving Flow or Mixing Contents"
 			tasks: [{
 				id: "2C8804D1FE4B3B61"
 				type: "checkmark"
@@ -913,12 +973,12 @@
 		{
 			dependencies: ["7A7EB90A68EA8845"]
 			dependency_requirement: "one_completed"
-			description: ["&eInterchangeable heads for the curving press. Convex, Concave, W-shaped, and V-shaped profiles.&r"]
+			description: ["&eA curving head gives the press its contact profile. Convex and concave faces form curved surfaces, while V-shaped and W-shaped faces form angular folds. The workpiece takes its shape from the head pressing against it.&r"]
 			disable_toast: true
 			id: "43E7F2CC1771B0FD"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Press Profiles"
+			subtitle: "Select the Forming Head"
 			tasks: [
 				{
 					disable_toast: true
@@ -980,16 +1040,12 @@
 		{
 			dependencies: ["5518FD26FF090152"]
 			dependency_requirement: "one_completed"
-			description: [
-				"&eBuilt around a redstone control chip, this component handles item filtering, extraction, and precise flow management for automated factories. &r"
-				""
-				"&eIt can be programmed to pull specific materials from storage or maintain exact stock levels across multiple production lines. With these in place, a facility moves from simple automation to true supply chain control.&r"
-			]
+			description: ["&eBrass funnels, brass tunnels, and smart chutes use control chips to select and distribute items. Filtering gives a shared transport line separate destinations for different materials, so each machine receives the stock intended for its process.&r"]
 			disable_toast: true
 			id: "6528C36E0791C790"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Better Factory Control"
+			subtitle: "Separating Shared Transport"
 			tasks: [
 				{
 					id: "69A3D84C4C26A41A"
@@ -1007,17 +1063,17 @@
 					type: "item"
 				}
 			]
-			title: "Smart Logistic"
+			title: "Filtered Logistics"
 			x: 2.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["3A8590545AC9E328"]
-			description: ["&eA casing made from industrial iron. Used for better machinery and advanced equipment.&r"]
+			description: ["&eThe industrial casing adds an iron covering to a brass machine body. It supports the working assemblies of drills, lathes, and other machining equipment, where a frame must hold parts in position through repeated cutting or forming work.&r"]
 			id: "233D8C38E18799CF"
 			shape: "rsquare"
 			size: 1.75d
-			subtitle: "Industrial Enclosure"
+			subtitle: "A Frame for Machining Equipment"
 			tasks: [{
 				id: "19B64B7E835FFA26"
 				item: "kubejs:industrial_casing"
@@ -1029,12 +1085,16 @@
 		}
 		{
 			dependencies: ["7A7EB90A68EA8845"]
-			description: ["&eA mixer designed for foundry use. Handles molten fluids for alloy production.&r"]
+			description: [
+				"&eThe foundry mixer stirs molten metals together for alloy production. Its sturdy whisk works in the hot contents of a foundry basin, circulating the melt so the constituents meet throughout the mixture.&r"
+				""
+				"&eMixing and heating serve different purposes: heat keeps the metals molten, while the mixer combines them. The drive operates through the basin's closed glassed lid.&r"
+			]
 			disable_toast: true
 			id: "1040B7CD0595052C"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Easier Alloy"
+			subtitle: "Combining Molten Metals"
 			tasks: [{
 				id: "2EEF283438E6E427"
 				item: "createmetallurgy:foundry_mixer"
@@ -1047,14 +1107,15 @@
 		{
 			dependencies: ["785427A61D5C6471"]
 			description: [
-				"&eFour individual redstone tubes arranged in a fused assembly create a compact signal bus capable of handling multiple channels or higher throughput. &r"
+				"&eThe integrated tube combines electron tubes into a compact module for machine controls.&r"
 				""
+				"&eA content observer turns the presence of a selected material into a redstone signal; a mechanical arm coordinates pickup and delivery at configured points. Their construction uses this module, as do surface scanners and distillation controllers.&r"
 			]
 			disable_toast: true
 			id: "42556560ABE2CD24"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "A Complex Diode"
+			subtitle: "A Module for Machine Control"
 			tasks: [{
 				id: "0E39C1037EF0D46C"
 				item: "kubejs:integrated_electron_tube"
@@ -1066,10 +1127,10 @@
 		}
 		{
 			dependencies: ["7A7EB90A68EA8845"]
-			description: ["&eA whisk that can withstand high temperatures. Used for mixing in foundry applications.&r"]
+			description: ["&eThe sturdy whisk is the foundry mixer's stirring element, built for the heat of molten-metal mixing.&r"]
 			disable_toast: true
 			id: "1A00D73D9FE52AAD"
-			subtitle: "Fireproof Whisk"
+			subtitle: "Foundry Mixer Component"
 			tasks: [{
 				id: "34DF041A31F3CB4F"
 				item: "createmetallurgy:sturdy_whisk"
@@ -1081,13 +1142,13 @@
 		}
 		{
 			dependencies: ["32BA01C17B48E245"]
-			description: ["&eRails for trains. Used to build railway networks between locations.&r"]
+			description: ["&ePaired rails support and guide a train's wheels along a fixed route. Joining track sections turns distant worksites into a transport network that can carry repeated deliveries without an operator accompanying every load.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "66A46D3B415C4286"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Railway Line"
+			subtitle: "A Guided Route for Trains"
 			tasks: [{
 				id: "3E9EC71859E19390"
 				item: "create:track"
@@ -1100,16 +1161,15 @@
 		{
 			dependencies: ["51EF890D08BB88B8"]
 			description: [
-				"&eManages temperature stages and fluid flow across a distillation setup, ensuring each fraction separates at the correct threshold. &r"
+				"&eThe controller is the operating unit of the distillation apparatus. Distillation uses differences in how readily substances vaporize to recover a vapor stream separately from the liquid left behind.&r"
 				""
-				"&eConsist of redstone control chips, allowing precise adjustments to output ratios and process timing.&r"
-				""
+				"&eThe workshop uses this apparatus to obtain steam from water and separate methanol from wood vinegar. Petroleum fractionation belongs to the larger steel distillation tower.&r"
 			]
 			disable_toast: true
 			id: "2E5DB3DB00FF5C7C"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Heating and Separation"
+			subtitle: "Recovering a Separate Vapor Stream"
 			tasks: [{
 				id: "5B34DDE9FB3F41C7"
 				item: "createdieselgenerators:distillation_controller"
@@ -1122,14 +1182,14 @@
 		{
 			dependencies: ["5518FD26FF090152"]
 			description: [
-				"&eA device that reads subtle environmental signatures to locate specific biomes across vast distances.&r"
+				"&eSelect a biome with Nature's Compass, then follow its direction and distance reading to locate it.&r"
 				""
 				"&cHandle it carefully, could be factured if it falls on the ground.&r"
 			]
 			disable_toast: true
 			id: "5D253C4D8B1EC58C"
 			shape: "diamond"
-			subtitle: "Find Biomes In A Much Faster Way"
+			subtitle: "Locating a Biome"
 			tasks: [{
 				id: "17D9D0F82CA0F133"
 				item: "naturescompass:naturescompass"
@@ -1141,10 +1201,11 @@
 		}
 		{
 			dependencies: ["5518FD26FF090152"]
-			description: ["&eA base structure for building a mechanical arm.&r"]
+			description: [
+				"&eThe arm base holds the drive and control parts for an articulated arm. A robot hand equips the finished arm to handle items; a robot pipette equips it to handle fluids. The completed arm works between selected transfer points.&r"
+			]
 			disable_toast: true
 			id: "7D38C4D9ED31E904"
-			subtitle: "Arm Foundation"
 			tasks: [{
 				id: "5D10178F50BCF72A"
 				item: "kubejs:mechanical_arm_base"
@@ -1159,11 +1220,11 @@
 				"3BE4C9ED2CFB6296"
 				"7B2506C2B1F67B51"
 			]
-			description: ["&eA wand that places blocks from a large inventory. Useful for large-scale construction.&r"]
+			description: ["&eThe construction wand extends a surface with matching blocks from the inventory. It makes repeated floors and walls quicker to build while using the same stored blocks as hand placement.&r"]
 			disable_toast: true
 			id: "699DDF861A8CE682"
 			shape: "diamond"
-			subtitle: "Construction Wand"
+			subtitle: "Repeated Construction"
 			tasks: [{
 				id: "48BDB8635FF8BE5E"
 				item: {
@@ -1175,19 +1236,19 @@
 				}
 				type: "item"
 			}]
-			title: "Infinity Wand"
+			title: "Precision Wand"
 			x: 8.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["32BA01C17B48E245"]
-			description: ["&eObserves and detects items passing through containers. Sends redstone signals based on contents.&r"]
+			description: ["&eA content observer detects selected items or fluids in supported transport and storage blocks. Its redstone output can trigger the next operation when the expected material arrives.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "10C9BB26856AB087"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Advanced Detection"
+			subtitle: "Observe the Material"
 			tasks: [{
 				id: "4729236745A7D6F0"
 				item: "create:content_observer"
@@ -1199,12 +1260,12 @@
 		}
 		{
 			dependencies: ["2812D99E5A60DF15"]
-			description: ["&eDetects passing trains and emits redstone signals. Used for railway automation.&r"]
+			description: ["&eFit a track observer to a rail segment to detect passing trains. Its redstone output can trigger station machinery or another action tied to the train's arrival.&r"]
 			disable_toast: true
 			id: "326240A261EFDFDC"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Train Detection"
+			subtitle: "A Passing Train"
 			tasks: [{
 				id: "5E9D604EAF585932"
 				item: "create:track_observer"
@@ -1216,10 +1277,10 @@
 		}
 		{
 			dependencies: ["51EF890D08BB88B8"]
-			description: ["&eObsidian powder heated to high temperature. Used to make sturdy sheets.&r"]
+			description: ["&eThis heated powder is the intermediate formed into sturdy sheets.&r"]
 			disable_toast: true
 			id: "36EB97B842C0099F"
-			subtitle: "Heat-Treated Powder"
+			subtitle: "Obsidian for Forming"
 			tasks: [{
 				id: "77F20A9C7AF13DE0"
 				item: "kubejs:heated_powdered_obsidian"
@@ -1231,10 +1292,14 @@
 		}
 		{
 			dependencies: ["6D37805074F5C079"]
-			description: ["&eA spring made from industrial iron. Used in lathes.&r"]
+			description: [
+				"&eDeforming a spring stores energy; it releases that energy as it returns toward its original shape. Coils accommodate repeated movement, making them useful in return mechanisms.&r"
+				""
+				"&eIndustrial iron springs are components of lathes, incubators, and centrifuges.&r"
+			]
 			disable_toast: true
 			id: "25C5F3ED706FFA9C"
-			subtitle: "Lathe Component"
+			subtitle: "Industrial Iron Coils"
 			tasks: [{
 				id: "7E7026F03B4791B9"
 				item: "kubejs:industrial_iron_spring"
@@ -1246,10 +1311,10 @@
 		}
 		{
 			dependencies: ["612A2B07C4F613E6"]
-			description: ["&eIndustrial iron pressed into a thin sheet. Used for casings and heavy components.&r"]
+			description: ["&eIndustrial iron sheets provide flat walls and covers for casings, pumps, and robot parts.&r"]
 			disable_toast: true
 			id: "3A8590545AC9E328"
-			subtitle: "Heavy Sheet"
+			subtitle: "Heavy Casing Stock"
 			tasks: [{
 				id: "0B8B0E87EBB280B1"
 				item: "kubejs:industrial_iron_sheet"
@@ -1261,12 +1326,12 @@
 		}
 		{
 			dependencies: ["6D37805074F5C079"]
-			description: ["&eVibrates items to separate or process them.&r"]
+			description: ["&eRepeated shaking loosens material held among grains and moves particles relative to one another. The vibrating table uses this motion to process loose feed into separate outputs, recovering useful mineral or biological material from a mixed sample.&r"]
 			disable_toast: true
 			id: "748F017B8A7A73EF"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Item Separation"
+			subtitle: "Separation by Vibration"
 			tasks: [{
 				id: "4DEC205462B55FFD"
 				item: "vintageimprovements:vibrating_table"
@@ -1278,12 +1343,16 @@
 		}
 		{
 			dependencies: ["25C5F3ED706FFA9C"]
-			description: ["&eIncubates fungal and bacterial cultures. Used to grow and harvest them.&r"]
+			description: [
+				"&eThe incubator develops sealed agar plates into cultured plates. Agar supports the sample and supplies a growth medium; sealing keeps the culture separate from the surrounding environment during incubation.&r"
+				""
+				"&eCultured plates provide living material for propagation and biological processing. Successful growth here establishes a culture inside the apparatus; its ability to survive outdoors remains a separate question.&r"
+			]
 			disable_toast: true
 			id: "22D4FFFA7C4A4009"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Culture"
+			subtitle: "Growing a Culture under Cover"
 			tasks: [{
 				id: "5F2D930C719E6CBF"
 				item: "cwi:incubator"
@@ -1295,13 +1364,13 @@
 		}
 		{
 			dependencies: ["32BA01C17B48E245"]
-			description: ["&eA vessel for mixing fluids. Used in various chemical and industrial processes.&r"]
+			description: ["&eThe mixing vessel brings liquids and other ingredients into repeated contact with a rotating whisk. This distributes material through the batch, making it useful for preparing solutions, catalysts, bioethanol, and biodiesel.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "0AC1C1497E7EBDA7"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Fluid Mixing"
+			subtitle: "Batch Mixing"
 			tasks: [{
 				id: "4617AE58275233A1"
 				item: "cwi:mixing_vessel"
@@ -1313,13 +1382,17 @@
 		}
 		{
 			dependencies: ["32BA01C17B48E245"]
-			description: ["&eLinks multiple storage units into a single accessible inventory.&r"]
+			description: [
+				"&eThe formed extractor draws lava only when its head is directly above eruptive bedrock. The structure must be valid, and its shaft must reach at least 128 RPM before extraction begins; the head stores the output for a pipe connection.&r"
+				""
+				"&eIts pumps provide a continuing supply for molten-material processing, reducing dependence on carrying lava back from an exposed pool. An ordinary floor or a slow drive produces no lava.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "0F10364E2DA4BE4C"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Infinite Lava"
+			subtitle: "A Pumped Lava Supply"
 			tasks: [{
 				id: "5005CA92BCEB36A8"
 				item: "cwi:lava_extractor_head"
@@ -1331,12 +1404,16 @@
 		}
 		{
 			dependencies: ["3CC959E1243E962E"]
-			description: ["&eAn engine powered by temperature differences. Converts heat into mechanical energy.&r"]
+			description: [
+				"&eA Stirling engine works by heating and cooling gas within a closed cycle. Expansion and contraction move the pistons, turning a temperature difference into mechanical motion.&r"
+				""
+				"&eHere it provides rotational power when a passive-boiler heater or a heated blaze burner is directly beneath it. A plain unheated block will not start the engine; hotter burner states produce more rotation.&r"
+			]
 			disable_toast: true
 			id: "30DB76E3E3C7E3BB"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Heat Engine"
+			subtitle: "Heat into Motion"
 			tasks: [{
 				id: "2A72D75DC2F2F416"
 				item: "cwi:stirling_engine"
@@ -1347,5 +1424,5 @@
 			y: -2.0d
 		}
 	]
-	title: "Precision Engraving"
+	title: "Precision Manufacturing"
 }

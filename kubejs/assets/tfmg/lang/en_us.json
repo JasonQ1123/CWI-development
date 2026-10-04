@@ -1,3 +1,7 @@
 {
-  "item.tfmg.rubber_sheet": "Industrial Rubber"
+  "item.tfmg.rubber_sheet": "Industrial Rubber",
+  "block.tfmg.blast_furnace_reinforcement": "Steel Reinforcement",
+  "block.tfmg.blast_furnace_reinforcement_wall": "Steel Reinforcement Wall",
+  "block.tfmg.rusted_blast_furnace_reinforcement": "Rusted Steel Reinforcement",
+  "block.tfmg.rusted_blast_furnace_reinforcement_wall": "Rusted Steel Reinforcement Wall"
 }

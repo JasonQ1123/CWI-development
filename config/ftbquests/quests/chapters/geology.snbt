@@ -11,6 +11,11 @@
 	quests: [
 		{
 			dependencies: ["77638D6698CCC725"]
+			description: [
+				"&eSmall ore deposits occur throughout the Overworld, in both stone and deepslate. Iron, copper, coal, tin, zinc, nickel, lead, lithium, lapis and quartz have broad vertical ranges; gold, silver, redstone, sulfur and diamond occupy narrower ones.&r"
+				""
+				"&eThe listed heights give search ranges. Deposits may extend beyond them, and local terrain affects what can be found.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "minecraft:stone"
@@ -28,6 +33,7 @@
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: ["&eIron ore occurs from Y -63 to 160 and is one of the more widespread metal ores. Raw iron powder is a smelting feedstock; larger hematite and magnetite bands provide additional iron-bearing minerals.&r"]
 			disable_toast: true
 			id: "2F94FFCC16D5C49D"
 			tasks: [{
@@ -35,11 +41,17 @@
 				item: "minecraft:raw_iron"
 				type: "item"
 			}]
+			title: "Iron Ore"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eCoal is a carbon-rich sedimentary fuel formed from buried organic matter over geological time. It is a mixture, rather than a single mineral.&r"
+				""
+				"&eSmall coal deposits occur at Y -63 to 160. Coal supplies furnace fuel, coke manufacture and carbon-based chemistry; biological conversion of peat provides another source.&r"
+			]
 			disable_toast: true
 			id: "0506C2A234B9703F"
 			tasks: [{
@@ -47,11 +59,17 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			title: "Coal"
 			x: 1.4d
 			y: -8.3d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eSmall copper deposits occur from Y -63 to 160. Azurite, malachite and chalcocite are separate copper-bearing minerals.&r"
+				""
+				"&eCopper supports pipes, pumps and other fluid equipment. Its powder is also an ingredient of brass and bronze.&r"
+			]
 			disable_toast: true
 			id: "10B2B5FA8BC2D32D"
 			tasks: [{
@@ -59,11 +77,17 @@
 				item: "minecraft:raw_copper"
 				type: "item"
 			}]
+			title: "Copper Ore"
 			x: 3.3d
 			y: -3.6d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eGold deposits occur between Y -63 and 63, with better chances near the middle of that range.&r"
+				""
+				"&eRaw gold powder can be smelted. Petzite provides another gold source, accompanied by silver.&r"
+			]
 			disable_toast: true
 			id: "0950824625FE540D"
 			tasks: [{
@@ -71,11 +95,17 @@
 				item: "minecraft:raw_gold"
 				type: "item"
 			}]
+			title: "Gold Ore"
 			x: 1.4d
 			y: -1.7d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eRedstone is the red mineral dust used for signals and control circuits. Small ore deposits occur between Y -63 and 63.&r"
+				""
+				"&eBeyond circuits, redstone is a feedstock for redstone acid and treated rose quartz. Brushing crystallized phyllite can release small quantities as well.&r"
+			]
 			disable_toast: true
 			id: "6D052D453279A7A2"
 			tasks: [{
@@ -83,11 +113,17 @@
 				item: "minecraft:redstone"
 				type: "item"
 			}]
+			title: "Redstone"
 			x: -1.4d
 			y: -8.3d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eNatural lapis lazuli is a blue rock containing lazurite, often with calcite and flecks of pyrite. Powdered lapis was historically the source of ultramarine pigment.&r"
+				""
+				"&eLapis ore here spans Y -63 to 160. The blue mineral is used for dye and enchanting, and its powder supports Crystallum Coccus crystal reconstruction.&r"
+			]
 			disable_toast: true
 			id: "7D513F2990AAD38B"
 			tasks: [{
@@ -95,11 +131,17 @@
 				item: "minecraft:lapis_lazuli"
 				type: "item"
 			}]
+			title: "Lapis Lazuli"
 			x: -3.3d
 			y: -6.4d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eDiamond is crystalline carbon. Its extreme hardness comes from a three-dimensional network of strong bonds, although a hard diamond can still chip along cleavage planes.&r"
+				""
+				"&eOverworld diamond deposits occur from Y -63 to 0, favoring the middle of that range. They are much scarcer than iron or copper.&r"
+			]
 			disable_toast: true
 			id: "290B3071C2AC1F08"
 			tasks: [{
@@ -107,11 +149,13 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
+			title: "Diamond"
 			x: -2.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: ["&eNickel ore occurs from Y -63 to 160. Raw nickel powder supplies smelted nickel; pentlandite offers a separate source with cobalt and iron byproducts. Nickel is useful in alloys and chemical catalysts, and combines with copper to form constantan.&r"]
 			disable_toast: true
 			id: "00BD2A9056BBD12D"
 			tasks: [{
@@ -119,11 +163,17 @@
 				item: "tfmg:raw_nickel"
 				type: "item"
 			}]
+			title: "Nickel Ore"
 			x: 3.3d
 			y: -6.4d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eQuartz is silicon dioxide, SiO2, a common mineral in many igneous, sedimentary and metamorphic rocks.&r"
+				""
+				"&eQuartz-bearing ore is present in the Overworld from Y -63 to 160, as well as in Nether netherrack. Quartz supplies silica processing, rose quartz and crystal-growth feedstock.&r"
+			]
 			disable_toast: true
 			id: "1F80AA8218471AE0"
 			tasks: [{
@@ -131,11 +181,17 @@
 				item: "minecraft:quartz"
 				type: "item"
 			}]
+			title: "Quartz Ore"
 			x: -3.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eSulfur is a yellow nonmetal. In natural geology it can occur around volcanic vents or in deposits associated with sulfur-bearing minerals.&r"
+				""
+				"&eSmall Overworld sulfur deposits span Y -63 to 63. Their native sulfur powder supplies gunpowder and sulfur chemistry. The sulfur dust separated from galena, sphalerite, pentlandite and chalcocite is a distinct stock.&r"
+			]
 			disable_toast: true
 			id: "7BE37EB99A6D4CF7"
 			tasks: [{
@@ -143,11 +199,17 @@
 				item: "kubejs:sulfur_powder"
 				type: "item"
 			}]
+			title: "Sulfur Ore"
 			x: -3.3d
 			y: -3.6d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eSmall tin deposits occur at Y -63 to 160. The raw material supplies tin through powder smelting; cassiterite is the larger mineral-band source.&r"
+				""
+				"&eTin combines with copper to make bronze. In real metallurgy, its low melting point and resistance to corrosion also make it useful in solder and protective coatings.&r"
+			]
 			disable_toast: true
 			id: "3500006A693DD345"
 			tasks: [{
@@ -155,11 +217,17 @@
 				item: "kubejs:raw_tin"
 				type: "item"
 			}]
+			title: "Tin Ore"
 			x: -2.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eZinc ore is distributed from Y -63 to 160. Sphalerite is another zinc source, recognizable as a distinct compound mineral.&r"
+				""
+				"&eHere, zinc supplies brass and acts as a returned catalyst in polyethylene and PVC production. In real industry, zinc coatings protect steel by corroding in its place.&r"
+			]
 			disable_toast: true
 			id: "719F83D1EB14EF52"
 			tasks: [{
@@ -167,11 +235,17 @@
 				item: "create:raw_zinc"
 				type: "item"
 			}]
+			title: "Zinc Ore"
 			x: 2.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eSmall lead deposits occur between Y -63 and 160. Raw lead powder is smeltable, while galena supplies lead together with traces of zinc and silver.&r"
+				""
+				"&eLead is dense, soft and toxic. Its real-world uses include radiation shielding and lead-acid batteries.&r"
+			]
 			disable_toast: true
 			id: "01551CCFD7B02814"
 			tasks: [{
@@ -179,11 +253,17 @@
 				item: "tfmg:raw_lead"
 				type: "item"
 			}]
+			title: "Lead Ore"
 			x: 3.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eLithium is the lightest metal, but natural lithium is found in compounds rather than free metallic lumps. Real commercial sources include mineral deposits and salt-rich brines.&r"
+				""
+				"&eThe local ore deposits span Y -63 to 160 and supply raw lithium. Magnesite separation and microbial treatment of rhyolite provide additional lithium-bearing outputs.&r"
+			]
 			disable_toast: true
 			id: "32B8611C97510295"
 			tasks: [{
@@ -191,11 +271,17 @@
 				item: "tfmg:raw_lithium"
 				type: "item"
 			}]
+			title: "Lithium Ore"
 			x: 2.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eSilver deposits occur between Y -63 and 63, with better chances near the middle of that range.&r"
+				""
+				"&eSilver is also a minor product of petzite, azurite, malachite and galena separation. Its powder is used in electrum and silver catalysts.&r"
+			]
 			disable_toast: true
 			id: "798B24CD005209E9"
 			tasks: [{
@@ -203,29 +289,40 @@
 				item: "kubejs:raw_silver"
 				type: "item"
 			}]
+			title: "Silver Ore"
 			x: -1.4d
 			y: -1.7d
 		}
 		{
 			dependencies: ["77638D6698CCC725"]
+			description: [
+				"&eNetherrack carries quartz and gold ores; ancient debris is a rarer, heat-resistant inclusion. Basalt and blackstone are other characteristic Nether rocks.&r"
+				""
+				"&eNether gold ore normally releases nuggets. Quartz ore releases quartz crystals, while ancient debris is a source of netherite scrap.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "minecraft:netherrack"
 			id: "009C96B36DFFDD5B"
 			invisible: true
 			size: 1.0d
-			subtitle: "Not Finished"
+			subtitle: "Nether Ores and Debris"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "1B257D7F4B39CEB1"
 				type: "dimension"
 			}]
-			title: "Nether Ores"
+			title: "Nether Mineralogy"
 			x: 21.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["009C96B36DFFDD5B"]
+			description: [
+				"&eGold can occur as native metal, in veins and in mineral compounds. Its resistance to oxidation helps metallic grains survive weathering.&r"
+				""
+				"&eOverworld gold ores yield raw gold; Nether gold ore normally yields nuggets. Petzite is a gold-bearing mineral whose separation also recovers silver.&r"
+			]
 			disable_toast: true
 			id: "6FAF3C840644F9D0"
 			tasks: [{
@@ -233,11 +330,17 @@
 				item: "minecraft:raw_gold"
 				type: "item"
 			}]
+			title: "Gold-Bearing Rock"
 			x: 22.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["009C96B36DFFDD5B"]
+			description: [
+				"&eQuartz crystals commonly have six-sided prisms. Different colors can result from impurities, inclusions or defects in the crystal structure.&r"
+				""
+				"&eQuartz occurs in Nether ore and in the Overworld deposits spanning Y -63 to 160. The crystals can be milled into powder or treated to make rose quartz.&r"
+			]
 			disable_toast: true
 			id: "364041AAD78EB3A1"
 			tasks: [{
@@ -245,11 +348,17 @@
 				item: "minecraft:quartz"
 				type: "item"
 			}]
+			title: "Quartz Crystals"
 			x: 23.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["009C96B36DFFDD5B"]
+			description: [
+				"&eSulfide minerals bind sulfur to metals. Galena, sphalerite, chalcocite and pentlandite are examples; their dark or metallic appearance can differ greatly from yellow elemental sulfur.&r"
+				""
+				"&eVibration and centrifugation of these minerals release sulfur dust alongside their metal products. This dust is distinct from the native sulfur powder used in gunpowder and pyrite preparation.&r"
+			]
 			disable_toast: true
 			id: "424B057217E415F9"
 			tasks: [{
@@ -257,11 +366,17 @@
 				item: "kubejs:sulfur_powder"
 				type: "item"
 			}]
+			title: "Sulfur-Bearing Minerals"
 			x: 20.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["77638D6698CCC725"]
+			description: [
+				"&eLarge deposits contain alternating bands of mineral and surrounding rock. A colored or metallic band may therefore be only part of a much larger body.&r"
+				""
+				"&eTheir distribution depends on both depth and biome. Glowshroom Caves favor azurite, malachite and cassiterite; Sandy Caves favor bauxite and lignite; Molten Caves contain increased magnetite and chromite deposits.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "minecraft:stone"
@@ -273,12 +388,19 @@
 				id: "21F032D1B3307590"
 				type: "dimension"
 			}]
-			title: "Overworld Ore Veins"
+			title: "Layered Mineral Deposits"
 			x: 3.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eAzurite is a deep-blue copper carbonate mineral, Cu3(CO3)2(OH)2. It forms in oxidized copper deposits and may occur alongside green malachite.&r"
+				""
+				"&eOrdinary azurite bands begin at Y 0-70. They are more frequent in Glowshroom Caves, where bands begin at Y -63 to 50.&r"
+				""
+				"&eAzurite powder supplies copper and a small silver byproduct. Both physical separation and sulfuric-acid leaching are available.&r"
+			]
 			disable_toast: true
 			id: "5F134945AFC3583E"
 			tasks: [{
@@ -286,11 +408,17 @@
 				item: "create:asurine"
 				type: "item"
 			}]
+			title: "Azurite"
 			x: 1.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eChromite is an iron-chromium oxide, FeCr2O4, and the principal commercial ore of chromium. Magnesium can substitute for some iron in natural specimens.&r"
+				""
+				"&eOrdinary bands start at Y -63 to -30; Molten Caves bands extend to Y -20 and occur more frequently. Separation yields chromium with magnesium, iron and aluminum byproducts.&r"
+			]
 			disable_toast: true
 			id: "348F7BF851E4C95E"
 			tasks: [{
@@ -298,11 +426,17 @@
 				item: "kubejs:chromite"
 				type: "item"
 			}]
+			title: "Chromite"
 			x: 3.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eBauxite is a rock composed chiefly of aluminum-bearing hydroxide minerals, often mixed with iron oxides and clay. It is an ore mixture, not a single mineral species.&r"
+				""
+				"&eOrdinary bands begin at Y 30-70. Sandy Caves carry more frequent bauxite deposits from Y -20 to 63. Bauxite supplies refined aluminum and is also a fireclay ingredient.&r"
+			]
 			disable_toast: true
 			id: "51C86C8C68E48EA9"
 			tasks: [{
@@ -310,11 +444,19 @@
 				item: "tfmg:bauxite"
 				type: "item"
 			}]
+			title: "Bauxite"
 			x: 6.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eGalena, PbS, is a dense lead sulfide with a metallic luster and characteristic cubic cleavage. Some natural deposits also contain economically useful silver.&r"
+				""
+				"&eBands begin at Y -40 to 70 across several Overworld biomes, including Typical, Spider, Dripstone and Echo Caves.&r"
+				""
+				"&eSeparation or acid leaching supplies lead, with zinc and silver byproducts. Vibration and centrifugation also recover sulfur.&r"
+			]
 			disable_toast: true
 			id: "73FF6276224EBAB6"
 			tasks: [{
@@ -322,11 +464,17 @@
 				item: "tfmg:galena"
 				type: "item"
 			}]
+			title: "Galena"
 			x: 4.9d
 			y: 8.8d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eMagnetite is an iron oxide, Fe3O4. It is strongly magnetic; naturally magnetized pieces are known as lodestones.&r"
+				""
+				"&eOrdinary mineral bands begin at Y -63 to 0. Molten Caves have more frequent magnetite bands reaching Y 20. Physical separation recovers iron with possible vanadium and titanium byproducts.&r"
+			]
 			disable_toast: true
 			id: "4D4BB95CAA968736"
 			tasks: [{
@@ -334,11 +482,17 @@
 				item: "kubejs:magnetite"
 				type: "item"
 			}]
+			title: "Magnetite"
 			x: 2.1d
 			y: 8.8d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eCassiterite is tin dioxide, SnO2. Its high density makes gravity separation useful in real ore dressing, including deposits where weathering has concentrated heavy grains.&r"
+				""
+				"&eOrdinary bands begin at Y -40 to 0. Glowshroom Caves contain a more frequent variety at Y -63 to 50. Separation supplies tin with small molybdenum, copper and iron byproducts.&r"
+			]
 			disable_toast: true
 			id: "14774B797AB28D64"
 			tasks: [{
@@ -346,11 +500,17 @@
 				item: "kubejs:cassiterite"
 				type: "item"
 			}]
+			title: "Cassiterite"
 			x: 6.8d
 			y: 6.9d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eSphalerite, ZnS, is the main ore mineral of zinc. Iron impurities influence its color, which can range from pale yellow to nearly black.&r"
+				""
+				"&eOverworld bands begin at Y -30 to 70. Separation or leaching supplies zinc with iron and lead byproducts; vibration and centrifugation also recover sulfur.&r"
+			]
 			disable_toast: true
 			id: "207759E6F9A95646"
 			tasks: [{
@@ -358,11 +518,17 @@
 				item: "kubejs:sphalerite"
 				type: "item"
 			}]
+			title: "Sphalerite"
 			x: 0.0d
 			y: 5.5d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eChalcocite is copper sulfide, Cu2S, a dark mineral with a high copper content. It can become concentrated in zones enriched by groundwater moving through copper deposits.&r"
+				""
+				"&eBands begin at Y 0-70 in ordinary Overworld geology. Separation and acid leaching recover copper with molybdenum and gold byproducts. Vibration and centrifugation also recover sulfur.&r"
+			]
 			disable_toast: true
 			id: "60C945A7A8D4054A"
 			tasks: [{
@@ -370,11 +536,17 @@
 				item: "kubejs:chalcocite"
 				type: "item"
 			}]
+			title: "Chalcocite"
 			x: 0.2d
 			y: 6.9d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eHematite is iron oxide, Fe2O3. Even a dark metallic specimen leaves a reddish-brown streak, a useful real-world identification feature.&r"
+				""
+				"&eOrdinary bands span Y -63 to 70; Sandy Caves carry a slightly more frequent type from Y -63 to 63. The mineral supplies iron by physical separation.&r"
+			]
 			disable_toast: true
 			id: "2285D4636ABBCF53"
 			tasks: [{
@@ -382,11 +554,17 @@
 				item: "create:crimsite"
 				type: "item"
 			}]
+			title: "Hematite"
 			x: 6.8d
 			y: 4.1d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eLignite is a low-rank coal, generally browner, softer and more moisture-rich than bituminous coal. It represents an intermediate stage in the transformation of buried plant matter.&r"
+				""
+				"&eOrdinary lignite bands begin at Y 0-70. Sandy Caves contain more frequent deposits from Y -20 to 63. It is a carbon feedstock, including for the Carbofusor culture's conversion to bituminous coal.&r"
+			]
 			disable_toast: true
 			id: "4BBBB627F7AB501F"
 			tasks: [{
@@ -394,11 +572,17 @@
 				item: "tfmg:lignite"
 				type: "item"
 			}]
+			title: "Lignite"
 			x: 0.2d
 			y: 4.1d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eAmethyst is the violet variety of quartz. In real specimens, trace iron and irradiation contribute to its color.&r"
+				""
+				"&eAmethyst geodes occur in Molten Caves. Their solid amethyst lining is distinct from budding amethyst, the base that grows crystal clusters and produces shards.&r"
+			]
 			disable_toast: true
 			id: "07953215B5F0ABE7"
 			tasks: [{
@@ -406,11 +590,17 @@
 				item: "minecraft:amethyst_block"
 				type: "item"
 			}]
+			title: "Amethyst"
 			x: 7.0d
 			y: 5.5d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&ePetzite is a silver-gold telluride, Ag3AuTe2. Natural petzite belongs to the telluride minerals associated with some gold deposits.&r"
+				""
+				"&eLocal bands begin at Y -63 to -30 and are scarce. Physical separation supplies gold and a silver byproduct.&r"
+			]
 			disable_toast: true
 			id: "3C495220D7F4ABD1"
 			tasks: [{
@@ -418,11 +608,17 @@
 				item: "create:ochrum"
 				type: "item"
 			}]
+			title: "Petzite"
 			x: 6.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eHalite is sodium chloride, NaCl: rock salt. Its crystals and cleavage are cubic, and it dissolves readily in water.&r"
+				""
+				"&eBands begin at Y 30-70. Its soluble salt supplies brine for the chemical workshop; calcite and shale may also be recovered from local deposits.&r"
+			]
 			disable_toast: true
 			id: "1F9C0D9632351F1F"
 			tasks: [{
@@ -430,11 +626,17 @@
 				item: "kubejs:halite"
 				type: "item"
 			}]
+			title: "Halite"
 			x: 2.1d
 			y: 2.2d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&ePentlandite is an iron-nickel sulfide, commonly written (Fe,Ni)9S8. It is an important nickel ore associated with sulfide deposits.&r"
+				""
+				"&eOrdinary bands start at Y -63 to -30. Separation and sulfuric-acid leaching recover nickel with cobalt and iron byproducts. Vibration and centrifugation also recover sulfur.&r"
+			]
 			disable_toast: true
 			id: "00C88F4A64520F95"
 			tasks: [{
@@ -442,29 +644,40 @@
 				item: "kubejs:pentlandite"
 				type: "item"
 			}]
+			title: "Pentlandite"
 			x: 1.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["77638D6698CCC725"]
+			description: [
+				"&eOre minerals carry useful elements in different chemical forms: oxides, sulfides, carbonates and tellurides. Their similar appearance does not imply identical composition.&r"
+				""
+				"&eAssociated metals and surrounding rock affect the useful products of a sample. Platinum-bearing cooperite differs from titanium-bearing rutile; both differ from the copper, tin and zinc minerals.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "minecraft:netherrack"
 			id: "3A1C6C2C5F5965E7"
 			invisible: true
 			size: 1.0d
-			subtitle: "Not Finished"
+			subtitle: "Oxides, Sulfides and Tellurides"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "32E8120A88A1A885"
 				type: "dimension"
 			}]
-			title: "Nether Ore Veins"
+			title: "Mineral Specimens"
 			x: 19.0d
 			y: 5.5d
 		}
 		{
 			dependencies: ["3A1C6C2C5F5965E7"]
+			description: [
+				"&eCooperite is a platinum sulfide, ideally PtS, and may contain palladium or nickel in natural specimens. It is associated with platinum-group mineral deposits.&r"
+				""
+				"&eThe local mineral supplies platinum through physical separation, with a small nickel byproduct and recoverable sulfur.&r"
+			]
 			disable_toast: true
 			id: "22E99910557AA046"
 			tasks: [{
@@ -472,11 +685,17 @@
 				item: "kubejs:cooperite"
 				type: "item"
 			}]
+			title: "Cooperite"
 			x: 18.0d
 			y: 8.5d
 		}
 		{
 			dependencies: ["3A1C6C2C5F5965E7"]
+			description: [
+				"&eRutile is titanium dioxide, TiO2. Its crystals can be reddish-brown, dark or metallic; fine needle-like inclusions also occur inside quartz.&r"
+				""
+				"&eRutile powder supplies refined titanium by physical separation. In real industry, titanium dioxide is widely used as a white pigment as well as a titanium-bearing raw material.&r"
+			]
 			disable_toast: true
 			id: "1A6BEA4E485D5F19"
 			tasks: [{
@@ -484,11 +703,13 @@
 				item: "kubejs:rutile"
 				type: "item"
 			}]
+			title: "Rutile"
 			x: 20.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["3A1C6C2C5F5965E7"]
+			description: ["&eElemental sulfur is a brittle yellow solid, chemically different from sulfur already bound inside a sulfide mineral. Recovered sulfur supplies gunpowder and chemical manufacture.&r"]
 			disable_toast: true
 			id: "46D938DC84518EF3"
 			tasks: [{
@@ -496,11 +717,17 @@
 				item: "kubejs:sulfur_powder"
 				type: "item"
 			}]
+			title: "Elemental Sulfur"
 			x: 18.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["3A1C6C2C5F5965E7"]
+			description: [
+				"&eMature amethyst clusters release shards. Solid amethyst blocks form the geode lining, while budding amethyst produces new clusters.&r"
+				""
+				"&eAmethyst powder can be reconstructed into shards by Crystallum Coccus fermentation. The mineral also has decorative uses, with its violet color distinguishing it from ordinary quartz.&r"
+			]
 			disable_toast: true
 			id: "44808873B24D25DD"
 			tasks: [{
@@ -508,23 +735,35 @@
 				item: "minecraft:amethyst_shard"
 				type: "item"
 			}]
+			title: "Amethyst Shards"
 			x: 20.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["3A1C6C2C5F5965E7"]
+			description: [
+				"&ePetzite combines gold, silver and tellurium in a single mineral. A gold-bearing specimen need not look like a bright lump of native gold.&r"
+				""
+				"&eThe layered petzite ore supplies gold and silver through physical separation. Telluride chemistry is distinct from the sulfur chemistry of sulfide ores.&r"
+			]
 			disable_toast: true
 			id: "69868F26E8CAEB28"
 			tasks: [{
 				id: "1A1C789CAC4B7371"
-				item: "kubejs:petzite"
+				item: "create:ochrum"
 				type: "item"
 			}]
+			title: "Petzite Specimen"
 			x: 18.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["3A1C6C2C5F5965E7"]
+			description: [
+				"&eChromite belongs to the spinel group of minerals. Its crystal structure can accommodate several related metal ions, so natural compositions vary.&r"
+				""
+				"&eThe local separation products are chromium, magnesium, iron and aluminum. Chromite bands occur in deep ordinary geology and more frequently in Molten Caves.&r"
+			]
 			disable_toast: true
 			id: "11CBF5CC3C77AFB9"
 			tasks: [{
@@ -532,11 +771,17 @@
 				item: "kubejs:chromite"
 				type: "item"
 			}]
+			title: "Chromite Composition"
 			x: 17.0d
 			y: 5.5d
 		}
 		{
 			dependencies: ["3A1C6C2C5F5965E7"]
+			description: [
+				"&eCassiterite is dense and resistant to weathering. In the real world, those properties allow it to accumulate in stream and placer deposits after its original host rock erodes.&r"
+				""
+				"&eThe local mineral supplies tin with minor molybdenum, copper and iron. Ordinary bands begin at Y -40 to 0; Glowshroom Caves bands extend from Y -63 to 50.&r"
+			]
 			disable_toast: true
 			id: "20AE4883883AF881"
 			tasks: [{
@@ -544,11 +789,17 @@
 				item: "kubejs:cassiterite"
 				type: "item"
 			}]
+			title: "Cassiterite Concentrates"
 			x: 19.5d
 			y: 7.5d
 		}
 		{
 			dependencies: ["3A1C6C2C5F5965E7"]
+			description: [
+				"&eSphalerite is zinc sulfide. Its iron content and association with other sulfides can make a deposit a source of more than one metal.&r"
+				""
+				"&eZinc is the main local product, with iron, lead and sulfur recovered alongside it. The powder supports both physical separation and acid leaching.&r"
+			]
 			disable_toast: true
 			id: "76D20CBA56A8B826"
 			tasks: [{
@@ -556,11 +807,17 @@
 				item: "kubejs:sphalerite"
 				type: "item"
 			}]
+			title: "Zinc Sulfide"
 			x: 18.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["009C96B36DFFDD5B"]
+			description: [
+				"&eDiamond is very hard but is not a tough metal: hardness measures resistance to scratching, while toughness concerns resistance to fracture.&r"
+				""
+				"&eIn real industry, diamond is used for cutting and abrasives. Here, it supplies the construction wand's Angel Core. Ordinary diamond ore deposits lie in the Overworld at Y -63 to 0.&r"
+			]
 			disable_toast: true
 			id: "18CC2E58DB8CDEB3"
 			tasks: [{
@@ -568,11 +825,17 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
+			title: "Diamond Properties"
 			x: 19.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["009C96B36DFFDD5B"]
+			description: [
+				"&eAncient debris is a rare Nether inclusion resistant to ordinary fire and lava. Thermal processing yields netherite scrap.&r"
+				""
+				"&eScrap is an intermediate recovered from the debris. Finished netherite serves in durable tools and armor.&r"
+			]
 			disable_toast: true
 			id: "3E9879ACA95F92AD"
 			tasks: [{
@@ -580,11 +843,17 @@
 				item: "minecraft:netherite_scrap"
 				type: "item"
 			}]
+			title: "Ancient Debris and Scrap"
 			x: 22.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["77638D6698CCC725"]
+			description: [
+				"&eRocks are aggregates of minerals. Igneous rocks solidify from molten material, sedimentary rocks form from deposited matter, and metamorphic rocks change under heat and pressure.&r"
+				""
+				"&eThe Overworld contains all three families. Many local rocks have intact, cobbled, gravel and powder forms, and ore treatment also produces rock powders.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "3D033B6C68308599"
@@ -595,12 +864,17 @@
 				id: "25C4A581AC80429A"
 				type: "dimension"
 			}]
-			title: "Overworld Stones"
+			title: "Overworld Rocks"
 			x: -7.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eAndesite is a fine-grained volcanic rock of intermediate composition. Its coarse-grained geological counterpart is diorite.&r"
+				""
+				"&eLocal andesite pockets begin at Y -30 to 256; layered bands also occur deeper, from Y -63 to 30. Andesite powder is a raw material for andesite compound and alloy.&r"
+			]
 			disable_toast: true
 			id: "271399BED991F412"
 			tasks: [{
@@ -608,11 +882,17 @@
 				item: "minecraft:andesite"
 				type: "item"
 			}]
+			title: "Andesite"
 			x: -7.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eGranite forms when silica-rich magma cools slowly underground, allowing visible crystals of quartz, feldspar and mica to grow.&r"
+				""
+				"&eLocal pockets begin at Y -63 to 31, with the middle of that interval favored. Granite is a building stone and powder feedstock; granite gravel also participates in rhyolite production.&r"
+			]
 			disable_toast: true
 			id: "358330F488CD75B2"
 			tasks: [{
@@ -620,11 +900,17 @@
 				item: "minecraft:granite"
 				type: "item"
 			}]
+			title: "Granite"
 			x: -5.6d
 			y: -0.8d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eDiorite is a coarse-grained igneous rock, often with a mottled light-and-dark appearance. Plagioclase feldspar is a major constituent of natural diorite.&r"
+				""
+				"&eLocal pockets begin between Y -30 and 256. Its powder can supply quartz and stone powders and is also used in granite and andesite powder mixtures.&r"
+			]
 			disable_toast: true
 			id: "7FBC9ED123F2CE31"
 			tasks: [{
@@ -632,11 +918,17 @@
 				item: "minecraft:diorite"
 				type: "item"
 			}]
+			title: "Diorite"
 			x: -4.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eClaystone is a sedimentary rock composed mainly of compacted clay-sized particles. Unlike shale, it need not split into thin sheets.&r"
+				""
+				"&eOrdinary pockets start at Y 20-256 and layered bands at Y 30-70. Sandy Caves contain additional bands from Y -63 to 63. Its powder separates into stone and clay powders.&r"
+			]
 			disable_toast: true
 			id: "743DE43A446F6831"
 			tasks: [{
@@ -644,11 +936,17 @@
 				item: "kubejs:claystone"
 				type: "item"
 			}]
+			title: "Claystone"
 			x: -7.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eSchist is a metamorphic rock with a pronounced alignment of visible platy minerals, commonly mica. This foliation develops under directed pressure.&r"
+				""
+				"&eSchist occurs among the associated rocks of mineral deposits. Acidolys treatment can recover quartz, mineral, iron and nickel powders from the local rock.&r"
+			]
 			disable_toast: true
 			id: "72C8DB6B6A21D418"
 			tasks: [{
@@ -656,11 +954,17 @@
 				item: "kubejs:schist"
 				type: "item"
 			}]
+			title: "Schist"
 			x: -5.6d
 			y: 5.8d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eGneiss is a metamorphic rock distinguished by bands of contrasting mineral composition. Its striped texture differs from the closely spaced sheen and cleavage of finer phyllite.&r"
+				""
+				"&eOrdinary bands begin at Y -63 to -20. Glowshroom Caves contain much more frequent gneiss bands reaching Y 40. Acidolys treatment yields quartz, mineral, iron and nickel powders.&r"
+			]
 			disable_toast: true
 			id: "7B61D3E3B02B25F8"
 			tasks: [{
@@ -668,11 +972,17 @@
 				item: "kubejs:gneiss"
 				type: "item"
 			}]
+			title: "Gneiss"
 			x: -4.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eLimestone consists chiefly of calcium carbonate. Many natural limestones originate from accumulated shells, skeletal fragments or carbonate precipitated from water.&r"
+				""
+				"&eLimestone occurs as an associated layer in some local mineral deposits. Its powder is used in glass batches, iron-processing flux and silicon-related mixtures.&r"
+			]
 			disable_toast: true
 			id: "4A9F896B7EF913BF"
 			tasks: [{
@@ -680,11 +990,17 @@
 				item: "create:limestone"
 				type: "item"
 			}]
+			title: "Limestone"
 			x: -3.7d
 			y: 1.1d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eShale is a fine-grained sedimentary rock formed from mud. Its tendency to split along thin bedding planes is called fissility.&r"
+				""
+				"&eLocal bands begin at Y -63 to 70, including geology in Echo Caves and beneath the Deep Ocean. Shale powder also accompanies mineral deposits, and Acidolys treatment can recover clay, quartz and sulfur powders.&r"
+			]
 			disable_toast: true
 			id: "00C1FAED2B66021C"
 			tasks: [{
@@ -692,11 +1008,17 @@
 				item: "kubejs:shale"
 				type: "item"
 			}]
+			title: "Shale"
 			x: -3.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&ePhyllite forms during metamorphism between slate and schist. Fine aligned mica gives natural specimens a silky sheen.&r"
+				""
+				"&eLocal phyllite, also called grimestone, forms part of the Glowshroom Caves floor. Its Acidolys treatment yields clay, quartz and iron powders. Crystallized phyllite is a separate mineral-bearing deposit.&r"
+			]
 			disable_toast: true
 			id: "02CCDCFA7F27891E"
 			tasks: [{
@@ -704,11 +1026,17 @@
 				item: "darkerdepths:grimestone"
 				type: "item"
 			}]
+			title: "Phyllite"
 			x: -10.3d
 			y: 3.9d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eConglomerate is a sedimentary rock made of rounded pebbles and larger clasts cemented together. Rounded grains suggest abrasion during transport before burial.&r"
+				""
+				"&eThe local rock is also called duskrock. It supplies conglomerate powder, and Acidolys treatment can recover mineral, clay and quartz powders.&r"
+			]
 			disable_toast: true
 			id: "195C1679FB4756BA"
 			tasks: [{
@@ -716,11 +1044,17 @@
 				item: "darkerdepths:duskrock"
 				type: "item"
 			}]
+			title: "Conglomerate"
 			x: -3.7d
 			y: 3.9d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eDripstone Cave formations include solid dripstone blocks and pointed stalactites or stalagmites. Stalactites hang from ceilings; stalagmites grow from floors.&r"
+				""
+				"&eReal cave dripstone commonly forms when mineral-bearing water deposits calcium carbonate. The local blocks provide a distinct cave building material.&r"
+			]
 			disable_toast: true
 			id: "6D7E66BD12CC0882"
 			tasks: [{
@@ -728,11 +1062,17 @@
 				item: "minecraft:dripstone_block"
 				type: "item"
 			}]
+			title: "Dripstone"
 			x: -10.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eDarkslate is a dark cave rock abundant in Molten Caves, where its deposits extend from Y -63 to 33.&r"
+				""
+				"&eIt supplies cobbled rock, gravel and powder. Acidolys treatment recovers mineral, clay, iron and copper powders; acidified darkslate is a separate culture-bearing deposit.&r"
+			]
 			disable_toast: true
 			id: "6B6AD4A40DAB9EB4"
 			tasks: [{
@@ -740,11 +1080,19 @@
 				item: "darkerdepths:darkslate"
 				type: "item"
 			}]
+			title: "Darkslate"
 			x: -8.4d
 			y: 5.8d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eQuartzite is a quartz-rich metamorphic rock, usually derived from sandstone. Recrystallization binds its quartz grains tightly together.&r"
+				""
+				"&eLocal quartzite, also called aridrock, occurs on Sandy Caves floors.&r"
+				""
+				"&eIts cobbled form is an abrasive feedstock for fine whetstones, and milling supplies quartzite powder.&r"
+			]
 			disable_toast: true
 			id: "5D74DA7D8F03E458"
 			tasks: [{
@@ -752,11 +1100,17 @@
 				item: "darkerdepths:aridrock"
 				type: "item"
 			}]
+			title: "Quartzite"
 			x: -9.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eStone is the common upper crustal rock surrounding many Overworld deposits. Ordinary mining breaks it into cobblestone.&r"
+				""
+				"&eStone powder is a bulk ingredient for rock mixtures. Acidolys treatment of stone and its crushed forms recovers clay and flint powders.&r"
+			]
 			disable_toast: true
 			id: "48F5761F604C0223"
 			tasks: [{
@@ -764,11 +1118,17 @@
 				item: "minecraft:stone"
 				type: "item"
 			}]
+			title: "Stone"
 			x: -8.4d
 			y: -0.8d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eDeepslate dominates the lower Overworld, replacing the ordinary stone found nearer the surface. Mining normally produces its cobbled form.&r"
+				""
+				"&eLocal deepslate is also a source of clay and flint powders, giving the deep rock a use as mineral feedstock as well as building stone.&r"
+			]
 			disable_toast: true
 			id: "4B225719A3B6CA8A"
 			tasks: [{
@@ -776,11 +1136,17 @@
 				item: "minecraft:deepslate"
 				type: "item"
 			}]
+			title: "Deepslate"
 			x: -9.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3D033B6C68308599"]
+			description: [
+				"&eBasalt is a dark, fine-grained volcanic rock formed from relatively silica-poor lava. Cooling basalt can form striking polygonal columns.&r"
+				""
+				"&eSmooth basalt forms around lava in Molten Caves; ordinary basalt occurs in the Nether. Both supply basalt powder, useful as a rock feedstock.&r"
+			]
 			disable_toast: true
 			id: "6448B8454B6AEE6F"
 			tasks: [{
@@ -788,27 +1154,39 @@
 				item: "minecraft:basalt"
 				type: "item"
 			}]
+			title: "Basalt"
 			x: -10.3d
 			y: 1.1d
 		}
 		{
 			dependencies: ["06ACDE2AA3D90380"]
+			description: [
+				"&eA mineral has a characteristic crystal structure and composition; a rock may contain several minerals. An ore is material from which a useful substance can be recovered.&r"
+				""
+				"&eThese deposits vary by biome, depth and associated rock. Small ore pockets and extensive mineral bands are different geological bodies, even when they supply the same metal.&r"
+			]
 			hide_until_deps_complete: true
 			icon_scale: 0.9d
 			id: "77638D6698CCC725"
 			shape: "gear"
 			size: 3.0d
-			subtitle: "Not Yet Completed"
+			subtitle: "Ores, Minerals and Rocks"
 			tasks: [{
 				id: "6630B88145632850"
 				item: "kubejs:geological_note"
 				type: "item"
 			}]
+			title: "Geological Notes"
 			x: 6.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["3A1C6C2C5F5965E7"]
+			description: [
+				"&eQuartz is one of the crystalline forms of silica, SiO2. Its abundance makes it an important constituent of many rocks and a useful silica feedstock.&r"
+				""
+				"&eQuartz powder supplies silicon production and refractory mixtures. Crystallum Coccus can rebuild the powder into quartz crystals.&r"
+			]
 			disable_toast: true
 			id: "383C9ACAB37B7DC5"
 			tasks: [{
@@ -816,11 +1194,17 @@
 				item: "minecraft:quartz"
 				type: "item"
 			}]
+			title: "Silica Minerals"
 			x: 19.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["73F7C99EE4ABCE4F"]
+			description: [
+				"&eEmerald is the green gem variety of beryl. Chromium or vanadium commonly produces its natural color; inclusions are frequent in real emeralds.&r"
+				""
+				"&eLocal emerald deposits begin at Y 0-128. Emeralds serve as trading currency and as mineral specimens.&r"
+			]
 			disable_toast: true
 			id: "3209C4128550BBD3"
 			tasks: [{
@@ -828,11 +1212,17 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
+			title: "Emerald"
 			x: 0.0d
 			y: -8.5d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eMagnesite is magnesium carbonate, MgCO3. In real industry it is an important raw material for magnesium compounds and refractory magnesia.&r"
+				""
+				"&eOrdinary bands start at Y 0-70; Sandy Caves bands extend from Y -63 to 63 and are more frequent. Magnesium is the main separation product, with lithium as a minor byproduct. Magnesite powder is also used in fireclay.&r"
+			]
 			disable_toast: true
 			id: "21312E8A3700E4BE"
 			tasks: [{
@@ -840,11 +1230,17 @@
 				item: "kubejs:magnesite"
 				type: "item"
 			}]
+			title: "Magnesite"
 			x: 4.9d
 			y: 2.2d
 		}
 		{
 			dependencies: ["009C96B36DFFDD5B"]
+			description: [
+				"&eFluorite is calcium fluoride, CaF2. It has cubic crystals and occurs in many colors; some specimens fluoresce under ultraviolet light.&r"
+				""
+				"&eReal uses include metallurgical flux, optical materials and a raw material for fluorine chemistry. The local mineral has powder and crystal forms, with Crystallum Coccus able to reconstruct the crystal from its powder.&r"
+			]
 			disable_toast: true
 			id: "34DFDAC6840F28EF"
 			tasks: [{
@@ -852,11 +1248,19 @@
 				item: "kubejs:fluorite"
 				type: "item"
 			}]
+			title: "Fluorite"
 			x: 20.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["450EC9FCCFB49FA9"]
+			description: [
+				"&eMalachite is a green copper carbonate mineral, Cu2CO3(OH)2. Its banded appearance makes it a decorative stone as well as a copper ore.&r"
+				""
+				"&eOrdinary bands begin at Y 30-70. Malachite is much more frequent in Glowshroom Caves, where bands begin at Y -63 to 50.&r"
+				""
+				"&ePhysical separation or sulfuric-acid leaching supplies copper, with a small silver byproduct.&r"
+			]
 			disable_toast: true
 			id: "16F39EF6812B7239"
 			tasks: [{
@@ -864,6 +1268,7 @@
 				item: "create:veridium"
 				type: "item"
 			}]
+			title: "Malachite"
 			x: 3.5d
 			y: 2.0d
 		}

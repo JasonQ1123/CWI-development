@@ -37,18 +37,18 @@
 				"216B9570B131C6AF"
 				"5A4EECDD6BF9801B"
 			]
-			description: ["&eThings you must know before starting this modpack. You will suffer if you don't see this&r"]
+			description: ["&eThese are the things you need to know before starting this modpack. Read all of them first; you will have a rough time if you skip them.&r"]
 			disable_toast: true
 			icon: "kubejs:depleted_dirt"
 			id: "616FAC6C3E7160CB"
 			shape: "circle"
 			size: 2.9d
-			subtitle: "You Can Start After Reading All Of Them"
+			subtitle: "Read All of These First"
 			tasks: [{
 				id: "004357245CB2299D"
 				type: "checkmark"
 			}]
-			title: "Start The Game"
+			title: "Start the Game"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -59,7 +59,6 @@
 			id: "581352108711C576"
 			shape: "circle"
 			size: 2.0d
-			subtitle: "The world is no longer the way it is used to be"
 			tasks: [{
 				id: "0AAE19A994A68DE8"
 				type: "checkmark"
@@ -70,8 +69,8 @@
 		}
 		{
 			description: [
-				"&b Inverntory Sort: &r"
-				"&e   Select any slot in the GUI and press J on the keyboard to organize.&r"
+				"   &3----------&r   &bPress J to Sort&r   &3----------&r"
+				"&eBind Inventory Sorter to J in Controls. Then hover over any slot in an inventory and press J to sort it.&r"
 			]
 			disable_toast: true
 			icon: {
@@ -81,56 +80,54 @@
 			}
 			id: "216B9570B131C6AF"
 			size: 2.0d
-			subtitle: "Useful Things"
 			tasks: [{
 				id: "16EB191EAC44D5AF"
 				type: "checkmark"
 			}]
-			title: "Utilities"
+			title: "Inventory Sorting"
 			x: 0.0d
 			y: 4.0d
 		}
 		{
 			description: [
-				"&6Some mods are only for enhancing gaming experience, and you can delete them without causing any problems in the modpack."
+				"&6These mods are included to improve convenience, visuals, or the interface. They are optional, so you can remove them if you do not need their features.&r"
 				""
-				"&b Xaero's World/Mini Maps:&r"
-				"&e - Map, which is actually very useful&r"
+				"&bXaero's World Map and Minimap:&r"
+				"&eMaps for exploration and navigation.&r"
 				""
-				"&b Inventory Sorter:&r"
-				"&e - A mod for Sorting items&r"
+				"&bInventory Sorter:&r"
+				"&eInventory sorting.&r"
 				""
-				"&b Oculus:&r"
-				"&e - Including all mods around shaders&r"
+				"&bOculus and Related Shader Mods:&r"
+				"&eShader support.&r"
 				""
-				"&b ColorWheel/Patcher:&r"
-				"&e - Better performance on Create with shaders&r"
+				"&bColorWheel and ColorWheel Patcher:&r"
+				"&eImprovements for Create rendering with shaders.&r"
 				""
-				"&b Ceate Better FPS:&r"
-				"&e - Better performance on Create with shaders&r"
+				"&bCreate Better FPS:&r"
+				"&ePerformance improvements for Create.&r"
 				""
 				"{@pagebreak}"
 				""
-				"&b Just Enough Characters:&r"
-				"&e - For Chinese users exclusively&r"
+				"&bJust Enough Characters:&r"
+				"&eSearch support for Chinese users.&r"
 				""
-				"&b Sodium Dynamic Light:&r"
-				"&e - Dynamic Light&r"
+				"&bSodium Dynamic Light:&r"
+				"&eDynamic lighting.&r"
 				""
-				"&b Certain Questing Addition:&r"
-				"&e - Improvements on FTB Quest&r"
+				"&bCertain Questing Additions:&r"
+				"&eImprovements to FTB Quests.&r"
 				""
-				"&b Shadow Drop:&r"
-				"&e - Shadow effect on Items in UI&r"
+				"&bShadow Drop:&r"
+				"&eDrop shadows for items in inventory interfaces.&r"
 				""
-				"&b Status Effect Bar Reforged:&r"
-				"&e - Improvements on Status Effect Barv"
+				"&bStatus Effect Bar Reforged:&r"
+				"&eImprovements to status-effect displays.&r"
 			]
 			disable_toast: true
 			icon: "minecraft:end_crystal"
 			id: "48AC81B4ABF02782"
 			size: 2.0d
-			subtitle: "Mods That Are Not Necessary"
 			tasks: [{
 				id: "31A3CCA44198D7BD"
 				type: "checkmark"
@@ -140,33 +137,38 @@
 			y: 3.0d
 		}
 		{
-			description: ["&eThis modpack is perhaps suitable for beginners of Create or Tech modpacks. \\n\\n&eHowever, You should expect a challenging progression where every recipe is intentionally redesigned to create deep interdependencies between mods. It requires strategic planning, complex automation, and thorough exploration at every stage.&r\\n\\n&eThis pack is designed for players seeking a long-term, intellectually engaging engineering challenge with a satisfying payoff.&r&r"]
+			description: [
+				"&eThis pack may suit players new to Create or technology modpacks, but you should still expect a challenging progression.&r"
+				""
+				"&eRecipes have been extensively redesigned to connect the mods. Progress requires planning, complex automation, and exploration at every stage.&r"
+				""
+				"&eThe pack is designed for players who enjoy a long-term engineering challenge and the satisfaction of making their systems work.&r"
+			]
 			disable_toast: true
 			icon: "tfmg:electricians_wrench"
 			id: "46475B7FCE7E04E8"
 			size: 2.0d
-			subtitle: "Difficulty of This Modpack"
 			tasks: [{
 				id: "7A7F3FAB8877C902"
 				type: "checkmark"
 			}]
-			title: "Expert Pack ?"
+			title: "Expert Pack?"
 			x: 3.0d
 			y: -3.0d
 		}
 		{
 			description: [
-				"&eQuest Are Hidden Until You Achieved A Certain Stage&r"
+				"&eQuests are hidden until you reach the corresponding stage.&r"
 				""
-				"&eYou Have To Complete Quest To Get To The Next Stage&r"
+				"&eYou need to complete quests to advance to the next stage.&r"
 				""
-				"&eThe Manual Itself Don't Have Any Information. The Information Of The Manual Is Shown In the Quest&r"
+				"&eThe manual items themselves do not contain instructions. Their information is shown in the quests unlocked by those manuals.&r"
 			]
 			disable_toast: true
 			icon: "create:goggles"
 			id: "7A44091B6E68D50D"
 			size: 2.0d
-			subtitle: "Some FAQs About The QUest Of This Modpack"
+			subtitle: "Questions About the Quest System"
 			tasks: [{
 				id: "24F7F8196AB61924"
 				type: "checkmark"
@@ -176,12 +178,16 @@
 			y: 0.0d
 		}
 		{
-			description: ["&eThis is a total conversion pack where every major mod has been deeply integrated into a single, cohesive progression ladder. Mods like Create, TFMG, and Biomancy are not standalone features but interconnected chapters, with custom recipes, and rebalanced loot tables ensuring a unified and challenging expert experience.&r"]
+			description: [
+				"&eThis is a total-conversion pack. Almost everything has been changed, including recipes and loot tables.&r"
+				""
+				"&eCreate, TFMG, Biomancy, and the other major mods are deeply integrated into one progression. Their materials and systems are designed to work together throughout the pack.&r"
+			]
 			disable_toast: true
 			icon: "minecraft:writable_book"
 			id: "52B3434FBA5AC6FF"
 			size: 2.0d
-			subtitle: "Almost Everything Was Changed"
+			subtitle: "Almost Everything Has Changed"
 			tasks: [{
 				id: "1A3A002CBF840039"
 				type: "checkmark"
@@ -191,12 +197,12 @@
 			y: -3.0d
 		}
 		{
-			description: ["&eIf You Don't Know What to do in the game, I suggest you to look at the quest carefully, especially the description.&r"]
+			description: ["&eIf you do not know what to do next, read the quests carefully, especially their descriptions.&r"]
 			disable_toast: true
 			icon: "create:schematic_and_quill"
 			id: "5137F04F4288DA8F"
 			size: 2.0d
-			subtitle: "What Should I Do ?"
+			subtitle: "What Should I Do?"
 			tasks: [{
 				id: "2AD17BF6EC67EA17"
 				type: "checkmark"
@@ -207,24 +213,24 @@
 		}
 		{
 			description: [
-				"&6If any&r &cBUG&r &6was found in this modpack, please report in the&r &aDiscord Server &6or under the modpack's&r &aCurseforge Page &6^w^&r"
+				"&6If you find a &cbug&6 in this modpack, please report it on the &aDiscord server&6 or the modpack's &aCurseForge page&6. ^w^&r"
 				""
-				"&6You could join the modpack's Discord server using the URL&r"
+				"&6You can join the Discord server using the link below:&r"
 				""
-				"&b      https://discord.gg/sbJyC2qxX3&r"
+				"&bhttps://discord.gg/sbJyC2qxX3&r"
 				""
-				"&6You can find it in the Curseforge page&r"
+				"&6The link is also available on the CurseForge page.&r"
 			]
 			disable_toast: true
 			icon: "createdeco:decal_warning"
 			id: "5A4EECDD6BF9801B"
 			size: 2.0d
-			subtitle: "Where To Report BUGs"
+			subtitle: "Where to Report Bugs"
 			tasks: [{
 				id: "5AE5E01423EF0098"
 				type: "checkmark"
 			}]
-			title: "BUG ?"
+			title: "Bug?"
 			x: -4.0d
 			y: 0.0d
 		}

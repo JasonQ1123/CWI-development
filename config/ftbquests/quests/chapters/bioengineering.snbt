@@ -8,15 +8,22 @@
 	order_index: 14
 	quest_links: [ ]
 	quests: [{
+		description: [
+			"&eIncubation develops sealed agar plates into cultures for fermentation, biomass, and renewable-fuel production.&r"
+			""
+			"&7Successful growth in a sealed plate gives us a culture to work with. We have no field record showing how long it could persist in the damaged ground.&r"
+		]
 		id: "0DFA888EA5975E50"
 		invisible: true
 		shape: "gear"
 		size: 2.0d
+		subtitle: "Cultures and Restoration"
 		tasks: [{
 			id: "264FB3B6A8B2FE27"
 			item: "kubejs:bioengineering_manual"
 			type: "item"
 		}]
+		title: "Bioengineering"
 		x: 0.0d
 		y: 0.0d
 	}]

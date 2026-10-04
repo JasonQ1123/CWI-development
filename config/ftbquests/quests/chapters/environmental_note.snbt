@@ -10,6 +10,11 @@
 	quests: [
 		{
 			dependencies: ["7F91ABDAA7AE930C"]
+			description: [
+				"&eRestoration working notes. The immediate aim is a plot that produces food; rebuilding a lasting ecosystem is a separate question. The soil treatments and culture procedures below give us a place to begin.&r"
+				""
+				"&eThese plans join laboratory processes to materials that may still be recovered outside. We have no long-term survival record for a person depending on such a farm.&r"
+			]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			icon_scale: 0.9d
@@ -21,17 +26,22 @@
 				item: "kubejs:environmental_note"
 				type: "item"
 			}]
+			title: "Environmental Notes"
 			x: -8.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3CECF5ADD3C91E4B"]
-			description: ["&eThe surface layer is dry, compacted, and lifeless. Stripped of organic matter and moisture by decades of solar radiation. It crumbles to dust when handled and holds no capacity to support even the hardiest microbes.&r"]
+			description: [
+				"&eThe surface dirt has lost the structure and organic content expected of productive soil. It remains useful as a source of ash and buried remnants, but a dry mineral layer cannot provide everything a crop needs.&r"
+				"&eWater by itself makes soaked depleted dirt. Nutrients and biological treatment are still needed before planting.&r"
+			]
 			hide_dependency_lines: true
 			id: "5787AF3D0A2E4728"
+			title: "Depleted Dirt"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Powder and Dust"
+			subtitle: "The Barren Surface"
 			tasks: [{
 				id: "23B347D0F2B68326"
 				item: "kubejs:depleted_dirt"
@@ -46,12 +56,17 @@
 				"60BE07D84D003F04"
 				"761160110BAD09FD"
 			]
-			description: ["&eA basic ecosystem has taken root, plants can now survive. Nutrient cycles are still fragile, but the soil can sustain life without constant intervention.&r"]
+			description: [
+				"&eUsable dirt gives roots a medium that holds moisture and carries nutrients. Soil conditioning supplies the nitrogen and bone-derived mineral contribution missing from the prepared ground, allowing it to support planting.&r"
+				""
+				"&eA first harvest should tell us more than the appearance of the soil. Whether a field can remain productive over many seasons is still an open question.&r"
+			]
 			disable_toast: true
 			id: "2DD3C94512042C0F"
+			title: "Dirt"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Living Soil"
+			subtitle: "Restored Growing Ground"
 			tasks: [{
 				id: "516B778143F5D72C"
 				item: "minecraft:dirt"
@@ -62,12 +77,19 @@
 		}
 		{
 			dependencies: ["58E9697AC16F146C"]
-			description: ["&eDecomposition is complete, yielding a dark, crumbly medium teeming with active biology. This is the end goal, rich soil that can support agriculture and function as a self-sustaining living system, promoting plant growth.&r"]
+			description: [
+				"&eRich soil contains decomposed organic material and can be tilled into farmland that promotes crop growth. Decomposition makes nutrients more available, while organic matter helps the soil hold moisture and retain a workable structure.&r"
+				""
+				"&eOrganic compost matures into this medium after being placed. Nearby water and suitable surrounding blocks assist that decomposition.&r"
+				""
+				"&eThis is the soil we would hope to expand beyond a trial plot. A dark, crumbly sample is encouraging, but it is not evidence that the surrounding land has recovered.&r"
+			]
 			disable_toast: true
 			id: "5AE545956D2B2D20"
+			title: "Rich Soil"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Faster Soil"
+			subtitle: "Compost Becomes Soil"
 			tasks: [{
 				id: "1D144224E3ADE9F4"
 				item: "farmersdelight:rich_soil"
@@ -78,11 +100,16 @@
 		}
 		{
 			dependencies: ["3CECF5ADD3C91E4B"]
-			description: ["&eA pale, glowing lichen surviving in caves. One of the few organisms that endured.&r"]
+			description: [
+				"&eThe faint light on a cave wall can mark glow lichen. Collect it with shears and retain the colony for soil treatment.&r"
+				""
+				"&eGlow lichen provides a reusable biological starter for the raw-soil treatment. Lichens can colonize exposed mineral surfaces in nature; the cave colony's persistence makes it a promising starting point for restoration work.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "3DCE698C59DE0C7C"
-			subtitle: "Cave Survivor"
+			title: "Glow Lichen"
+			subtitle: "A Living Starter"
 			tasks: [{
 				id: "1E53AD09D723B82D"
 				item: "minecraft:glow_lichen"
@@ -93,12 +120,12 @@
 		}
 		{
 			dependencies: ["5787AF3D0A2E4728"]
-			description: ["&eDepleted soil slowly absorbs water. Though still barren, saturation begins to break down the impervious crust and allows the first chemical exchanges to take place beneath the surface.&r"]
+			description: ["&eMoisture penetrates the depleted ground and allows dissolved substances to move through it. This makes the material suitable for biological treatment, although wetting alone does not restore lost nutrients or organic matter.&r"]
 			disable_toast: true
 			id: "14669168D99B9CA0"
+			title: "Soaked Depleted Dirt"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Saturated Ground"
 			tasks: [{
 				id: "508795C263D0E494"
 				item: "kubejs:soaked_depleted_dirt"
@@ -112,12 +139,15 @@
 				"14669168D99B9CA0"
 				"3DCE698C59DE0C7C"
 			]
-			description: ["&eThe structure has loosened, and trapped air now moves through the pores. No living organisms are present yet, but the physical foundation is finally ready to accept organic input and microbial colonization.&r"]
+			description: [
+				"&eLichen treatment prepares the depleted ground for further conditioning. Raw soil still needs available nutrients before it can support planting.&r"
+			]
 			disable_toast: true
 			id: "5C856CCA4F078AA9"
+			title: "Raw Soil"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Awakening Earth"
+			subtitle: "The Soil Intermediate"
 			tasks: [{
 				id: "4E1ABB921C950BEF"
 				item: "kubejs:raw_soil"
@@ -128,10 +158,14 @@
 		}
 		{
 			dependencies: ["5787AF3D0A2E4728"]
-			description: ["&eDried arthropod meat found in depleted soil. A meager source of protein.&r"]
+			description: [
+				"&eThreshing depleted dirt has a small chance of recovering an arthropod. The remains offer a little protein while a crop is being established.&r"
+				"&7Allow for many empty batches. A food plan cannot assume that the next handful of dirt contains anything edible.&r"
+			]
 			disable_toast: true
 			id: "5A983ABB2A279DFE"
-			subtitle: "Buried Protein"
+			title: "Arthropod"
+			subtitle: "Food From Threshing"
 			tasks: [{
 				id: "4AC542FCDF413AA8"
 				item: "miners_delight:arthropod"
@@ -142,9 +176,14 @@
 		}
 		{
 			dependencies: ["4F09B6C7A598452C"]
-			description: ["&eCollect any available plant matter and sediment from oceans and riverbeds to form a crude compost pit. The resulting humus will enhance microbial activity and create a foundation for sustainable growth. Without it, even a recovering atmosphere cannot anchor lasting life.&r"]
+			description: [
+				"&eCompost mass recovered from wet biological sediment provides organic material for decomposition. The process recovers useful solids, nutrient-bearing liquid and combustible gas from the same old biological stock.&r"
+				""
+				"&eFermentation produces compost residue, biogas, and compost tea. An active Putrelys Sporogenes culture accelerates the treatment; the slower process can run without it.&r"
+			]
 			disable_toast: true
 			id: "4095EF2352EAD14C"
+			title: "Compost Mass"
 			tasks: [{
 				id: "4EEAB0B2047CC408"
 				item: "ratatouille:compost_mass"
@@ -155,10 +194,10 @@
 		}
 		{
 			dependencies: ["4095EF2352EAD14C"]
-			description: ["&eThe products of composting. They are rich in nutrients.&r"]
+			description: ["&eCompost residue is the solid fraction of fermentation. It can be milled into biomass, mixed into organic compost, or converted to peat by active Putrelys Sporogenes. Collect the accompanying gas and tea as separate outputs.&r"]
 			disable_toast: true
 			id: "6A6DF9304AB7EA15"
-			subtitle: "Nutrient Rich"
+			title: "Compost Residue"
 			tasks: [{
 				id: "7B0B56F81F9D64A1"
 				item: "ratatouille:compost_residue"
@@ -169,9 +208,10 @@
 		}
 		{
 			dependencies: ["5FFC1ABF7B74F16E"]
-			description: ["&eSugar is vital both for early nutrition and as a feedstock for more complex bioprocessing.&r"]
+			description: ["&eSugar is a food ingredient and an accessible carbon feedstock for cultures. Its relatively small molecules are easier to use in fermentation than intact woody tissue, making a sugar supply useful for alcohol production and other biological work.&r"]
 			disable_toast: true
 			id: "645DB368A9D15AD7"
+			title: "Sugar"
 			tasks: [{
 				id: "67F4F2A6921F4BD8"
 				item: "minecraft:sugar"
@@ -182,10 +222,14 @@
 		}
 		{
 			dependencies: ["4095EF2352EAD14C"]
-			description: ["&eBiogas produced from compost. A renewable fuel source.&r"]
+			description: [
+				"&eBiogas carries part of the organic feedstock's stored energy as a combustible gas. Compost decomposition and the local wood-processing line supply it; a fluid-fed blaze burner can turn it into workshop heat.&r"
+				""
+				"&eGas recovery gives the biological line an energy use alongside its soil products. A fuel reserve would help keep the apparatus running between harvests.&r"
+			]
 			disable_toast: true
 			id: "31891D15D0EA187C"
-			subtitle: "Renewable Fuel"
+			title: "Biogas"
 			tasks: [{
 				id: "0CB18B7FBD068C4F"
 				item: "ratatouille:bio_gas_bucket"
@@ -196,10 +240,13 @@
 		}
 		{
 			dependencies: ["7DAB92C0947C10CB"]
-			description: ["&eBiodiesel refined from ethanol. Can power diesel engines.&r"]
+			description: [
+				"&eBiodiesel brings energy stored in biological feedstock into a liquid engine fuel. Compatible diesel engines convert its combustion into rotation, allowing the farm to contribute to its own machinery's power supply.&r"
+				"&eIt also fuels supported portable equipment. A crop-derived supply could supplement oil reserves once a productive plot is established.&r"
+			]
 			disable_toast: true
 			id: "6F0159783AE33348"
-			subtitle: "Engine Fuel"
+			title: "Biodiesel"
 			tasks: [{
 				id: "5AC9117B4AEAD36A"
 				item: "createdieselgenerators:biodiesel_bucket"
@@ -210,10 +257,15 @@
 		}
 		{
 			dependencies: ["645DB368A9D15AD7"]
-			description: ["&eEthanol produced from sugar fermentation.&r"]
+			description: [
+				"&eBioethanol fuels liquid-fed blaze burners for superheating, supplying the stronger heat required by advanced processing. It brings the plant material's stored energy into the workshop as a renewable industrial fuel.&r"
+				""
+				"&eFermento Mycetes produces the separate ethanol used in biodiesel manufacture.&r"
+			]
 			disable_toast: true
 			id: "7B2AC3CE02DAA69C"
-			subtitle: "Fermentation Product"
+			title: "Bioethanol"
+			subtitle: "Biomass-Based Alcohol"
 			tasks: [{
 				id: "5B54932D01646ACC"
 				item: "createaddition:bioethanol_bucket"
@@ -224,10 +276,10 @@
 		}
 		{
 			dependencies: ["5787AF3D0A2E4728"]
-			description: ["&eFine ash from incinerated organic matter. Contains trace minerals.&r"]
+			description: ["&eFine ash is readily recovered from depleted dirt by milling, crushing, or threshing. Dry biological sediment releases it when crushed. Reserve some for ash bricks while separating the biological remains: the workshop and restoration work share this soil supply.&r"]
 			disable_toast: true
 			id: "0402F7A20A3CF9ED"
-			subtitle: "Trace Minerals"
+			title: "Ash"
 			tasks: [{
 				id: "2F7E3642C002434C"
 				item: "kubejs:ash"
@@ -238,10 +290,10 @@
 		}
 		{
 			dependencies: ["4095EF2352EAD14C"]
-			description: ["&eLiquid runoff from compost. Rich in dissolved nutrients for plants.&r"]
+			description: ["&eCompost tea carries the liquid fraction of the decomposing material, including dissolved nutrients. It supplies the crop-growth preparation, bringing this recovered biological material back into plant production.&r"]
 			disable_toast: true
 			id: "0DD993D89E7FDA58"
-			subtitle: "Liquid Fertilizer"
+			title: "Compost Tea"
 			tasks: [{
 				id: "39CF7FE1F9EDD473"
 				item: "ratatouille:compost_tea_bucket"
@@ -252,11 +304,15 @@
 		}
 		{
 			dependencies: ["645DB368A9D15AD7"]
-			description: ["&eRefined ethanol. Can be further processed into biodiesel.&r"]
+			description: [
+				"&eCultured ethanol supplies biodiesel manufacture, sterilizing fan catalysts and further chemical treatments. As an alcohol, it mixes with water and dissolves many organic substances, properties useful in cleaning and chemical processing.&r"
+				"&eFermento Mycetes links the crop's accessible sugars to this alcohol supply, giving a food-producing plot another use in the workshop.&r"
+			]
 			disable_toast: true
 			id: "7DAB92C0947C10CB"
+			title: "Ethanol"
 			optional: true
-			subtitle: "Fuel Precursor"
+			subtitle: "Microbial Alcohol"
 			tasks: [{
 				id: "7FC7257023D03D4D"
 				item: "createdieselgenerators:ethanol_bucket"
@@ -270,12 +326,15 @@
 				"43A681E4759A3D71"
 				"2DD3C94512042C0F"
 			]
-			description: ["&eOrganic material has been incorporated but remains undecomposed. The mix is rich in carbon and nitrogen, waiting for microbial activity to break it down into forms plants can readily absorb.&r"]
+			description: [
+				"&eOrganic compost incorporates decomposable material into the soil supply. Decomposition releases nutrients from that material and contributes to a darker, more crumbly growing medium.&r"
+				"&eIt matures into rich soil after being placed. Leave room for that maturation when planning the restoration plot.&r"
+			]
 			disable_toast: true
 			id: "58E9697AC16F146C"
+			title: "Organic Compost"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Raw Compost"
 			tasks: [{
 				id: "5F0CB18F51A2610D"
 				item: "farmersdelight:organic_compost"
@@ -286,10 +345,11 @@
 		}
 		{
 			dependencies: ["0D14A252C4D9955C"]
-			description: ["&eTo revive them, you first have to crush them into powders.&r"]
+			description: ["&eDried Fermento Mycetes is preserved starter material for an ethanol-producing culture, rarely recovered from dry biological sediment. Dry storage can slow biological activity, but the appearance of a sample does not by itself establish whether it remains viable.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "0038547A05E5BB0A"
+			title: "Dried Fermento Mycetes"
 			tasks: [{
 				id: "0E2D2AAB4812DBDD"
 				item: "kubejs:dry_fermento_mycetes"
@@ -300,9 +360,13 @@
 		}
 		{
 			dependencies: ["0038547A05E5BB0A"]
-			description: ["&eSecondly, you have to rehydrate the material slowly in water at a stable, moderate temperature, agitation will help break up clumps without shocking the cells. &r"]
+			description: [
+				"&eThe powdered sample disperses through a growth medium more evenly than a dry clump. Rehydration restores the water needed for cellular activity, while available nutrients support the first growth.&r"
+				"&eThis is starter material for Fermento Mycetes. A revived working culture would establish the alcohol-fermentation supply.&r"
+			]
 			disable_toast: true
 			id: "2124F945CC19830F"
+			title: "Powdered Fermento Mycetes"
 			tasks: [{
 				id: "53943C2AAD8FC12C"
 				item: "kubejs:powdered_fermento_mycetes"
@@ -314,13 +378,14 @@
 		{
 			dependencies: ["2124F945CC19830F"]
 			description: [
-				"&eOnce metabolic activity resumes, transfer to a simple sugar solution to confirm viability and begin propagation. &r"
+				"&eAn active Fermento Mycetes culture converts accessible plant sugars into ethanol. Fermentation draws on the crop's stored carbon and energy, linking food production to liquid fuel and chemical feedstock.&r"
 				""
-				"&eThese cultures will serve as the foundation for fermentation. Handle the initial batches carefully; they are limited resources.&r"
+				"&eThe culture remains after production. Establish a spare working sample before relying on fermentation for all fuel production.&r"
 			]
 			disable_toast: true
 			id: "2886DC3B95FC59E8"
-			subtitle: "Most Important Microorganisms"
+			title: "Fermento Mycetes"
+			subtitle: "An Active Fermentation Culture"
 			tasks: [{
 				id: "53702170B79F6F1A"
 				item: "kubejs:fermento_mycetes"
@@ -331,10 +396,10 @@
 		}
 		{
 			dependencies: ["6A6DF9304AB7EA15"]
-			description: ["&eBiomass processed from compost residue. Used as a base for further refinement.&r"]
+			description: ["&eBiomass collects plant-derived material and compost residue into usable organic feedstock. Its carbon and stored chemical energy make it useful for bioethanol production, giving biological leftovers a role in the fuel supply.&r"]
 			disable_toast: true
 			id: "172963D5623889D6"
-			subtitle: "Processed Biomass"
+			title: "Biomass"
 			tasks: [{
 				id: "34E870276D77A01C"
 				item: "createaddition:biomass"
@@ -345,10 +410,11 @@
 		}
 		{
 			dependencies: ["721B0A23FFEC5265"]
-			description: ["&eRipened organic matter. Used in spreader to promote plant growth.&r"]
+			description: ["&eA spreader distributes ripen matter to suitable plants, encouraging growth in the same practical role as repeated fertilizer application. It lets a powered apparatus tend part of the growing plot.&r"]
 			disable_toast: true
 			id: "075E454A2C75D143"
-			subtitle: "Ripening"
+			title: "Ripen Matter"
+			subtitle: "Crop Growth Material"
 			tasks: [{
 				id: "2F8E5BD82020CC0B"
 				item: "ratatouille:ripen_matter"
@@ -359,10 +425,11 @@
 		}
 		{
 			dependencies: ["3432EC274FFBCBDD"]
-			description: ["&eFully matured organic matter. Used in spreader to promote animal breeding&r"]
+			description: ["&eMature matter lets a spreader encourage adult animals to breed and young animals to grow. It supports the renewal of an existing herd, providing another way to maintain food and biological material alongside the crop plot.&r"]
 			disable_toast: true
 			id: "0DBBCEEAD979BD5B"
-			subtitle: "Matured"
+			title: "Mature Matter"
+			subtitle: "Animal Growth Material"
 			tasks: [{
 				id: "3F6F46E252AE9B24"
 				item: "ratatouille:mature_matter"
@@ -373,10 +440,10 @@
 		}
 		{
 			dependencies: ["6A6DF9304AB7EA15"]
-			description: ["&eFolded mature matter.&r"]
+			description: ["&eThis solid stock is processed into mature matter, which lets a spreader support breeding and the growth of young animals. The finished matter, rather than the fold, is what the spreader can distribute.&r"]
 			disable_toast: true
 			id: "3432EC274FFBCBDD"
-			subtitle: "Concentrated"
+			title: "Mature Matter Fold"
 			tasks: [{
 				id: "471E9B755529D5FA"
 				item: "ratatouille:mature_matter_fold"
@@ -387,10 +454,10 @@
 		}
 		{
 			dependencies: ["6A6DF9304AB7EA15"]
-			description: ["&eFolded ripened matter.&r"]
+			description: ["&eThis compact intermediate supplies ripen matter for plant growth. The spreader uses the finished matter, rather than the fold, to distribute treatment across the growing plot.&r"]
 			disable_toast: true
 			id: "721B0A23FFEC5265"
-			subtitle: "Folded"
+			title: "Ripen Matter Fold"
 			tasks: [{
 				id: "2937857EDAFC031C"
 				item: "ratatouille:ripen_matter_fold"
@@ -402,16 +469,14 @@
 		{
 			dependencies: ["3CECF5ADD3C91E4B"]
 			description: [
-				"&eThe old seabeds and rivers are our best chance at reclaiming organic material.&r"
-				""
-				"&eWhen the atmosphere collapsed, most surface life was scoured away, but layers of biomass settled into waters.&r"
-				""
-				"&eIt contains preserved life that we can use for soil regeneration and early bio-culturing.&r"
+				"&eWet biological sediment occurs in lakes and oceans. Search beneath the water for preserved organic material.&r"
+				"&eCrushing can release compost mass, muddy bamboo or sugar cane, Nitrofix Rhizobium, bone fragments, and mineral powder. Individual samples do not contain every useful component.&r"
 			]
 			hide_dependency_lines: true
 			id: "4F09B6C7A598452C"
+			title: "Wet Biological Sediment"
 			size: 1.5d
-			subtitle: "Submerged Biomass Recovery"
+			subtitle: "Search Under Water"
 			tasks: [{
 				id: "3B44DBB0C05CFCD4"
 				item: "kubejs:wet_biological_sediment"
@@ -423,12 +488,13 @@
 		{
 			dependencies: ["4F09B6C7A598452C"]
 			description: [
-				"&eThe phosphorus component in bones, tricalcium phosphate, is a natural slow-release high-phosphorus organic fertilizer.&r"
+				"&eBones contain calcium phosphate, a useful source of phosphorus for plant growth. Wet, dry, and claystone biological sediments can yield bone fragments when crushed.&r"
 				""
-				"&eIt is crucial for healthy plant growth by promoting strong root development, increasing flowering and fruiting rates, transferring photosynthetic energy, and enhancing seedling vitality.&r"
+				"&ePhosphorus supports energy transfer and root development. Recovering this mineral from old remains gives soil conditioning a nutrient source that water and nitrogen alone cannot provide.&r"
 			]
 			disable_toast: true
 			id: "13B4B488109EA835"
+			title: "Bone Fragments"
 			tasks: [{
 				id: "7622C180DC016850"
 				item: "biomancy:bone_fragments"
@@ -439,10 +505,13 @@
 		}
 		{
 			dependencies: ["4F09B6C7A598452C"]
-			description: ["&eNitrogen-fixing bacteria recovered from wet sediment. Essential for soil recovery.&r"]
+			description: [
+				"&eNitrofix Rhizobium recovered from wet biological sediment produces ammonia solution and converts it to nitrate solution for soil conditioning. A working culture can sustain this nitrogen supply.&r"
+				"&ePlants need usable nitrogen to build proteins and chlorophyll. The culture's value lies in providing that supply, rather than merely surviving as a preserved sample.&r"
+			]
 			disable_toast: true
 			id: "6C55B9E58C86102E"
-			subtitle: "Nitrogen Fixer"
+			title: "Nitrofix Rhizobium"
 			tasks: [{
 				id: "651C0CFC6DF2ABA6"
 				item: "kubejs:nitrofix_rhizobium"
@@ -453,10 +522,10 @@
 		}
 		{
 			dependencies: ["4F09B6C7A598452C"]
-			description: ["&eBamboo preserved in muddy sediment. Can be cleaned and planted.&r"]
+			description: ["&eBamboo preserved in wet sediment offers planting stock beneath the mud. Cleaning exposes usable material; a surviving shoot could establish a renewable supply of fibrous stems for sticks and wood stock.&r"]
 			disable_toast: true
 			id: "05E6809D0816FD73"
-			subtitle: "Preserved Bamboo"
+			title: "Muddy Bamboo"
 			tasks: [{
 				id: "68A30675BEE1422E"
 				item: "kubejs:muddy_bamboo"
@@ -467,10 +536,13 @@
 		}
 		{
 			dependencies: ["4F09B6C7A598452C"]
-			description: ["&eSugar cane preserved in muddy sediment. Can be cleaned and planted.&r"]
+			description: [
+				"&eMuddy sugar cane recovered from wet sediment offers another source of living planting stock. Its stalks can supply accessible sugars for food and fermentation once a plot is established.&r"
+				"&eReserve the first planting before processing any cane for sugar.&r"
+			]
 			disable_toast: true
 			id: "42AE62A2A0976533"
-			subtitle: "Preserved Cane"
+			title: "Muddy Sugar Cane"
 			tasks: [{
 				id: "0B0797D3586A65BE"
 				item: "kubejs:muddy_sugar_cane"
@@ -481,10 +553,11 @@
 		}
 		{
 			dependencies: ["4F09B6C7A598452C"]
-			description: ["&eStone powder extracted from wet sediment. Used in various recipes.&r"]
+			description: ["&eThe mineral powder separated from biological sediment supplies the mineral fraction of the bone-meal mix. Acidolys stone treatment can recover it as well. This powder has a different role from the individual rock powders used in geological processing.&r"]
 			disable_toast: true
 			id: "21A04E72207405AF"
-			subtitle: "Sediment Powder"
+			title: "Stone Powder"
+			subtitle: "Mineral Additive"
 			tasks: [{
 				id: "4477A6A84768F8D1"
 				item: "biomancy:stone_powder"
@@ -495,7 +568,10 @@
 		}
 		{
 			dependencies: ["6C55B9E58C86102E"]
-			description: ["&eNitrates are a core component of the nitrogen cycle in nature and are crucial for plant growth, industrial production, and human health.&r"]
+			description: [
+				"&eNitrate supplies nitrogen in a form plants can absorb and use to build proteins and other essential compounds. In solution it can move with water through a growing medium to the roots.&r"
+				"&eIn soil conditioning, its nitrogen contribution complements the mineral nutrients recovered from bone and sediment.&r"
+			]
 			disable_toast: true
 			icon: "tfmg:nitrate_dust"
 			id: "12F9EB602769BA20"
@@ -504,16 +580,17 @@
 				item: "kubejs:nitrate_solution_bucket"
 				type: "item"
 			}]
-			title: "Nitrate"
+			title: "Nitrate Solution"
 			x: -5.0d
 			y: -8.0d
 		}
 		{
 			dependencies: ["13B4B488109EA835"]
-			description: ["&eBone ground into powder. Can be further processed into bone meal.&r"]
+			description: ["&eGround bone is easier to distribute through a soil preparation than intact fragments, exposing more of its calcium-phosphate mineral to the surrounding material. It supplies bone-meal production and can also serve as white pigment stock.&r"]
 			disable_toast: true
 			id: "006AA70EA1916072"
-			subtitle: "Bone Powder"
+			title: "Bone Powder"
+			subtitle: "The Fertilizer Intermediate"
 			tasks: [{
 				id: "7E99FDE8E3CDAAA0"
 				item: "kubejs:bone_powder"
@@ -524,10 +601,13 @@
 		}
 		{
 			dependencies: ["0D14A252C4D9955C"]
-			description: ["&eDry wheat seeds from sediment. Add water to revive them.&r"]
+			description: [
+				"&eDry wheat seeds recovered from dust-covered samples offer the beginning of a grain supply. A surviving embryo can resume growth after rehydration, drawing on the reserves stored inside the seed.&r"
+				"&eWheat would serve both food preparation and fermentation, making a successful planting useful beyond the next meal.&r"
+			]
 			disable_toast: true
 			id: "4ACCA5D64B4F6533"
-			subtitle: "Dry Wheat"
+			title: "Dry Wheat Seeds"
 			tasks: [{
 				id: "7441473B4617DC78"
 				item: "kubejs:dry_wheat_seeds"
@@ -538,10 +618,13 @@
 		}
 		{
 			dependencies: ["0D14A252C4D9955C"]
-			description: ["&eDry melon seeds from sediment. Add water to revive them.&r"]
+			description: [
+				"&eDry melon seeds can be recovered from dust-covered samples. The seed coat protects the enclosed embryo; rehydration is needed before living tissue can resume growth.&r"
+				"&eA successful planting would add fruit to the food supply. Melon stems need an adjacent space for that fruit.&r"
+			]
 			disable_toast: true
 			id: "0287E7B4D93AE3DC"
-			subtitle: "Dry Melon"
+			title: "Dry Melon Seeds"
 			tasks: [{
 				id: "4691D84E297D28B8"
 				item: "kubejs:dry_melon_seeds"
@@ -552,10 +635,14 @@
 		}
 		{
 			dependencies: ["0D14A252C4D9955C"]
-			description: ["&eDry cabbage seeds from sediment. Add water to revive them.&r"]
+			description: [
+				"&eDried cabbage seeds are preserved planting material recovered from dust-covered samples. Rehydrated stock could supply a leafy crop to supplement grain and fruit.&r"
+				""
+				"&7Set aside planting stock before counting this crop as food.&r"
+			]
 			disable_toast: true
 			id: "42B7FB696E682E11"
-			subtitle: "Dry Cabbage"
+			title: "Dry Cabbage Seeds"
 			tasks: [{
 				id: "280ED658430CD7A5"
 				item: "kubejs:dry_cabbage_seeds"
@@ -566,10 +653,10 @@
 		}
 		{
 			dependencies: ["0D14A252C4D9955C"]
-			description: ["&eDry tomato seeds from sediment. Add water to revive them.&r"]
+			description: ["&eDry storage can preserve a dormant seed, although a seed-shaped remnant alone tells us little. Tomato seeds recovered from dust-covered samples offer fruit-bearing planting stock if the enclosed living tissue has survived.&r"]
 			disable_toast: true
 			id: "377CA90F7E982A02"
-			subtitle: "Dry Tomato"
+			title: "Dry Tomato Seeds"
 			tasks: [{
 				id: "72B761E24CFD5F04"
 				item: "kubejs:dry_tomato_seeds"
@@ -580,10 +667,13 @@
 		}
 		{
 			dependencies: ["0D14A252C4D9955C"]
-			description: ["&eDry pumpkin seeds from sediment. Add water to revive them.&r"]
+			description: [
+				"&eDry pumpkin seeds are another preserved crop recovered from dust-covered samples. Once revived, the stem can supply repeated fruit without needing to be replanted after every harvest.&r"
+				"&eLeave an open space beside each planted stem for that fruit.&r"
+			]
 			disable_toast: true
 			id: "4D6AEAB5700A47E9"
-			subtitle: "Dry Pumpkin"
+			title: "Dry Pumpkin Seeds"
 			tasks: [{
 				id: "0AC9C7D0040F380D"
 				item: "kubejs:dry_pumpkin_seeds"
@@ -595,30 +685,31 @@
 		{
 			dependencies: ["3CECF5ADD3C91E4B"]
 			description: [
-				"&eSurface surveys indicate that while most organic matter was incinerated or swept away, pockets of desiccated biomass remain trapped in depleted soil layers. &r"
+				"&eDry biological sediment occurs on rocky surfaces and may be buried beneath depleted dirt. Crush the collected material to recover preserved remnants.&r"
 				""
-				"&eLook for exposed sedimentary deposits on elevated ground. Excavating them should provide viable source of organic material for rebuilding the biosphere.&r"
+				"&eMost outputs are ash and minerals. Dust-covered seeds and dried Fermento Mycetes are rare, so the recovery line needs somewhere to retain them.&r"
 			]
 			hide_dependency_lines: true
 			id: "0D14A252C4D9955C"
 			shape: "circle"
 			size: 1.5d
-			subtitle: "Submerged Biomass Recovery"
+			subtitle: "Preserved Surface Remains"
 			tasks: [{
 				id: "3E6799AFA52DE67C"
 				item: "kubejs:dry_biological_sediment"
 				type: "item"
 			}]
-			title: "Ash"
+			title: "Dry Biological Sediment"
 			x: -11.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["0C0473AAE983CA2E"]
-			description: ["&eAdd water to dry beetroot seeds to revive them.&r"]
+			description: ["&eBeetroot supplies an edible storage root alongside planting stock for another crop. Plant the recovered seeds on farmland and retain part of each harvest's seed supply, so the plot no longer depends on finding preserved samples.&r"]
 			disable_toast: true
 			id: "2E4198E131B2BB5B"
-			subtitle: "Wet Beetroot"
+			title: "Beetroot Seeds"
+			subtitle: "Plantable Beetroot"
 			tasks: [{
 				id: "3B7A26C837ED8213"
 				item: "minecraft:beetroot_seeds"
@@ -629,8 +720,10 @@
 		}
 		{
 			dependencies: ["4D6AEAB5700A47E9"]
+			description: ["&ePlant the stem on farmland with one adjacent space for the pumpkin. Harvest the fruit and leave the stem for another crop.&r"]
 			disable_toast: true
 			id: "7D32088AF5AAE27F"
+			title: "Pumpkin Seeds"
 			tasks: [{
 				id: "1321F245E1668631"
 				item: "minecraft:pumpkin_seeds"
@@ -641,8 +734,12 @@
 		}
 		{
 			dependencies: ["377CA90F7E982A02"]
+			description: [
+				"&eTomato plants supply fruit and further planting stock. A living plot could turn one recovered sample into a continuing food source; preserve seeds from the harvest alongside the kitchen supply.&r"
+			]
 			disable_toast: true
 			id: "77D5342F1FB3885B"
+			title: "Tomato Seeds"
 			tasks: [{
 				id: "3ACC9C144F65D22C"
 				item: "farmersdelight:tomato_seeds"
@@ -653,8 +750,13 @@
 		}
 		{
 			dependencies: ["0287E7B4D93AE3DC"]
+			description: [
+				"&eMelon provides edible fruit and material for further planting stock. The stem remains after its fruit is harvested, allowing repeated production from the same planting.&r"
+				"&ePlant on farmland with room beside the stem for the fruit.&r"
+			]
 			disable_toast: true
 			id: "153B2DE93991BCD7"
+			title: "Melon Seeds"
 			tasks: [{
 				id: "048B9A9FADFB639F"
 				item: "minecraft:melon_seeds"
@@ -665,8 +767,10 @@
 		}
 		{
 			dependencies: ["42B7FB696E682E11"]
+			description: ["&eCabbage would add a leafy crop to a grain-based food reserve. Plant it on farmland for leaves and further seed stock.&r"]
 			disable_toast: true
 			id: "59F567AA29FE1F58"
+			title: "Cabbage Seeds"
 			tasks: [{
 				id: "7CB5372C167F9ECD"
 				item: "farmersdelight:cabbage_seeds"
@@ -677,8 +781,10 @@
 		}
 		{
 			dependencies: ["4ACCA5D64B4F6533"]
+			description: ["&ePlant the revived wheat seeds on farmland. At harvest, separate grain for food and fermentation from the seed stock for the next planting. The reserve is part of the crop, even though it is not part of the meal.&r"]
 			disable_toast: true
 			id: "32E76B484D204790"
+			title: "Wheat Seeds"
 			tasks: [{
 				id: "74BB97FCE9B89BCC"
 				item: "minecraft:wheat_seeds"
@@ -689,10 +795,14 @@
 		}
 		{
 			dependencies: ["42AE62A2A0976533"]
-			description: ["&eSugar cane cleaned from muddy sediment. A key vegetation for sugar production.&r"]
+			description: [
+				"&eSugar cane supplies accessible sugars for food and fermentation. Plant it beside water and harvest the upper growth while leaving the base to regrow.&r"
+				"&eSugar and syrup production can expand after the planted reserve is secure.&r"
+			]
 			disable_toast: true
 			id: "5FFC1ABF7B74F16E"
-			subtitle: "A Key Vegetation"
+			title: "Sugar Cane"
+			subtitle: "A Renewable Sugar Supply"
 			tasks: [{
 				id: "34073DB235888CE9"
 				item: "minecraft:sugar_cane"
@@ -703,10 +813,14 @@
 		}
 		{
 			dependencies: ["05E6809D0816FD73"]
-			description: ["&eBamboo cleaned from muddy sediment. A key vegetation for wood production.&r"]
+			description: [
+				"&eCleaned bamboo can be planted for repeatable growth. It makes sticks directly and wood chips through milling.&r"
+				"&eThis would relieve some pressure on the dead timber reserve. Machinery consumes wood almost as readily as a fire does.&r"
+			]
 			disable_toast: true
 			id: "1E7BA22EFFD0FDB8"
-			subtitle: "Another Key Vegetation"
+			title: "Bamboo"
+			subtitle: "A Renewable Chip Supply"
 			tasks: [{
 				id: "4120BF3ED9A38F8A"
 				item: "minecraft:bamboo"
@@ -717,10 +831,10 @@
 		}
 		{
 			dependencies: ["1E7BA22EFFD0FDB8"]
-			description: ["&eBamboo processed into wood chips. A renewable fuel source.&r"]
+			description: ["&eWood chips are small, fibrous pieces that can be consolidated into larger construction stock or used in wood processing. A bamboo plot makes this supply renewable, easing dependence on the remaining dead timber.&r"]
 			disable_toast: true
 			id: "53FE42548DBB97B6"
-			subtitle: "Bamboo Chips"
+			title: "Wood Chips"
 			tasks: [{
 				id: "6F16534E8F9A6BF8"
 				item: "createdieselgenerators:wood_chip"
@@ -731,10 +845,13 @@
 		}
 		{
 			dependencies: ["006AA70EA1916072"]
-			description: ["&eBone meal from bone powder. A natural fertilizer.&r"]
+			description: [
+				"&eBone meal supports crop growth and soil conditioning. Bone-derived phosphate contributes phosphorus, an essential nutrient for energy transfer and the development of plant tissue.&r"
+				"&eCompostable plants offer another way to replenish the supply once the farm is producing.&r"
+			]
 			disable_toast: true
 			id: "3C9EB6854C43EE3D"
-			subtitle: "Fertilizer"
+			title: "Bone Meal"
 			tasks: [{
 				id: "62DCC03D2642E610"
 				item: "minecraft:bone_meal"
@@ -745,11 +862,15 @@
 		}
 		{
 			dependencies: ["6C55B9E58C86102E"]
-			description: ["&eNitrogen-fixing bacteria. Used in soil recovery.&r"]
+			description: [
+				"&eA working Nitrofix Rhizobium culture sustains the nitrogen supply for soil conditioning. Plants use that nitrogen to build proteins and chlorophyll.&r"
+				""
+				"&ePreparing new ground also requires the bone-derived minerals. Keep both supplies available as the plot expands.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "60BE07D84D003F04"
-			subtitle: "Nitrogen Fixer"
+			title: "Nitrogen Culture"
 			tasks: [{
 				id: "79395C6BD3DC649D"
 				item: "kubejs:nitrofix_rhizobium"
@@ -760,11 +881,13 @@
 		}
 		{
 			dependencies: ["6A6DF9304AB7EA15"]
-			description: ["&eCompost residue for soil enrichment.&r"]
+			description: [
+				"&eCompost residue brings recovered organic material into soil enrichment. The same stock supplies biomass and peat, so growing food and making fuel draw on a shared resource.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "43A681E4759A3D71"
-			subtitle: "Soil Enrichment"
+			title: "Compost Residue for Soil"
 			tasks: [{
 				id: "622479A7955D32F0"
 				item: "ratatouille:compost_residue"
@@ -775,10 +898,14 @@
 		}
 		{
 			dependencies: ["5787AF3D0A2E4728"]
-			description: ["&eSilverfish eggs found in depleted soil. A meager source of protein.&r"]
+			description: [
+				"&eSilverfish eggs can be recovered from depleted dirt. They offer a little edible protein while a crop is being established.&r"
+				"&eRecovery is irregular. Treat the eggs as a supplement while establishing a dependable food supply.&r"
+			]
 			disable_toast: true
 			id: "3388A5B73DB7BAA5"
-			subtitle: "Buried Eggs"
+			title: "Silverfish Eggs"
+			subtitle: "An Occasional Dirt Output"
 			tasks: [{
 				id: "51CC1CC613569C65"
 				item: "miners_delight:silverfish_eggs"
@@ -789,10 +916,10 @@
 		}
 		{
 			dependencies: ["0D14A252C4D9955C"]
-			description: ["&eDry beetroot seeds from sediment. Add water to revive them.&r"]
+			description: ["&eDried beetroot seeds recovered from dust-covered samples offer planting stock for an edible root crop. Rehydration restores the conditions needed for growth in any surviving embryo.&r"]
 			disable_toast: true
 			id: "0C0473AAE983CA2E"
-			subtitle: "Dry Beetroot"
+			title: "Dry Beetroot Seeds"
 			tasks: [{
 				id: "4CDCACC54CB0A5C3"
 				item: "kubejs:dry_beetroot_seeds"
@@ -803,11 +930,14 @@
 		}
 		{
 			dependencies: ["3C9EB6854C43EE3D"]
-			description: ["&eBone meal for fertilizing soil.&r"]
+			description: [
+				"&eThe bone-meal reserve contributes mineral nutrients to the expanding soil supply. A nitrate supply covers nitrogen, while bone-derived phosphate serves a different need; healthy growth depends on more than either one alone.&r"
+				"&eKeep part of the reserve for preparing new ground, even when the current crop could use it immediately.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "761160110BAD09FD"
-			subtitle: "Fertilizer"
+			title: "Bone Meal for Soil"
 			tasks: [{
 				id: "6A3497061ACFF476"
 				item: "minecraft:bone_meal"
@@ -818,12 +948,14 @@
 		}
 		{
 			dependencies: ["3CECF5ADD3C91E4B"]
-			description: ["&eFound in caves underground. Can be broken down into gossypium.&r"]
+			description: [
+				"&eThe wild cave-carrot plant occurs underground and supplies gossypium. Its fibers can provide string immediately or seeds for a cotton crop.&r"
+			]
 			hide_dependency_lines: true
 			icon: "miners_delight:wild_cave_carrots"
 			id: "7AD8E7DC7BB46C73"
 			size: 1.5d
-			subtitle: "Found in Caves"
+			subtitle: "Underground Fiber Plant"
 			tasks: [{
 				icon: "miners_delight:wild_cave_carrots"
 				id: "0E4F68989128A2F8"
@@ -838,10 +970,15 @@
 		}
 		{
 			dependencies: ["7AD8E7DC7BB46C73"]
-			description: ["&eFibrous material from wild cave carrots. Can be processed into cotton seeds.&r"]
+			description: [
+				"&eGossypium recovered from the cave plant supplies flexible fibers that can serve as string, replacing cordage otherwise recovered from salvage.&r"
+				""
+				"&eSet some aside for cotton seeds before using the rest as string.&r"
+			]
 			disable_toast: true
 			id: "25CA7683076A428F"
-			subtitle: "Plant Fiber"
+			title: "Gossypium"
+			subtitle: "Fiber and Cotton Seeds"
 			tasks: [{
 				id: "661DE1D15271B538"
 				item: "miners_delight:gossypium"
@@ -852,10 +989,13 @@
 		}
 		{
 			dependencies: ["25CA7683076A428F"]
-			description: ["&eCotton seeds from gossypium. Ready for planting.&r"]
+			description: [
+				"&eA cotton plot would replace repeated searches for salvaged fiber. Cotton's long, flexible cellulose fibers can be twisted into thread or string, giving the plant a use in tools, textile stock and assembled equipment.&r"
+				"&eReserve planting stock alongside the harvested fiber so that the supply can continue.&r"
+			]
 			disable_toast: true
 			id: "19290BD4AAC5F63B"
-			subtitle: "Plantable"
+			title: "Cotton Seeds"
 			tasks: [{
 				id: "43C783BC6A23A816"
 				item: "rusticdelight:cotton_seeds"
@@ -871,11 +1011,15 @@
 				"3F40E1672701FCE4"
 			]
 			dependency_requirement: "one_completed"
-			description: ["&ePetrified wood that has become porous over time. Can be treated to extract amber.&r"]
+			description: [
+				"&ePorous petrified logs provide a base for amber growth. Place the log beneath a spout and leave its faces open for a cluster.&r"
+				"&eWater, sulfuric acid, and ethylene support growth with different success rates. A failed attempt still consumes the applied fluid.&r"
+			]
 			id: "19E5A9FCF4E7AC83"
+			title: "Porous Petrified Log"
 			shape: "circle"
 			size: 1.5d
-			subtitle: "Fossil Wood"
+			subtitle: "A Surface for Amber Growth"
 			tasks: [{
 				id: "19E9FDE7DD77F830"
 				item: "darkerdepths:porous_petrified_log"
@@ -886,10 +1030,10 @@
 		}
 		{
 			dependencies: ["19E5A9FCF4E7AC83"]
-			description: ["&eAmber extracted from petrified wood. Can be melted into sticky resin.&r"]
+			description: ["&eAmber is preserved resin, hardened over time. Harvest the clusters beside porous petrified logs and melt the amber into molten sticky resin. This supplies rubber manufacture after the loose salvage reserve begins to run out.&r"]
 			disable_toast: true
 			id: "4BD82A3FB052848F"
-			subtitle: "Fossil Resin"
+			title: "Amber"
 			tasks: [{
 				id: "1AAA813AC4E750FC"
 				item: "darkerdepths:amber"
@@ -900,10 +1044,13 @@
 		}
 		{
 			dependencies: ["4BD82A3FB052848F"]
-			description: ["&eMolten resin from amber. Sticky and useful.&r"]
+			description: [
+				"&eMolten sticky resin serves as a binder in machine assembly and as feedstock for rubber production.&r"
+				"&eAmber supplies the fossil source, while supported living trees offer another resin supply.&r"
+			]
 			disable_toast: true
 			id: "61596650A79A6A7E"
-			subtitle: "Sticky Resin"
+			title: "Molten Sticky Resin"
 			tasks: [{
 				id: "1BF305CB1F21B094"
 				item: "kubejs:molten_sticky_resin_bucket"
@@ -914,11 +1061,15 @@
 		}
 		{
 			dependencies: ["3CECF5ADD3C91E4B"]
-			description: ["&eSulfuric acid. Used to treat petrified wood.&r"]
+			description: [
+				"&6Amber treatment: sulfuric acid&r"
+				"&eApply sulfuric acid through a spout onto a porous petrified log. The treatment uses less fluid per attempt than water and gives amber a better chance to grow on an available face.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "3F40E1672701FCE4"
-			subtitle: "Better Treatment Fluid"
+			title: "Sulfuric Acid Treatment"
+			subtitle: "Improve Amber Growth"
 			tasks: [{
 				id: "0B95F908194F6666"
 				item: "kubejs:sulfuric_acid_bucket"
@@ -929,11 +1080,15 @@
 		}
 		{
 			dependencies: ["3CECF5ADD3C91E4B"]
-			description: ["&eEthylene. Used to treat petrified wood.&r"]
+			description: [
+				"&eAn ethylene spout treatment gives amber a strong chance to grow on a porous petrified log. Leave a face free for the cluster.&r"
+				"&eEthylene also supplies polymer manufacture. Its strongest growth treatment may not be the best use of a limited chemical reserve.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "03789598F3A87A86"
-			subtitle: "Best Treatment Fluid"
+			title: "Ethylene Treatment"
+			subtitle: "Ethylene for Amber Growth"
 			tasks: [{
 				id: "5D633DB7B1FED2B6"
 				item: "tfmg:ethylene_bucket"
@@ -944,11 +1099,11 @@
 		}
 		{
 			dependencies: ["3CECF5ADD3C91E4B"]
-			description: ["&eWater. Used to treat petrified wood.&r"]
+			description: ["&eWater can be applied through a spout onto a porous petrified log, but growth is less reliable. Leave the faces clear for repeated applications; acid and ethylene improve the odds when available.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "41933389CFE645C5"
-			subtitle: "Treatment Fluid"
+			title: "Water Treatment"
 			tasks: [{
 				id: "21FB838BEDFC4942"
 				item: "minecraft:water_bucket"
@@ -960,16 +1115,15 @@
 		{
 			dependencies: ["3CECF5ADD3C91E4B"]
 			description: [
-				"&eIn biomes of dryness and sandiness, layers of clay sealed two distinct carbon-based microorganisms, keeping them safe for hundreds of years.&r"
+				"&eClaystone biological sediment occurs in Sandy Caves between Y -63 and 63. Crushing may release preserved Carbofusor Spirillum and Putrelys Sporogenes, alongside bone fragments and mineral material.&r"
 				""
-				"&eThese ancient microbes, preserved in their earthen tomb, remain locked within the rock, waiting to be uncovered by your hands.&r"
-				""
-				"&eThough the world above turned to dust, these tiny survivors remind us that life finds a way to endure.&r"
+				"&eThe recovered cultures are dry. Preservation in clay is promising, but a recognizable sample is not the same thing as a working culture.&r"
 			]
 			hide_dependency_lines: true
 			id: "3EEC66CE7B96ECD5"
+			title: "Claystone Biological Sediment"
 			size: 1.5d
-			subtitle: "Dry claystone deposits"
+			subtitle: "Samples From Sandy Caves"
 			tasks: [{
 				id: "7F9456555A9E99F5"
 				item: "kubejs:claystone_biological_sediment"
@@ -980,11 +1134,14 @@
 		}
 		{
 			dependencies: ["3CECF5ADD3C91E4B"]
-			description: ["&eFound in glowshroom caves. Use a brush to extract Crystallum Coccus from its surface.&r"]
+			description: [
+				"   &3----------&r   &bSneak and Use Brush&r   &3----------&r"
+				"&eCrystallized phyllite occurs in Glowshroom Caves. Sneak and right-click the block with a brush to attempt extraction of Crystallum Coccus; brushing can also release redstone and quartz powder.&r"
+				"&eSuccessful culture extraction changes the block. Collect the output before moving on to the next surface.&r"
+			]
 			hide_dependency_lines: true
 			id: "03FD5DEDB1A74683"
 			size: 1.5d
-			subtitle: "In Glowshroom Caves"
 			tasks: [{
 				icon: "kubejs:crystalized_phyllite"
 				id: "1AF6D2CF379BFCC2"
@@ -993,16 +1150,20 @@
 				to_observe: "kubejs:crystalized_phyllite"
 				type: "observation"
 			}]
-			title: "Infected Phyllite"
+			title: "Crystallized Phyllite"
 			x: -24.5d
 			y: 8.0d
 		}
 		{
 			dependencies: ["03FD5DEDB1A74683"]
-			description: ["&eA crystal-catalyzing microbe obtained by brushing infected phyllite.&r"]
+			description: [
+				"&eCrystallum Coccus assists reconstruction of quartz, amethyst and other listed crystals, restoring useful crystal forms from dispersed mineral material. It is recovered by brushing crystallized phyllite while sneaking.&r"
+				"&eThose treatments return the culture. Preparing infected budding blocks consumes a sample, so retain a separate working reserve.&r"
+			]
 			disable_toast: true
 			id: "5182BDBC0B6D16AF"
-			subtitle: "Catalyze Crystal Growth"
+			title: "Crystallum Coccus"
+			subtitle: "Mineral Reconstruction Culture"
 			tasks: [{
 				id: "1B13EC8811D159B2"
 				item: "kubejs:crystallum_coccus"
@@ -1013,10 +1174,14 @@
 		}
 		{
 			dependencies: ["3EEC66CE7B96ECD5"]
-			description: ["&eDried carbon-fusing bacteria from claystone deposits.&r"]
+			description: [
+				"&eDried Carbofusor Spirillum may be recovered from crushed claystone biological sediment.&r"
+				"&7Revival protocol remains unconfirmed. The dry sample cannot replace active inoculum in carbon-processing treatments.&r"
+			]
 			disable_toast: true
 			id: "227D6E30C7143BCB"
-			subtitle: "Carbon Bacteria"
+			title: "Dried Carbofusor Spirillum"
+			subtitle: "A Dried Carbon Culture"
 			tasks: [{
 				id: "113602BC7C5C48E9"
 				item: "kubejs:dry_carbofusor_spirillum"
@@ -1027,10 +1192,15 @@
 		}
 		{
 			dependencies: ["227D6E30C7143BCB"]
-			description: ["&eRevived carbon-fusing bacteria. Converts organic matter into crude oil and methanol.&r"]
+			description: [
+				"&eAn active Carbofusor Spirillum culture is required to develop the peat, lignite, bituminous-coal, and coal sequence. It also supplies the coal-to-oil and heated syngas-to-methanol treatments.&r"
+				""
+				"&ePropagation requires a viable starter. The documented method does not settle how the dry sediment sample should first be revived.&r"
+			]
 			disable_toast: true
 			id: "52452BBA9F49586A"
-			subtitle: "Carbon Fusing"
+			title: "Carbofusor Spirillum"
+			subtitle: "The Active Carbon Catalyst"
 			tasks: [{
 				id: "5C2182167EFA480A"
 				item: "kubejs:carbofusor_spirillum"
@@ -1041,10 +1211,11 @@
 		}
 		{
 			dependencies: ["3EEC66CE7B96ECD5"]
-			description: ["&eBone fragments preserved in claystone deposits.&r"]
+			description: ["&eThe claystone deposits contain more than culture samples. Bone fragments separated by crushing can be milled into powder for bone meal, giving the Sandy Caves material a use in soil preparation as well as research.&r"]
 			disable_toast: true
 			id: "7CC8C2930A5D8598"
-			subtitle: "Preserved Bones"
+			title: "Claystone Bone Fragments"
+			subtitle: "A Second Bone Source"
 			tasks: [{
 				id: "732ECC82E87F8AC5"
 				item: "biomancy:bone_fragments"
@@ -1055,13 +1226,16 @@
 		}
 		{
 			dependencies: ["3CECF5ADD3C91E4B"]
-			description: ["&ePartially decayed plant matter from bogs. The first stage of coal formation.&r"]
+			description: [
+				"&ePeat stores partly decomposed plant material. In nature it accumulates where wet, oxygen-poor conditions slow decay, retaining carbon that would otherwise return more quickly to the environment.&r"
+				"&eThe culture-assisted carbon line uses this organic stock as a starting material for its coal supply.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "66E07B97EB6E41B9"
+			title: "Peat"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Bog Material"
 			tasks: [{
 				id: "003E33435007D4C3"
 				item: "kubejs:peat"
@@ -1072,12 +1246,15 @@
 		}
 		{
 			dependencies: ["66E07B97EB6E41B9"]
-			description: ["&eCompressed peat. A low-grade coal.&r"]
+			description: [
+				"&eLignite is a low-rank coal formed from altered plant material. Compared with more coalified material, it generally retains more moisture and oxygen-rich compounds, leaving less useful energy in the same mass of fuel.&r"
+				"&eMined deposits supplement the culture-assisted supply. Locally it serves as carbon stock for further fuel processing.&r"
+			]
 			disable_toast: true
 			id: "03C5FD608BA44B14"
+			title: "Lignite"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Brown Coal"
 			tasks: [{
 				id: "4EFC10A4830505CE"
 				item: "kubejs:lignite_item"
@@ -1088,12 +1265,15 @@
 		}
 		{
 			dependencies: ["03C5FD608BA44B14"]
-			description: ["&eFurther compressed lignite. A mid-grade coal.&r"]
+			description: [
+				"&eBituminous coal is more coalified than lignite, with a greater carbon contribution and generally less moisture. It has long served as an industrial fuel, and suitable grades can supply coke.&r"
+				"&eThe local material supports further culture-assisted carbon processing, linking organic recovery to the workshop's coal supply.&r"
+			]
 			disable_toast: true
 			id: "1135ECD7A3674B46"
+			title: "Bituminous Coal"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Soft Coal"
 			tasks: [{
 				id: "3D1ADB8E162409A6"
 				item: "kubejs:bituminous_coal"
@@ -1104,12 +1284,15 @@
 		}
 		{
 			dependencies: ["1135ECD7A3674B46"]
-			description: ["&eThe final stage of coal formation. A high-grade fuel.&r"]
+			description: [
+				"&eCoal stores chemical energy in a compact solid fuel. It supplies furnace heat, coke manufacture and carbon-based chemistry; carbon can also help remove oxygen from metal compounds during refining.&r"
+				"&eCulture-assisted production gives the workshop another supply alongside mined seams, bringing recovered organic carbon into the same industrial uses.&r"
+			]
 			disable_toast: true
 			id: "302D7A36FB1D3034"
+			title: "Coal"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Hard Coal"
 			tasks: [{
 				id: "390A7D0433F98D72"
 				item: "minecraft:coal"
@@ -1120,10 +1303,10 @@
 		}
 		{
 			dependencies: ["52452BBA9F49586A"]
-			description: ["&eCrude oil produced by carbon-fusing bacteria.&r"]
+			description: ["&eThe biological carbon line provides another crude-oil supply for refining. Crude oil is mixed hydrocarbon stock: separating its fractions yields more useful fuels and chemical feedstocks than the untreated mixture.&r"]
 			disable_toast: true
 			id: "11D7AE36D5A92985"
-			subtitle: "Bacterial Product"
+			title: "Biological Crude Oil"
 			tasks: [{
 				id: "740338ABF143935B"
 				item: "tfmg:crude_oil_bucket"
@@ -1134,10 +1317,11 @@
 		}
 		{
 			dependencies: ["52452BBA9F49586A"]
-			description: ["&eCompost residue produced by carbon-fusing bacteria.&r"]
+			description: ["&eActive Putrelys Sporogenes speeds compost decomposition, bringing its useful residue back into the soil and fuel supplies sooner. The same organic material also supplies compost tea and biogas, so accelerated recovery benefits several parts of the restoration apparatus.&r"]
 			disable_toast: true
 			id: "27A374095C25B7E0"
-			subtitle: "Faster Composting"
+			title: "Faster Composting"
+			subtitle: "Faster With Putrelys"
 			tasks: [{
 				id: "66A1BC3ABE337C9F"
 				item: "ratatouille:compost_residue"
@@ -1148,10 +1332,14 @@
 		}
 		{
 			dependencies: ["3EEC66CE7B96ECD5"]
-			description: ["&eDried decomposition bacteria from claystone deposits.&r"]
+			description: [
+				"&eDried Putrelys Sporogenes can be separated from crushed claystone biological sediment.&r"
+				"&eThe revival procedure is still unresolved. Compost acceleration and peat production require an active culture.&r"
+			]
 			disable_toast: true
 			id: "0B04CA26E87AB968"
-			subtitle: "Decomposition Bacteria"
+			title: "Dried Putrelys Sporogenes"
+			subtitle: "A Dried Decomposer Sample"
 			tasks: [{
 				id: "78AA522C15DA3239"
 				item: "kubejs:dry_putrelys_sporogenes"
@@ -1162,10 +1350,14 @@
 		}
 		{
 			dependencies: ["0B04CA26E87AB968"]
-			description: ["&eRevived decomposition bacteria. Breaks down organic matter.&r"]
+			description: [
+				"&eWorking Putrelys Sporogenes speeds compost fermentation and converts its residue into peat. Both processes return the culture.&r"
+				"&ePropagation requires an active sample. Keep a working reserve aside from the production line; a stored dry remnant does not establish that a replacement culture is viable.&r"
+			]
 			disable_toast: true
 			id: "01D81AC34759CA01"
-			subtitle: "Decomposition"
+			title: "Putrelys Sporogenes"
+			subtitle: "The Active Decomposer"
 			tasks: [{
 				id: "00DEBC133E7C9A2B"
 				item: "kubejs:putrelys_sporogenes"
@@ -1176,10 +1368,13 @@
 		}
 		{
 			dependencies: ["52452BBA9F49586A"]
-			description: ["&eMethanol produced by carbon-fusing bacteria.&r"]
+			description: [
+				"&eMethanol is a small alcohol used as a solvent and chemical feedstock. It mixes with water and dissolves many organic compounds.&r"
+				"&eThe workshop recovers it through carbon processing and wood-vinegar separation. It is toxic; keep this chemical supply distinct from the ethanol tanks.&r"
+			]
 			disable_toast: true
 			id: "666E40867F521D15"
-			subtitle: "Bacterial Product"
+			title: "Methanol"
 			tasks: [{
 				id: "21AB4264B2A1F6AF"
 				item: "kubejs:methanol_bucket"
@@ -1190,10 +1385,13 @@
 		}
 		{
 			dependencies: ["5182BDBC0B6D16AF"]
-			description: ["&eAmethyst bud enhanced by crystal-catalyzing microbes.&r"]
+			description: [
+				"&eCulture-treated budding amethyst makes more growth attempts per spout application than ordinary budding amethyst, improving the crystal supply from an established growing surface.&r"
+				"&eUse the same supported fluids and leave room for buds and clusters.&r"
+			]
 			disable_toast: true
 			id: "1F25BD25A172E591"
-			subtitle: "Grows Faster"
+			title: "Infected Budding Amethyst"
 			tasks: [{
 				id: "21D157F669D5DAD4"
 				item: "kubejs:infected_budding_amethyst"
@@ -1204,10 +1402,13 @@
 		}
 		{
 			dependencies: ["5182BDBC0B6D16AF"]
-			description: ["&eQuartz bud enhanced by crystal-catalyzing microbes.&r"]
+			description: [
+				"&eWater, lava, and caustic-soda spout treatments make more growth attempts on culture-treated budding quartz. The improved growing base provides a recurring supply for quartz-dependent components.&r"
+				"&eLeave open faces for the crystals.&r"
+			]
 			disable_toast: true
 			id: "096825DEE52A662C"
-			subtitle: "Grows Faster"
+			title: "Infected Budding Quartz"
 			tasks: [{
 				id: "2834C3A2FC8DC57B"
 				item: "kubejs:infected_budding_quartz"
@@ -1218,11 +1419,15 @@
 		}
 		{
 			dependencies: ["3CECF5ADD3C91E4B"]
-			description: ["&eDarkslate being corroded with acid. Contains Acidic Bacteria.&r"]
+			description: [
+				"&eAcidified darkslate occurs in Molten Caves between Y -63 and 30. Crushing releases dark ash and mineral powders, with chances of recovering Acidolys Bacillus.&r"
+				"&eRetain the culture separately from the mineral output.&r"
+			]
 			hide_dependency_lines: true
 			id: "5F996DDE34E30FFE"
+			title: "Acidified Darkslate"
 			size: 1.5d
-			subtitle: "Corroded Stone"
+			subtitle: "Search Molten Caves"
 			tasks: [{
 				id: "4B05660D6C736BFA"
 				item: "kubejs:acidified_darkslate"
@@ -1233,10 +1438,14 @@
 		}
 		{
 			dependencies: ["5F996DDE34E30FFE"]
-			description: ["&eAcid-making bacteria. Can dissolve armor, refine stones, and perform other functions.&r"]
+			description: [
+				"&eAcidolys Bacillus assists the separation of useful minerals from supported stone, gravel, and powders. It can be recovered by crushing acidified darkslate.&r"
+				"&eRock identity determines the useful minerals that can be recovered. Fine feedstock exposes more surface to treatment, while the returned culture allows the mineral-recovery work to continue.&r"
+			]
 			disable_toast: true
 			id: "2E77D91EAB2CD464"
-			subtitle: "Acidic Bacteria"
+			title: "Acidolys Bacillus"
+			subtitle: "The Stone-Separation Culture"
 			tasks: [{
 				id: "20D39875A214D33B"
 				item: "kubejs:acidolys_bacillus"
@@ -1247,7 +1456,10 @@
 		}
 		{
 			dependencies: ["2E77D91EAB2CD464"]
-			description: ["&eUses Acidolys Bacillus to dissolve armor into raw materials.&r"]
+			description: [
+				"&eUse Acidolys Bacillus to recover mineral ingredients from supported rocks. The accepted stone, gravel, or powder depends on the intended output.&r"
+				"&eRecovered powders supply soil additives, clay and flint production, and later metal processing. Return the culture to the next batch.&r"
+			]
 			disable_toast: true
 			icon: {
 				Count: 1
@@ -1259,24 +1471,28 @@
 			id: "28AAA52174010B75"
 			tasks: [{
 				id: "5AE93C5A6527DC10"
-				title: "Armor Dissolving"
+				title: "Recover Useful Minerals"
 				type: "checkmark"
 			}]
+			title: "Recover Useful Minerals"
 			x: -21.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["2E77D91EAB2CD464"]
-			description: ["&eUses Acidolys Bacillus to refine stone into other forms.&r"]
+			description: [
+				"&eA rock can contain several useful mineral contributions. Culture-assisted separation makes those contributions available as distinct powders, supplying clay, flint and other materials without treating every rock as interchangeable stock.&r"
+				"&eFiner particles expose more surface to the treatment. The useful mixture still depends on the original rock's composition.&r"
+			]
 			disable_toast: true
 			icon: "minecraft:granite"
 			id: "5518C951F8D3EA0A"
 			tasks: [{
 				id: "563D463354EB9293"
-				title: "Stone Refining"
+				title: "Microbial Stone Separation"
 				type: "checkmark"
 			}]
-			title: "Stone Refining"
+			title: "Microbial Stone Separation"
 			x: -20.0d
 			y: 10.0d
 		}

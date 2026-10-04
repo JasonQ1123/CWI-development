@@ -51,10 +51,16 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"&eThe petroleum manual covers surveying, pumpjack construction, fractionation, and reactions that turn crude oil into fuels and chemical feedstocks.&r"
+				""
+				"&eRefining separates the mixed resource into useful streams. Some supply combustion engines; others provide the small molecules from which plastics, rubber stock, and further chemicals can be made.&r"
+			]
 			id: "23BC2F1468912FE3"
 			invisible: true
 			shape: "gear"
 			size: 2.0d
+			subtitle: "Refinery Operating Copy"
 			tasks: [{
 				id: "3781ED6D058AF3D4"
 				item: "kubejs:petroleum_manual"
@@ -66,6 +72,13 @@
 		}
 		{
 			dependencies: ["23BC2F1468912FE3"]
+			description: [
+				"&eDistillation separates a mixture using differences in volatility. In a tower, vapor cools as it rises, allowing different petroleum fractions to be recovered through separate outlets.&r"
+				""
+				"&eCrude processing recovers residual oil, wax oil, diesel, kerosene, and naphtha. The tower also separates mixtures produced by later cracking reactions; distillation separates compounds, while cracking changes them chemically.&r"
+				""
+				"&ePlace the heat source beneath the tower's steel tanks and feed the mixture into the controller. Each outlet can stop distillation when full or void excess fluid; choose its mode according to whether that stream must be preserved.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "71A1E5FE72C80780"
@@ -83,11 +96,13 @@
 					type: "item"
 				}
 			]
+			title: "Steel Distillation Tower"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["23BC2F1468912FE3"]
+			description: ["&eThe machine input receives rotation from the power network. The pumpjack crank converts that continuous rotation into the back-and-forth movement needed by the extraction assembly.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "2C6354E880DA2306"
@@ -105,16 +120,19 @@
 					type: "item"
 				}
 			]
+			title: "Pumpjack Drive"
 			x: 0.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["23BC2F1468912FE3"]
+			description: ["&eThe beam carries motion from the pumpjack drive to its extraction end. The connector joins it to the drive linkage, while the head forms the outer end of the moving assembly.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "0994F189C3CEA26E"
 			shape: "hexagon"
 			size: 1.5d
+			subtitle: "Moving Beam Assembly"
 			tasks: [
 				{
 					id: "0FCBECA9008AF67B"
@@ -132,16 +150,23 @@
 					type: "item"
 				}
 			]
+			title: "Pumpjack Beam Parts"
 			x: 0.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["23BC2F1468912FE3"]
+			description: [
+				"&eThe base supports the pumpjack's moving assembly at the extraction site.&r"
+				""
+				"&eThe base connects to the deposit through industrial pipes extending down into the ground. The beam parts must be joined with Super Glue so they move as one assembly.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "6B70EE9075BB5385"
 			shape: "hexagon"
 			size: 1.5d
+			subtitle: "Install at the Surveyed Site"
 			tasks: [
 				{
 					id: "3976BC13927BFCE5"
@@ -154,11 +179,13 @@
 					type: "item"
 				}
 			]
+			title: "Pumpjack Base and Hammer"
 			x: 2.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["23BC2F1468912FE3"]
+			description: ["&eUse the scanner's petroleum reading to choose the pumpjack site before extending industrial pipes down to the deposit. Surface appearance alone does not identify extraction ground.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "25D0B69D3F5EBC20"
@@ -169,11 +196,17 @@
 				item: "tfmg:surface_scanner"
 				type: "item"
 			}]
+			title: "Surface Scanner"
 			x: 4.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["44136ADDCD8EAD4F"]
+			description: [
+				"&ePolyethylene consists of long chains built from ethylene units. The chains turn a small gaseous molecule into a lightweight solid that can be shaped into sheets, containers, and other manufactured stock.&r"
+				""
+				"&eIts resistance to moisture and poor electrical conductivity make it familiar in packaging and insulation. The refinery supplies polyethylene in cast solid and sheet forms.&r"
+			]
 			disable_toast: true
 			id: "307A621A21A3E63C"
 			shape: "square"
@@ -182,6 +215,7 @@
 				item: "kubejs:polyethylene"
 				type: "item"
 			}]
+			title: "Polyethylene"
 			x: 10.0d
 			y: -2.0d
 		}
@@ -192,6 +226,9 @@
 				"6B70EE9075BB5385"
 				"25D0B69D3F5EBC20"
 			]
+			description: [
+				"&eCrude oil contains hydrocarbons with different chain lengths and boiling behavior. The pumpjack recovers this mixed resource; the steel distillation tower separates it into fuels and chemical feedstocks.&r"
+			]
 			disable_toast: true
 			id: "2BB7B30F3B59D458"
 			tasks: [{
@@ -199,19 +236,27 @@
 				item: "tfmg:crude_oil_bucket"
 				type: "item"
 			}]
+			title: "Crude Oil"
 			x: 2.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["2BB7B30F3B59D458"]
+			description: [
+				"&eNaphtha is a lighter petroleum fraction whose hydrocarbons serve as starting material for chemical manufacture. Steam cracking breaks larger molecules into smaller ones, supplying ethylene and propylene for plastics.&r"
+				""
+				"&eReforming offers a different use: it rearranges hydrocarbons into a mixture from which aromatic chemicals can be recovered. Naphtha therefore links crude refining to both polymer and aromatic chemistry.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "28F5C1BA9431AF60"
+			subtitle: "Naphtha as Feedstock"
 			tasks: [{
 				id: "7DC916E7F2D0EBDA"
 				item: "tfmg:naphtha_bucket"
 				type: "item"
 			}]
+			title: "Naphtha"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -220,6 +265,11 @@
 				"2BB7B30F3B59D458"
 				"71A1E5FE72C80780"
 			]
+			description: [
+				"&eHeavy oil provides hydrocarbon-rich stock for rubber sheets and bitumen, giving the petroleum line material uses beyond combustion fuel.&r"
+				""
+				"&eThis stock is distinct from the residual oil and wax oil recovered by the current crude-distillation process.&r"
+			]
 			disable_toast: true
 			id: "21FEFC379E961856"
 			tasks: [{
@@ -227,198 +277,279 @@
 				item: "tfmg:heavy_oil_bucket"
 				type: "item"
 			}]
+			title: "Heavy Oil"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["21FEFC379E961856"]
+			description: [
+				"&eRubber's elastic behavior makes it useful where a rigid metal joint would not seal or flex well. Rubber sheets supply the pump's sealing stock and other assemblies that accept rubber.&r"
+				""
+				"&eSulfur is used in the petroleum-to-rubber process. In ordinary rubber manufacture, sulfur forms links between polymer chains, helping the material retain its shape after stretching. Sheets also supply synthetic leather and string.&r"
+			]
 			disable_toast: true
 			id: "301441864FC92B6B"
 			shape: "square"
+			subtitle: "Rubber from Petroleum Stock"
 			tasks: [{
 				id: "436EA8CE3140970E"
 				item: "tfmg:rubber_sheet"
 				type: "item"
 			}]
+			title: "Industrial Rubber"
 			x: 6.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["301441864FC92B6B"]
+			description: ["&eSynthetic leather uses rubber as a flexible base in place of animal hide. It serves recipes that accept leather, allowing the refinery to supply this material.&r"]
 			disable_toast: true
 			id: "1A19C3A9645CFCFF"
+			subtitle: "Synthetic Sheet Material"
 			tasks: [{
 				id: "365F161193EF417A"
 				item: "tfmg:synthetic_leather"
 				type: "item"
 			}]
+			title: "Synthetic Leather"
 			x: 6.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["21FEFC379E961856"]
+			description: ["&eBitumen is a viscous, hydrocarbon-rich binder. Its adhesive and water-resistant character makes it useful in paving and waterproofing; in asphalt mixture it holds gravel and slag together as a continuous surface.&r"]
 			disable_toast: true
 			id: "7D310A7F3C5FC0EF"
+			subtitle: "Bituminous Binder"
 			tasks: [{
 				id: "2FD7717FA4A2C13F"
 				item: "tfmg:bitumen"
 				type: "item"
 			}]
+			title: "Bitumen"
 			x: 2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["7D310A7F3C5FC0EF"]
+			description: ["&eAsphalt mixture combines gravel and slag with bitumen. The aggregate forms the solid body of the paving material, while the binder holds those particles together. Furnace slag gains a second use as construction stock.&r"]
 			disable_toast: true
 			id: "6E443BA43458D311"
+			subtitle: "Binder and Aggregate"
 			tasks: [{
 				id: "5640B425E24B26E8"
 				item: "tfmg:asphalt_mixture"
 				type: "item"
 			}]
+			title: "Asphalt Mixture"
 			x: 0.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6E443BA43458D311"]
+			description: ["&eAsphalt turns loose mineral aggregate into a bound paved surface for paths and factory yards. Its bituminous binder holds the aggregate together, while the liquid form allows the material to be handled before placement.&r"]
 			disable_toast: true
 			id: "6182694F6CB2E60A"
+			subtitle: "Paved Surfaces"
 			tasks: [{
 				id: "1C8CF0EB08FC4EE3"
 				item: "tfmg:asphalt"
 				type: "item"
 			}]
+			title: "Asphalt"
 			x: 0.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["3DB9E5F294FAFF09"]
+			description: ["&eThe bomb's casing carries napalm until deployment, when its incendiary filling ignites an area.&r"]
 			disable_toast: true
 			id: "3B660F7A6A01F864"
 			shape: "diamond"
+			subtitle: "Incendiary Stores"
 			tasks: [{
 				id: "79B9416FC88C852E"
 				item: "tfmg:napalm_bomb"
 				type: "item"
 			}]
+			title: "Napalm Bomb"
 			x: 6.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["6B3B0E0C4983791F"]
+			description: ["&eNapalm is a thickened incendiary fuel used in napalm bombs. Thickening makes burning fuel remain where it lands instead of behaving like a freely flowing engine fuel.&r"]
 			disable_toast: true
 			id: "3DB9E5F294FAFF09"
+			subtitle: "Separate Incendiary Fluid"
 			tasks: [{
 				id: "17A57557DDC12D91"
 				item: "tfmg:napalm_bucket"
 				type: "item"
 			}]
+			title: "Napalm"
 			x: 6.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["2BB7B30F3B59D458"]
+			description: [
+				"&eGasoline is a volatile petroleum fuel used by compatible engines and fluid-fed burners. Combustion releases chemical energy as heat, which an engine turns into movement; it also supplies the fuel base for napalm.&r"
+				""
+				"&eCracking wax oil produces a mixture from which gasoline can be separated, turning heavier refinery stock into a lighter fuel.&r"
+			]
 			disable_toast: true
 			id: "6B3B0E0C4983791F"
+			subtitle: "Gasoline Recovery"
 			tasks: [{
 				id: "059B563E7C8F20F3"
 				item: "tfmg:gasoline_bucket"
 				type: "item"
 			}]
+			title: "Gasoline"
 			x: 4.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["21FEFC379E961856"]
+			description: [
+				"&eLubrication oil forms a film between contacting machine parts. That film reduces friction and wear where cylinders, bearings, and other moving surfaces would otherwise rub directly against one another.&r"
+				""
+				"&eCylinder and fuel-injector assembly, diesel engines, and heavy machine cores use this oil to prepare their working parts.&r"
+			]
 			disable_toast: true
 			id: "7E496F23593AA01F"
+			subtitle: "Assembly Lubricant Reserve"
 			tasks: [{
 				id: "184655FC37C9735C"
 				item: "tfmg:lubrication_oil_bucket"
 				type: "item"
 			}]
+			title: "Lubrication Oil"
 			x: 4.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["307A621A21A3E63C"]
+			description: [
+				"   &3---&r   &bWrench: Switch Mode While Idle&r   &3---&r"
+				""
+				"&eThis kinetic chamber has vacuumizing and pressurizing modes. Right-clicking with a wrench selects which pressure operation it performs, but the mode can only change while idle. Some recipes also need heat from a Blaze Burner.&r"
+				""
+				"&eMechanical pumps can fill and drain the chamber's secondary fluid tanks. In pressurizing mode, it can turn sulfur into sulfur dioxide for later chemical work.&r"
+			]
 			disable_toast: true
 			id: "016E8D66E5C67081"
 			shape: "hexagon"
 			size: 1.5d
+			subtitle: "Pressure-Controlled Apparatus"
 			tasks: [{
 				id: "7D8F60C33D8D3387"
 				item: "vintageimprovements:vacuum_chamber"
 				type: "item"
 			}]
+			title: "Vacuum Chamber"
 			x: 10.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["7E496F23593AA01F"]
+			description: ["&eCylinders put the refinery's fuels to work in a diesel engine. Each contains the space where burning fuel expands against a piston; lubrication oil helps the piston travel repeatedly along its bore.&r"]
 			disable_toast: true
 			id: "504E3CD0908F07C3"
 			shape: "hexagon"
 			size: 1.5d
+			subtitle: "Piston Chamber"
 			tasks: [{
 				id: "6D765EE09DC88032"
 				item: "kubejs:engine_cylinder"
 				type: "item"
 			}]
+			title: "Engine Cylinder"
 			x: 4.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["28F5C1BA9431AF60"]
+			description: [
+				"&eEthylene is a small hydrocarbon with a carbon-carbon double bond. That bond allows molecules to join into long chains, making ethylene the starting monomer for polyethylene.&r"
+				""
+				"&eIt also supplies the carbon skeleton for the chlorinated intermediates used in PVC production. Petroleum cracking makes this useful small molecule from larger hydrocarbons.&r"
+			]
 			disable_toast: true
 			id: "49ACE7B6A81987AA"
+			subtitle: "Ethylene Recovery"
 			tasks: [{
 				id: "7D17880A3C2D58CE"
 				item: "tfmg:ethylene_bucket"
 				type: "item"
 			}]
+			title: "Ethylene"
 			x: 8.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["28F5C1BA9431AF60"]
+			description: [
+				"&ePropylene is the monomer used for polypropylene. Like ethylene, its double bond allows molecules to join into chains; the extra carbon group gives the resulting polymer a different structure and material behavior.&r"
+				""
+				"&eCracking products supply propylene, and removing hydrogen from propane provides another route to the same chemical feedstock.&r"
+			]
 			disable_toast: true
 			id: "3FD32B9970D4E3D9"
+			subtitle: "Propylene Recovery"
 			tasks: [{
 				id: "246CD4E629D90A01"
 				item: "tfmg:propylene_bucket"
 				type: "item"
 			}]
+			title: "Propylene"
 			x: 8.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["49ACE7B6A81987AA"]
+			description: [
+				"&ePVC is made by polymerizing vinyl chloride, so its chlorine must be incorporated before the long chains are formed. Ethylene first becomes a chlorinated intermediate; that intermediate supplies the monomer used by the polymerization process.&r"
+				""
+				"&eThe molten polymer can be shaped into solid stock and sheets. Muriatic acid is recovered separately during monomer production, giving the process another useful chemical output.&r"
+			]
 			disable_toast: true
 			id: "56CD87E991F1847E"
+			subtitle: "PVC Reaction Sequence"
 			tasks: [{
 				id: "04F087015BC8C95A"
 				item: "kubejs:molten_polyvinyl_chloride_bucket"
 				type: "item"
 			}]
+			title: "Molten Polyvinyl Chloride"
 			x: 8.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["49ACE7B6A81987AA"]
 			dependency_requirement: "one_completed"
+			description: ["&ePolymerization joins ethylene molecules into polyethylene chains. The molten product remains workable, allowing a casting mold to turn the polymer into solid stock or sheets.&r"]
 			disable_toast: true
 			id: "44136ADDCD8EAD4F"
+			subtitle: "Polyethylene Polymerization"
 			tasks: [{
 				id: "66A3A164A1070989"
 				item: "kubejs:molten_polyethylene_bucket"
 				type: "item"
 			}]
+			title: "Molten Polyethylene"
 			x: 10.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["56CD87E991F1847E"]
+			description: [
+				"&ePVC is a chlorine-containing thermoplastic. Its rigid forms are widely used for pipes and profiles; additives can make it flexible enough for coverings and cable insulation.&r"
+				""
+				"&eThe refinery provides it as cast stock and sheets, turning vinyl chloride chemistry into a solid material that can be shaped and handled.&r"
+			]
 			disable_toast: true
 			id: "6BED6C70FDA0D4A7"
 			shape: "square"
@@ -427,11 +558,13 @@
 				item: "kubejs:polyvinyl_chloride"
 				type: "item"
 			}]
+			title: "Polyvinyl Chloride"
 			x: 8.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["301441864FC92B6B"]
+			description: ["&eSynthetic string turns manufactured rubber stock into a flexible strand. It supplies recipes that accept string and the manufacture of synthetic feathers.&r"]
 			disable_toast: true
 			id: "1C259AB093CFCFCE"
 			tasks: [{
@@ -439,23 +572,32 @@
 				item: "tfmg:synthetic_string"
 				type: "item"
 			}]
+			title: "Synthetic String"
 			x: 8.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["3FD32B9970D4E3D9"]
+			description: ["&ePolymerization links propylene molecules into long polypropylene chains. While molten, the polymer can take the shape of a mold; cooling gives it the solid form used as material stock and sheets.&r"]
 			disable_toast: true
 			id: "5C58A1D7357251A1"
+			subtitle: "Polypropylene Polymerization"
 			tasks: [{
 				id: "516045C1D1967A74"
 				item: "kubejs:molten_polypropylene_bucket"
 				type: "item"
 			}]
+			title: "Molten Polypropylene"
 			x: 10.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["5C58A1D7357251A1"]
+			description: [
+				"&ePolypropylene is a lightweight thermoplastic made from propylene units. Its resistance to many chemicals and ability to form tough fibers make it useful in containers, textiles, and molded parts.&r"
+				""
+				"&eLike polyethylene, it can be reshaped by heating and cooling. Its different chain structure gives it different stiffness and heat behavior.&r"
+			]
 			disable_toast: true
 			id: "5559F2157588513F"
 			shape: "square"
@@ -464,24 +606,26 @@
 				item: "kubejs:polypropylene"
 				type: "item"
 			}]
+			title: "Polypropylene"
 			x: 10.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["7E496F23593AA01F"]
 			description: [
-				"&eThe lubricating effect of lubrication oil is far greater than that of ordinary plant oil.&r"
+				"&eLubricant keeps moving surfaces apart with an oil film, reducing direct contact and friction. The heavy machine core accepts specialized lubrication oil as an alternative to plant oil.&r"
 				""
-				"&eUsing lubrication oil can significantly reduce the amount of lubricant consumed.&r"
+				"&eThe specialized stock needs a smaller fluid charge for the same assembly. This is an advantage in manufacture, rather than a change to the finished core's function.&r"
 			]
 			icon: "kubejs:incomplete_heavy_machine"
 			id: "572404482C0E55DE"
-			subtitle: "Less Lubrication"
+			subtitle: "Compare the Lubricant Charge"
 			tasks: [{
 				id: "09BC0F68C8033C32"
-				title: "Better Recipe"
+				title: "Compare Lubrication Oils"
 				type: "checkmark"
 			}]
+			title: "Use Less Lubricant"
 			x: 2.0d
 			y: 4.0d
 		}

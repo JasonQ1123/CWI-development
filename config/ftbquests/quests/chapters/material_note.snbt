@@ -10,22 +10,33 @@
 	quests: [
 		{
 			dependencies: ["616D088897D2FF8D"]
+			description: [
+				"&eMaterial selection depends on the job: a structural part needs stiffness and strength, a conductor needs suitable electrical properties, and a vessel must tolerate its contents and temperature.&r"
+				""
+				"&eMetals, alloys, minerals and polymers each offer different combinations of these properties. The same substance may be supplied as an ingot, sheet, rod, wire or powder.&r"
+			]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "7D0C6F93C6FE1761"
 			shape: "gear"
 			size: 3.0d
-			subtitle: "Not Yet Completed"
+			subtitle: "Properties and Applications"
 			tasks: [{
 				id: "648902203FB63097"
 				item: "kubejs:material_note"
 				type: "item"
 			}]
+			title: "Material Notes"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eIron, Fe, is a widely used structural metal. Pure iron is relatively soft; its properties change greatly with carbon content, alloying and heat treatment.&r"
+				""
+				"&eIron supplies machinery, tools and armor because it can be formed into structural parts and adjusted into stronger grades. Hematite, magnetite and ordinary iron ore supply the local metal.&r"
+			]
 			hide_dependency_lines: true
 			id: "50BE729E62F6FAA2"
 			tasks: [{
@@ -33,11 +44,19 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
+			title: "Iron"
 			x: -6.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eCopper conducts heat and electricity readily, while its ductility allows it to be drawn into wire or formed into sheets and tubing without easily cracking.&r"
+				""
+				"&eIt supplies local pipes, pumps and fluid equipment. In engineering, its workability is useful for tubes and fittings, and its thermal conductivity makes it valuable in heat exchangers. Copper is also the base metal of brass, bronze and constantan.&r"
+				""
+				"&eIn real structures, copper exposed for long periods can develop the green patina familiar on old roofs and monuments.&r"
+			]
 			hide_dependency_lines: true
 			id: "5426E7D7F40C6487"
 			tasks: [{
@@ -45,11 +64,17 @@
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
+			title: "Copper"
 			x: -4.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eGold is dense, soft and highly malleable. Electrical contacts must carry current across their surfaces, and an oxide layer can interfere with that connection. Gold's resistance to oxidation makes it valuable for electrical contacts despite its cost.&r"
+				""
+				"&eElectrical contacts are often plated with a thin gold layer over another metal, conserving gold while protecting the contact surface. Alloying gold with silver produces electrum.&r"
+			]
 			hide_dependency_lines: true
 			id: "3532B5F30CC8F6D6"
 			tasks: [{
@@ -57,11 +82,17 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
+			title: "Gold"
 			x: 0.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eRust is a mixture of iron oxides and related compounds formed by corrosion. Its flaky, porous layer does not protect the underlying metal as effectively as the oxide film on aluminum.&r"
+				""
+				"&eLocal rusted-iron stock comes from salvage and supplies early tools, sheets, rods and wire. Corrosion damage makes real reclaimed iron less predictable than sound metal.&r"
+			]
 			hide_dependency_lines: true
 			id: "7562302EB17BA45D"
 			tasks: [{
@@ -69,11 +100,17 @@
 				item: "kubejs:rusted_iron_ingot"
 				type: "item"
 			}]
+			title: "Rusted Iron"
 			x: -6.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eMagnesium is a low-density metal used in lightweight alloys. Reducing the mass of a housing or moving part can ease the load on a vehicle or machine, provided the chosen alloy has sufficient strength. Magnesite supplies the local metal.&r"
+				""
+				"&eIn real pyrotechnics, fine magnesium particles expose a large surface to oxygen and burn with an intense white light. A bulk piece is less readily ignited than fine powder.&r"
+			]
 			hide_dependency_lines: true
 			id: "09AA38A7FEBAB559"
 			tasks: [{
@@ -81,11 +118,17 @@
 				item: "kubejs:magnesium_ingot"
 				type: "item"
 			}]
+			title: "Magnesium"
 			x: 2.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eSilver has the highest electrical conductivity of the pure metals at room temperature, making it useful for low-resistance contacts and conductors. Sulfur compounds can tarnish the surface, so preserving a clean contact matters.&r"
+				""
+				"&eIts local uses include electrum and silver catalysts. Ordinary silver ore and several compound-mineral byproducts supply the metal.&r"
+			]
 			hide_dependency_lines: true
 			id: "0ADBED42AB255741"
 			tasks: [{
@@ -93,11 +136,17 @@
 				item: "kubejs:silver_ingot"
 				type: "item"
 			}]
+			title: "Silver"
 			x: 6.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eAdding tin to copper produces a harder alloy. Suitable bronzes resist wear and sliding friction, which is why bronze has long been used for bearings, tools and other parts that rub against one another.&r"
+				""
+				"&eLocal bronze supplies tools, armor, train-track components and the steam apparatus.&r"
+			]
 			hide_dependency_lines: true
 			id: "72ADBE52D4063EC7"
 			tasks: [{
@@ -105,11 +154,17 @@
 				item: "kubejs:bronze_ingot"
 				type: "item"
 			}]
+			title: "Bronze"
 			x: -2.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eElectrum is a gold-silver alloy that can also occur naturally. Its color ranges from yellow to pale gold as the silver content changes; it was used for some of the earliest coins.&r"
+				""
+				"&eAlloying silver with gold can increase hardness while retaining useful conductivity and resistance to corrosion. Gold-silver alloys have served in jewelry and electrical contacts, where a stable contact surface matters as much as carrying current.&r"
+			]
 			hide_dependency_lines: true
 			id: "7D240FC1B3726CB7"
 			tasks: [{
@@ -117,11 +172,17 @@
 				item: "createaddition:electrum_ingot"
 				type: "item"
 			}]
+			title: "Electrum"
 			x: 0.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eBrass combines copper and zinc. Suitable grades are easy to machine into closely fitted parts and resist ordinary atmospheric corrosion, making them useful for valves, fittings and instruments.&r"
+				""
+				"&eCasings and precision mechanisms use brass as shaped structural stock. Its workability explains its place in small mechanical assemblies, where holes, shafts and mating surfaces must be formed accurately.&r"
+			]
 			hide_dependency_lines: true
 			id: "6237BB01B2A8E60E"
 			tasks: [{
@@ -129,11 +190,17 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
+			title: "Brass"
 			x: -4.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eThe zinc stock used here is green and gray. In real industry, a zinc coating can protect steel even after small scratches because the zinc corrodes preferentially.&r"
+				""
+				"&eLocally, zinc combines with copper for brass and acts as a returned catalyst in faster polyethylene and PVC reactions. Zinc ore and sphalerite supply the metal.&r"
+			]
 			hide_dependency_lines: true
 			id: "5A771DA7EF21B5F0"
 			tasks: [{
@@ -141,11 +208,17 @@
 				item: "create:zinc_ingot"
 				type: "item"
 			}]
+			title: "Zinc"
 			x: -2.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eSteel is an iron-based alloy with controlled carbon content. Carbon and other alloying elements, together with heat treatment, allow a wide range of strengths and toughnesses.&r"
+				""
+				"&eSteel supplies heavy machines, drill components, reinforced blast-furnace parts and engine components. Its sheets, rods and wire serve different structural and mechanical roles.&r"
+			]
 			hide_dependency_lines: true
 			id: "07ACB2FA5B6EDF33"
 			tasks: [{
@@ -153,11 +226,17 @@
 				item: "tfmg:steel_ingot"
 				type: "item"
 			}]
+			title: "Steel"
 			x: 6.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eIndustrial iron is treated iron stock used for precision machinery, engine pistons, blades, drill heads and springs. Those parts transmit force, hold alignment or undergo repeated motion, so the condition of the metal matters alongside its shape.&r"
+				""
+				"&eThe name denotes a processed iron grade. Real iron's response to working and quenching depends strongly on its carbon content and other impurities.&r"
+			]
 			hide_dependency_lines: true
 			id: "3FA76D1E7FAA0B28"
 			tasks: [{
@@ -165,11 +244,17 @@
 				item: "kubejs:industrial_iron_ingot"
 				type: "item"
 			}]
+			title: "Industrial Iron"
 			x: 2.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eCast iron flows well when molten and can be cast into complex housings, pipes and vessels. Many grades resist compressive loads and wear and damp vibration, but are comparatively brittle under impact or bending.&r"
+				""
+				"&eIt supplies local industrial pipes, pumps, tanks and vats. Conventional cast iron contains more carbon than most steels; that composition contributes to its casting behavior and mechanical properties.&r"
+			]
 			hide_dependency_lines: true
 			id: "1F5EED41C0CCF3B8"
 			tasks: [{
@@ -177,11 +262,17 @@
 				item: "tfmg:cast_iron_ingot"
 				type: "item"
 			}]
+			title: "Cast Iron"
 			x: 4.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eLead is a dense, soft metal with a comparatively low melting point. Its density makes it useful in radiation shielding and weights; its toxicity limits many uses.&r"
+				""
+				"&eLead ore and galena supply the local metal. It has sheet, rod, wire and powder forms. Lead ingots can also repair recovered lead tools.&r"
+			]
 			hide_dependency_lines: true
 			id: "5993E08C4DDDF021"
 			tasks: [{
@@ -189,11 +280,19 @@
 				item: "tfmg:lead_ingot"
 				type: "item"
 			}]
+			title: "Lead"
 			x: 4.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&ePolyvinyl chloride, or PVC, is a chlorine-containing polymer. Rigid PVC combines useful stiffness with resistance to many chemicals, which makes it suitable for pipes and protective profiles.&r"
+				""
+				"&ePlasticizers can make it flexible enough for cable coatings, which electrically insulate the conductor and protect it mechanically.&r"
+				""
+				"&eIn real installations, excessive heat causes PVC to lose useful properties.&r"
+			]
 			hide_dependency_lines: true
 			id: "27A9A84592979C3D"
 			tasks: [{
@@ -201,11 +300,17 @@
 				item: "kubejs:polyvinyl_chloride"
 				type: "item"
 			}]
+			title: "Polyvinyl Chloride"
 			x: 2.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&ePolyethylene consists of long chains made from ethylene. Branching and chain arrangement change how tightly those chains pack, producing grades that range from flexible films to relatively rigid containers and pipes.&r"
+				""
+				"&eIn real manufacture, its low density and resistance to many chemicals suit lightweight containers and protective liners. Good electrical insulation also makes it useful around wires. Excessive heat softens it, limiting these applications.&r"
+			]
 			hide_dependency_lines: true
 			id: "6BF322152F6631D9"
 			tasks: [{
@@ -213,11 +318,15 @@
 				item: "kubejs:polyethylene"
 				type: "item"
 			}]
+			title: "Polyethylene"
 			x: 0.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&ePolybenzimidazole, PBI, has a rigid, ring-rich molecular structure that remains stable at temperatures where many ordinary polymers lose their useful properties. Its fibers serve in heat-protective clothing; solid grades can be used for demanding seals and insulating parts.&r"
+			]
 			hide_dependency_lines: true
 			id: "58324EBEC63B3718"
 			tasks: [{
@@ -225,11 +334,17 @@
 				item: "kubejs:polybenzimidazole"
 				type: "item"
 			}]
+			title: "Polybenzimidazole"
 			x: 4.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eSilicon is a semiconductor: carefully introduced impurities allow its electrical behavior to be controlled. This is the basis of silicon diodes and transistors, which direct current, switch circuits and amplify signals.&r"
+				""
+				"&eElectronic applications require much purer silicon than ordinary industrial stock. The local powder also supplies a fireclay mixture. Elemental silicon is chemically different from the silicon dioxide found in quartz.&r"
+			]
 			hide_dependency_lines: true
 			id: "6DDF31AF3BC4DB93"
 			tasks: [{
@@ -237,11 +352,17 @@
 				item: "tfmg:silicon_ingot"
 				type: "item"
 			}]
+			title: "Silicon"
 			x: -4.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eThe local rose quartz is redstone-treated quartz used in electron tubes and precision components. Polishing produces the finished crystal required by those assemblies.&r"
+				""
+				"&eNatural rose quartz is a pink variety of quartz, with color arising from microscopic inclusions or crystal defects. Redstone treatment is particular to the local material process.&r"
+			]
 			hide_dependency_lines: true
 			id: "1BD92F0CA52086EF"
 			tasks: [{
@@ -249,11 +370,13 @@
 				item: "create:polished_rose_quartz"
 				type: "item"
 			}]
+			title: "Polished Rose Quartz"
 			x: -6.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: ["&eMolybdenum is a refractory metal with a very high melting point. In steel it can form hard carbides and improve performance under heat and load, making it useful in cutting tools and demanding machine parts. Local supplies come from cassiterite and chalcocite byproducts.&r"]
 			hide_dependency_lines: true
 			id: "4FAFF56A3C8E29C9"
 			tasks: [{
@@ -261,11 +384,17 @@
 				item: "kubejs:molybdenum_ingot"
 				type: "item"
 			}]
+			title: "Molybdenum"
 			x: 6.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eNickel is used in protective plating and corrosion-resistant alloys. In many stainless steels it helps stabilize a tough, ductile crystal structure; in copper-nickel alloys it also changes electrical resistance.&r"
+				""
+				"&eThe local powder supplies catalysts and constantan. A nickel catalyst provides a surface on which chemical reactions can proceed more readily without consuming the nickel itself. Nickel ore and pentlandite supply the metal.&r"
+			]
 			hide_dependency_lines: true
 			id: "2A73D5356317624A"
 			tasks: [{
@@ -273,11 +402,17 @@
 				item: "tfmg:nickel_ingot"
 				type: "item"
 			}]
+			title: "Nickel"
 			x: -6.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eCobalt, Co, is a transition metal used in high-performance alloys, magnets and some battery chemistries. Its compounds also produce familiar blue pigments.&r"
+				""
+				"&eLocal cobalt is a byproduct of pentlandite processing and a feedstock for cobalt catalysts. Sheets, rods, wire and springs provide mechanical forms of the metal.&r"
+			]
 			hide_dependency_lines: true
 			id: "14F8CD061D1CD7E2"
 			tasks: [{
@@ -285,11 +420,17 @@
 				item: "kubejs:cobalt_ingot"
 				type: "item"
 			}]
+			title: "Cobalt"
 			x: -4.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&ePolypropylene is made from propylene. It is lightweight, chemically resistant and widely used in containers, fibers and molded parts.&r"
+				""
+				"&eIts ability to tolerate repeated bending makes suitable grades useful for living hinges: a thin section can flex between two larger molded parts without needing a separate pin and hinge assembly.&r"
+			]
 			hide_dependency_lines: true
 			id: "44B202DF000A40CC"
 			tasks: [{
@@ -297,11 +438,17 @@
 				item: "kubejs:polypropylene"
 				type: "item"
 			}]
+			title: "Polypropylene"
 			x: -2.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eNickel can alter corrosion resistance, toughness and magnetic behavior when alloyed with other metals. Real copper-nickel alloys are used in marine service, while constantan is useful for electrical resistance and thermocouples.&r"
+				""
+				"&eConstantan's electrical resistance changes relatively little with temperature, which is useful for measuring circuits and resistive elements.&r"
+			]
 			hide_dependency_lines: true
 			id: "5364A002C4D3D6A6"
 			tasks: [{
@@ -309,11 +456,17 @@
 				item: "tfmg:nickel_ingot"
 				type: "item"
 			}]
+			title: "Nickel in Alloys"
 			x: -2.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eTin is a soft metal with a low melting point. It resists many forms of corrosion and is used in real solder alloys and coatings for steel containers.&r"
+				""
+				"&eTin hardens copper in bronze. In solder, its low melting point allows electrical and mechanical joints to be formed without melting the parts being joined. Tin ore and cassiterite supply the local metal.&r"
+			]
 			hide_dependency_lines: true
 			id: "235EA89106B32A57"
 			tasks: [{
@@ -321,11 +474,17 @@
 				item: "kubejs:tin_ingot"
 				type: "item"
 			}]
+			title: "Tin"
 			x: 0.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eNetherite is associated with ancient debris and used for durable tools and armor. Vanilla netherite tools and armor survive fire and lava when dropped, helping preserve lost equipment.&r"
+				""
+				"&eLocal netherite ingots can reinforce existing netherite gear. The material also has sheet, rod, wire and powder forms.&r"
+			]
 			hide_dependency_lines: true
 			id: "6D894A82B8D874AA"
 			tasks: [{
@@ -333,11 +492,17 @@
 				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
+			title: "Netherite"
 			x: 2.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: [
+				"&eAluminum's low density makes it useful for housings and structures whose weight matters. It also conducts electricity and can be worked into thin sheets or wire.&r"
+				""
+				"&eA thin oxide film forms on its surface and slows further corrosion, helping protect parts exposed to air and moisture. Bauxite supplies the local aluminum-bearing ore.&r"
+			]
 			hide_dependency_lines: true
 			id: "0AB8858F5F5E5E79"
 			tasks: [{
@@ -345,11 +510,13 @@
 				item: "tfmg:aluminum_ingot"
 				type: "item"
 			}]
+			title: "Aluminum"
 			x: 4.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["7D0C6F93C6FE1761"]
+			description: ["&eVanadium forms hard carbides in suitable steels and can help refine their grain structure. These effects improve strength and wear resistance, which is useful in tools and heavily loaded parts. Local vanadium is a minor product of magnetite separation.&r"]
 			hide_dependency_lines: true
 			id: "63070C40A4782909"
 			tasks: [{
@@ -357,6 +524,7 @@
 				item: "vintageimprovements:vanadium_ingot"
 				type: "item"
 			}]
+			title: "Vanadium"
 			x: 6.0d
 			y: 9.0d
 		}

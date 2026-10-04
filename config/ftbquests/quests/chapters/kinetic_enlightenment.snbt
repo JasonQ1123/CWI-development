@@ -52,18 +52,23 @@
 	quests: [
 		{
 			dependencies: ["661157F41CB9C876"]
-			description: [""]
+			description: [
+				"&eA mechanical workshop puts rotation to work: crushing stone, shaping metal, and combining materials. Shafts carry power between machines; each machine turns that rotation into a different action.&r"
+				""
+				"&7The hand tools come first. The drawings for a powered workshop assume that someone has already made the first casing and drive parts.&r"
+			]
 			hide_dependent_lines: true
 			id: "5E402C739E34B7D4"
 			invisible: true
 			shape: "gear"
 			size: 2.0d
+			subtitle: "Building the First Workshop"
 			tasks: [{
 				id: "5C61EFB7E7018D69"
 				item: "kubejs:mechanic_manual"
 				type: "item"
 			}]
-			title: "Mechanical Age"
+			title: "The Mechanical Workshop"
 			x: -1.5d
 			y: -2.5d
 		}
@@ -73,11 +78,11 @@
 				"42229A4123AA3541"
 				"5E24F2344B85B318"
 			]
-			description: ["&eA simple blend of andesite and iron. It will serve as the backbone of every machine that follows.&r"]
+			description: ["&eAndesite alloy supplies the shafts, cogwheels, and housings of early machinery. Firing the clay-andesite compound turns the loose mixture into solid stock that can be shaped into these parts.&r"]
 			disable_toast: true
 			id: "60E2563C494FB253"
 			shape: "square"
-			subtitle: "The Alloy of Mechanics"
+			subtitle: "Stock for Mechanical Parts"
 			tasks: [{
 				id: "68F20F61C0740F10"
 				item: "create:andesite_alloy"
@@ -93,10 +98,9 @@
 				"437113F4C591BBA5"
 				"476F895A01D30141"
 			]
-			description: ["&ePowdered andesite and clay blended together. The precursor to something stronger.&r"]
+			description: ["&eClay binds the grains of andesite into a workable compound. It is the unfired stock for andesite alloy and can also take the shape of a sheet mold before firing.&r"]
 			disable_toast: true
 			id: "42229A4123AA3541"
-			subtitle: "Mixed Ingredients"
 			tasks: [{
 				id: "76B728FDDEB6104A"
 				item: "kubejs:andesite_compound"
@@ -111,11 +115,11 @@
 				"1266E8AE2713DF7E"
 				"701D21C32E77F5C7"
 			]
-			description: ["&eAn enclosure for moving parts. More than a box, it is the foundation of reliable machinery.&r"]
+			description: ["&eThe casing houses a machine's moving parts and gives the assembly a common body. A wood chip block supplies the core, with an andesite alloy sheet forming its outer covering.&r"]
 			id: "6A11BA5D1C4D2924"
 			shape: "rsquare"
 			size: 1.75d
-			subtitle: "Housing for Mechanisms"
+			subtitle: "A Body for Moving Parts"
 			tasks: [{
 				id: "1A72D3EA0EC250E4"
 				item: "create:andesite_casing"
@@ -127,27 +131,31 @@
 		}
 		{
 			dependencies: ["417DC65C679BBF74"]
-			description: ["&eWood chips pressed into a dense block. It burns longer and steadier than loose scraps.&r"]
+			description: ["&eReassembled wood chips provide a solid body for casings and other wooden components. The block gives small recovered fragments a useful construction form when intact timber is scarce.&r"]
 			disable_toast: true
 			id: "1266E8AE2713DF7E"
-			subtitle: "Compressed Fuel"
+			subtitle: "Rebuild a Solid Material"
 			tasks: [{
 				id: "3E4F84056AA52EA3"
 				item: "createdieselgenerators:chip_wood_block"
 				type: "item"
 			}]
-			title: "Wood Chips Block"
+			title: "Wood Chip Block"
 			x: 4.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["012664D784F5D09D"]
-			description: ["&eApplies immense force. It can shape plates and compact materials.&r"]
+			description: [
+				"&eThe press turns shaft rotation into a downward stroke. Its broad head spreads force over a workpiece, flattening an ingot into a sheet for covers, blades, and other thin parts.&r"
+				""
+				"&eWith a basin below, the same stroke compacts a batch into a combined product. The basin contains the ingredients while the head applies pressure.&r"
+			]
 			disable_toast: true
 			id: "4C5689F8A2DBC8A7"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Pressure Application"
+			subtitle: "Powered Metalworking"
 			tasks: [{
 				id: "50FE3543D0720357"
 				item: "create:mechanical_press"
@@ -159,26 +167,26 @@
 		}
 		{
 			dependencies: ["5E402C739E34B7D4"]
-			description: ["&eA sticky, pliable earth. Paltry on its own, but essential for binding powders into sturdy compounds.&r"]
+			description: ["&eDamp clay is pliable enough to fill a mold and bind loose mineral grains together. This makes it useful in andesite compound, ash bricks, and casting molds; firing fixes the shaped clay into ceramic.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "437113F4C591BBA5"
-			subtitle: "Adhesive Substance"
+			subtitle: "A Binder for the Workshop"
 			tasks: [{
 				id: "20046B0DD94228D9"
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			title: "Clay Ball"
+			title: "Clay Balls"
 			x: 0.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["540EF2A79DD1C92C"]
-			description: ["&eCrushed and ground andesite. Dusty and unremarkable, but indispensable once mixed with other ingredients.&r"]
+			description: ["&eFine andesite grains mix through clay more evenly than chunks of stone. The powder supplies the mineral part of andesite compound.&r"]
 			disable_toast: true
 			id: "4C1F87459ED9C5F9"
-			subtitle: "The Foundation of Mechanics"
+			subtitle: "Break Down the Stone"
 			tasks: [{
 				id: "7F391AF5145C7B48"
 				item: "kubejs:andesite_powder"
@@ -193,15 +201,16 @@
 			description: [
 				"   &3----------&r   &bHold to Charge&r   &3----------&r"
 				"   &3----------&r   &bRelease to Use&r   &3----------&r"
+				"&eA heavy hammer head delivers an impact that breaks brittle stone and ore or flattens a metal ingot on a depot. It supplies these operations by hand before a powered crusher or press is available.&r"
 				""
-				"&eA simple tool, already corroded. Can break brittle stones and ores, flatten ingots into sheets, or strike animals.&r"
+				"&eThe rusted tool has fewer charge stages than the iron hammer.&r"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "540EF2A79DD1C92C"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Manual Crushing"
+			subtitle: "Charge and Release"
 			tasks: [{
 				id: "5A9F3D3814243B5B"
 				item: {
@@ -221,14 +230,15 @@
 			dependencies: ["6C479154F903BB77"]
 			description: [
 				"     &3----------&r   &bHold to Use&r   &3----------&r"
+				"&eA chisel concentrates force along a narrow edge, letting it cut or shape a workpiece instead of crushing the whole piece. It prepares parts such as circuit boards from brass sheets and panes from glass.&r"
 				""
-				"&eA chisel for engraving blocks and items. Used to carve patterns, shapes, or details that other tools cannot achieve.&r"
+				"&eHold the material in your offhand while using the chisel.&r"
 			]
 			disable_toast: true
 			id: "7BDE7169C3C400BD"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Carving"
+			subtitle: "Work the Item in Your Offhand"
 			tasks: [{
 				id: "02CEFFA9C48CC91C"
 				item: {
@@ -246,10 +256,10 @@
 		}
 		{
 			dependencies: ["42229A4123AA3541"]
-			description: ["&eThe alloy, flattened into a uniform sheet. Ready to be shaped into casings and machines.&r"]
+			description: ["&eAndesite alloy sheets form casing covers and bearing housings around the moving parts of early machinery.&r"]
 			disable_toast: true
 			id: "701D21C32E77F5C7"
-			subtitle: "Flat Andesite"
+			subtitle: "Flat Stock for Housings"
 			tasks: [{
 				id: "6CD38E7B46524DEF"
 				item: "kubejs:andesite_alloy_sheet"
@@ -264,12 +274,16 @@
 				"6A11BA5D1C4D2924"
 				"6C479154F903BB77"
 			]
-			description: ["&eA fan within a casing. When spun by mechanical power, it can push air over substances in between to process items.&r"]
+			description: [
+				"&eRotating blades create an air stream that carries a treatment from its source to the workpiece. Passing the stream through water washes items; other suitable media provide heating or smoking operations.&r"
+				""
+				"&eThe processing medium must lie between the fan and the items, within the air stream.&r"
+			]
 			disable_toast: true
 			id: "3939A1FCB9D2E69D"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "A Faster Furnace"
+			subtitle: "Processing in an Air Stream"
 			tasks: [{
 				id: "3CC7AF13E2AF3599"
 				item: "create:encased_fan"
@@ -281,36 +295,36 @@
 		}
 		{
 			dependencies: ["5E402C739E34B7D4"]
-			description: ["&eA pair of heavy wheels that crush whatever passes between them. Far more efficient than swinging a hammer by hand.&r"]
+			description: ["&eTwo heavy wheels turn toward their shared gap, drawing material inward and breaking it between their surfaces. This continuous crushing separates useful products from ore, stone, and sediment without repeated hand strikes.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "7FD48427B60C3E5A"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Constant Grinding"
+			subtitle: "A Powered Pair"
 			tasks: [{
 				id: "06037BCB30C3223F"
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			title: "Crushing Wheel"
+			title: "Crushing Wheels"
 			x: 0.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["5E402C739E34B7D4"]
-			description: ["&eA solid bar of iron. Smelted from ore, now ready to be worked into sheets, tools, and sturdier machines.&r"]
+			description: ["&eIron provides workable metal for tool heads, armor, and machine parts. It can be formed into sheets and rods while retaining the strength needed for cutting edges and parts that bear loads.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "40FA81C21DEF7A09"
 			shape: "square"
-			subtitle: "Refined Metal"
+			subtitle: "From Ore to Workable Metal"
 			tasks: [{
 				id: "22EB66E1D1DAF556"
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			title: "Iron Ingot"
+			title: "Iron Ingots"
 			x: 2.5d
 			y: -0.5d
 		}
@@ -319,13 +333,17 @@
 				"6C479154F903BB77"
 				"012664D784F5D09D"
 			]
-			description: ["&eSpins its internal blades to combine materials. Essential for making the alloys and compounds that will push technology further.&r"]
+			description: [
+				"&eThe mixer drives a whisk through a basin's contents, distributing powders and liquids through the batch to combine them into compounds and alloys.&r"
+				""
+				"&eInstall it two blocks above the basin, with one empty block between them, and supply at least medium rotational speed. Heated processes also need a heat source beneath the basin.&r"
+			]
 			disable_toast: true
 			id: "3CAC1D168C730208"
 			ignore_reward_blocking: true
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Rotary Blending"
+			subtitle: "Combine Materials in a Basin"
 			tasks: [{
 				id: "647924C4B0EE7333"
 				item: "create:mechanical_mixer"
@@ -339,14 +357,15 @@
 			dependencies: ["6C479154F903BB77"]
 			description: [
 				"     &3----------&r   &bHold to Use&r   &3----------&r"
+				"&eThe paired cutting edges shear suitable soft metals into rods and wires. They also trim dead bushes into sticks and sticks into chips, making the same tool useful for preparing small pieces of construction stock.&r"
 				""
-				"&eThey cut materials into wires and rods. Also useful for adjusting the collected resources.&r"
+				"&eKeep the material in your offhand while using the cutters.&r"
 			]
 			disable_toast: true
 			id: "2103F1534EFA77A5"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Almost Useless"
+			subtitle: "Cut Soft Metals and Scraps"
 			tasks: [{
 				id: "375BFCF0B2EB7ED8"
 				item: {
@@ -364,7 +383,7 @@
 		}
 		{
 			dependencies: ["6C479154F903BB77"]
-			description: ["&eBasic iron armor. The world may be barren, but sharp edges and falling debris do not care. Better to have it and not need it.&r"]
+			description: ["&eIron armor provides protection for exploration and close combat. Its separate plates cover the head, torso, and limbs while leaving room at the joints for movement.&r"]
 			disable_toast: true
 			id: "235292F382A4C466"
 			shape: "diamond"
@@ -429,27 +448,27 @@
 		}
 		{
 			dependencies: ["40FA81C21DEF7A09"]
-			description: ["&eIron ingot flattened under pressure. Thinner, more versatile. The starting point for casings, gears, and countless other parts.&r"]
+			description: ["&eIron sheets provide stock for armor plates, cutting tools, and fan blades. One flat form serves both protective surfaces and shaped working parts.&r"]
 			disable_toast: true
 			id: "6C479154F903BB77"
-			subtitle: "Pressed Flat"
 			tasks: [{
 				id: "522EF4A599008659"
 				item: "create:iron_sheet"
 				type: "item"
 			}]
-			title: "Iron Sheet"
+			title: "Iron Sheets"
 			x: 4.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["60E2563C494FB253"]
 			dependency_requirement: "one_completed"
+			description: ["&eFunnels connect an inventory to the belt carrying its inputs or outputs. Tunnels guide items through covered belt sections, giving several machines a continuous route for material instead of requiring hand delivery.&r"]
 			disable_toast: true
 			id: "49BC1E5BC8236CBD"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Factory Control"
+			subtitle: "Funnels and Tunnels"
 			tasks: [
 				{
 					disable_toast: true
@@ -464,20 +483,20 @@
 					type: "item"
 				}
 			]
-			title: "Simple Logistic"
+			title: "Andesite Logistics"
 			x: 0.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["5E402C739E34B7D4"]
-			description: ["&eA moving chain that carries items from one place to another. The first step toward automation. Let the machines do the heavy lifting.&r"]
+			description: ["&eA powered chain carries whole packages between loading and delivery ports. A suspended route can link distant rooms without running an item belt through every intervening workstation.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "create:chain_conveyor"
 			id: "677428374BDB25A9"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "This Will Help You Manage Your Factory"
+			subtitle: "Transport Packages"
 			tasks: [{
 				id: "11E128502C318F11"
 				item: "create:chain_conveyor"
@@ -489,12 +508,12 @@
 		}
 		{
 			dependencies: ["6C479154F903BB77"]
-			description: ["&eA full set of iron tools. They will work faster and last longer than the rusted relics from the lab.&r"]
+			description: ["&eFresh iron tools last longer than their rusted counterparts. The iron pickaxe also mines suitable blocks faster, while retaining the same mining tier.&r"]
 			disable_toast: true
 			id: "621E7183CC10DDAC"
 			ignore_reward_blocking: true
 			shape: "diamond"
-			subtitle: "Proper Equipment"
+			subtitle: "Equip the Workshop"
 			tasks: [
 				{
 					disable_toast: true
@@ -568,31 +587,31 @@
 		}
 		{
 			dependencies: ["264672AB0C531345"]
-			description: ["&eLaunches packaged items between stations, enabling compact transport setups.&r"]
+			description: ["&eThe frogport is the transfer point between an inventory and a chain conveyor. It loads packages onto the chain and receives those addressed to it, letting several destinations share one transport route.&r"]
 			disable_toast: true
 			icon: "create:package_frogport"
 			id: "195710E5E6F5F3D5"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Package Delivery"
+			subtitle: "Join the Delivery Line"
 			tasks: [{
 				id: "31BF94B55F809237"
 				item: "create:package_frogport"
 				type: "item"
 			}]
-			title: "Logistics"
+			title: "Package Frogport"
 			x: 12.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["5E402C739E34B7D4"]
-			description: ["&eA stone wheel driven by mechanical power. It grinds grains, mills minerals into powder, and turns hard things into dust.&r"]
+			description: ["&eThe millstone grinds material into smaller particles under continuous rotation. Fine powders mix more evenly into compounds, while grinding can also recover chips and other products from suitable feedstock.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "285908C913E29547"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Rotary Grinding"
+			subtitle: "Grind Materials into Powder"
 			tasks: [{
 				id: "1A029323230A494A"
 				item: "create:millstone"
@@ -604,13 +623,13 @@
 		}
 		{
 			dependencies: ["1266E8AE2713DF7E"]
-			description: ["&eFlowing water makes it turn, and turning makes power. The simplest way to generate stress for your machines. Reliable as long as the current runs.&r"]
+			description: ["&eFlowing water pushes against the wheel's paddles and turns its shaft. That rotation drives the first workshop machines, providing a continuous source of mechanical power without feeding a burner.&r"]
 			disable_toast: true
 			icon: "create:water_wheel"
 			id: "775DF78EB236C941"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "The First Stress Generator"
+			subtitle: "Start the Shafts Turning"
 			tasks: [{
 				id: "4C1460C8A495844D"
 				item: "create:water_wheel"
@@ -622,11 +641,14 @@
 		}
 		{
 			dependencies: ["5E402C739E34B7D4"]
-			description: ["&eThe skeleton of a wind-catching sail. Lightweight and modular, waiting for net to be attached.&r"]
+			description: [
+				"&eThe sail frame holds the net of a white sail in shape as the windmill turns.&r"
+				""
+				"&6Power specification:&r Only white sails contribute to this windmill assembly. An uncovered frame contributes no power.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "1E00920BBA587F26"
-			subtitle: "Unable to Generate Stress Unit Without Sails"
 			tasks: [{
 				id: "26C5B3EE09DA0ECA"
 				item: "create:sail_frame"
@@ -638,13 +660,13 @@
 		}
 		{
 			dependencies: ["1E00920BBA587F26"]
-			description: ["&eThe hub for a windmill. When fitted with sails and raised into the air, it converts the endless wind into steady mechanical force.&r"]
+			description: ["&eThe bearing supports the rotating sail structure and transfers its motion to a shaft. White sails provide the windmill's power-producing area, so adding them increases the assembly's output.&r"]
 			disable_toast: true
 			icon: "create:windmill_bearing"
 			id: "7CAFFE1A4C01CF47"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "Wind Energy - A Better Generator"
+			subtitle: "Power from White Sails"
 			tasks: [
 				{
 					id: "60F5FF713322C264"
@@ -663,13 +685,13 @@
 		}
 		{
 			dependencies: ["775DF78EB236C941"]
-			description: ["&eA bigger wheel, more power. Same principle, better output. When the stream is strong enough, this is the logical upgrade.&r"]
+			description: ["&eThe large wheel provides greater stress capacity at a lower rotational speed than the small wheel. Its larger paddled structure suits a heavier mechanical load, while gearing brings the slow shaft rotation to the speed a machine needs.&r"]
 			disable_toast: true
 			id: "242D3A2688376BA0"
 			ignore_reward_blocking: true
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "Larger Water Wheel"
+			subtitle: "More Capacity, Lower Speed"
 			tasks: [{
 				id: "587B6201E0BF2DDF"
 				item: "create:large_water_wheel"
@@ -681,12 +703,12 @@
 		}
 		{
 			dependencies: ["27EBAF24944A2A20"]
-			description: ["&eWraps items into packages for transport via ports. A small machine for a niche purpose, but it opens up new logistics possibilities.&r"]
+			description: ["&eA packager groups inventory contents into an addressed parcel for transport. A receiving packager opens deliveries into its attached inventory, allowing one delivery route to carry supplies for several workstations.&r"]
 			disable_toast: true
 			id: "264672AB0C531345"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Wrapping Up"
+			subtitle: "Pack and Unpack Inventories"
 			tasks: [{
 				id: "218DC4F36A442CD8"
 				item: "create:packager"
@@ -698,12 +720,12 @@
 		}
 		{
 			dependencies: ["60E2563C494FB253"]
-			description: ["&eA mill that rolls materials into long rods and wires. It consumes stress but produces essential components for later machines.&r"]
+			description: ["&ePowered rollers form metal into long, narrow stock: ingots become rods, and sheets become wires. Rods supply rigid parts such as tool shanks; wires provide the thin lengths needed for electrical parts and coils.&r"]
 			disable_toast: true
 			id: "542B9C01C426BA3F"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Continuous Shaping"
+			subtitle: "Rods and Wires"
 			tasks: [{
 				id: "74ADAF94D6180577"
 				item: "createaddition:rolling_mill"
@@ -715,13 +737,17 @@
 		}
 		{
 			dependencies: ["5E402C739E34B7D4"]
-			description: ["&eThe most basic smelting apparatus. It burns wood and coal to refine metals.&r"]
+			description: [
+				"&eA furnace confines a fire around the workpiece so fuel can fire compounds and filled sheet molds. These first firings provide machine stock before powered processing is available.&r"
+				""
+				"&eCarve a placed reinforced ash brick with a pickaxe, shovel, or flint. Continue working the resulting ash brick base through the incomplete furnace stage to finish it.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "5E24F2344B85B318"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Chiseled From Ash Brick Base"
+			subtitle: "Carve the Ash Brick Base"
 			tasks: [{
 				id: "54ABA5747F20DD14"
 				item: "minecraft:furnace"
@@ -733,7 +759,7 @@
 		}
 		{
 			dependencies: ["4C5689F8A2DBC8A7"]
-			description: ["&eWhat was inside has been waiting for a long time.&r"]
+			description: ["&eThe brass lockbox protects a package containing the precision manual, processing note, and manufacturing engineer's log. These records carry the workshop beyond basic mechanical equipment into finer manufacturing and material processing.&r"]
 			disable_toast: true
 			hide_dependency_lines: false
 			icon: "kubejs:brass_lockbox"
@@ -741,23 +767,27 @@
 			id: "055007D72160EFC4"
 			shape: "gear"
 			size: 2.75d
-			subtitle: "Open The Lockbox With Mechanical Press"
+			subtitle: "Put the Press to Work"
 			tasks: [{
 				id: "1BEE2C4D25FB6186"
-				title: "Open The Lockbox"
+				title: "Open the Lockbox"
 				type: "checkmark"
 			}]
-			title: "The Mysterious Lockbox"
+			title: "Open the Brass Lockbox"
 			x: 11.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["285908C913E29547"]
-			description: ["&eThe millstone can process more than minerals. Can also be used to extract Arthropod meat and silverfish eggs.&r"]
+			description: [
+				"&eA knife used on dead leaves can uncover arthropods or silverfish eggs. Milling depleted dirt may also recover eggs.&r"
+				""
+				"&eThese are small, irregular finds. They can supplement rations while a steadier food supply is being established.&r"
+			]
 			disable_toast: true
 			id: "2CC58D6978615651"
 			shape: "diamond"
-			subtitle: "Alternative Sustenance"
+			subtitle: "Search the Dead Leaves"
 			tasks: [
 				{
 					id: "797CC00ADB8E5C5A"
@@ -770,7 +800,7 @@
 					type: "item"
 				}
 			]
-			title: "Arthropod Delicacies"
+			title: "Arthropods and Eggs"
 			x: -1.5d
 			y: 3.5d
 		}
@@ -779,11 +809,11 @@
 				"6A11BA5D1C4D2924"
 				"173296B31B228A12"
 			]
-			description: ["&eThe first machine assembly. A compact nexus of gears, bearings, and casing. It does not do much on its own, but attach it to a power source and other components, and it becomes the heart of basic machinery.&r"]
+			description: ["&eThe core holds the shafts and cogwheels that transmit a machine's drive, with a bearing supporting the moving assembly inside its casing. Presses, mixers, and fans share this drive body but use different working heads to turn rotation into a useful operation.&r"]
 			id: "012664D784F5D09D"
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "The Core of Mechanics"
+			subtitle: "A Shared Mechanical Drive"
 			tasks: [{
 				id: "44075566716B7121"
 				item: "kubejs:andesite_machine"
@@ -795,12 +825,12 @@
 		}
 		{
 			dependencies: ["012664D784F5D09D"]
-			description: ["&eLoad a schematic, supply materials, and it builds structures automatically. A tool for duplication, or for swiftly raising outposts in the wasteland.&r"]
+			description: ["&eThe schematicannon places supplied blocks according to a schematic, reproducing a workshop or building layout. The drawing provides the positions; the builder must still supply the blocks and gunpowder needed for construction.&r"]
 			disable_toast: true
 			id: "6B423AB39398252B"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Blueprint to Reality"
+			subtitle: "Reproduce a Workshop Design"
 			tasks: [{
 				id: "7B5FED24F26D21E3"
 				item: "create:schematicannon"
@@ -812,11 +842,11 @@
 		}
 		{
 			dependencies: ["5E402C739E34B7D4"]
-			description: ["&eSmall shreds of wood, the only reliable source of solid fuel for now. They burn fast, but compacted into blocks they become something useful.&r"]
+			description: ["&eWood chips are small pieces of recovered timber that can be reassembled into sticks, blocks, and wooden molds. They also supply the pulp for cardboard, giving damaged wood a use even when it cannot serve as an intact beam.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "417DC65C679BBF74"
-			subtitle: "Only Supply for Wood"
+			subtitle: "Use What the Trees Left Behind"
 			tasks: [{
 				id: "773304BD68CD27D6"
 				item: "createdieselgenerators:wood_chip"
@@ -828,12 +858,15 @@
 		}
 		{
 			dependencies: ["6C479154F903BB77"]
-			description: [" &3------&r &bRightclick with Fuel to Burn&r &3------&r"]
+			description: [
+				"   &3----------&r   &bRight Click with Fuel&r   &3----------&r"
+				"&eThe burner supplies heat beneath a basin or foundry. A mixing drive combines the contents, but the burner provides the thermal energy needed for heated reactions and melting.&r"
+			]
 			disable_toast: true
 			id: "1D5086DE41A5D46B"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Heating Platform"
+			subtitle: "Heat Beneath the Basin"
 			tasks: [{
 				id: "1C598B08D327D546"
 				item: "create:blaze_burner"
@@ -845,13 +878,13 @@
 		}
 		{
 			dependencies: ["5E402C739E34B7D4"]
-			description: ["&eBearings made from andesite alloy. They reduce friction in moving parts, essential for constructing more advanced machinery.&r"]
+			description: ["&eA bearing carries a rotating part in a stationary housing without locking it in place. Andesite bearings support the moving assemblies in machine cores and windmill bearings.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "173296B31B228A12"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Smooth Rotation"
+			subtitle: "Support the Mechanism"
 			tasks: [{
 				id: "53A30DEC0DB60852"
 				item: "kubejs:andesite_bearing"
@@ -863,12 +896,18 @@
 		}
 		{
 			dependencies: ["1D5086DE41A5D46B"]
-			description: ["&eThey form a vessel for melting liquid metal.&r"]
+			description: [
+				"&6Before melting:&r Fit the lid and close it. An open foundry basin cannot begin the melting operation."
+				""
+				"&eThe foundry basin holds material as heat turns it into a molten fluid. The enclosed basin contains the melt for transfer to casting equipment, where it can take a new shape.&r"
+				""
+				"&eAlloying also needs a powered foundry mixer with a glassed lid: melting makes material liquid, while mixing combines the molten constituents.&r"
+			]
 			disable_toast: true
 			id: "2AD57CB06F484582"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Molten Metal Handling"
+			subtitle: "Melt and Alloy Metals"
 			tasks: [
 				{
 					id: "56406577988924B1"
@@ -887,12 +926,12 @@
 		}
 		{
 			dependencies: ["2AD57CB06F484582"]
-			description: ["&eA table with slots for molds. Pour liquid metal in, let it cool, and retrieve shaped ingots, nuggets, or sheets.&r"]
+			description: ["&eA casting table holds a mold while molten material fills its cavity and solidifies. The mold defines the product's shape, allowing the casting line to supply different forms of metal stock.&r"]
 			disable_toast: true
 			id: "73B79BFBE4B0DC6F"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Shape the Molten"
+			subtitle: "Pour into a Mold"
 			tasks: [{
 				id: "519DC640B9E27AAD"
 				item: "createmetallurgy:casting_table"
@@ -904,12 +943,12 @@
 		}
 		{
 			dependencies: ["012664D784F5D09D"]
-			description: ["&eA press that shapes materials into different forms. Making components that flat presses cannot make.&r"]
+			description: ["&eThe curving press pushes a shaped head into a clay disk to make a mold cavity. An iron ingot, nugget, sheet, or rod serves as the pattern, leaving an impression that a later casting can reproduce.&r"]
 			disable_toast: true
 			id: "1750081E47007EBC"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Print The Shapes of Items"
+			subtitle: "Impress a Shape into Clay"
 			tasks: [{
 				id: "4147AF585ABB2355"
 				item: "vintageimprovements:curving_press"
@@ -921,12 +960,12 @@
 		}
 		{
 			dependencies: ["1750081E47007EBC"]
-			description: ["&eMolds pressed from clay. They define the shape of cast metal. Ingot, nugget, sheet, rod.&r"]
+			description: ["&eA clay mold records the shape impressed by the press head. Clay is soft enough to accept that pattern; firing the shaped mold turns it into a rigid ceramic form suitable for casting.&r"]
 			disable_toast: true
 			id: "2DBB4544AB0C3F18"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Disposable Shapes"
+			subtitle: "Shape Before Firing"
 			tasks: [
 				{
 					disable_toast: true
@@ -963,12 +1002,12 @@
 		}
 		{
 			dependencies: ["2DBB4544AB0C3F18"]
-			description: ["&eFired clay molds. Cannot handle extremely hot liquids.&r"]
+			description: ["&eFired clay makes a rigid terracotta mold that holds its cavity during a pour. These molds cast materials with a listed melting point below 1200; fireproof brick molds are needed for hotter materials.&r"]
 			disable_toast: true
 			id: "078E22FD664525E0"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Heat-Resistant Upgrade"
+			subtitle: "For Lower Melting Points"
 			tasks: [
 				{
 					disable_toast: true
@@ -1005,10 +1044,10 @@
 		}
 		{
 			dependencies: ["3CAC1D168C730208"]
-			description: ["&eMade from wood pulp and mixed in a mechanical mixer. Lightweight packaging material, essential for logistics.&r"]
+			description: ["&eRecovered wood chips supply the pulp for this light packaging material. Its fibers bind into sheets, which also form the packager's body.&r"]
 			disable_toast: true
 			id: "27EBAF24944A2A20"
-			subtitle: "Recycled Layers"
+			subtitle: "Wood Fibers for Packaging"
 			tasks: [{
 				id: "52BF99F138DABA15"
 				item: "create:cardboard"
@@ -1020,13 +1059,17 @@
 		}
 		{
 			dependencies: ["5E402C739E34B7D4"]
-			description: ["&eA workbench for assembling components by hand.&r"]
+			description: [
+				"&eThe crafting table provides a work surface for assembling tools and parts by hand. Its reinforced ash brick base supports a leather-covered top, using materials available at hand.&r"
+				""
+				"&eForm the base from a placed reinforced ash brick, apply leather, then finish the incomplete table with an axe or flint.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "476F895A01D30141"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Chiseled From Ash Brick Base"
+			subtitle: "Leather over Ash Brick"
 			tasks: [{
 				id: "58396F5CCA70668D"
 				item: "minecraft:crafting_table"
@@ -1038,13 +1081,13 @@
 		}
 		{
 			dependencies: ["5E402C739E34B7D4"]
-			description: ["&eA tool for extracting resin from rubber trees. Automating this process will ensure a steady supply of rubber for future machines.&r"]
+			description: ["&eThe sapper collects molten sticky resin from suitable logs or leaves, providing a source for rubber seals. Its mechanical drive handles extraction while its rear fluid connection carries the resin to storage and processing.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "07B2757EC96E4E09"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Rubber Automation"
+			subtitle: "Collect Resin from Trees"
 			tasks: [{
 				id: "63303524C48E34F3"
 				item: "rubberworks:sapper"
@@ -1056,13 +1099,13 @@
 		}
 		{
 			dependencies: ["5E402C739E34B7D4"]
-			description: ["&eA device that keeps a chunk of the world loaded even when you are far away. Essential for factories that need to run unattended.&r"]
+			description: ["&eWith sufficient rotation, the andesite chunk loader keeps its own chunk active while the player is away. This lets an unattended workshop continue processing within that chunk; a configurable loading radius belongs to the later brass loader.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "623F4EF31A00940F"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Keep the Machines Running"
+			subtitle: "Keep the Workshop Loaded"
 			tasks: [{
 				id: "15D6CACA95DF43DA"
 				item: "create_power_loader:andesite_chunk_loader"
@@ -1077,15 +1120,14 @@
 			description: [
 				"   &3----------&r   &bHold to Charge&r   &3----------&r"
 				"   &3----------&r   &bRelease to Use&r   &3----------&r"
-				""
-				"&eAn iron hammer, more durable and efficient than the rusted one.&r"
+				"&eThe iron hammer is a more durable hand tool for breaking stone and ore or working ingots on a depot. Its heavy head supplies the impact, and it has more charge stages than the rusted hammer.&r"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "5FC63F5C6DC17A71"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Better Hammer"
+			subtitle: "A Stronger Manual Tool"
 			tasks: [{
 				id: "1B92121E523FFD21"
 				item: {

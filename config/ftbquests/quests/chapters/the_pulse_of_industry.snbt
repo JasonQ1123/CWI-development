@@ -27,11 +27,15 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"&eFluid machinery connects a stored supply to the process that consumes it. Pipes link the vessels, pumps drive the flow, and valves open or isolate individual branches.&r"
+			]
 			hide_dependent_lines: true
 			id: "497B62C9B689DE39"
 			invisible: true
 			shape: "gear"
 			size: 2.0d
+			subtitle: "Supply and Return"
 			tasks: [{
 				id: "143F946FF784F70B"
 				item: "kubejs:fluid_manual"
@@ -43,18 +47,18 @@
 		}
 		{
 			dependencies: ["497B62C9B689DE39"]
-			description: ["&eThe workhorse of fluid systems. Used in pipes, casings, and fluid components.&r"]
+			description: ["&eCopper is readily formed into sheets and tubes, making it useful for tank walls, pipes, and fluid machinery. It also conducts heat well, a useful property around boilers and other equipment that transfers thermal energy.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "03B2E935BC80D280"
 			shape: "square"
-			subtitle: "Fluidic Metal"
+			subtitle: "Metal for the Fluid Network"
 			tasks: [{
 				id: "45D2D1284232804E"
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
-			title: "Copper Ingot"
+			title: "Copper Ingots"
 			x: 0.5d
 			y: -2.5d
 		}
@@ -63,11 +67,11 @@
 				"0AB2714AE3675671"
 				"68EF942EB6D8901B"
 			]
-			description: ["&eA casing made from copper. Foundation for fluid machinery.&r"]
+			description: ["&eThe copper casing provides a body for fluid-handling machinery. Its wooden core gives the assembly structure, rubber supplies the sealing layer, and a copper sheet forms the outer covering.&r"]
 			id: "5A05AF5F4360CBBC"
 			shape: "rsquare"
 			size: 1.75d
-			subtitle: "Fluid Enclosure"
+			subtitle: "A Sealed Machine Body"
 			tasks: [{
 				id: "3D72840214ADF626"
 				item: "create:copper_casing"
@@ -79,45 +83,45 @@
 		}
 		{
 			dependencies: ["03B2E935BC80D280"]
-			description: ["&eCopper pressed into a thin sheet. Used for fluid tanks and casings.&r"]
+			description: ["&eCopper sheets form tank walls and casing covers. The metal's malleability allows these surfaces to be bent into shape.&r"]
 			disable_toast: true
 			id: "68EF942EB6D8901B"
-			subtitle: "Thin Copper"
+			subtitle: "Walls and Coverings"
 			tasks: [{
 				id: "76D1320E3CCFAEDE"
 				item: "create:copper_sheet"
 				type: "item"
 			}]
-			title: "Copper Sheet"
+			title: "Copper Sheets"
 			x: 2.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["497B62C9B689DE39"]
-			description: ["&eTransports fluids between machines and tanks. The backbone of any fluid system.&r"]
+			description: ["&ePipes connect tanks to machine ports through an enclosed route. A powered pump drives the fluid along this network.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "4D08D43112F8E50A"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Fluid Transport"
+			subtitle: "Connect Sources and Machines"
 			tasks: [{
 				id: "4D8821EF07F7468C"
 				item: "create:fluid_pipe"
 				type: "item"
 			}]
-			title: "Fluid Pipe"
+			title: "Fluid Pipes"
 			x: 0.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["4D08D43112F8E50A"]
-			description: ["&eMoves fluids through pipes. Requires rotational power to operate.&r"]
+			description: ["&eThe mechanical pump turns shaft power into directed fluid movement, drawing from one side of a pipe and delivering to the other. Reversing its rotation reverses the flow, while higher speed increases the transfer rate.&r"]
 			disable_toast: true
 			id: "5C630C455922A36A"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Powered Flow"
+			subtitle: "Set the Direction of Flow"
 			tasks: [{
 				id: "694D1C06AC826164"
 				item: "create:mechanical_pump"
@@ -129,12 +133,12 @@
 		}
 		{
 			dependencies: ["4D08D43112F8E50A"]
-			description: ["&eControls fluid flow through pipes. Can be toggled with redstone.&r"]
+			description: ["&eA valve opens or blocks a passage through the pipe, allowing one branch to be isolated while the rest of the system remains connected. Shaft rotation opens it, and reverse rotation closes it; the pump supplies the movement through the open passage.&r"]
 			disable_toast: true
 			id: "358B15745F3F6A7B"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Flow Control"
+			subtitle: "Open and Close a Pipe"
 			tasks: [{
 				id: "0D59BFA21B1BD151"
 				item: "create:fluid_valve"
@@ -146,12 +150,12 @@
 		}
 		{
 			dependencies: ["5A05AF5F4360CBBC"]
-			description: ["&eAllows portable transfer of fluids between inventories.&r"]
+			description: ["&eA moving contraption and the stationary pipework each carry an interface. The pair connects the contraption's fluid storage to the pipes while docked, then separates when the contraption leaves.&r"]
 			disable_toast: true
 			id: "1F205AA95D114BEB"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Portable Transfer"
+			subtitle: "Supply a Moving Contraption"
 			tasks: [{
 				id: "413E3E3E6738D431"
 				item: "create:portable_fluid_interface"
@@ -163,12 +167,12 @@
 		}
 		{
 			dependencies: ["5A05AF5F4360CBBC"]
-			description: ["&ePours fluids onto items below. Used for filling and processing.&r"]
+			description: ["&eThe spout fills containers or applies a liquid treatment to items beneath it. Place the workpiece on a depot or carry it under the outlet on a belt.&r"]
 			disable_toast: true
 			id: "0C856B27FEBCFD64"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Fluid Pouring"
+			subtitle: "Fill Items on a Belt or Depot"
 			tasks: [{
 				id: "6AD761659599D83D"
 				item: "create:spout"
@@ -180,12 +184,12 @@
 		}
 		{
 			dependencies: ["5A05AF5F4360CBBC"]
-			description: ["&eLowers a hose to collect or deposit fluids at varying heights.&r"]
+			description: ["&eLower the hose into a body of fluid to connect it to the pipework above. Connected pumps can draw fluid from the world or return it there; the pulley adjusts the hose's working height.&r"]
 			disable_toast: true
 			id: "7C12FC4C16CA0D9D"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Fluid Hose"
+			subtitle: "Reach a Body of Fluid"
 			tasks: [{
 				id: "7F4EA407AEF8FFF0"
 				item: "create:hose_pulley"
@@ -197,12 +201,12 @@
 		}
 		{
 			dependencies: ["68EF942EB6D8901B"]
-			description: ["&eStores fluids. Can be stacked and connected for larger capacity.&r"]
+			description: ["&eA tank stores surplus production and supplies machines when the source pauses. Connect tank blocks to enlarge the reservoir and give the fluid line a greater reserve.&r"]
 			disable_toast: true
 			id: "3AD988D19BD12F19"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Fluid Storage"
+			subtitle: "Buffer the Supply"
 			tasks: [{
 				id: "1724D0FFAEF86BC8"
 				item: "create:fluid_tank"
@@ -214,12 +218,16 @@
 		}
 		{
 			dependencies: ["3AD988D19BD12F19"]
-			description: ["&eConverts heat into rotational power.&r"]
+			description: [
+				"&eSteam from a heated, water-supplied boiler pushes the engine's piston. The piston-and-crank arrangement turns that back-and-forth movement into shaft rotation, converting heat into mechanical power for the workshop.&r"
+				""
+				"&eThe engine needs the boiler's steam supply; tank size, heat, and water delivery all limit the power available.&r"
+			]
 			disable_toast: true
 			id: "21516827F73BAC5C"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Efficient Energy"
+			subtitle: "Turn a Boiler into Shaft Power"
 			tasks: [{
 				id: "6AFB50297017E74F"
 				item: "create:steam_engine"
@@ -231,12 +239,12 @@
 		}
 		{
 			dependencies: ["21516827F73BAC5C"]
-			description: ["&eEmits a loud whistle when steam passes through.&r"]
+			description: ["&eA steam whistle uses the boiler to sound a signal when triggered by redstone. Its tone can be heard from another room, making it useful for a workshop call or alarm; extensions alter the pitch.&r"]
 			disable_toast: true
 			id: "280E95A4E8CF8E4F"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Steam Signal"
+			subtitle: "A Signal from the Boiler"
 			tasks: [{
 				id: "69F26EFA9D66C18B"
 				item: "create:steam_whistle"
@@ -248,28 +256,33 @@
 		}
 		{
 			dependencies: ["497B62C9B689DE39"]
+			description: [
+				"   &3----------&r   &bUse to Sample / Sneak to Clear&r   &3----------&r"
+				"&eThe manifest records a fluid selected from a source or container. That record identifies the fluid for filters and requests, allowing a control to specify what a line should carry.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "51FCF9E1390C7557"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Fluid Filter"
+			subtitle: "Sample Fluids"
 			tasks: [{
 				id: "0B61281E27C00ED4"
 				item: "fluid:fluid_manifest"
 				type: "item"
 			}]
+			title: "Fluid Manifest"
 			x: 4.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["5A05AF5F4360CBBC"]
-			description: ["&eDrains fluids from items. Useful for emptying filled containers.&r"]
+			description: ["&eThe item drain separates a filled container from its contents. It collects the liquid for a pipe connection and leaves the emptied container as an item, linking container transport to a fluid network.&r"]
 			disable_toast: true
 			id: "7EBA164EE1EBC428"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Item Draining"
+			subtitle: "Recover Fluid from Containers"
 			tasks: [{
 				id: "05EBB15E2A87395B"
 				item: "create:item_drain"
@@ -281,18 +294,22 @@
 		}
 		{
 			dependencies: ["11F9A3AD93930BDD"]
-			description: ["&eA handheld tool for moving small amounts of fluid between containers.&r"]
+			description: [
+				"&eThe mechanical pipette moves fluid between selected containers and fills items on belts or depots. One arm can serve several workstations within its reach.&r"
+				""
+				"&eSelect its input and output points before placement. Fluid interfaces let it reach additional compatible containers.&r"
+			]
 			disable_toast: true
 			id: "36A0A9049C7E3228"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Fluid Transfer Tool"
+			subtitle: "A Powered Arm for Fluids"
 			tasks: [{
 				id: "3B8155B7BDBED2EE"
 				item: "fluid:pipette"
 				type: "item"
 			}]
-			title: "Pipette"
+			title: "Mechanical Pipette"
 			x: -1.5d
 			y: -6.5d
 		}
@@ -301,12 +318,12 @@
 				"0AB2714AE3675671"
 				"4D08D43112F8E50A"
 			]
-			description: ["&eBalances fluid levels between connected tanks.&r"]
+			description: ["&eThe communicating vessel lets compatible adjacent containers share a fluid supply without a rotational drive. Transfer balances their fluid levels, making it useful for passive distribution rather than a pump's directed flow.&r"]
 			disable_toast: true
 			id: "3D9C425E8993EE1D"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Level Balancing"
+			subtitle: "Balance Adjacent Containers"
 			tasks: [{
 				id: "65092CE0EA2F3720"
 				item: "fluid:communicating_vessel"
@@ -318,12 +335,16 @@
 		}
 		{
 			dependencies: ["0AB2714AE3675671"]
-			description: ["&eFills cans with fluids automatically.&r"]
+			description: [
+				"&ePlace a fluid tank behind each can filler. The sending filler seals that tank's fluid into copper cans for package transport; a receiving filler empties the can into its own rear tank and consumes it.&r"
+				""
+				"&eRedstone triggers dispatch, and a sign can set the outgoing address. A partly filled receiving tank accepts only matching fluid.&r"
+			]
 			disable_toast: true
 			id: "49BB95B4D4287747"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Can Filling"
+			subtitle: "Package Fluid Delivery"
 			tasks: [{
 				id: "709A41ECBC8EEBB7"
 				item: "fluid:can_filler"
@@ -335,11 +356,16 @@
 		}
 		{
 			dependencies: ["497B62C9B689DE39"]
-			description: ["&eRubber recovered from scrap. Essential for fluid seals.&r"]
+			description: [
+				"   &3----------&r   &bSneak and Use Empty Hand&r   &3----------&r"
+				"&eRubber deforms around a joint and fills gaps between rigid parts, making it useful for seals in fluid machinery. Its flexibility also suits belts and hose components that must bend while carrying force or fluid.&r"
+				""
+				"&eScrap piles and tree resin provide separate sources of this sealing material.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "0AB2714AE3675671"
-			subtitle: "Sealing Material"
+			subtitle: "Seals from Scrap or Resin"
 			tasks: [{
 				id: "156D7D2A51596198"
 				item: "kubejs:rubber"
@@ -351,29 +377,33 @@
 		}
 		{
 			dependencies: ["497B62C9B689DE39"]
-			description: ["&eBrass is needed for more advanced fluid components.&r"]
+			description: ["&eBrass combines copper with zinc into a workable alloy used in fittings and mechanism parts. It can be shaped into detailed components, including the robot pipette and the controls that extend the fluid workshop.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "1B2BF2C10C4FEB9E"
 			shape: "square"
-			subtitle: "Advanced Fluid Material"
+			subtitle: "Copper and Zinc"
 			tasks: [{
 				id: "6FE8E94AF2C36F99"
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			title: "Brass Ingot"
+			title: "Brass Ingots"
 			x: 2.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["03B2E935BC80D280"]
-			description: ["&eChannels fluids along a line. Smart outlets can filter fluids.&r"]
+			description: [
+				"&eA gutter outlet collects fluid sources and dripstone drips from above, then releases fluid into a container below or a connected pipe. With open sky above it, the outlet can also collect precipitation.&r"
+				""
+				"&eThe smart outlet adds filtering and a redstone disable control where the collected supply must be selected or paused.&r"
+			]
 			disable_toast: true
 			id: "1BC0E9639F76FFE6"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Fluid Channels"
+			subtitle: "Collect and Release Fluid"
 			tasks: [
 				{
 					id: "72850DADB66A958F"
@@ -392,12 +422,19 @@
 		}
 		{
 			dependencies: ["4D08D43112F8E50A"]
-			description: ["&eA pump that moves fluids at higher speed. Powered by rotational force.&r"]
+			description: [
+				"&eA centrifugal pump uses a rotating impeller to drive fluid outward through its housing. This pump offers greater reach and transfer rate at a higher stress cost, suiting longer lines and heavier fluid demand.&r"
+				""
+				"   &3-----&r   &bScroll Panel to Reverse Flow&r   &3-----&r"
+				"   &3---&r   &bRight Click with Conductor's Baton&r   &3---&r"
+				""
+				"&6After copper encasing:&r The panel is removed. Rotation direction then controls the flow.&r"
+			]
 			disable_toast: true
 			id: "3FC61A5F2C151E4F"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "High Speed Pump"
+			subtitle: "Longer Reach and Faster Transfer"
 			tasks: [{
 				id: "204B8E4E8B1E0E6A"
 				item: "fluid:centrifugal_pump"
@@ -409,12 +446,16 @@
 		}
 		{
 			dependencies: ["03B2E935BC80D280"]
-			description: ["&eInterfaces for moving fluids between machines. Smart versions can filter.&r"]
+			description: [
+				"&eA fluid interface exposes a container's contents to buckets and mechanical pipettes. It gives the container a common access point, allowing the same handling equipment to serve different storage blocks.&r"
+				""
+				"&eA smart interface restricts insertion and extraction according to its fluid filter.&r"
+			]
 			disable_toast: true
 			id: "634FC7A47FB767BA"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Fluid Connections"
+			subtitle: "Expose Fluid Connections"
 			tasks: [
 				{
 					id: "1B854E99FE14F623"
@@ -433,12 +474,12 @@
 		}
 		{
 			dependencies: ["68EF942EB6D8901B"]
-			description: ["&eStores fluids. Can be stacked and connected for larger capacity. But horizontal.&r"]
+			description: ["&eThe fluid vessel joins into a horizontal reservoir. Its long, low form stores a supply along a wall or beneath other equipment where a tall tank would occupy the space above.&r"]
 			disable_toast: true
 			id: "35DCFF2700B3C97B"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Horizontal Fluid Storage"
+			subtitle: "Build Storage Horizontally"
 			tasks: [{
 				id: "7878CC5491265206"
 				item: "create_connected:fluid_vessel"
@@ -450,10 +491,10 @@
 		}
 		{
 			dependencies: ["1B2BF2C10C4FEB9E"]
-			description: ["&eRobotic arm with a pipette. Used for precise fluid handling in automation.&r"]
+			description: ["&eThe robot pipette equips a mechanical arm for fluid transfer and item filling. It is a component of the mechanical pipette, not a pump by itself.&r"]
 			disable_toast: true
 			id: "11F9A3AD93930BDD"
-			subtitle: "Automated Fluid Handling"
+			subtitle: "The Fluid-Handling End of an Arm"
 			tasks: [{
 				id: "4A3492332D7B237F"
 				item: "kubejs:robot_pipette"

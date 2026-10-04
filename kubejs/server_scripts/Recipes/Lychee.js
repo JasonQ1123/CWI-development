@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "lychee:block_interacting",
         "item_in": { "item": "minecraft:flint" },
-        "block_in": "kubejs:ash_brick_clump",
+        "block_in": "kubejs:reinforced_ash_brick",
         "post": [
             { "type": "execute", "command": "particle minecraft:falling_dust minecraft:gravel ~ ~ ~ 0.4 0.3 0.4 0.03 3", "hide": true },
             { "type": "execute", "command": "particle minecraft:smoke ~ ~ ~ 0.3 0.3 0.3 0.05 2", "hide": true },

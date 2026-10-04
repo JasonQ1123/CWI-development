@@ -10,6 +10,11 @@
 	quests: [
 		{
 			dependencies: ["36A9C92C5DCABC6B"]
+			description: [
+				"&eEmergency field notes: begin with loose scrap, dead timber, and stone. These can supply a first set of tools and a small workshop.&r"
+				""
+				"&eThe procedures below use salvaged materials. We cannot yet say how long someone could live on those reserves, or how far they would need to travel for replacements.&r"
+			]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			icon_scale: 0.9d
@@ -29,13 +34,14 @@
 			dependencies: ["5733B6FE443F3A31"]
 			description: [
 				"  &3--------&r  &bRight Click to Collect&r  &3--------&r"
+				"&eSneak and right-click a scrap pile with an empty hand. Loose screws, rubber, synthetic fibers, leather, and ash can be pulled free. The compact remains become a small scrap block.&r"
 				""
-				"&eContains materials left behind by those who came before.&r"
+				"&eSharp edges can injure you. Finish a few piles, check your health, and eat before continuing.&r"
 			]
 			hide_dependency_lines: true
 			id: "771B7234DC99AC45"
 			size: 1.5d
-			subtitle: "Materials Left By Predecessors"
+			subtitle: "Sneak and use an empty hand"
 			tasks: [{
 				icon: "kubejs:scrap_block"
 				id: "6A783FF8DB1AE63D"
@@ -51,6 +57,7 @@
 		}
 		{
 			dependencies: ["771B7234DC99AC45"]
+			description: ["&eSynthetic leather provides a flexible covering for backpack components and crafting table surfaces. Scrap piles are an early source.&r"]
 			disable_toast: true
 			id: "0E8772CBC63F7D6D"
 			tasks: [{
@@ -64,6 +71,7 @@
 		}
 		{
 			dependencies: ["0E58512F3902F0F9"]
+			description: ["&eSmall scrap blocks hold rebar among their heavier metal remains. These thick, rigid bars reinforce larger assemblies.&r"]
 			disable_toast: true
 			id: "263A0574B7E0C0DC"
 			tasks: [{
@@ -78,6 +86,9 @@
 		{
 			dependencies: ["0E58512F3902F0F9"]
 			dependency_requirement: "one_completed"
+			description: [
+				"&eSort the rusted iron into rods, wire, and nuggets. A rod provides rigid support, wire can follow a narrow path or wrap around a joint, and nuggets provide small portions of metal stock.&r"
+			]
 			disable_toast: true
 			id: "080FA7C3F386B9B8"
 			tasks: [
@@ -109,6 +120,7 @@
 		}
 		{
 			dependencies: ["771B7234DC99AC45"]
+			description: ["&eSalvaged synthetic string can stand in for ordinary string in many workshop recipes, including nets, rope, and backpack components.&r"]
 			disable_toast: true
 			id: "444E20B159183D13"
 			tasks: [{
@@ -122,6 +134,7 @@
 		}
 		{
 			dependencies: ["771B7234DC99AC45"]
+			description: ["&eRubber bends and compresses under pressure. It is used for flexible belts, seals, and other parts that keep joints closed.&r"]
 			disable_toast: true
 			id: "0B1ECD95761E02BA"
 			tasks: [{
@@ -135,6 +148,7 @@
 		}
 		{
 			dependencies: ["771B7234DC99AC45"]
+			description: ["&eScrew threads draw fitted parts tight. The joint can be undone for maintenance, allowing a machine mechanism to be taken apart and reassembled.&r"]
 			disable_toast: true
 			id: "1A75CF6A6C2F2AE5"
 			tasks: [{
@@ -148,17 +162,19 @@
 		}
 		{
 			dependencies: ["771B7234DC99AC45"]
-			description: ["&eSmaller scrap blocks containing heavier materials. Sheets, ingots, and other dense remnants.&r"]
+			description: [
+				"&eStrip the loose material from a pile before breaking its compact core. The small scrap block holds heavier metal stock, including sheets and rebar.&r"
+			]
 			disable_toast: true
 			icon: "kubejs:small_scrap_block"
 			id: "0E58512F3902F0F9"
 			size: 1.5d
-			subtitle: "Heavy Materials In Scraps"
+			subtitle: "Recover Metal from Scraps"
 			tasks: [{
 				dimension: "minecraft:overworld"
 				icon: "kubejs:small_scrap_block"
 				id: "058C7EBC532D83F3"
-				title: "Small Scrap Block"
+				title: "Overworld"
 				type: "dimension"
 			}]
 			title: "Small Scraps"
@@ -168,9 +184,12 @@
 		{
 			dependencies: ["0E58512F3902F0F9"]
 			dependency_requirement: "one_completed"
+			description: [
+				"&eSheets recovered from small scraps are ready for the rusted tool patterns. Ingots provide stock for further processing.&r"
+			]
 			disable_toast: true
 			id: "4ABFD18B3CCA0DF5"
-			subtitle: "Recovered Plates"
+			subtitle: "Sheets and Ingots"
 			tasks: [
 				{
 					disable_toast: true
@@ -187,17 +206,19 @@
 					type: "item"
 				}
 			]
-			title: "Rusted Iron Plates"
+			title: "Rusted Iron Stock"
 			x: -0.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["5733B6FE443F3A31"]
-			description: ["&eAsh and burnt logs scattered across the wasteland. The only remaining wood sources.&r"]
+			description: [
+				"&eAsh and burnt logs still hold usable wood. Work them in place with an axe; stripping exposes timber that can be split for chips.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "108DC1287F75BF74"
-			subtitle: "Dead Trees"
+			subtitle: "Work dead trees with an axe"
 			tasks: [
 				{
 					disable_toast: true
@@ -222,16 +243,20 @@
 					type: "observation"
 				}
 			]
-			title: "Logs"
+			title: "Dead Logs"
 			x: -6.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["108DC1287F75BF74"]
-			description: ["&eStrip the bark from dead logs to get clean wood.&r"]
+			description: [
+				"  &3--------&r   &bRight Click with Axe&r   &3--------&r"
+				""
+				"&eRight-click dead timber with an axe to strip it. Ash logs shed ash; burnt logs shed dark ash. The stripped wood is ready for splitting.&r"
+			]
 			disable_toast: true
 			id: "1DEDFF868BA0A8E5"
-			subtitle: "Bare Wood"
+			subtitle: "The first step in recovering wood"
 			tasks: [
 				{
 					disable_toast: true
@@ -261,10 +286,14 @@
 		}
 		{
 			dependencies: ["1DEDFF868BA0A8E5"]
-			description: ["&eBreak stripped logs into smaller pieces.&r"]
+			description: [
+				"  &3--------&r   &bRight Click with Axe&r   &3--------&r"
+				""
+				"&eRight-click the stripped log with an axe to split it and recover wood chips. Work the stripped broken log once more for its final batch. The block disappears when it has been fully used.&r"
+			]
 			disable_toast: true
 			id: "0725AF9EC929C5C6"
-			subtitle: "Cutted Wood"
+			subtitle: "Use the Axe for Wood Chips"
 			tasks: [
 				{
 					disable_toast: true
@@ -289,18 +318,20 @@
 					type: "observation"
 				}
 			]
-			title: "Stripped Broken Logs"
+			title: "Split Stripped Logs"
 			x: -3.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["5733B6FE443F3A31"]
-			description: ["&ePetrified wood found underground. A stone-like alternative to wood.&r"]
+			description: [
+				"&ePetrified timber occurs underground. Its stone-like appearance makes it easy to pass by while looking for ore, but it offers another source of planks.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "61523773DA8A8372"
 			size: 1.5d
-			subtitle: "Wood Alternatives"
+			subtitle: "An underground source of planks"
 			tasks: [{
 				disable_toast: true
 				icon: "darkerdepths:petrified_log"
@@ -317,11 +348,15 @@
 		}
 		{
 			dependencies: ["0725AF9EC929C5C6"]
-			description: ["&eProcess broken logs into wood chips. Can be used to make wood chip blocks, which act as wood planks.&r"]
+			description: [
+				"&eWood chips are small enough to recover from damaged timber. They can be made into sticks or pressed into chip wood blocks, which supply early wooden components and the base of an andesite casing.&r"
+				""
+				"&7Burning the whole pile for warmth would also burn the next tool handle.&r"
+			]
 			disable_toast: true
 			id: "52CA338C1BB121C9"
 			size: 1.5d
-			subtitle: "Wood Supply"
+			subtitle: "Turn dead timber into useful stock"
 			tasks: [{
 				id: "0BDCB097BDC61AFD"
 				item: "createdieselgenerators:wood_chip"
@@ -333,10 +368,9 @@
 		}
 		{
 			dependencies: ["61523773DA8A8372"]
-			description: ["&ePetrified wood crafted into planks. Act as wood planks and a durable building material.&r"]
+			description: ["&ePetrified planks are building stock and substitute for wood in compatible workshop assemblies.&r"]
 			disable_toast: true
 			id: "3A35A3762C132C15"
-			subtitle: "Stone-Like Planks"
 			tasks: [{
 				id: "5C3D4259A040FD9D"
 				item: "darkerdepths:petrified_planks"
@@ -349,7 +383,10 @@
 		{
 			dependencies: ["5733B6FE443F3A31"]
 			dependency_requirement: "one_completed"
-			description: ["&eHammers of all tiers. Used to crush ores, crush stones, and process items.&r"]
+			description: [
+				"&eA hammer brings crushing work within reach before powered processing is available. It can break down compatible ores, stones, and other materials.&r"
+				"&eChoose a material that can be replaced from your current stock. A dependable hammer is one you can keep supplied as it wears.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: {
@@ -361,7 +398,7 @@
 			}
 			id: "52B0015D7D0E531F"
 			size: 1.5d
-			subtitle: "Important Tools"
+			subtitle: "Manual processing before machinery"
 			tasks: [
 				{
 					id: "38CCC97DF417D319"
@@ -487,12 +524,16 @@
 		}
 		{
 			dependencies: ["5733B6FE443F3A31"]
-			description: ["&eThe surface is covered in this lifeless, dry soil.&r"]
+			description: [
+				"&eDepleted dirt is abundant, but it is not ready farmland. Water can soften it; restoring usable soil also needs the biological and nutrient treatments described in the environmental notes.&r"
+				""
+				"&eSet aside a small test plot. It is still uncertain whether a first crop would be the beginning of recovery or a brief use of the nutrients we supplied.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "033BB57BC19A2871"
 			size: 1.5d
-			subtitle: "Dead Surface"
+			subtitle: "Soil that needs restoration"
 			tasks: [{
 				disable_toast: true
 				icon: "kubejs:depleted_dirt"
@@ -510,20 +551,19 @@
 		{
 			dependencies: ["5733B6FE443F3A31"]
 			description: [
-				"&eRusted iron is a cheap and accessible material at the start.&r"
-				""
-				"&eIt can be obtained from scrap blocks scattered across the wasteland.&r"
+				"&eRusted iron from scrap provides replacement tools before fresh metal is available. The mechanical manual describes the improvised crafting table needed for them.&r"
+				"&ePrepare replacements while the original tools still work. A broken pickaxe can leave the next batch of material out of reach.&r"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "minecraft:campfire"
 			id: "4A50B3F60E44489D"
-			subtitle: "Essential Tools for Survival"
+			subtitle: "Replace Tools with Salvage"
 			tasks: [{
 				dimension: "minecraft:overworld"
 				icon: "minecraft:campfire"
 				id: "06E77EAC49BA7B1A"
-				title: "Survival Tools"
+				title: "Overworld"
 				type: "dimension"
 			}]
 			title: "Survival Tools"
@@ -532,6 +572,7 @@
 		}
 		{
 			dependencies: ["4A50B3F60E44489D"]
+			description: ["&eThe rusted shovel clears loose ground and shapes placed reinforced ash bricks into the bases used for early workstations.&r"]
 			disable_toast: true
 			id: "1B9E9B4590DF4D98"
 			tasks: [{
@@ -552,6 +593,7 @@
 		}
 		{
 			dependencies: ["4A50B3F60E44489D"]
+			description: ["&eThis salvaged pickaxe gathers stone and opens the first route underground. Harder materials will need a better mining tier.&r"]
 			disable_toast: true
 			id: "278267C48509B7F4"
 			tasks: [{
@@ -572,6 +614,7 @@
 		}
 		{
 			dependencies: ["4A50B3F60E44489D"]
+			description: ["&eEven the dead logs outside can supply wood. Work ash or burnt logs repeatedly with the axe, keeping the recovered chips and ash as separate supplies.&r"]
 			disable_toast: true
 			id: "10BC5553D9D78A57"
 			tasks: [{
@@ -592,6 +635,7 @@
 		}
 		{
 			dependencies: ["4A50B3F60E44489D"]
+			description: ["&eThe rusted sword is still a serviceable close-range weapon. It offers protection while gathering food or exploring underground.&r"]
 			disable_toast: true
 			id: "19FB0E0AA89A3169"
 			tasks: [{
@@ -612,12 +656,16 @@
 		}
 		{
 			dependencies: ["5733B6FE443F3A31"]
-			description: ["&eArmors and Tools can be enhanced using the crafting table.&r"]
+			description: [
+				"&eEquipment upgrades are applied through crafting. Abrasives sharpen blades or improve mining efficiency; reinforcement uses additional parts to strengthen tools and armor.&r"
+				""
+				"&eEach material has an upgrade limit. The work adds wear to the equipment, and reusable workshop tools also lose durability. Inspect the finished item before heading out.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "42A753C2A80F604A"
 			size: 1.0d
-			subtitle: "Enhancement"
+			subtitle: "Craft upgrades with workshop tools"
 			tasks: [{
 				dimension: "minecraft:overworld"
 				icon: {
@@ -628,18 +676,22 @@
 					}
 				}
 				id: "05E7AB41697FAB2A"
-				title: "Equipment Upgrades"
+				title: "Overworld"
 				type: "dimension"
 			}]
+			title: "Equipment Upgrades"
 			x: -12.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["42A753C2A80F604A"]
-			description: ["&eSimple but essential item used to improve the quality of your tools&r"]
+			description: [
+				"&eA whetstone gives abrasive grains a firm working surface. It supports sharpening and mining-efficiency upgrades beyond the first sandpaper treatments.&r"
+				"&eThe stone remains after use, but wears down with the work.&r"
+			]
 			disable_toast: true
 			id: "1797BC481AAF948E"
-			subtitle: "Sharpen Your Tools"
+			subtitle: "A Surface for Sharpening"
 			tasks: [{
 				id: "44E1D4B6203368CB"
 				item: {
@@ -651,14 +703,19 @@
 				}
 				type: "item"
 			}]
+			title: "Whetstone"
 			x: -12.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["42A753C2A80F604A"]
+			description: [
+				"&eA carefully prepared quartzite surface allows finer abrasive work. The fine whetstone supports higher sharpening and mining-efficiency upgrades where the equipment's material permits them.&r"
+				"&eIt is also used to fit blades for later Sweeping Edge upgrades.&r"
+			]
 			disable_toast: true
 			id: "401F5CBD66ABACA6"
-			subtitle: "Better Whetstone"
+			subtitle: "An abrasive for later equipment"
 			tasks: [{
 				id: "45B2539D9D40BA38"
 				item: {
@@ -670,14 +727,18 @@
 				}
 				type: "item"
 			}]
+			title: "Fine Whetstone"
 			x: -14.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["42A753C2A80F604A"]
+			description: [
+				"&eA small hammer delivers controlled blows for fitting and reinforcing equipment. Here it is a workshop tool for upgrades, including reinforcement that adds Unbreaking and helps equipment endure repeated use.&r"
+				"&7Reusable means it remains after the work. It still wears down.&r"
+			]
 			disable_toast: true
 			id: "58AEE1F63EB7C8A8"
-			subtitle: "Another Useful Item"
 			tasks: [{
 				id: "6ACABBE9FAEC3180"
 				item: {
@@ -689,29 +750,32 @@
 				}
 				type: "item"
 			}]
+			title: "Small Hammer"
 			x: -14.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["5733B6FE443F3A31"]
 			description: [
-				"   &eTools used as Lockpicks:&r"
-				"      &6Sword: 20%&r"
-				"      &6Axe: 40%&r"
-				"      &6Pickaxe: 50%&r"
-				"      &6Shovel: 30%&r"
-				"      &6Hoe: 30%&r"
+				"  &3--------&r   &bRight Click to Unlock&r   &3--------&r"
+				""
+				"&eHold a supported tool in the main hand and right-click a loot chest or barrel. After the lock yields, click again to open it.&r"
+				""
+				"&eEach ordinary supported tool attempt costs 3 durability. Success per attempt: sword 20%; axe 40%; pickaxe 50%; shovel or hoe 30%.&r"
+				""
+				"&eBudget for failed attempts. Do not use the last of your only pickaxe on a lock.&r"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "minecraft:chest"
 			id: "49286854E1C7149C"
-			subtitle: "Explore the Locked Boxes"
+			subtitle: "Unlock Loot Containers"
 			tasks: [{
 				id: "2EB93C54D4840BE2"
 				title: "Chests and Lockpicks"
 				type: "checkmark"
 			}]
+			title: "Chests and Lockpicks"
 			x: -11.0d
 			y: 1.0d
 		}

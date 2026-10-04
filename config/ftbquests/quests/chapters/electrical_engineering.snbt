@@ -8,15 +8,22 @@
 	order_index: 13
 	quest_links: [ ]
 	quests: [{
+		description: [
+			"&eThe second package from the armored safe contains the galvanic manual and the electrical engineer's log.&r"
+			""
+			"&eElectrical equipment carries energy through conductors between connected devices. Insulation keeps those paths separate, allowing the supply to reach the intended load. Generators and motors connect this form of power to the workshop's mechanical drives.&r"
+		]
 		id: "448CEED7EF898AB1"
 		invisible: true
 		shape: "gear"
 		size: 2.0d
+		subtitle: "Electrical Records from the Safe"
 		tasks: [{
 			id: "02B55A2590C0C7DB"
 			item: "kubejs:galvanic_manual"
 			type: "item"
 		}]
+		title: "Electrical Engineering"
 		x: 0.0d
 		y: 0.0d
 	}]

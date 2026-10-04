@@ -11,87 +11,133 @@
 	quests: [
 		{
 			dependency_requirement: "one_completed"
+			description: [
+				"&eLogs recovered from the laboratory staff. Most of the pages concern ordinary work.&r"
+			]
 			icon: "minecraft:writable_book"
 			id: "207E2F3729E91CEC"
 			invisible: true
 			shape: "gear"
 			size: 3.0d
-			subtitle: "Not Yet Completed"
 			tasks: [{
 				id: "59DD8C7F23D11AAD"
-				title: "Not Started Yet"
+				title: "Record the Recovered Logs"
 				type: "checkmark"
 			}]
-			title: "Lost Notes"
+			title: "The Recovered Archive"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["207E2F3729E91CEC"]
+			description: [
+				"&7From the cleaner's log:&r"
+				""
+				"&eMoved the exit chest out from under the bench again. Leave it where someone can see it.&r"
+				""
+				"&eThe preparation room is clean. The observation room will have to wait.&r"
+			]
 			id: "7C3299CBACBDAE0F"
 			tasks: [{
 				id: "15D53F1D3832F7F0"
 				item: "kubejs:the_cleaners_log"
 				type: "item"
 			}]
+			title: "The Cleaner's Log"
 			x: 3.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["207E2F3729E91CEC"]
+			description: [
+				"&7From the mechanical engineer's log:&r"
+				""
+				"&eRedrew the first sheet mold. The old drawing assumed a working press; the press drawing assumed a supply of sheets. That was an embarrassing pair of instructions.&r"
+				""
+				"&eThe wooden mold is crude, but it breaks the circle.&r"
+			]
 			id: "74B858ACAA29F9D8"
 			tasks: [{
 				id: "53CED5C536FF7B33"
 				item: "kubejs:the_mechanical_engineers_log"
 				type: "item"
 			}]
+			title: "The Mechanical Engineer's Log"
 			x: 0.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["207E2F3729E91CEC"]
+			description: [
+				"&7From the fluid engineer's log:&r"
+				""
+				"&eThe return line was connected correctly. The pump was turning the wrong way.&r"
+				""
+				"&eAdded rotation arrows to the drawing. Whoever reads it next may never have seen this installation running.&r"
+			]
 			id: "11993D43DAEFB516"
 			tasks: [{
 				id: "45565DB4D4D23BA9"
 				item: "kubejs:the_fluid_engineers_log"
 				type: "item"
 			}]
+			title: "The Fluid Engineer's Log"
 			x: -3.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["207E2F3729E91CEC"]
+			description: [
+				"&7From the precision manufacturing engineer's log:&r"
+				""
+				"&eThe document packet fits in the brass box. Opening sequence tested before sealing the final copy; the pages can be removed intact.&r"
+			]
 			id: "29D5C51D5B2A259F"
 			tasks: [{
 				id: "783329405CA86ABD"
 				item: "kubejs:the_precision_manufacturing_engineers_log"
 				type: "item"
 			}]
+			title: "Precision Manufacturing Log"
 			x: -5.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["207E2F3729E91CEC"]
+			description: [
+				"&7From the material engineer's log:&r"
+				""
+				"&eThey asked which material would last longest. I asked where it would be stored, at what temperature, and in contact with what.&r"
+				""
+				"&eCompatibility notes complete. Storage conditions still unspecified.&r"
+			]
 			id: "0EE2743FF6D048DD"
 			tasks: [{
 				id: "6DDFFC283C9EEE5C"
 				item: "kubejs:the_material_engineers_log"
 				type: "item"
 			}]
+			title: "The Material Engineer's Log"
 			x: 0.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["207E2F3729E91CEC"]
+			description: [
+				"&7From the electrical engineer's log:&r"
+				""
+				"&eCopied the restart procedure onto paper. Keep this copy with the electrical notes in case the console fails.&r"
+			]
 			id: "3E0DD88A307809D4"
 			tasks: [{
 				id: "547E80AFEAF4744C"
 				item: "kubejs:the_electrical_engineers_log"
 				type: "item"
 			}]
+			title: "The Electrical Engineer's Log"
 			x: 7.5d
 			y: 0.0d
 		}
 	]
-	title: "Losted Logs"
+	title: "Lost Logs"
 }

@@ -115,17 +115,21 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"&eHeavy industry brings higher furnace temperatures, stronger metal stock, and machinery built to handle sustained loads. These notes explain how the furnace and its supporting workshops make those conditions possible.&r"
+			]
 			hide_dependent_lines: true
 			id: "7A0C6B3904C55546"
 			invisible: true
 			shape: "gear"
 			size: 2.0d
+			subtitle: "Industrial Workshop Handbook"
 			tasks: [{
 				id: "3471BB278B14DE85"
 				item: "kubejs:industrial_manual"
 				type: "item"
 			}]
-			title: "Industrial Age"
+			title: "Heavy Industry"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -134,11 +138,15 @@
 				"461B8FFD37D6D4A8"
 				"34A1646F3FC3509B"
 			]
-			description: ["&eAn alloy of iron and coke. Stronger than bronze, used for industrial components.&r"]
+			description: [
+				"&eCast iron contains more carbon than steel. It flows well when molten, making it useful for cast bodies with shapes that would be difficult to forge. Its brittleness makes it less suitable for parts that must bend or absorb sharp impacts.&r"
+				""
+				"&eThe workshop uses it for pipes, tanks, chemical vats, and furnace components: rigid bodies that contain fluids or support machinery.&r"
+			]
 			disable_toast: true
 			id: "3E0CF50CF54A7795"
 			shape: "square"
-			subtitle: "Dark Iron"
+			subtitle: "Cast Machine Bodies"
 			tasks: [{
 				id: "52F9478B200B748C"
 				item: "tfmg:cast_iron_ingot"
@@ -154,11 +162,14 @@
 				"4B93583D74E7E010"
 				"13C9C9F227B312DD"
 			]
-			description: ["&eRefined from iron and coke in a blast furnace. The fundament of heavy industry.&r"]
+			description: [
+				"&eSteel combines iron with a controlled amount of carbon. Its strength and toughness make it useful for parts that transmit force or hold a machine together, including heavy plates, bearings, mechanisms, and furnace reinforcement.&r"
+				""
+				"&ePig iron is a different stock with a higher carbon content. The blast furnace produces pig iron; turning it into steel ordinarily requires further control of carbon and impurities.&r"
+			]
 			disable_toast: true
 			id: "0635A293D5BA7EF2"
 			shape: "square"
-			subtitle: "True Industrial Metal"
 			tasks: [{
 				id: "7942A16831EDA69A"
 				item: "tfmg:steel_ingot"
@@ -172,15 +183,15 @@
 			dependencies: ["7A0C6B3904C55546"]
 			description: [
 				"   &3----------&r   &bRequires Fuel to Operate&r   &3----------&r"
+				"&eThe coke oven heats coal with limited access to oxygen, driving off volatile compounds while leaving a carbon-rich solid. This produces coke for furnace work; wood can be treated here to make charcoal.&r"
 				""
-				"&eBurns coal into coal coke. Produces creosote as a byproduct.&r"
+				"&eCreosote and carbon dioxide leave alongside the solid product. Drain carbon dioxide from the top and creosote from another face; a full fluid tank stops processing. Creosote also treats the wood used beneath industrial casings.&r"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "09E6FDDC7DCCD8E3"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Coke Production"
 			tasks: [{
 				id: "471C4245F65D97F6"
 				item: "tfmg:coke_oven"
@@ -192,10 +203,14 @@
 		}
 		{
 			dependencies: ["09E6FDDC7DCCD8E3"]
-			description: ["&eSmokeless fuel from the coke oven. Burns hotter and longer than coal.&r"]
+			description: [
+				"&eCoke is the carbon-rich solid left after coking coal. Industrial furnaces historically used it as both a fuel and a reducing material.&r"
+				""
+				"&eGround coke supplies carbon to heated industrial iron and silicon production. In reduction processes, carbon helps remove oxygen from mineral compounds; it is a chemical ingredient as well as a source of heat.&r"
+			]
 			disable_toast: true
 			id: "4784F318EADDD9C3"
-			subtitle: "High-Carbon Fuel"
+			subtitle: "Coal after Coking"
 			tasks: [{
 				id: "66AC72A9F1107284"
 				item: "tfmg:coal_coke"
@@ -211,12 +226,16 @@
 				"49EB4FE7D42831FA"
 				"337E1339823083A2"
 			]
-			description: ["&eSmelts iron into steel using hot air and coke. Requires multiple supporting components.&r"]
+			description: [
+				"&eThe blast furnace processes iron-bearing material into molten pig iron and slag, and can also recover liquid silicon from quartz. High heat enables these reactions; limestone helps carry unwanted compounds into the separate slag output.&r"
+				""
+				"&eHeaters beneath the furnace supply heat, while reinforcement sets its temperature ceiling. The temperature rises gradually: heated operation begins at 1200, and superheated operation at 1900. The pig-iron and silicon reactions require superheating.&r"
+			]
 			disable_toast: true
 			id: "5148FEA0B12D0880"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Steel Production"
+			subtitle: "Furnace Commissioning"
 			tasks: [{
 				id: "053DC5CC9134C583"
 				item: "cwi:blast_furnace"
@@ -228,10 +247,10 @@
 		}
 		{
 			dependencies: ["4DADEE61B50B2B74"]
-			description: ["&eRefractory bricks that line the blast furnace. Withstand extreme temperatures.&r"]
+			description: ["&eFireproof brick blocks form refractory furnace linings and casting equipment. Their heat-resistant mineral body keeps the vessel intact at temperatures that would damage ordinary masonry.&r"]
 			disable_toast: true
 			id: "49EB4FE7D42831FA"
-			subtitle: "Blast Furnace Lining"
+			subtitle: "Refractory Masonry"
 			tasks: [{
 				id: "12E0D24622EA9C27"
 				item: "tfmg:fireproof_bricks"
@@ -243,11 +262,15 @@
 		}
 		{
 			dependencies: ["14B9150E857D89D3"]
-			description: ["&eBricks made from fireclay. Can handle the highest temperatures.&r"]
+			description: [
+				"&eFiring converts the soft fireclay blend into a rigid refractory brick. These bricks supply furnace masonry and components exposed to molten material.&r"
+				""
+				"&eMold stock must be shaped into a disk before firing. Once fired, the material has the heat resistance needed for casting rather than the softness needed for initial shaping.&r"
+			]
 			disable_toast: true
 			id: "4DADEE61B50B2B74"
 			shape: "square"
-			subtitle: "Even MORE Refractory"
+			subtitle: "Brick or Mold Stock"
 			tasks: [{
 				id: "477046D248E52059"
 				item: "tfmg:fireproof_brick"
@@ -259,12 +282,12 @@
 		}
 		{
 			dependencies: ["3E0CF50CF54A7795"]
-			description: ["&ePreheats air before it enters the blast furnace. Improves efficiency.&r"]
+			description: ["&eThe air intake draws air for industrial processes that need a gas supply. The furnace hatch serves a different purpose: it provides access through the blast furnace's refractory structure.&r"]
 			disable_toast: true
 			id: "13C9C9F227B312DD"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Preheating Components"
+			subtitle: "Air Equipment and Furnace Access"
 			tasks: [
 				{
 					id: "043662A42D209F9F"
@@ -277,18 +300,21 @@
 					type: "item"
 				}
 			]
-			title: "Hot Air"
+			title: "Furnace Air and Access"
 			x: 4.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["3E0CF50CF54A7795"]
-			description: ["&eHeats air before it enters the blast furnace. Uses fuel to generate the hot blast.&r"]
+			description: [
+				"&eBlast stoves historically heated the air supplied to ironmaking furnaces. Preheated air carries heat into the furnace instead of cooling the reaction zone as cold incoming air would.&r"
+				""
+				"&eThe furnace described in this manual is heated from beneath, with reinforcement setting the heat it can withstand. This design does not require a blast stove's hot-air supply.&r"
+			]
 			disable_toast: true
 			id: "337E1339823083A2"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Hot Blast"
 			tasks: [{
 				id: "3AD67A3E7E1B6578"
 				item: "tfmg:blast_stove"
@@ -305,10 +331,14 @@
 				"09A16A54841462D0"
 				"6DFB21A13808280F"
 			]
-			description: ["&eA special clay blend that withstands extreme heat. The base for fireproof bricks.&r"]
+			description: [
+				"&eFireclay blends workable clay with bauxite, magnesite, and quartz or silicon powder. The clay allows the unfired stock to be shaped; the mineral blend supplies the refractory material needed around intense heat.&r"
+				""
+				"&eThe same stock becomes furnace bricks or casting molds, depending on how it is shaped before firing.&r"
+			]
 			disable_toast: true
 			id: "14B9150E857D89D3"
-			subtitle: "Refractory Clay"
+			subtitle: "Fireclay Blend"
 			tasks: [{
 				id: "33967496483FF39B"
 				item: "tfmg:fireclay_ball"
@@ -320,11 +350,11 @@
 		}
 		{
 			dependencies: ["7A0C6B3904C55546"]
-			description: ["&ePowdered bauxite. The primary source of aluminum.&r"]
+			description: ["&eBauxite is rich in aluminum-bearing minerals and is the principal ore used for aluminum production. Its alumina content also makes it useful in refractories; powdered bauxite is part of the fireclay blend.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "307C9A0994617AEA"
-			subtitle: "Aluminum Ore"
+			subtitle: "Bauxite in Refractories"
 			tasks: [{
 				id: "65314E54C8FBBB97"
 				item: "kubejs:bauxite_powder"
@@ -336,11 +366,15 @@
 		}
 		{
 			dependencies: ["7A0C6B3904C55546"]
-			description: ["&eFine silicon powder. Used in refractory materials and electronics.&r"]
+			description: [
+				"&eSilicon is a metalloid widely used in alloys and semiconductor electronics. Quartz contains silicon bound to oxygen; carbon reduction provides a route to separate silicon-bearing stock from that mineral.&r"
+				""
+				"&eHere silicon powder can replace quartz powder in the fireclay blend. This powder is refractory stock, rather than a finished electronic component.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "5CB3035210A39A5F"
-			subtitle: "From Quartz"
+			subtitle: "Silicon and Refractories"
 			tasks: [{
 				id: "7A80B4CA2B0BF9F0"
 				item: "kubejs:silicon_powder"
@@ -352,11 +386,11 @@
 		}
 		{
 			dependencies: ["7A0C6B3904C55546"]
-			description: ["&ePowdered magnesite. Added to fireclay for high-temperature resistance.&r"]
+			description: ["&eMagnesite is magnesium carbonate. Magnesium-bearing refractories have long served furnace linings exposed to severe heat. Here its powder joins bauxite, clay, and quartz or silicon in the fireclay blend.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "09A16A54841462D0"
-			subtitle: "Refractory Mineral"
+			subtitle: "Magnesite Additive"
 			tasks: [{
 				id: "1399CB6A28A8469E"
 				item: "kubejs:magnesite_powder"
@@ -371,11 +405,10 @@
 				"33288F9895EE3A5E"
 				"5742E5A99ED7CEF1"
 			]
-			description: ["&eA casing made from steel and hardened wood. Used for heavy industrial machines.&r"]
+			description: ["&eA steel casing encloses the machine's working parts in a plated body. Hardened wood provides the base, while the steel exterior forms the casing used by centrifuges and other industrial assemblies.&r"]
 			id: "7F050F2D70CEA448"
 			shape: "rsquare"
 			size: 1.75d
-			subtitle: "Casing for Industry"
 			tasks: [{
 				id: "4D9D2D44DFEBC788"
 				item: "tfmg:steel_casing"
@@ -387,11 +420,11 @@
 		}
 		{
 			dependencies: ["5742E5A99ED7CEF1"]
-			description: ["&eA reinforced casing made from heavy plates. For the most demanding machinery.&r"]
+			description: ["&eThe heavy machinery casing reinforces a steel casing with more steel and heavy plates. It houses heavy machine cores, pumpjack equipment, and refinery assemblies.&r"]
 			id: "213E8A29FFD8F2F6"
 			shape: "rsquare"
 			size: 1.75d
-			subtitle: "Heavy Enclosure"
+			subtitle: "Reinforced Machine Body"
 			tasks: [{
 				id: "0A70FC9BF912EC2A"
 				item: "tfmg:heavy_machinery_casing"
@@ -403,10 +436,9 @@
 		}
 		{
 			dependencies: ["0635A293D5BA7EF2"]
-			description: ["&eA heavy plate of steel. Used for casings and structural components.&r"]
+			description: ["&eHeavy plates are steel stock used where a broad metal surface must contain, protect, or support something. Tanks use them for walls, casings for enclosures, and armor for protective panels; mechanisms and tools also depend on this stock.&r"]
 			disable_toast: true
 			id: "5742E5A99ED7CEF1"
-			subtitle: "Thick Steel"
 			tasks: [{
 				id: "00A8A83AA19B71F6"
 				item: "tfmg:heavy_plate"
@@ -418,12 +450,16 @@
 		}
 		{
 			dependencies: ["5742E5A99ED7CEF1"]
-			description: ["&eReinforces the blast furnace structure. Allows it to withstand higher pressures.&r"]
+			description: [
+				"&eSteel reinforcement supports the furnace's refractory structure and raises its permitted temperature ceiling. Heat supply and structural support are separate requirements: stronger heaters cannot push an inadequately reinforced furnace beyond that limit.&r"
+				""
+				"&eFresh reinforcement contributes more than rusted reinforcement. Both support the furnace, but their condition matters when seeking superheated operation.&r"
+			]
 			disable_toast: true
 			id: "7D93855EB57F68E5"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Strengthening"
+			subtitle: "Furnace Temperature Limit"
 			tasks: [{
 				id: "53AF58ACC8D7D86D"
 				item: "tfmg:blast_furnace_reinforcement"
@@ -435,26 +471,25 @@
 		}
 		{
 			dependencies: ["72BBEB2B8E9363AB"]
-			description: ["&eWood treated with creosote. Durable and resistant to weathering.&r"]
+			description: ["&eHardened wood is quality sealed wood treated further with creosote. Timber preservatives resist decay and weathering, making treated wood useful as the lasting base beneath a steel casing.&r"]
 			disable_toast: true
 			id: "33288F9895EE3A5E"
-			subtitle: "Creosote-Treated"
+			subtitle: "Preserved Casing Base"
 			tasks: [{
 				id: "71517F0A0693C35F"
 				item: "kubejs:harden_wood"
 				type: "item"
 			}]
-			title: "Harden Wood"
+			title: "Hardened Wood"
 			x: 6.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["7A0C6B3904C55546"]
-			description: ["&eUsed in fireclay and other refractory recipes.&r"]
+			description: ["&eFine clay particles become workable with water, allowing shaped pieces to be dried or fired. The workshop uses clay in fireclay, cement, mortar, and casting molds.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "6DFB21A13808280F"
-			subtitle: "Binding Agent"
 			tasks: [{
 				id: "7C030214A8273473"
 				item: "minecraft:clay_ball"
@@ -466,25 +501,26 @@
 		}
 		{
 			dependencies: ["09E6FDDC7DCCD8E3"]
-			description: ["&eOily byproduct of coke production. Used to treat wood and as a fuel.&r"]
+			description: [
+				"&eCreosote is an oily mixture recovered during coking, historically used to preserve timber against decay. The workshop uses it on ordinary planks and quality sealed wood, supplying treated stock for the centrifuge and steel casings.&r"
+			]
 			disable_toast: true
 			id: "72BBEB2B8E9363AB"
-			subtitle: "Wood Treatment"
+			subtitle: "Keep the Coking Byproduct"
 			tasks: [{
 				id: "27F49C90ECC65A2E"
 				item: "tfmg:creosote_bucket"
 				type: "item"
 			}]
-			title: "Creosote Bucket"
+			title: "Creosote"
 			x: 4.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["4784F318EADDD9C3"]
-			description: ["&eCoal coke ground into dust. Used in steel production.&r"]
+			description: ["&eGrinding coke spreads its carbon through a batch instead of leaving it in large lumps. Coke dust supplies carbon to heated industrial iron and helps reduce quartz during silicon production.&r"]
 			disable_toast: true
 			id: "461B8FFD37D6D4A8"
-			subtitle: "Powdered Coke"
 			tasks: [{
 				id: "34124BBFCA8DAEA6"
 				item: "tfmg:coal_coke_dust"
@@ -496,27 +532,31 @@
 		}
 		{
 			dependencies: ["7A0C6B3904C55546"]
-			description: ["&eCrushed limestone. Used as flux in steelmaking.&r"]
+			description: [
+				"&eLimestone is largely calcium carbonate. In ironmaking, lime derived from it helps collect unwanted compounds into slag.&r"
+				""
+				"&eIts powder is used in heated industrial iron, silicon, cement, and the blast furnace's pig-iron recipes.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "34A1646F3FC3509B"
-			subtitle: "Crushed Limestone"
+			subtitle: "Limestone as a Process Additive"
 			tasks: [{
 				id: "43235D5BFDAF9C4F"
 				item: "kubejs:limestone_powder"
 				type: "item"
 			}]
-			title: "Limesand"
+			title: "Limestone Powder"
 			x: 0.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["72BBEB2B8E9363AB"]
-			description: ["&ePlanks made from hardened wood. Used in casing recipes.&r"]
+			description: ["&eCreosote-treated planks provide wooden structural stock for the centrifuge. They are treated ordinary planks; the hardened wood used beneath steel casings is a separate product made from quality sealed wood.&r"]
 			disable_toast: true
 			id: "70556A32DA19E441"
 			shape: "diamond"
-			subtitle: "Treated Wood"
+			subtitle: "Treat the Planks Directly"
 			tasks: [{
 				id: "5AD2D3D030ACF624"
 				item: "tfmg:hardened_planks"
@@ -528,12 +568,12 @@
 		}
 		{
 			dependencies: ["4DADEE61B50B2B74"]
-			description: ["&eA basin for casting blocks of metal. Handles high-temperature melts.&r"]
+			description: ["&eThe casting basin contains a melt while it cools into a block. It supplies solid storage stock directly from molten metal and turns furnace slag into blocks, giving the fluid output a form that can be stored or used in construction.&r"]
 			disable_toast: true
 			id: "5C5628BB82D53C81"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Fireproof Casting"
+			subtitle: "Block Casting"
 			tasks: [{
 				id: "429620DCD4A9043A"
 				item: "createmetallurgy:casting_basin"
@@ -545,12 +585,16 @@
 		}
 		{
 			dependencies: ["4DADEE61B50B2B74"]
-			description: ["&eA firebox for heating. Another option for generating heat.&r"]
+			description: [
+				"&eThe firebox burns liquid fuel supplied through pipes, transferring combustion heat to compatible machinery above it. The fuel burns in a separate chamber beneath the vessel, heating the contents without adding the fuel to the batch.&r"
+				""
+				"&eCombustion also produces carbon dioxide. Pump this exhaust out continuously: when its exhaust tank fills, the firebox stops burning even if fuel remains.&r"
+			]
 			disable_toast: true
 			id: "1AC4C7E11C7A406E"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Another Burner"
+			subtitle: "Liquid Fuel and Exhaust"
 			tasks: [{
 				id: "2C5E85DE64CB14A6"
 				item: "tfmg:firebox"
@@ -562,12 +606,15 @@
 		}
 		{
 			dependencies: ["5531421570274E82"]
-			description: ["&eA mechanism built with steel components. More durable and powerful than brass.&r"]
+			description: [
+				"&eSteel cogwheels and a bearing form a supported gear assembly. The gears transmit rotation between parts, while the bearing supports their movement; fastening keeps their positions fixed.&r"
+				""
+				"&eThis mechanism supplies the working assembly in industrial machine cores, chemical vats, and petroleum equipment.&r"
+			]
 			disable_toast: true
 			id: "08C023B7583B9161"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Steel Precision"
 			tasks: [{
 				id: "15FEAB67600B7431"
 				item: "tfmg:steel_mechanism"
@@ -579,12 +626,15 @@
 		}
 		{
 			dependencies: ["5742E5A99ED7CEF1"]
-			description: ["&eBearings made from steel. Reduce friction better than andesite bearings.&r"]
+			description: [
+				"&eA bearing supports a rotating part while allowing it to turn. Its rolling elements reduce sliding contact between the moving part and its housing, limiting friction and helping the shaft stay aligned.&r"
+				""
+				"&eSteel bearings are used in mechanisms, industrial pumps, pumpjack cranks, and heavy machine cores.&r"
+			]
 			disable_toast: true
 			id: "5531421570274E82"
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "Stronger Bearings"
 			tasks: [{
 				id: "666A88C414E59C27"
 				item: "kubejs:steel_bearing"
@@ -596,11 +646,15 @@
 		}
 		{
 			dependencies: ["5C5628BB82D53C81"]
-			description: ["&eWaste material from the blast furnace. Can be processed into useful blocks.&r"]
+			description: [
+				"&eSlag is the mineral-rich output separated from metal during furnace processing. Limestone-derived flux helps collect unwanted compounds into this phase, keeping them apart from the pig iron.&r"
+				""
+				"&eCast slag can serve as construction aggregate, including in asphalt mixture. Both slag and metal need an outlet for furnace processing to continue.&r"
+			]
 			disable_toast: true
 			id: "4879996922D6BF38"
 			shape: "diamond"
-			subtitle: "Smelting Byproduct"
+			subtitle: "A Second Furnace Output"
 			tasks: [{
 				id: "56DA74974453C52D"
 				item: "tfmg:slag_block"
@@ -612,12 +666,16 @@
 		}
 		{
 			dependencies: ["202D27DC120594C9"]
-			description: ["&eA more powerful mixer for industrial-scale recipes. Handles larger batches and more complex mixtures.&r"]
+			description: [
+				"&eMounted over a chemical vat, the industrial mixer agitates the batch when fitted with a mixer blade and supplied with rotation. Agitation brings reactants into contact and distributes them through the mixture, which is why many cracking and polymer reactions require it.&r"
+				""
+				"&eMixing does not replace heat or a suitable vessel; those remain separate requirements of the reaction.&r"
+			]
 			disable_toast: true
 			id: "1FC1928E91DA9191"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Advanced Mixing"
+			subtitle: "Reaction Requirements"
 			tasks: [{
 				id: "563D14AA4A2FFE47"
 				item: "tfmg:industrial_mixer"
@@ -629,12 +687,15 @@
 		}
 		{
 			dependencies: ["08C023B7583B9161"]
-			description: ["&eA vat for chemical reactions. Different attachments enable various processes.&r"]
+			description: [
+				"&eThe steel chemical vat holds fluids and solids together while they react. Its vessel contains the batch; attachments provide operations such as mixing, and external heat supplies the energy required by heated reactions.&r"
+				""
+				"&ePetroleum cracking and polymer production require a steel or firebrick-lined vat. A cast-iron vat is useful for other work, but does not satisfy these reactions' vessel requirement.&r"
+			]
 			disable_toast: true
 			id: "38C3399F3559D720"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Chemical Processing"
 			tasks: [{
 				id: "6D513D39818E4606"
 				item: "tfmg:steel_chemical_vat"
@@ -646,7 +707,7 @@
 		}
 		{
 			dependencies: ["5C5628BB82D53C81"]
-			description: ["&eA tough building material. It starts as a soft mixture that you can pour into shapes, but it hardens into a strong, solid block.&r"]
+			description: ["&eConcrete combines a binder with mineral aggregate. In ordinary construction it is poured while workable and gains strength as the binder reacts and hardens. These durable blocks provide factory floors and structural building stock.&r"]
 			disable_toast: true
 			hide_dependency_lines: false
 			id: "168029E07C5CA042"
@@ -662,10 +723,13 @@
 		}
 		{
 			dependencies: ["128293ACBBFC6D76"]
-			description: ["&ePumps fluids between tanks and machines.&r"]
+			description: [
+				"&eThe industrial pump is a fluid-handling component for larger machines. Its bearings support moving parts, while rubber and resin provide sealing materials around the fluid path.&r"
+				""
+				"&eThis pump is a construction component for heavy machine cores, distillation equipment, and large diesel engines.&r"
+			]
 			disable_toast: true
 			id: "5FEBE3E71CBDBB0F"
-			subtitle: "Fluid Transport"
 			tasks: [{
 				id: "162AE1D02886E438"
 				item: "kubejs:industrial_pump"
@@ -677,10 +741,10 @@
 		}
 		{
 			dependencies: ["5742E5A99ED7CEF1"]
-			description: ["&eA steel ring. Part of the industrial pump assembly.&r"]
+			description: ["&eA steel ring provides a rigid circular seat around a moving part or fluid passage. Bearings, industrial pumps, and fuel injectors use this shaped stock to support their internal assemblies.&r"]
 			disable_toast: true
 			id: "128293ACBBFC6D76"
-			subtitle: "Pump Component"
+			subtitle: "Circular Support Stock"
 			tasks: [{
 				id: "396C3695091DF81B"
 				item: "kubejs:steel_ring"
@@ -692,13 +756,15 @@
 		}
 		{
 			dependencies: ["2D1180C9EC2DE6E2"]
-			description: ["&eA heavily armored safe. A helve hammer can break it open.&r"]
+			description: [
+				"&eThe armored safe protects a packet containing the galvanic manual and the electrical engineer's log. Its steel enclosure is harder to recover than ordinary storage; a portable drill is needed to remove it from the laboratory.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "4A57AE1DCC0BFE11"
 			shape: "gear"
 			size: 2.75d
-			subtitle: "Break Open With Helve Hammer"
+			subtitle: "Recover the Protected Packet"
 			tasks: [{
 				id: "64B432CF940A6991"
 				item: "kubejs:steel_armor_safe"
@@ -710,12 +776,16 @@
 		}
 		{
 			dependencies: ["202D27DC120594C9"]
-			description: ["&eA mechanical hammer for heavy forging. Applies tremendous force.&r"]
+			description: [
+				"&eThe helve hammer converts rotation into repeated blows. Its swinging head concentrates force on a workpiece, forming metal that needs heavier treatment than ordinary pressing.&r"
+				""
+				"&eReinforced casings, crucibles, and steel drill heads use this forming method. It can also break open a recovered armored safe.&r"
+			]
 			disable_toast: true
 			id: "2D1180C9EC2DE6E2"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Stronger Press"
+			subtitle: "Heavy Forming"
 			tasks: [{
 				id: "760C61E0052D0AB2"
 				item: "vintageimprovements:helve_hammer"
@@ -727,13 +797,17 @@
 		}
 		{
 			dependencies: ["4DADEE61B50B2B74"]
-			description: ["&eA mold made from fireproof brick. Can handle higher temperatures than terracotta.&r"]
+			description: [
+				"&eA fired fireclay disk becomes a refractory casting mold. The mold fixes the shape of a melt as it solidifies, producing ingots, nuggets, sheets, or rods without machining each shape from solid stock.&r"
+				""
+				"&eTerracotta molds are available below 1200. At 1200 or above, refractory molds supply the heat resistance required for casting.&r"
+			]
 			disable_toast: true
 			icon_scale: 0.8d
 			id: "4B93583D74E7E010"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Better Mold For Higher Temperature"
+			subtitle: "Refractory Mold-Making"
 			tasks: [{
 				id: "46F05324BAB064C5"
 				item: "kubejs:fireproof_brick_disk"
@@ -745,12 +819,16 @@
 		}
 		{
 			dependencies: ["7D93855EB57F68E5"]
-			description: ["&eA large crucible for melting metals. Holds more than a basin.&r"]
+			description: [
+				"&eThe industrial crucible holds metal while heat turns it into a melt. Its refractory vessel and reinforced body provide a dedicated route from solid stock to the fluid needed by a casting line.&r"
+				""
+				"&eBulk melting recipes require the crucible's heat to fall within a permitted range. Check the recipe's heat requirements before loading the vessel.&r"
+			]
 			disable_toast: true
 			id: "69BA8B4A6B6C0D75"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Larger Smelting"
+			subtitle: "Bulk Melting"
 			tasks: [{
 				id: "55E74BA4F5D08C85"
 				item: "createmetallurgy:industrial_crucible"
@@ -762,11 +840,15 @@
 		}
 		{
 			dependencies: ["5C5628BB82D53C81"]
-			description: ["&eA dark, sticky, and heavy mixture of bitumen and stone aggregates. People use this durable material to pave smooth surfaces for roads, driveways, and airport runways back in the past.&r"]
+			description: [
+				"&eAsphalt uses a bituminous binder to hold mineral aggregate together. The compacted grains carry the load, while the binder limits water entering the surface.&r"
+				""
+				"&eIt was widely used for roads, yards, and runways.&r"
+			]
 			disable_toast: true
 			id: "2E0453F54E312FDB"
 			shape: "diamond"
-			subtitle: "Road Material"
+			subtitle: "Paving Material"
 			tasks: [{
 				id: "758ABC986A5C74BB"
 				item: "createdieselgenerators:asphalt_block"
@@ -778,11 +860,13 @@
 		}
 		{
 			dependencies: ["38C3399F3559D720"]
-			description: ["&eA powerful potato launcher. For fun.&r"]
+			description: [
+				"&eA powerful potato launcher. For fun.&r"
+			]
 			disable_toast: true
 			id: "4BB8F26DFBE7AFCD"
 			shape: "diamond"
-			subtitle: "Fun Item"
+			subtitle: "Workshop Diversion"
 			tasks: [{
 				id: "12C7928F48194FDD"
 				item: {
@@ -804,11 +888,15 @@
 				"08C023B7583B9161"
 				"5FEBE3E71CBDBB0F"
 			]
-			description: ["&eThe central machine core for heavy industrial equipment. Integrates steel mechanisms, casings, and pumps.&r"]
+			description: [
+				"&eA heavy machine core brings the drive mechanism, bearing, and fluid pump together inside a reinforced casing. It supplies the shared working assembly for engines, refinery machinery, and other industrial equipment.&r"
+				""
+				"&eLubricant reduces friction where the moving parts meet. Plant oil and specialized lubrication oil are both used for this role in the core's assembly.&r"
+			]
 			id: "202D27DC120594C9"
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "The Core of Industry"
+			subtitle: "Core Assembly and Lubricant"
 			tasks: [{
 				id: "42F366E855E89AC0"
 				item: "kubejs:heavy_machine"
@@ -820,12 +908,11 @@
 		}
 		{
 			dependencies: ["1FC1928E91DA9191"]
-			description: ["&eBlades for the industrial mixer. Enables more recipes.&r"]
+			description: ["&eThe mixer blade pushes through the batch as it rotates, circulating the contents instead of letting them remain in separate regions. It is the working part of the industrial mixing attachment used on chemical vats.&r"]
 			disable_toast: true
 			id: "6CDF4C4F3924B144"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Mixer Upgrade"
 			tasks: [{
 				id: "45D21A385A6EB927"
 				item: "tfmg:mixer_blade"
@@ -837,29 +924,30 @@
 		}
 		{
 			dependencies: ["2D1180C9EC2DE6E2"]
+			description: ["&eHammering a metal block spreads the stock into sheets. This gives the helve hammer a bulk forming route for plates used in enclosures and assemblies.&r"]
 			disable_toast: true
 			icon: "tfmg:heavy_plate"
 			id: "0DC9E40A95F02CAA"
 			shape: "diamond"
-			subtitle: "Press Sheets Directly From Block"
+			subtitle: "Forming from Larger Stock"
 			tasks: [{
 				id: "1BFE61B7330735B5"
-				title: "Faster Sheets"
+				title: "Hammer Blocks into Sheets"
 				type: "checkmark"
 			}]
-			title: "Faster Sheets"
+			title: "Sheets From Blocks"
 			x: 16.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["7A0C6B3904C55546"]
-			description: ["&eScans the surface for oil deposits. Useful for finding fuel sources.&r"]
+			description: ["&eSurvey the site before placing a pumpjack. The surface scanner reports petroleum resources beneath the survey area, showing whether there is oil to extract.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "68B7323CA1B8BCCF"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Scan for Oil"
+			subtitle: "Survey before Construction"
 			tasks: [{
 				id: "4E1510BF396FB99C"
 				item: "tfmg:surface_scanner"
@@ -871,13 +959,13 @@
 		}
 		{
 			dependencies: ["7A0C6B3904C55546"]
-			description: ["&eAn input port for machines. Allows items to be fed automatically.&r"]
+			description: ["&eThe machine input passes rotation from an external shaft into an industrial assembly. It connects the power network to the working mechanism, including the crank that drives a pumpjack.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "2AA9C7BE2A0D3BA2"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Item Input"
+			subtitle: "Rotational Connection"
 			tasks: [{
 				id: "277872E762FFAB5A"
 				item: "tfmg:machine_input"
@@ -889,12 +977,16 @@
 		}
 		{
 			dependencies: ["70556A32DA19E441"]
-			description: ["&eSeparates fluids into their components. Used for processing oil and other liquids.&r"]
+			description: [
+				"&eThe centrifuge separates a mixture by spinning it. Components that respond differently to centrifugal motion move apart, making rotation useful for separation rather than for blending.&r"
+				""
+				"&eMineral processing uses it to recover separate powders from mixed rock stock, and clay processing can separate clay powder from water.&r"
+			]
 			disable_toast: true
 			id: "34F011FB69FB0B93"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Fluid Separation"
+			subtitle: "Centrifugal Separation"
 			tasks: [{
 				id: "3629CC66B8D77B52"
 				item: "vintageimprovements:centrifuge"
@@ -906,11 +998,15 @@
 		}
 		{
 			dependencies: ["7A0C6B3904C55546"]
-			description: ["&eA cylinder for a diesel engine.&r"]
+			description: [
+				"&eThe cylinder provides the chamber in which an engine piston travels. Combustion pressure acts on the piston, and the engine's mechanism converts that back-and-forth movement into rotation.&r"
+				""
+				"&eA machined bore guides the piston; lubrication reduces friction between their contacting surfaces. Cylinders are required components of the diesel engine.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "45287FE5D913F14D"
-			subtitle: "Engine Component"
+			subtitle: "Cylinder Machining"
 			tasks: [{
 				id: "566ADBFFB2D9736B"
 				item: "kubejs:engine_cylinder"
@@ -925,12 +1021,16 @@
 				"45287FE5D913F14D"
 				"5FEBE3E71CBDBB0F"
 			]
-			description: ["&eAn engine that runs on diesel. Provides powerful rotational force.&r"]
+			description: [
+				"&eA diesel engine converts the energy of burning fuel into rotation. Fuel injectors feed the combustion chambers, cylinders guide the pistons, and the internal mechanism delivers their movement to the shaft.&r"
+				""
+				"&eCompatible liquid fuels include biodiesel, allowing plant-derived fuel to power the same rotational machinery.&r"
+			]
 			disable_toast: true
 			id: "6278A4EBD6EF8DE7"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "Fuel Power"
+			subtitle: "Fuel-Powered Rotation"
 			tasks: [{
 				id: "73EC8E446A8C2E6B"
 				item: "createdieselgenerators:diesel_engine"
@@ -942,12 +1042,12 @@
 		}
 		{
 			dependencies: ["6278A4EBD6EF8DE7"]
-			description: ["&eA larger diesel engine. More cylinders, more stress output.&r"]
+			description: ["&eThe large diesel engine supplies rotational power for machinery with greater demand. Its enlarged assembly adds heavy plates and industrial pumps to the smaller engine's working body.&r"]
 			disable_toast: true
 			id: "53E0446A29083D90"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "More Power"
+			subtitle: "Engine Expansion"
 			tasks: [{
 				id: "3180B9A010A98905"
 				item: "createdieselgenerators:large_diesel_engine"
@@ -959,12 +1059,12 @@
 		}
 		{
 			dependencies: ["7A0C6B3904C55546"]
-			description: ["&eA drill head made from steel. Upgrades the portable drill for faster mining.&r"]
+			description: ["&eReinforcing the portable drill head with steel produces a drill with Efficiency V. The upgrade increases its mining speed.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "0B372411B5263246"
 			shape: "diamond"
-			subtitle: "Drill Upgrade"
+			subtitle: "Reinforced Portable Drill Head"
 			tasks: [{
 				id: "644CE25A4BBD35FE"
 				item: "kubejs:steel_drill_head"
@@ -976,11 +1076,11 @@
 		}
 		{
 			dependencies: ["69BA8B4A6B6C0D75"]
-			description: ["&eAttaches to an industrial crucible. Displays temperature and contents.&r"]
+			description: ["&eThe gauge attachment adds a visible heat indicator to the industrial crucible. With the attachment fitted, Engineer's Goggles also show its thermal status, helping you check the heat needed for melting.&r"]
 			disable_toast: true
 			id: "75D002F673C6FBA1"
 			shape: "diamond"
-			subtitle: "Crucible Info"
+			subtitle: "Crucible Readout"
 			tasks: [{
 				id: "11F596CEE755A0DE"
 				item: "createmetallurgy:gauge_attachment"
@@ -992,11 +1092,12 @@
 		}
 		{
 			dependencies: ["7A0C6B3904C55546"]
+			description: ["&eSteel tools last longer than bronze tools and mine faster. Their higher mining tier also makes them suitable for harder ores that the earlier tools cannot recover.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "037EE7423A735019"
 			shape: "diamond"
-			subtitle: "Sturdy"
+			subtitle: "Field Tools: Steel"
 			tasks: [
 				{
 					id: "43ACD198D4668154"
@@ -1065,11 +1166,12 @@
 		}
 		{
 			dependencies: ["7A0C6B3904C55546"]
+			description: ["&eSteel armor improves protection, durability, toughness, and knockback resistance over bronze equipment.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "4274439D1FCFA4D7"
 			shape: "diamond"
-			subtitle: "Sturdy"
+			subtitle: "Field Armor: Steel"
 			tasks: [
 				{
 					id: "08BBAF09B5432ED4"
@@ -1125,5 +1227,5 @@
 			y: 6.0d
 		}
 	]
-	title: "Industrial Foregoing"
+	title: "Heavy Industry"
 }

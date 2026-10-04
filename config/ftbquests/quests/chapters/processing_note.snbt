@@ -10,36 +10,50 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"&eGlassmaking turns a loose mineral batch into a shaped, transparent solid. Ore processing has a different aim: separate useful material from the rock around it and recover what remains after the first pass.&r"
+				""
+				"&ePhysical separation uses differences between particles. Chemical recovery changes the mineral compounds themselves. The appropriate treatment depends on what the ore contains and how that material responds.&r"
+			]
 			hide_dependent_lines: true
 			id: "7EAD0C34B17014A4"
 			invisible: true
 			shape: "gear"
 			size: 3.0d
-			subtitle: "Not Completed Yet"
+			subtitle: "Glassmaking and Ore Recovery"
 			tasks: [{
 				id: "71385303C15031A6"
 				item: "kubejs:processing_note"
 				type: "item"
 			}]
+			title: "Processing Notes"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6E14C5649AE916F6"]
+			description: [
+				"&eGlass provides a hard, transparent barrier for windows, vessels and fluid equipment. Unlike a crystal, its atoms have no repeating long-range arrangement.&r"
+				""
+				"&eIn conventional glassmaking, uneven cooling can cause cracking, while unwanted crystallization causes devitrification. These are different defects: one breaks the barrier, the other disrupts its clear structure.&r"
+			]
 			disable_toast: true
 			id: "486EA6444B07AE9E"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "Transparent Barriers"
 			tasks: [{
 				id: "1882244D0B7ED9A4"
 				item: "minecraft:glass"
 				type: "item"
 			}]
+			title: "Glass"
 			x: 3.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["078BB9F9932F52D8"]
+			description: ["&ePressing gives the fired blank a defined form. Uniform shape and thickness matter when a glass piece must fit a frame or vessel; cooling fixes the shape after it has been worked.&r"]
 			disable_toast: true
 			icon: "kubejs:pressed_glass_blank"
 			id: "6E14C5649AE916F6"
@@ -48,19 +62,23 @@
 				title: "Pressed Glass Blank"
 				type: "checkmark"
 			}]
+			title: "Pressed Glass Blank"
 			x: 0.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["4F55DF87BD90F15D"]
+			description: ["&eFiring joins the loose batch into a solid blank. In sintering, heat bonds neighboring particles; the resulting piece can be handled and shaped instead of remaining a pile of powder.&r"]
 			disable_toast: true
 			icon: "kubejs:sintered_glass_blank"
 			id: "078BB9F9932F52D8"
+			subtitle: "Particle Bonding"
 			tasks: [{
 				id: "5B9CAF6EDF6853D9"
 				title: "Sintered Glass Blank"
 				type: "checkmark"
 			}]
+			title: "Sintered Glass Blank"
 			x: -1.5d
 			y: -5.0d
 		}
@@ -70,141 +88,183 @@
 				"2B0465F2A53DB8ED"
 				"31D8AA7BD7F225D1"
 			]
+			description: ["&eThe glass batch distributes its mineral components before firing. A uniform mixture avoids regions with different compositions when the batch is worked into a glass blank.&r"]
 			disable_toast: true
 			icon: "kubejs:glass_batch"
 			id: "4F55DF87BD90F15D"
+			subtitle: "A Workable Glass Composition"
 			tasks: [{
 				id: "0FE4B8B11B516CD8"
 				title: "Glass Batch"
 				type: "checkmark"
 			}]
+			title: "Glass Batch"
 			x: -3.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["7EAD0C34B17014A4"]
+			description: ["&eSilica-rich sand supplies the main network-forming material of ordinary glass. Silica alone needs very high temperatures to work, so soda and limestone are used to make a more practical glass batch.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "minecraft:sand"
 			id: "1294A6C6E1A12EFB"
+			subtitle: "The Glass Network"
 			tasks: [{
 				id: "1181107E9F3D9C4E"
 				title: "Sand"
 				type: "checkmark"
 			}]
+			title: "Sand"
 			x: -4.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["7EAD0C34B17014A4"]
+			description: ["&eIn conventional glassmaking, soda is a flux that allows silica to be worked at lower temperatures. It makes a silica-rich batch easier to melt and shape.&r"]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "kubejs:soda_powder"
 			id: "2B0465F2A53DB8ED"
+			subtitle: "A Glassmaking Flux"
 			tasks: [{
 				id: "4B6131D6C33ACB92"
 				title: "Soda Powder"
 				type: "checkmark"
 			}]
+			title: "Soda Powder"
 			x: -6.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["7EAD0C34B17014A4"]
+			description: [
+				"&eLimestone supplies lime during conventional glass firing. Lime stabilizes soda-containing glass, helping it resist water instead of gradually dissolving at the surface.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "kubejs:limestone_powder"
 			id: "31D8AA7BD7F225D1"
+			subtitle: "Water Resistance"
 			tasks: [{
 				id: "5BB685DD9A51BF50"
 				title: "Limestone Powder"
 				type: "checkmark"
 			}]
+			title: "Limestone Powder"
 			x: -4.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["486EA6444B07AE9E"]
+			description: ["&eHeat allows ions near the glass surface to move and exchange with ions in the molten salt. This mobility is needed for surface strengthening: a cold, rigid glass structure does not exchange those ions readily.&r"]
 			disable_toast: true
 			icon: "kubejs:heated_glass"
 			id: "3A3EEC1B9D937AEF"
+			subtitle: "Mobile Surface Ions"
 			tasks: [{
 				id: "491C7ED8A4E258DF"
 				title: "Heated Glass"
 				type: "checkmark"
 			}]
+			title: "Heated Glass"
 			x: 4.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["3A3EEC1B9D937AEF"]
+			description: [
+				"&eThe nitrate bath exchanges sodium ions near the glass surface for larger potassium ions. The crowded surface layer is left under compression, making it harder for cracks to open.&r"
+				""
+				"&eStrengthening acts at the surface because small surface defects are common starting points for glass fracture. The interior remains glass; the treatment changes how readily those defects can grow into cracks.&r"
+			]
 			disable_toast: true
 			icon: "kubejs:ion_exchanged_glass_blank"
 			id: "3A991DA7FC5F6E12"
+			subtitle: "Surface Compression"
 			tasks: [{
 				id: "3238CA3E846D8204"
 				title: "Ion Exchanged Glass Blank"
 				type: "checkmark"
 			}]
+			title: "Ion-Exchanged Glass Blank"
 			x: 6.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["3A991DA7FC5F6E12"]
+			description: [
+				"&eThis strengthened glass is required for the lava-extractor pump. Surface compression helps glass resist the opening of small cracks; it does not make a glass part indestructible.&r"
+				""
+				"&eIon exchange and thermal tempering are different ways of producing a compressed surface. This workshop's strengthened grade combines a salt treatment with cooling, rather than relying on untreated glass alone.&r"
+			]
 			disable_toast: true
 			id: "67A10FC69686A727"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "Strengthened Glass"
 			tasks: [{
 				id: "3B4818E356032AA3"
 				item: "kubejs:tempered_glass"
 				type: "item"
 			}]
+			title: "Tempered Glass"
 			x: 9.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["70631EBCEC3BA87D"]
+			description: ["&eCrushed ore is coarse feed for milling. Breaking the block exposes mineral grains and releases some of the surrounding host rock, but the useful material still needs finer grinding before separation.&r"]
 			disable_toast: true
 			icon: "kubejs:crushed_chalcocite"
 			id: "68EDC7F8F372E4EC"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "Liberating Mineral Grains"
 			tasks: [{
 				id: "4B19E8A0D5B80613"
 				title: "Crushed Ore"
 				type: "checkmark"
 			}]
+			title: "Crushed Ore"
 			x: -3.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["31B2117B6DC8C595"]
+			description: [
+				"&eFlotation leaves stubborn tailings after its recoverable concentrate has been separated. Some useful mineral remains mixed with the residue: further grinding can expose it, while a compatible acid treatment provides another recovery route.&r"
+			]
 			disable_toast: true
 			icon: "kubejs:stubborn_chalcocite_tailings"
 			id: "2EF97B44F3C871A6"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "Material Left after Flotation"
 			tasks: [{
 				id: "319F506306A72F0F"
 				title: "Stubborn Ore Tailings"
 				type: "checkmark"
 			}]
+			title: "Stubborn Ore Tailings"
 			x: -1.5d
 			y: 13.0d
 		}
 		{
 			dependencies: ["19B51F96FEE5A2E1"]
+			description: ["&eLeach residue is the solid fraction left when acid transfers soluble material into the solution. Insoluble rock and incompletely recovered material remain here; washing can still recover metal powder alongside silicate and washing residues.&r"]
 			disable_toast: true
 			icon: "kubejs:leach_chalcocite_residue"
 			id: "1626665799ED7DC7"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "The Insoluble Fraction"
 			tasks: [{
 				id: "570643370064D342"
 				title: "Leach Ore Residue"
 				type: "checkmark"
 			}]
+			title: "Leach Residue"
 			x: 1.5d
 			y: 15.0d
 		}
@@ -213,32 +273,44 @@
 				"6E509F0E28483D5B"
 				"5FA2456D613EC7BF"
 			]
+			description: [
+				"&eGrinding exposes mineral grains locked together in larger rock fragments, preparing them for separation. The fine particles also present more surface area to an acid treatment.&r"
+			]
 			disable_toast: true
 			icon: "kubejs:chalcocite_powder"
 			id: "325A4EA2A4390C9C"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "Greater Surface Area"
 			tasks: [{
 				id: "69E956B17190EF25"
 				title: "Ore Powder"
 				type: "checkmark"
 			}]
+			title: "Ore Powder"
 			x: 1.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["7EAD0C34B17014A4"]
+			description: [
+				"&eA mined ore block combines useful minerals with host rock. Processing concentrates the useful material before metal production, and may recover secondary metals from the same feed.&r"
+				""
+				"&eThe mineral determines which metals are present and whether acid treatment is available. Not every ore follows the same recovery line.&r"
+			]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "kubejs:chalcocite"
 			id: "3C615E4515459663"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "Minerals and Host Rock"
 			tasks: [{
 				id: "11425278484C38CF"
 				title: "Ore Block"
 				type: "checkmark"
 			}]
+			title: "Ore Blocks"
 			x: 0.0d
 			y: 4.0d
 		}
@@ -247,258 +319,333 @@
 				"3968023285949226"
 				"175DCD25317BDC00"
 			]
+			description: ["&eTailings are what remains after vibration or centrifugation removes the concentrates. They still contain useful mineral that escaped the first separation. Flotation can recover more by acting on particle surfaces instead of relying on the same physical sorting again.&r"]
 			disable_toast: true
 			icon: "kubejs:chalcocite_tailings"
 			id: "2A5727AD26A217EB"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "Incomplete Mineral Recovery"
 			tasks: [{
 				id: "26DD5A803BC27A54"
 				title: "Ore Tailings"
 				type: "checkmark"
 			}]
+			title: "Ore Tailings"
 			x: 0.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["3C615E4515459663"]
+			description: ["&eCrushing wheels break ore into smaller fragments by applying force between the rotating wheels. This exposes mineral grains and releases host-rock powder, preparing the remaining fragments for milling.&r"]
 			disable_toast: true
 			id: "70631EBCEC3BA87D"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Powered Crushing Wheels"
 			tasks: [{
 				id: "68AB5FBF12DBCEC5"
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
+			title: "Crush the Ore"
 			x: -1.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["3C615E4515459663"]
+			description: ["&eA millstone grinds the ore block directly into powder, combining size reduction and preparation for separation in one operation. It can also release the mineral's listed host-rock powders.&r"]
 			disable_toast: true
 			id: "6E509F0E28483D5B"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "The Shorter Preparation Route"
 			tasks: [{
 				id: "49B77DA4563384F8"
 				item: "create:millstone"
 				type: "item"
 			}]
+			title: "Mill Ore Directly"
 			x: 0.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["325A4EA2A4390C9C"]
+			description: [
+				"&eThe corroding fan provides a short acid-assisted route from compatible ore powders to metal powder or nuggets. Acid acts on susceptible mineral compounds; it serves a different role from a table or centrifuge that sorts loose particles.&r"
+				""
+				"&eThe fan needs a prepared corroding catalyst block in its air stream. An exposed acid fluid does not substitute for the catalyst block.&r"
+			]
 			disable_toast: true
 			id: "1D747D35EA0AB142"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "For Leachable Ore Powders"
 			tasks: [{
 				id: "1B0ABBEEFA0ACF76"
 				item: "create:encased_fan"
 				type: "item"
 			}]
+			title: "Fan-Assisted Acid Recovery"
 			x: 3.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["325A4EA2A4390C9C"]
+			description: [
+				"&eVibration moves loose particles differently according to their density, size and contact with the table. This lets valuable mineral be concentrated away from part of the surrounding rock without dissolving the feed.&r"
+				""
+				"&eThe local table yields refined material, possible secondary concentrates and tailings. The tailings remain useful for flotation.&r"
+			]
 			disable_toast: true
 			id: "175DCD25317BDC00"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Recover Refined Material"
 			tasks: [{
 				id: "7626F2DDCD6EE3C9"
 				item: "vintageimprovements:vibrating_table"
 				type: "item"
 			}]
+			title: "Vibrating Separation"
 			x: 1.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["325A4EA2A4390C9C"]
+			description: [
+				"&eRotation intensifies the separation of particles with different densities. Centrifugal motion helps concentrate useful minerals from ore powder without changing them into dissolved compounds.&r"
+				""
+				"&eThe remaining tailings still contain recoverable material and can enter flotation.&r"
+			]
 			disable_toast: true
 			id: "3968023285949226"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Density Separation by Rotation"
 			tasks: [{
 				id: "35D2F31B609BD829"
 				item: "vintageimprovements:centrifuge"
 				type: "item"
 			}]
+			title: "Centrifugal Separation"
 			x: 0.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["68EDC7F8F372E4EC"]
+			description: ["&eMilling finishes the size reduction begun by the crushing wheels. The resulting powder enters the same recovery branches as directly milled ore.&r"]
 			disable_toast: true
 			id: "5FA2456D613EC7BF"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Prepare the Separation Feed"
 			tasks: [{
 				id: "1570CC321FD56C07"
 				item: "create:millstone"
 				type: "item"
 			}]
+			title: "Mill Crushed Ore"
 			x: -1.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["1D747D35EA0AB142"]
+			description: ["&eThis is powder of the recovered metal, rather than the original ore mineral. The fine form is useful in metal processing and alloy mixing because it can be distributed through a batch without handling large pieces of solid metal.&r"]
 			disable_toast: true
 			icon: "kubejs:copper_powder"
 			id: "5D84F6BA00FE1F33"
+			subtitle: "Recovered Metal Stock"
 			tasks: [{
 				id: "07B11FE6C575A2A0"
 				title: "Material Powder"
 				type: "checkmark"
 			}]
+			title: "Metal Powder from Corroding"
 			x: 4.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["1D747D35EA0AB142"]
+			description: ["&eCorroding can recover small portions of metal directly from compatible ore powder. These nuggets are ready for component assembly or consolidation into larger metal stock.&r"]
 			disable_toast: true
 			icon: "create:copper_nugget"
 			id: "6EE13B4821311122"
+			subtitle: "Small Portions of Metal"
 			tasks: [{
 				id: "7F20C1475449A485"
 				title: "Material Nugget"
 				type: "checkmark"
 			}]
+			title: "Metal Nuggets from Corroding"
 			x: 6.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["2A5727AD26A217EB"]
+			description: [
+				"&eFlotation uses differences in mineral surface behavior. Reagents change how selected particles interact with water and air bubbles, allowing valuable mineral to separate from unwanted rock.&r"
+				""
+				"&eFlotation can recover mineral left behind by density separation. The remaining stubborn tailings retain the less readily separated fraction.&r"
+			]
 			disable_toast: true
 			id: "31B2117B6DC8C595"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Selective Mineral Surfaces"
 			tasks: [{
 				id: "42DACE0009B57BC0"
 				item: "tfmg:steel_chemical_vat"
 				type: "item"
 			}]
+			title: "Tailings Flotation"
 			x: -1.5d
 			y: 11.0d
 		}
 		{
 			dependencies: ["19B51F96FEE5A2E1"]
+			description: [
+				"&eThe leach solution carries material recovered by acid in liquid form. Dissolved metal compounds can be treated and precipitated as crystals, providing a chemical route to material that physical separation leaves mixed with the rock.&r"
+			]
 			disable_toast: true
 			icon: "kubejs:leach_chalcocite_solution_bucket"
 			id: "134A15D609997F50"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "Liquid Acid Output"
 			tasks: [{
 				id: "4CD3A1F2E1306CD5"
 				title: "Leach Ore Solution"
 				type: "checkmark"
 			}]
+			title: "Leach Solution"
 			x: 0.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["2EF97B44F3C871A6"]
+			description: [
+				"&eFor tailings with a compatible leaching treatment, acid provides another recovery route after flotation. Susceptible material leaves the stubborn residue in solution; the remaining solid still has a washing stage.&r"
+			]
 			disable_toast: true
 			id: "19B51F96FEE5A2E1"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Heated Acid Treatment"
 			tasks: [{
 				id: "40E7B2D187CEFC8B"
 				item: "tfmg:steel_chemical_vat"
 				type: "item"
 			}]
+			title: "Leach Stubborn Tailings"
 			x: 0.0d
 			y: 14.0d
 		}
 		{
 			dependencies: ["1626665799ED7DC7"]
+			description: ["&eWashing separates further useful material from the solid left by leaching. An encased fan's water stream can recover metal powder alongside silicate and washing residues, adding to the metal carried through the liquid branch.&r"]
 			disable_toast: true
 			id: "1CCD1ABA317C5BC9"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Water in the Fan Stream"
 			tasks: [{
 				id: "7E41E75096CB233C"
 				item: "create:encased_fan"
 				type: "item"
 			}]
+			title: "Wash the Leach Residue"
 			x: 3.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["2ADE88E9213632E5"]
+			description: ["&ePurified solution carries recovered metal compounds in liquid form after washing residue has been separated. It is the feed for precipitation into material crystals.&r"]
 			disable_toast: true
 			icon: "kubejs:purified_chalcocite_solution_bucket"
 			id: "2F86EA68D986A8F0"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "Ready for Precipitation"
 			tasks: [{
 				id: "39D07F3F14D513F7"
 				title: "Purified Ore Solution"
 				type: "checkmark"
 			}]
+			title: "Purified Ore Solution"
 			x: -3.0d
 			y: 18.0d
 		}
 		{
 			dependencies: ["1CCD1ABA317C5BC9"]
+			description: ["&eThis powder recovers metal from the solid fraction of the leaching process. It complements the liquid recovery branch: material that did not leave with the solution can still contribute to the finished metal supply.&r"]
 			disable_toast: true
 			icon: "kubejs:copper_powder"
 			id: "00378F90D469BA6D"
+			subtitle: "Recover the Remaining Metal"
 			tasks: [{
 				id: "634F99254C0EE804"
 				title: "Material Powder"
 				type: "checkmark"
 			}]
+			title: "Metal Powder from Residue"
 			x: 3.0d
 			y: 18.0d
 		}
 		{
 			dependencies: ["2EF97B44F3C871A6"]
+			description: ["&eRegrinding stubborn tailings can recover another portion of ore powder for the separation line. It offers a physical recovery route for material left after flotation.&r"]
 			disable_toast: true
 			id: "62C41AC444B3C7A4"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Expose the Remaining Mineral"
 			tasks: [{
 				id: "07CDE6E7C1AABA41"
 				item: "create:millstone"
 				type: "item"
 			}]
+			title: "Regrind Stubborn Tailings"
 			x: -3.0d
 			y: 14.0d
 		}
 		{
 			dependencies: ["62C41AC444B3C7A4"]
+			description: ["&eTreat recovered powder like fresh powder of the same ore. It rejoins that mineral's separation line.&r"]
 			disable_toast: true
 			icon: "kubejs:chalcocite_powder"
 			id: "4A1E650E8310F38D"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "Return It to Separation"
 			tasks: [{
 				id: "79C6FF07182A2E16"
 				title: "Ore Powder"
 				type: "checkmark"
 			}]
+			title: "Recovered Ore Powder"
 			x: -4.5d
 			y: 13.0d
 		}
 		{
 			dependencies: ["175DCD25317BDC00"]
+			description: ["&eThe table's refined material is a concentrate: useful mineral separated from part of the host rock. Where a smelting or blasting treatment exists, it supplies an ingot; the separated tailings follow their own recovery line.&r"]
 			disable_toast: true
 			icon: "kubejs:refined_copper"
 			id: "774B30482C504976"
+			subtitle: "Smelt the Concentrate"
 			tasks: [{
 				id: "489EA759507CBD9F"
 				title: "Refined Material"
 				type: "checkmark"
 			}]
+			title: "Refined Material from Vibration"
 			x: 3.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["3968023285949226"]
+			description: ["&eCentrifugation can recover several concentrates from one mineral feed. Separate the main and secondary materials for their individual smelting treatments; the metal-bearing byproducts are part of the ore's value.&r"]
 			disable_toast: true
 			icon: "kubejs:refined_copper"
 			id: "7E94F4D3E57C9E1D"
@@ -507,59 +654,84 @@
 				title: "Refined Material"
 				type: "checkmark"
 			}]
+			title: "Centrifuged Concentrates"
 			x: -1.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["31B2117B6DC8C595"]
+			description: ["&eThese concentrates recover useful material missed by the first separation. They can join the matching refined-material supply for smelting, while the stubborn tailings retain the less readily recovered fraction.&r"]
 			disable_toast: true
 			icon: "kubejs:refined_copper"
 			id: "753ABE805BF061CE"
+			subtitle: "Recover More from the Tailings"
 			tasks: [{
 				id: "2B57AB62F2D26811"
 				title: "Refined Material"
 				type: "checkmark"
 			}]
+			title: "Refined Material from Flotation"
 			x: 0.0d
 			y: 12.0d
 		}
 		{
 			dependencies: ["2F86EA68D986A8F0"]
+			description: [
+				"&eThe precipitant brings dissolved material out of the purified solution as solid crystals for metal production.&r"
+				""
+				"&eThe source mineral determines the main and possible secondary crystal types.&r"
+			]
 			disable_toast: true
 			icon: "kubejs:copper_crystal"
 			id: "75C706ECEEC5B87C"
+			subtitle: "Precipitate the Purified Solution"
 			tasks: [{
 				id: "4383F002E61A3561"
 				title: "Material Crystal"
 				type: "checkmark"
 			}]
+			title: "Material Crystals"
 			x: -3.0d
 			y: 20.0d
 		}
 		{
 			dependencies: ["325A4EA2A4390C9C"]
+			description: [
+				"&eAcid leaching transfers soluble material from the mineral into a liquid solution. Fine powder exposes more surface to the acid, while heating and mixing help the treatment reach the feed.&r"
+				""
+				"&eThe liquid carries dissolved material, while insoluble rock remains as residue. Treatment compatibility depends on the mineral; the documented magnetite and cassiterite lines use physical recovery.&r"
+			]
 			id: "4272A4EB7852D7B4"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Alternative Separation"
 			tasks: [{
 				id: "3366362B5A123617"
 				item: "tfmg:steel_chemical_vat"
 				type: "item"
 			}]
+			title: "Leach Ore Powder"
 			x: 3.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["134A15D609997F50"]
+			description: [
+				"&ePurification separates washing residue from the leach liquid before crystal recovery. This removes unwanted solid material while keeping the dissolved metal compounds in the solution.&r"
+				""
+				"&eKeep the purified solution identified by ore. It retains the mineral-specific recovery products.&r"
+			]
 			disable_toast: true
 			id: "2ADE88E9213632E5"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Separate the Residue"
 			tasks: [{
 				id: "4864BA01B9AD146D"
 				item: "tfmg:steel_chemical_vat"
 				type: "item"
 			}]
+			title: "Purify the Leach Solution"
 			x: -1.5d
 			y: 17.0d
 		}
